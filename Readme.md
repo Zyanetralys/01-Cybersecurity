@@ -145,10 +145,11 @@ Bienvenido a mi arsenal, un repositorio con herramientas, scripts, automatizacio
 - [LICENSE](https://github.com/Zyanetralys/Cybersecurity/blob/main/LICENSE)
 
 ---
-
 ## 🛡️ Código
 
 - 🔐 **Ética** – Todos los recursos son para investigación, aprendizaje y entrenamiento responsable.
+No se apoya el uso malintencionado de las técnicas aquí documentadas.  
+Este contenido es únicamente con fines educativos y de entrenamiento técnico.
 
 > *“El conocimiento es poder.”*  
 ---
