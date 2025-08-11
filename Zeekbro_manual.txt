@@ -1,0 +1,83 @@
+┌───────────────────────────────────────────────────────────────┐
+│                       ZYA'S ZEEK (BRO) CHEATSHEET             │
+│                      TACTICAL GUIDE                           │
+└───────────────────────────────────────────────────────────────┘
+
+MISSION:  
+Perform deep network traffic analysis and security monitoring  
+to detect anomalies, intrusions, and suspicious behaviors in real time.
+
+───────────────────────────────
+QUICK DEPLOYMENT PROTOCOL
+───────────────────────────────
+1️⃣ Install Zeek on a dedicated monitoring host or tap device.  
+2️⃣ Configure network interface in promiscuous mode to capture traffic.  
+3️⃣ Customize Zeek scripts or use defaults to detect protocols and behaviors.  
+4️⃣ Run Zeek to generate logs: connection, DNS, HTTP, SSL, files, etc.  
+5️⃣ Analyze logs manually or feed them to SIEM/analytics platforms.  
+6️⃣ Update and tune detection scripts regularly for evolving threats.
+
+───────────────────────────────
+CORE LOG FILES GENERATED
+───────────────────────────────
+- **conn.log** — Records all network connections with metadata.  
+- **dns.log** — DNS queries and responses.  
+- **http.log** — HTTP requests and responses.  
+- **ssl.log** — SSL/TLS handshake details and cert info.  
+- **files.log** — File transfer metadata and extraction.  
+- **weird.log** — Anomalous or malformed traffic detection.  
+- **notice.log** — Security notices, alerts, and warnings.
+
+───────────────────────────────
+KEY ZEEL SCRIPT COMPONENTS
+───────────────────────────────
+- **Base scripts** — Protocol analyzers and event handlers.  
+- **Policy scripts** — Define security policies and alert conditions.  
+- **Custom scripts** — Tailored detection and monitoring logic.  
+- **Script loading** — Via `zeekctl` or command line with `-r` and `-s`.
+
+───────────────────────────────
+BASIC USAGE COMMANDS
+───────────────────────────────
+- Start live capture:  
+  `zeek -i eth0`
+
+- Analyze pcap file:  
+  `zeek -r capture.pcap`
+
+- Run with custom scripts:  
+  `zeek -i eth0 myscript.zeek`
+
+- Use Zeek Control for management:  
+  `zeekctl deploy` (after config)
+
+───────────────────────────────
+TACTICAL USE CASES
+───────────────────────────────
+- Detect lateral movement via SMB/NetBIOS traffic.  
+- Identify DNS tunneling or exfiltration attempts.  
+- Monitor HTTP for suspicious user agents or payloads.  
+- Track SSL certificate anomalies or suspicious issuers.  
+- Extract transferred files and inspect contents.  
+- Correlate Zeek logs with IDS/IPS and endpoint data.
+
+───────────────────────────────
+INTEGRATION & EXTENSION
+───────────────────────────────
+- Integrate with ELK stack, Splunk, or SIEM solutions.  
+- Use Zeek scripts from community repositories (e.g., zeek-packages).  
+- Develop custom analyzers for proprietary protocols.  
+- Combine with Suricata or Snort for hybrid detection.
+
+───────────────────────────────
+PERFORMANCE TUNING
+───────────────────────────────
+- Use dedicated hardware or FPGA accelerators for high throughput.  
+- Tune script load and logging verbosity to manage resource use.  
+- Use `zeekctl` for centralized cluster deployments.  
+- Employ data filtering to reduce noise and focus on critical traffic.
+
+───────────────────────────────
+FINAL COMMANDMENT:  
+“See beyond packets; decode intent and protect your network’s soul.”
+───────────────────────────────

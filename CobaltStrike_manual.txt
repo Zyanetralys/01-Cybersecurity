@@ -1,0 +1,58 @@
+┌───────────────────────────────────────────────────────────────┐
+│                   ZYA'S COBALT STRIKE CHEATSHEET              │
+│                      TACTICAL GUIDE                           │
+└───────────────────────────────────────────────────────────────┘
+
+MISSION:  
+Conduct advanced adversary simulations with post-exploitation, lateral  
+movement, and command & control capabilities leveraging beacon payloads.
+
+───────────────────────────────
+QUICK DEPLOYMENT PROTOCOL  
+───────────────────────────────  
+1️⃣ Generate and customize Beacon payloads (stagers).  
+2️⃣ Deliver payload via phishing, exploit, or manual install.  
+3️⃣ Establish C2 communication (HTTP, HTTPS, DNS, SMB).  
+4️⃣ Use Beacon console to issue commands, upload/download files, and run modules.  
+5️⃣ Execute lateral movement via PsExec, WMI, SMB, etc.  
+6️⃣ Harvest credentials, escalate privileges, and maintain persistence.  
+7️⃣ Evade detection by using sleep timers, jitter, and encryption.  
+
+───────────────────────────────
+CORE COMPONENTS & FEATURES  
+───────────────────────────────  
+- Beacon: Modular payload for C2 communication and execution.  
+- Malleable C2 Profiles: Customize traffic to mimic legitimate protocols.  
+- Aggressor Scripts: Automate tasks and extend functionality.  
+- Lateral Movement Tools: PsExec, WMI, SMBexec, PowerShell Remoting.  
+- Post-Exploitation Modules: Keylogging, screenshot, token manipulation.  
+- Credential Harvesting: Integration with Mimikatz and built-in tools.  
+- Pivoting & Tunneling: Route traffic through compromised hosts.
+
+───────────────────────────────
+TACTICAL COMMANDS & USE CASES  
+───────────────────────────────  
+- `beacon> shell` — Run system shell commands.  
+- `beacon> upload <local> <remote>` — Transfer files to target.  
+- `beacon> download <remote> <local>` — Download files.  
+- `beacon> invoke-mimikatz` — Run Mimikatz to extract creds.  
+- `beacon> psexec <target>` — Execute commands remotely via PsExec.  
+- `beacon> portscan <range>` — Scan ports from target host.  
+- `beacon> powershell-import <script>` — Execute PowerShell scripts.  
+- `beacon> keylogger` — Start keylogging on host.  
+- `beacon> kill` — Terminate Beacon session.
+
+───────────────────────────────
+OPERATIONAL SECURITY TIPS  
+───────────────────────────────  
+- Use slow beaconing intervals and jitter to avoid network detection.  
+- Employ Malleable C2 to blend in with legitimate traffic.  
+- Rotate payloads and C2 domains frequently.  
+- Limit use of noisy commands in sensitive environments.  
+- Use staging carefully; drop only necessary payloads.  
+- Clean logs and disable event auditing if possible.
+
+───────────────────────────────
+FINAL COMMANDMENT:  
+“Control the shadows, move unseen, and strike decisively with precision.”
+───────────────────────────────

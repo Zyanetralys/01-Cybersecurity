@@ -1,0 +1,26 @@
+8. Scripts y Automatización Propia – Tu toque personal en la guerra
+Repositorio Zyanetralys Ops
+Fase: Automatización integral
+
+Función: Colección de scripts Python/Bash para agilizar y personalizar operaciones.
+
+Protocolo de empleo:
+
+Mantener scripts actualizados y documentados.
+
+Adaptar scripts para entornos y objetivos específicos.
+
+Integrar con otras herramientas para flujos automáticos.
+
+Reglas de enfrentamiento:
+
+Verificar siempre salida y logs para evitar errores operativos.
+
+Probar en entornos controlados antes de despliegue en misión real.
+
+Funciones clave del repositorio
+Escaneo rápido multi-fase para reconocimiento eficiente.
+
+Limpieza de huellas post-operación para minimizar rastros.
+
+Despliegue de payloads ajustados y seguros.

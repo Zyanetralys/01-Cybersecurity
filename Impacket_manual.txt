@@ -1,0 +1,117 @@
+┌───────────────────────────────────────────────────────────────┐
+│                   ZYA'S IMPACKET CHEATSHEET                   │
+│                      TACTICAL GUIDE                           │
+└───────────────────────────────────────────────────────────────┘
+
+MISSION:
+Leverage Impacket’s powerful Python scripts and libraries to perform
+network protocol manipulation, credential harvesting, lateral movement,
+and Active Directory exploitation in Windows environments.
+
+───────────────────────────────
+QUICK DEPLOYMENT PROTOCOL
+───────────────────────────────
+1️⃣ Deploy Impacket tools on attacker machine (Linux/Windows with Python).
+2️⃣ Gather valid credentials or hashes for authentication.
+3️⃣ Use appropriate Impacket modules for reconnaissance, exploitation, or lateral movement.
+4️⃣ Automate attacks by chaining modules with collected intel.
+5️⃣ Exfiltrate data or escalate privileges stealthily.
+
+───────────────────────────────
+CORE IMPACKET TOOLS & USE CASES
+───────────────────────────────
+- **secretsdump.py**  
+  Extract hashes, credentials, and secrets from remote Windows machines or domain controllers.  
+  Example:  
+  `secretsdump.py domain/user@target`
+
+- **wmiexec.py**  
+  Execute commands remotely via WMI using credentials or hashes.  
+  Example:  
+  `wmiexec.py domain/user@target`
+
+- **psexec.py**  
+  Remotely execute commands with SYSTEM privileges using SMB and admin credentials.  
+  Example:  
+  `psexec.py domain/user@target`
+
+- **atexec.py**  
+  Schedule tasks remotely and execute commands with elevated privileges.  
+  Example:  
+  `atexec.py domain/user@target`
+
+- **smbexec.py**  
+  Similar to psexec, execute commands remotely over SMB with output streaming.  
+  Example:  
+  `smbexec.py domain/user@target`
+
+- **dcomexec.py**  
+  Execute commands remotely leveraging DCOM protocol (less common but stealthy).  
+  Example:  
+  `dcomexec.py domain/user@target`
+
+- **lookupsid.py**  
+  Translate SIDs to names or enumerate domain groups.  
+  Example:  
+  `lookupsid.py domain/target`
+
+- **netview.py**  
+  Enumerate network shares and computers on the domain.  
+  Example:  
+  `netview.py domain/user@target`
+
+- **ticketer.py**  
+  Forge and inject Kerberos tickets (Golden Ticket, Silver Ticket attacks).  
+  Example:  
+  `ticketer.py -user krbtgt -domain DOMAIN.LOCAL -sid S-1-5-21-... -groups "512,519" -aesKey <key>`
+
+───────────────────────────────
+AUTHENTICATION METHODS SUPPORTED
+───────────────────────────────
+- NTLM (pass-the-hash and password)
+- Kerberos (with or without tickets)
+- Plaintext passwords
+- Hashes (NTLMv1/v2)
+- AES keys (Kerberos)
+
+───────────────────────────────
+TACTICAL WORKFLOWS & USAGE TIPS
+───────────────────────────────
+- Use **secretsdump.py** to harvest credentials from compromised hosts or DCs silently.  
+- Use **wmiexec.py** or **psexec.py** for stealthy remote command execution without installing agents.  
+- Chain **netview.py** and **lookupsid.py** to gather intel on domain resources and privileges.  
+- Leverage **ticketer.py** to perform advanced Kerberos ticket forging for persistence and privilege escalation.  
+- Avoid noisy tools when possible; prefer WMI or SMB exec methods that leave fewer traces.  
+- Always specify domain and username explicitly to avoid fallback authentication issues.
+
+───────────────────────────────
+COMMON COMMAND LINE EXAMPLES
+───────────────────────────────
+- Dump hashes from a target:  
+  `secretsdump.py DOMAIN/Administrator@10.10.10.5`
+
+- Execute command with psexec:  
+  `psexec.py DOMAIN/user@10.10.10.5 "whoami"`
+
+- Run command via WMI:  
+  `wmiexec.py DOMAIN/user@10.10.10.5 "ipconfig /all"`
+
+- Enumerate shares:  
+  `netview.py DOMAIN/user@10.10.10.5`
+
+- Lookup SID:  
+  `lookupsid.py DOMAIN/10.10.10.5`
+
+───────────────────────────────
+DEFENSIVE CONSIDERATIONS
+───────────────────────────────
+- Monitor and restrict use of remote execution protocols (WMI, SMB, DCOM).  
+- Detect abnormal task scheduling and service creations.  
+- Harden credential storage and avoid NTLM fallback authentication.  
+- Audit service accounts and limit excessive privileges.  
+- Detect suspicious Kerberos ticket usage and forged tickets.
+
+───────────────────────────────
+FINAL COMMANDMENT:
+“Master the protocols beneath the surface; control Windows by bending its own tools.”
+───────────────────────────────

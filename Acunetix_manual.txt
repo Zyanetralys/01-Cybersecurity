@@ -1,0 +1,94 @@
+┌───────────────────────────────────────────────────────────────┐
+│                  ZYA'S ACUNETIX CHEATSHEET                    │
+│                      TACTICAL GUIDE                           │
+└───────────────────────────────────────────────────────────────┘
+
+MISSION:  
+Perform automated and advanced web vulnerability scanning to identify,  
+prioritize, and remediate security flaws in web applications and services.
+
+───────────────────────────────
+QUICK DEPLOYMENT PROTOCOL
+───────────────────────────────
+1️⃣ Define target web application(s) and scope of testing.  
+2️⃣ Configure crawler and scanner settings to avoid collateral damage.  
+3️⃣ Launch scan in chosen mode (Full/High-Risk/Custom).  
+4️⃣ Monitor scan progress for issues (e.g., WAF blocking).  
+5️⃣ Analyze results, prioritize vulnerabilities, and retest after fixes.
+
+───────────────────────────────
+SCAN TYPES
+───────────────────────────────
+⚡ **Full Scan:**  
+Comprehensive test for OWASP Top 10, misconfigurations, weak SSL, injections.
+
+⚡ **High-Risk Vulnerabilities Scan:**  
+Focuses on critical flaws only (e.g., SQLi, RCE).
+
+⚡ **Targeted Scan:**  
+Custom selection of vulnerabilities or endpoints to test.
+
+⚡ **Manual Crawl + Scan:**  
+Manually browse and record target paths for better coverage before scanning.
+
+───────────────────────────────
+KEY FEATURES & MODULES
+───────────────────────────────
+- **Crawler:** Maps entire website structure, detects hidden parameters and endpoints.
+- **Scanner Engine:** Executes vulnerability payloads safely or aggressively.
+- **Vulnerability Management Dashboard:** Organizes findings by severity.
+- **Authentication Handling:** Supports form-based, basic, NTLM, OAuth logins.
+- **Business Logic Testing:** Detects multi-step vulnerabilities.
+- **Integration:** CI/CD pipelines, Jenkins, GitLab, Jira.
+
+───────────────────────────────
+COMMON VULNERABILITIES DETECTED
+───────────────────────────────
+- SQL Injection, Blind SQLi
+- Cross-Site Scripting (XSS)
+- Cross-Site Request Forgery (CSRF)
+- Remote File Inclusion (RFI), Local File Inclusion (LFI)
+- Server-Side Request Forgery (SSRF)
+- XML External Entity (XXE) attacks
+- Insecure Direct Object Reference (IDOR)
+- Weak SSL/TLS configurations
+- Directory traversal and exposed admin panels
+- Default or weak credentials
+
+───────────────────────────────
+OPERATIONAL BEST PRACTICES
+───────────────────────────────
+- **Scope Control:** Avoid scanning third-party assets unintentionally.
+- **Exclude Non-Relevant URLs:** Static resources, logout links.
+- **Authentication:** Ensure scanner is logged in to test internal pages.
+- **Safe Mode First:** Run a safe scan before full aggressive mode.
+- **Manual Validation:** Double-check findings to avoid false positives.
+- **Chaining Tools:** Validate critical findings with Burp Suite or manual exploitation.
+
+───────────────────────────────
+OUTPUT & REPORTING
+───────────────────────────────
+- **Report Formats:** PDF, HTML, XML for easy sharing.
+- **Filtering:** By severity (High, Medium, Low, Informational).
+- **Export:** Feed results into vulnerability management platforms (e.g., DefectDojo).
+
+───────────────────────────────
+TACTICAL COMBINATIONS
+───────────────────────────────
+- **Acunetix + Burp Suite:** Deep manual exploitation of identified flaws.
+- **Acunetix + Nmap/Nessus:** Combine infra scanning with web vulnerabilities.
+- **Acunetix + OWASP ZAP:** Cross-verify results to reduce false positives.
+- **Acunetix + CI/CD:** Automate testing on every deployment.
+
+───────────────────────────────
+PROFESSIONAL TIPS
+───────────────────────────────
+- Tune request throttling to avoid crashing fragile apps.
+- Use HEADLESS browser mode for complex JavaScript apps.
+- Schedule recurring scans for continuous monitoring.
+- Customize payloads for proprietary technologies.
+
+───────────────────────────────
+FINAL COMMANDMENT:
+“Automate reconnaissance, validate manually, and weaponize knowledge for decisive action.”
+───────────────────────────────

@@ -1,0 +1,72 @@
+┌───────────────────────────────────────────────────────────────┐
+│                    ZYA'S RESPONDER CHEATSHEET                 │
+│                      TACTICAL GUIDE                           │
+└───────────────────────────────────────────────────────────────┘
+
+MISSION:
+Perform LLMNR, NBT-NS, and MDNS poisoning to capture NTLM hashes,
+credentials, and perform man-in-the-middle attacks on local networks.
+
+───────────────────────────────
+QUICK DEPLOYMENT PROTOCOL
+───────────────────────────────
+1️⃣ Deploy Responder on attacker machine within target network.  
+2️⃣ Start Responder with appropriate interface and protocols enabled.  
+3️⃣ Wait passively to intercept broadcast name resolution requests.  
+4️⃣ Capture NTLM authentication attempts triggered by poisoned responses.  
+5️⃣ Analyze or relay captured hashes for further exploitation.
+
+───────────────────────────────
+STARTING RESPONDER
+───────────────────────────────
+- Basic start with default modules:  
+  `responder -I eth0`
+
+- Enable specific protocols or disable modules:  
+  `responder -I eth0 -r -n -w -d`  
+  Where:  
+  `-r` = LLMNR poison  
+  `-n` = NBT-NS poison  
+  `-w` = WPAD rogue proxy  
+  `-d` = MDNS poison
+
+- Verbose output for debugging:  
+  `responder -I eth0 -v`
+
+───────────────────────────────
+MODULES & PROTOCOLS
+───────────────────────────────
+- **LLMNR (Link-Local Multicast Name Resolution)** — Common in Windows for name resolution fallback.  
+- **NBT-NS (NetBIOS Name Service)** — Legacy Windows name resolution.  
+- **MDNS (Multicast DNS)** — Used in some environments, especially macOS/Linux.  
+- **WPAD (Web Proxy Auto-Discovery Protocol)** — Poison proxy requests for man-in-the-middle.
+
+───────────────────────────────
+CAPTURED DATA TYPES
+───────────────────────────────
+- NTLMv1 and NTLMv2 challenge-response hashes.  
+- Cleartext credentials (if configured).  
+- Session keys (in some scenarios).  
+- Hostnames and IPs of victims.
+
+───────────────────────────────
+POST-CAPTURE EXPLOITATION
+───────────────────────────────
+- Use captured NTLM hashes for pass-the-hash attacks (e.g., with Impacket).  
+- Attempt cracking hashes with John the Ripper or Hashcat.  
+- Relay captured credentials to other hosts or services (SMB, HTTP).  
+- Monitor for successful authentications and lateral movement.
+
+───────────────────────────────
+DEFENSIVE MITIGATIONS
+───────────────────────────────
+- Disable LLMNR and NBT-NS on endpoints via group policies.  
+- Restrict unnecessary service protocols.  
+- Use strong authentication and enforce SMB signing.  
+- Network segmentation and monitoring for suspicious traffic.  
+- Deploy honeytokens or decoy services to detect poisoning.
+
+───────────────────────────────
+FINAL COMMANDMENT:
+“Exploit the trust in local name resolution; own the network silently and swiftly.”
+───────────────────────────────

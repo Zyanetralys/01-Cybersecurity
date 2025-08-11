@@ -1,0 +1,117 @@
+┌───────────────────────────────────────────────────────────────┐
+│             ZYA'S JOHN THE RIPPER CHEATSHEET                  │
+│                      TACTICAL GUIDE                           │
+└───────────────────────────────────────────────────────────────┘
+
+MISSION:
+Recover passwords by cracking hashes; audit password strength and detect weak credentials
+to strengthen security postures and exploit vulnerable authentication.
+
+───────────────────────────────
+QUICK DEPLOYMENT PROTOCOL
+───────────────────────────────
+1️⃣ Collect password hashes from compromised endpoints, dumps, or memory (Mimikatz, etc).
+2️⃣ Identify hash formats precisely using:
+   `john --list=formats`
+3️⃣ Prepare or acquire appropriate wordlists tuned for the target (rockyou, custom, generated).
+4️⃣ Execute cracking runs combining wordlists and mangling rules to maximize coverage.
+5️⃣ Iterate with incremental brute force or mask attacks for complex passwords.
+6️⃣ Extract and analyze cracked passwords with:
+   `john --show <hashfile>`
+7️⃣ Report findings with risk prioritization and remediation recommendations.
+
+───────────────────────────────
+COMMON COMMANDS & MODES
+───────────────────────────────
+- Basic cracking with default wordlist and rules:  
+  `john <hashfile>`
+
+- Use specific wordlist:  
+  `john --wordlist=<file> <hashfile>`
+
+- Apply rulesets for mutations (default or custom):  
+  `john --wordlist=<file> --rules <hashfile>`
+
+- Incremental brute force mode (exhaustive, slow):  
+  `john --incremental <hashfile>`
+
+- Mask mode for targeted brute force (custom charset & length):  
+  `john --mask='?l?d?d?d?d' <hashfile>`
+
+- Show cracked passwords:  
+  `john --show <hashfile>`
+
+- List supported hash formats:  
+  `john --list=formats`
+
+- Use session management to pause/resume cracking:  
+  `john --session=<name> <hashfile>`
+
+───────────────────────────────
+HASH TYPES & IDENTIFICATION
+───────────────────────────────
+- Common Hash Formats:  
+  MD5, SHA1, SHA256, SHA512  
+  NTLM (Windows LAN Manager)  
+  bcrypt, PBKDF2, scrypt (slow, salted hashes)  
+  DES, LM (legacy Windows)  
+  WPA/WPA2 PSK (wireless)  
+  MySQL, Oracle, MSSQL hashes  
+
+- Use `file` or `hashid` tools for quick hash type detection.
+
+───────────────────────────────
+WORDLIST SOURCES & GENERATION
+───────────────────────────────
+- Standard Lists:  
+  rockyou.txt, crackstation.txt, SecLists.
+
+- Custom Targeted Lists:  
+  Generated with `crunch`, `cewl` (target-specific crawling).  
+  Use leak-based corpuses and known password dumps.
+
+- Rule-based Mutation:  
+  Use built-in or custom rule sets to create variations.
+
+───────────────────────────────
+PERFORMANCE OPTIMIZATION & ACCELERATION
+───────────────────────────────
+- Use Jumbo John build for GPU acceleration:  
+  `john --format=nt-opencl --device=0 <hashfile>`
+
+- Prefer wordlist + rules before incremental brute forcing to save time.
+
+- Distribute cracking across multiple systems with session sharing.
+
+- Limit charset in mask mode to focus attack vectors efficiently.
+
+───────────────────────────────
+ADVANCED TACTICS & STRATEGIES
+───────────────────────────────
+- Combine with **hashcat** for GPU-accelerated cracking on complex hashes.
+
+- Use incremental mode for passwords beyond wordlist scope.
+
+- Prioritize cracking hashes from privileged accounts first (admins, service accounts).
+
+- Exploit cracked credentials for lateral movement and privilege escalation.
+
+- Regularly update wordlists with fresh leaks and intel.
+
+───────────────────────────────
+DEFENSIVE COUNTERMEASURES (IF YOU WERE DEFENDING)
+───────────────────────────────
+- Enforce strong password policies and complexity requirements.
+
+- Use slow hash algorithms (bcrypt, scrypt) with salt and high cost.
+
+- Implement multi-factor authentication (MFA) to mitigate compromised passwords.
+
+- Monitor for unusual authentication patterns and brute force attempts.
+
+- Limit hash exposure; protect hashes with encryption and access control.
+
+───────────────────────────────
+FINAL COMMANDMENT:
+“Break the weak, fortify the strong, never trust the untested.”
+───────────────────────────────

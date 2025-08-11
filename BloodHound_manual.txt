@@ -1,0 +1,135 @@
+┌───────────────────────────────────────────────────────────────┐
+│                 ZYA'S BLOUDHOUND CHEATSHEET                   │
+│                      TACTICAL GUIDE                           │
+└───────────────────────────────────────────────────────────────┘
+
+MISSION:
+Map, analyze and exploit Active Directory relationships and permissions to identify attack paths,
+escalate privileges, and gain domain dominance stealthily and efficiently.
+
+───────────────────────────────
+QUICK DEPLOYMENT PROTOCOL
+───────────────────────────────
+1️⃣ Gather domain data using BloodHound ingestors (SharpHound).
+2️⃣ Import collected data into BloodHound interface.
+3️⃣ Query and analyze attack paths, relationships, and privileges.
+4️⃣ Identify high-value targets, privilege escalation vectors, and lateral movement routes.
+5️⃣ Plan and execute offensive actions on AD infrastructure.
+
+───────────────────────────────
+COLLECTING DATA WITH SHARPHOUND
+───────────────────────────────
+- SharpHound ingestors collect AD data via:
+
+| Collection Methods  | Description                          | CLI Option                  |
+|---------------------|------------------------------------|-----------------------------|
+| ACL                 | Access Control Lists on objects    | -CollectionMethod ACL       |
+| Session             | Logged-on sessions                 | -CollectionMethod Session   |
+| LocalAdmin          | Local admin rights on machines     | -CollectionMethod LocalAdmin|
+| Trusts              | Domain trust relationships         | -CollectionMethod Trusts    |
+| ObjectProps         | Object properties                  | -CollectionMethod ObjectProps|
+| GroupMembership     | Group memberships                 | -CollectionMethod GroupMembership|
+| LoggedOn            | Logged-on users                   | -CollectionMethod LoggedOn  |
+| Default             | All above (comprehensive)          | *(default)*                 |
+
+Example command:
+SharpHound.exe -c All -Domain yourdomain.local -ZipFileName data.zip
+
+───────────────────────────────
+IMPORTING DATA TO BLOODHOUND
+───────────────────────────────
+- Open BloodHound GUI.
+- Authenticate with valid credentials (domain user or admin).
+- Import `.zip` collected by SharpHound via “Upload Data”.
+- Wait for parsing and graph generation.
+
+───────────────────────────────
+BLOODHOUND INTERFACE BASICS
+───────────────────────────────
+- Nodes: Represent AD objects (users, computers, groups, domains).
+- Edges: Relationships & permissions (AdminTo, MemberOf, HasSession, CanRDP, etc).
+- Filters: Narrow down visible nodes by type, domain, or attributes.
+- Queries: Prebuilt or custom Cypher queries to analyze paths.
+
+───────────────────────────────
+ESSENTIAL PREBUILT QUERIES
+───────────────────────────────
+| Query Name                      | Purpose                                   |
+|--------------------------------|-------------------------------------------|
+| Shortest Paths to Domain Admins | Finds the minimal chain to DA privileges.|
+| Users with DCSync Rights         | Detects who can replicate directory data.|
+| Admins with Sessions             | Users with active sessions on targets.   |
+| Local Admins on Computers        | Lists users with local admin rights.     |
+| Kerberoastable Users             | Accounts vulnerable to Kerberoasting.    |
+| AS-REP Roastable Users           | Users with unconstrained delegation.     |
+| Find Principals with Unconstrained Delegation | Key targets for privilege escalation. |
+| High Value Targets               | Critical assets or accounts in domain.   |
+
+───────────────────────────────
+CUSTOM CYPHER QUERY BASICS
+───────────────────────────────
+- BloodHound uses Cypher (Neo4j query language) for deep custom queries.
+
+Example to find all users with administrative rights on a specific machine:
+MATCH (u:User)-[:AdminTo]->(c:Computer {name:"TARGETMACHINE"})
+RETURN u.name
+
+Find shortest path between user and Domain Admin:
+MATCH p=shortestPath((u:User {name:"username"})-[*]->(g:Group {name:"DOMAIN ADMINS"}))
+RETURN p
+
+───────────────────────────────
+KEY BLOODHOUND RELATIONSHIPS
+───────────────────────────────
+| Relationship       | Meaning                          | Tactical Use                     |
+|--------------------|---------------------------------|---------------------------------|
+| MemberOf           | User or computer belongs to group| Identify group-based privileges |
+| AdminTo            | User has admin rights on object | Escalate privileges on targets  |
+| HasSession         | User is logged on to machine    | Lateral movement opportunities  |
+| CanRDP             | User can RDP to computer        | Plan remote access              |
+| CanPSRemote        | User can PowerShell remote      | Plan remote command execution   |
+| AllowedToDelegate  | Unconstrained delegation rights | Critical for Kerberos attacks   |
+| HasSPN             | User/computer has Service Principal Name | Identify Kerberoast targets |
+
+───────────────────────────────
+PRIVILEGE ESCALATION VECTORS TO WATCH
+───────────────────────────────
+- DCSync Rights: Replicating Directory Changes permissions allow extracting user hashes.
+- Unconstrained Delegation: Allows ticket forgery for domain-wide access.
+- Local Admin Access: Lateral movement via local admin rights on other hosts.
+- Active Sessions: Hijack active sessions for immediate access.
+- Kerberoasting: Exploit SPNs to crack service account passwords offline.
+- Trust Relationships: Exploit inter-domain trusts to escalate across forests.
+
+───────────────────────────────
+TACTICAL USAGE TIPS
+───────────────────────────────
+- Always start with broad SharpHound collection, then filter to relevant attack paths.
+- Focus on shortest paths to Domain Admin to optimize attack efforts.
+- Combine BloodHound intel with live reconnaissance (Invoke-Mimikatz, Rubeus) to confirm access.
+- Use custom Cypher queries to pivot on specific assets or user groups.
+- Monitor local admin relationships and active sessions for lateral movement opportunities.
+- Identify “shadow admins”—users with unexpected admin rights.
+- Regularly update BloodHound data for real-time AD state.
+
+───────────────────────────────
+DEFENSIVE COUNTERMEASURES (IF YOU WERE DEFENDING)
+───────────────────────────────
+- Audit and restrict ACLs to prevent excessive privileges.
+- Disable unconstrained delegation where unnecessary.
+- Monitor and alert on unusual local admin assignments.
+- Limit DCSync permissions strictly to domain controllers and admins.
+- Harden Kerberos and monitor for abnormal ticket requests.
+
+───────────────────────────────
+INTEGRATION WITH OTHER TOOLS
+───────────────────────────────
+- Use with SharpHound powershell ingestors for data collection.
+- Correlate with Mimikatz for credential extraction.
+- Combine with Rubeus for Kerberos attacks.
+- Link findings to Cobalt Strike or Metasploit for exploitation chains.
+
+───────────────────────────────
+FINAL COMMANDMENT:
+“Master the graph, own the domain. Control the unseen paths and dominate the AD battlefield.”
+───────────────────────────────

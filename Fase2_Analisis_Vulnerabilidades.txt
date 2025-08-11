@@ -1,0 +1,106 @@
+2. Escaneo y Análisis de Vulnerabilidades – Localiza el punto débil
+Nessus
+Fase: Escaneo
+
+Función: Escáner comercial de vulnerabilidades con amplias firmas y soporte.
+
+Protocolo de empleo:
+
+Actualizar base de datos antes de cada escaneo.
+
+Configurar escaneo segmentado y programado para minimizar detección.
+
+Priorizar escaneos en sistemas críticos y de alta exposición.
+
+Reglas de enfrentamiento:
+
+Evitar escaneos masivos sin pausas para no saturar la red.
+
+Revisar y validar falsos positivos con análisis manual.
+
+OpenVAS
+Fase: Escaneo
+
+Función: Escáner de vulnerabilidades open source para análisis extensivo.
+
+Protocolo de empleo:
+
+Mantener actualizado el feed de vulnerabilidades.
+
+Configurar escaneos con reglas personalizadas según objetivo.
+
+Integrar con herramientas externas para reportes.
+
+Reglas de enfrentamiento:
+
+Segmentar escaneos para evitar alertas en IDS/IPS.
+
+Verificar credenciales y permisos para escaneos autenticados.
+
+Acunetix
+Fase: Escaneo web
+
+Función: Escaneo profundo de vulnerabilidades web incluyendo OWASP.
+
+Protocolo de empleo:
+
+Configurar perfiles de escaneo específicos por tipo de aplicación.
+
+Ejecutar escaneos en ventanas temporales bajas de tráfico.
+
+Analizar reportes para priorizar explotación.
+
+Reglas de enfrentamiento:
+
+Evitar escaneos agresivos que puedan generar bloqueos.
+
+Confirmar hallazgos con pruebas manuales antes de explotación.
+
+Nikto
+Fase: Escaneo web
+
+Función: Escáner web básico, rápido para detectar configuraciones débiles.
+
+Protocolo de empleo:
+
+Utilizar como primer filtro antes de escaneo profundo.
+
+Complementar con otras herramientas para validación.
+
+Reglas de enfrentamiento:
+
+Controlar la velocidad para no generar alertas inmediatas.
+
+wpscan
+Fase: Escaneo web
+
+Función: Escáner específico para vulnerabilidades en WordPress.
+
+Protocolo de empleo:
+
+Identificar versión y plugins activos antes del escaneo.
+
+Escanear con autenticación para aumentar cobertura si es posible.
+
+Reglas de enfrentamiento:
+
+Evitar escaneo agresivo para prevenir bloqueos.
+
+Utilizar proxies para ocultar origen si es necesario.
+
+OSQUERY
+Fase: Escaneo y análisis en endpoints
+
+Función: Consultas SQL sobre sistemas para auditoría y detección.
+
+Protocolo de empleo:
+
+Configurar consultas personalizadas según sistema objetivo.
+
+Integrar con SIEM para monitoreo continuo.
+
+Reglas de enfrentamiento:
+
+Minimizar impacto en rendimiento del endpoint.
+
+Revisar logs para evitar detección de actividad anómala.

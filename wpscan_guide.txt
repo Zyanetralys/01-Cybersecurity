@@ -1,0 +1,19 @@
+WPSCAN - Manual Básico
+------------------
+Descripción:
+WPScan es un escáner de seguridad para sitios web WordPress.
+
+Instalación:
+sudo apt install ruby
+gem install wpscan
+
+Uso básico:
+wpscan --url https://sitio.com --enumerate u           # Enumerar usuarios
+wpscan --url https://sitio.com --enumerate vp,vt       # Enumerar plugins y temas vulnerables
+wpscan --url https://sitio.com -U usuarios.txt -P pass.txt # Fuerza bruta
+
+Opciones comunes:
+--enumerate u       Enumerar usuarios
+--enumerate vp,vt   Plugins y temas vulnerables
+-U                  Lista de usuarios
+-P                  Lista de contraseñas

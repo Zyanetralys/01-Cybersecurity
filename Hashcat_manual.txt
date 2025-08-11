@@ -1,0 +1,94 @@
+┌───────────────────────────────────────────────────────────────┐
+│                      ZYA'S HASHCAT CHEATSHEET                 │
+│                      TACTICAL GUIDE                           │
+└───────────────────────────────────────────────────────────────┘
+
+MISSION:
+Crack password hashes efficiently using GPU acceleration,
+supporting multitudinous hash types and attack modes to audit
+and recover credentials.
+
+───────────────────────────────
+QUICK DEPLOYMENT PROTOCOL
+───────────────────────────────
+1️⃣ Prepare hash file(s) to crack (one hash per line).  
+2️⃣ Identify hash type (use `hashcat -m ?`) or reference hashcat modes.  
+3️⃣ Select attack mode based on scenario: dictionary, combinator, brute-force, etc.  
+4️⃣ Choose or create wordlists, rules, masks, and masks combinators.  
+5️⃣ Launch hashcat with appropriate options and monitor progress.  
+6️⃣ Analyze cracked hashes and act accordingly.
+
+───────────────────────────────
+COMMON HASHCAT MODES (-m)
+───────────────────────────────
+- 0   — MD5  
+- 100 — SHA1  
+- 1400 — SHA256  
+- 1700 — SHA512  
+- 1000 — NTLM (Windows)  
+- 5500 — NetNTLMv1  
+- 5600 — NetNTLMv2  
+- 3200 — bcrypt  
+- 22000 — WPA/WPA2 PMKID/handshake  
+
+(Full mode list at: https://hashcat.net/wiki/doku.php?id=example_hashes)
+
+───────────────────────────────
+ATTACK MODES (-a)
+───────────────────────────────
+- 0 — Straight (dictionary)  
+- 1 — Combination (combine two dictionaries)  
+- 3 — Brute-force (mask attack)  
+- 6 — Hybrid wordlist + mask (append)  
+- 7 — Hybrid mask + wordlist (prepend)
+
+───────────────────────────────
+KEY COMMANDS & OPTIONS
+───────────────────────────────
+- Basic dictionary attack:  
+  `hashcat -m <hash_type> -a 0 hashes.txt wordlist.txt`
+
+- Brute-force attack with mask:  
+  `hashcat -m <hash_type> -a 3 hashes.txt ?a?a?a?a?a`
+
+- Use rules for mutations:  
+  `hashcat -m <hash_type> -a 0 -r rules/best64.rule hashes.txt wordlist.txt`
+
+- Resume interrupted session:  
+  `hashcat --session=<name> -r`
+
+- Show cracked passwords:  
+  `hashcat --show -m <hash_type> hashes.txt`
+
+- Benchmark performance:  
+  `hashcat -b`
+
+- Limit runtime:  
+  `--runtime=<seconds>`
+
+- Use multiple GPUs:  
+  `--opencl-device-types 1`
+
+───────────────────────────────
+PERFORMANCE & OPTIMIZATION
+───────────────────────────────
+- Use GPUs for massive acceleration; CPUs only as fallback.  
+- Combine wordlists with rules for maximum coverage.  
+- Use masks to target specific password patterns.  
+- Avoid brute-force unless necessary; prioritize targeted attacks.  
+- Keep drivers and hashcat updated.  
+- Monitor temperature and power consumption on GPUs.
+
+───────────────────────────────
+TACTICAL TIPS
+───────────────────────────────
+- Identify hash type precisely before attack to avoid wasted effort.  
+- Use hybrid attacks to cover variations in password formats.  
+- Regularly update wordlists with custom or leaked datasets.  
+- Leverage mask attacks for known password policy patterns.  
+- Use session save/resume for long-running cracking attempts.
+
+───────────────────────────────
+FINAL COMMANDMENT:
+“Crack the hardened; reveal the hidden. Master speed, patience, and precision.”
+───────────────────────────────

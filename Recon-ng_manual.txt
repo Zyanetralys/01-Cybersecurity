@@ -1,0 +1,96 @@
+┌───────────────────────────────────────────────────────────────┐
+│                   ZYA'S RECON-NG CHEATSHEET                   │
+│                      TACTICAL GUIDE                           │
+└───────────────────────────────────────────────────────────────┘
+
+MISSION:
+Automate open-source reconnaissance by collecting and correlating
+intelligence on domains, hosts, people, and infrastructure using modular workflows.
+
+───────────────────────────────
+QUICK DEPLOYMENT PROTOCOL
+───────────────────────────────
+1️⃣ Launch Recon-ng in a controlled environment:  
+   `recon-ng`
+
+2️⃣ Setup workspace for target separation:  
+   `workspaces create <target_name>`  
+   `workspaces select <target_name>`
+
+3️⃣ Add target domains or hosts:  
+   `add domains example.com`  
+   `add hosts 192.168.1.1`
+
+4️⃣ Load modules based on intel needs:  
+   `modules search <keyword>`  
+   `modules load <module_path>`
+
+5️⃣ Configure module options:  
+   `show options`  
+   `set SOURCE example.com`
+
+6️⃣ Run modules to gather data:  
+   `run`
+
+7️⃣ Use reporting and exporting to consolidate intelligence:  
+   `report csv`  
+   `export csv`
+
+───────────────────────────────
+MODULE CATEGORIES & EXAMPLES
+───────────────────────────────
+- **Recon Modules**  
+  - `recon/domains-hosts/google_site` — Find hosts via Google site search.  
+  - `recon/domains-vulnerabilities/whois_pocs` — Extract WHOIS point of contacts.  
+  - `recon/contacts-credentials/breach-compilation` — Search breached credentials.
+
+- **Discovery Modules**  
+  - `discovery/info_breaches` — Collect data from public breach datasets.  
+  - `discovery/dns/zone_transfer` — Attempt DNS zone transfers.
+
+- **Exploitation Modules**  
+  - `exploitation/<varies>` — Integrate with other tools or perform phishing setups.
+
+- **Reporting Modules**  
+  - `report/csv` — Export gathered intel to CSV.  
+  - `report/html` — Generate HTML reports.
+
+───────────────────────────────
+KEY COMMANDS
+───────────────────────────────
+- `help` — Show available commands and usage.  
+- `workspaces list` — List all workspaces.  
+- `workspaces create <name>` — Create new workspace.  
+- `workspaces select <name>` — Switch workspace.  
+- `modules search <term>` — Search available modules.  
+- `modules load <module_name>` — Load a module.  
+- `show options` — Display module configuration.  
+- `set <option> <value>` — Set module option.  
+- `run` — Execute loaded module.  
+- `add domains <domain>` — Add domains manually.  
+- `add hosts <host>` — Add hosts manually.  
+- `show hosts` / `show domains` — List current targets.  
+- `report <format>` — Export data (csv, html, json).  
+- `exit` — Quit Recon-ng.
+
+───────────────────────────────
+WORKFLOW BEST PRACTICES
+───────────────────────────────
+- Use workspaces to isolate and manage multiple targets or operations.  
+- Start with passive modules to gather initial data without detection risk.  
+- Chain modules logically: domains → hosts → contacts → vulnerabilities.  
+- Validate and clean gathered data before escalation.  
+- Combine outputs with other tools (Maltego, custom scripts) for enriched analysis.
+
+───────────────────────────────
+INTEGRATION & EXTENSION
+───────────────────────────────
+- API keys and credentials management for third-party services (Shodan, VirusTotal, etc).  
+- Create custom modules in Python to automate unique workflows.  
+- Export data for SIEM or intelligence platforms.  
+- Integrate with other OSINT tools for pivoting.
+
+───────────────────────────────
+FINAL COMMANDMENT:
+“Harvest the open web's secrets with precision; know your target before the strike.”
+───────────────────────────────
