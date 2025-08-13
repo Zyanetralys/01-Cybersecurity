@@ -55,9 +55,9 @@ Sintaxis entre [ ]. Los más usados arriba. Todo en minúsculas salvo “PortHac
 - FirstTimeInit …… Inicializa sistema (casos raros).
 
 Consejos:
-• Auto-completado con TAB (comandos y nombres).
-• Editar ficheros: ‘cat’ + ‘replace’/‘append’. Si da “Assuming active flag file”, usa la forma completa de replace con nombre de fichero.
-• Tras comprometer, ‘scan’ SIEMPRE para descubrir extensiones/eOS.
+- Auto-completado con TAB (comandos y nombres).
+- Editar ficheros: ‘cat’ + ‘replace’/‘append’. Si da “Assuming active flag file”, usa la forma completa de replace con nombre de fichero.
+- Tras comprometer, ‘scan’ SIEMPRE para descubrir extensiones/eOS.
 
 ---
 
@@ -108,11 +108,11 @@ Notas:
 
 
 ## 5) Walkthrough táctico
-• Inicio (Bit): recupera x-server.sys si Naix te rompe el escritorio: cd /log → IP → connect → SSHcrack → PortHack → scp /sys/x-server.sys → reboot -i.
-• Entropy: baja FTPBounce y SMTPoverflow; usa proxies/shell para sobrecargar; no borres logs locales antes del hack de “Aggression must be punished” (los necesitarás para la trama de Naix).
-• Naix & /el: venganza (WebServerWorm), acceso al /el Message Board, Santuario Polar (4 pruebas → IP compuesto).
-• CSEC: invitación (gauntlets), CFC cadena, “Ghosting the Vault” (Decypher), “Through the Spyglass” (DECHead), red line (cambia IP en ISP Management), “Project Junebug” (KBT_PortTest y marcapasos, 104).
-• Final de Bit: TraceKill → cadena EnTech (Prometheus/Romulus) → Sequencer + múltiples shells → purge de archivos en backups.
+- Inicio (Bit): recupera x-server.sys si Naix te rompe el escritorio: cd /log → IP → connect → SSHcrack → PortHack → scp /sys/x-server.sys → reboot -i.
+- Entropy: baja FTPBounce y SMTPoverflow; usa proxies/shell para sobrecargar; no borres logs locales antes del hack de “Aggression must be punished” (los necesitarás para la trama de Naix).
+- Naix & /el: venganza (WebServerWorm), acceso al /el Message Board, Santuario Polar (4 pruebas → IP compuesto).
+- CSEC: invitación (gauntlets), CFC cadena, “Ghosting the Vault” (Decypher), “Through the Spyglass” (DECHead), red line (cambia IP en ISP Management), “Project Junebug” (KBT_PortTest y marcapasos, 104).
+- Final de Bit: TraceKill → cadena EnTech (Prometheus/Romulus) → Sequencer + múltiples shells → purge de archivos en backups.
 
 Consejos de ruta:
 - Tras cada root: ‘scan’. Muchos hilos se abren así (eOS, repos, mainframes).
