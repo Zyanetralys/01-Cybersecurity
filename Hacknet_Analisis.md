@@ -91,9 +91,9 @@ DLC “Labyrinths” (además de las anteriores):
 - PacificPortcrusher.exe (192) … Abre “Pacific Dedicated”.  ≈ explot/cred en servicio propietario.
 
 Notas:
-• “PortHack” requiere N puertos abiertos (según el host) antes de otorgar root. 
-• Proxies: abre shells en otros nodos y pulsa “Overload” para bajarlos; ‘Trap’ cambia tu IP si te rastrean.
-• Firewalls: ‘analyze’ → ‘solve’ (puzzle de colores/ritmos/figuras). Lanza solve al ritmo correcto.
+- “PortHack” requiere N puertos abiertos (según el host) antes de otorgar root. 
+-  Proxies: abre shells en otros nodos y pulsa “Overload” para bajarlos; ‘Trap’ cambia tu IP si te rastrean.
+- Firewalls: ‘analyze’ → ‘solve’ (puzzle de colores/ritmos/figuras). Lanza solve al ritmo correcto.
 
 ---
 
