@@ -99,7 +99,7 @@ Bienvenido a mi arsenal, un repositorio con herramientas, scripts, automatizacio
 - [Training_RPG_Cerificaciones.txt](https://github.com/Zyanetralys/Cybersecurity/blob/main/Training_RPG_Cerificaciones.txt)
 - [TryHackMe_FreePath.txt](https://github.com/Zyanetralys/Cybersecurity/blob/main/TryHackMe_FreePath.txt)
 - [ZSeries_TrainingPlan.txt](https://github.com/Zyanetralys/Cybersecurity/blob/main/ZSeries_TrainingPlan.txt)
-- [Hacknet.md]
+- [Hacknet.md](https://github.com/Zyanetralys/Cybersecurity/blob/main/Hacknet_Manual.md)
 
 ---
 
