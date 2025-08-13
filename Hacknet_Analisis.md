@@ -20,7 +20,7 @@ Nota: Todo lo aquí descrito es para entrenamiento, CTFs y simulación. No lo us
 6. Descubrimiento lateral: ‘scan’ tras entrar para descubrir nuevos nodos (eOS, servidores vinculados, etc.).
 7. Salida limpia: ‘disconnect’/’dc’. Responde al correo del contrato.
 
-Equivalencia real (muy resumida): Recon (Nmap) → Exploit (msf/PoC) → Post-explotación (shell) → Acciones (exfil/modificación) → Limpieza (log-wipe) → Pivoting.
+Equivalencia real: Recon (Nmap) → Exploit (msf/PoC) → Post-explotación (shell) → Acciones (exfil/modificación) → Limpieza (log-wipe) → Pivoting.
 
 ---
 
