@@ -1,6 +1,6 @@
 # Manual Definitivo de Pentesting — CTF + Auditoría Real (con consentimiento)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-yellow.svg)](https://opensource.org/licenses/)
 [![Security](https://img.shields.io/badge/Security-Pentesting-red.svg)](https://github.com/topics/penetration-testing)
 [![Platform](https://img.shields.io/badge/Platform-Linux-blue.svg)](https://www.linux.org/)
 
