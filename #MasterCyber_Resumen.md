@@ -178,3 +178,7 @@ Mapear si no detectamos URL dinámicas puede darnos miles de resultados.
 
 **Técnicas para mapear**
 - **Navegación forzada:** Preguntar a través de peticiones http si un servidor sirve ciertas páginas en fuerza bruta, usando diccionario o similar. Es la principal y la más ruidosa.
+
+Buscamos endpoints (si puede ser con funcionalidad), páginas con info contextual y trazas de aplicaciones de terceros par aobservar vulnerabilidades.
+
+- **Registrar avances del mapeo:** Aplicación que registre esas URL. Proxies http: ZAP y Burp
