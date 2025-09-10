@@ -138,6 +138,20 @@ Consultas pasivas:
 ##### Infraestructura Web
 Ya tenemos un listado de dominios que mapean sobre IPs.
 Hemos identificado los bloques y redes del objetivo (su presencia)
-Ahora desactivaremos el "gran angular" y nos enfocamos en objetivos concretos.
+Ahora desactivaremos el "gran angular" y nos enfocamos en objetivos concretos: modelo de servidor web, versión de jQuery, etc. para raspar vulnerabilidades.
 
-1. Establecemos contacto 
+1. Establecemos contacto con el servidor.
+2. Cualquier petición va a ser registrada, y si tiene patrón de ataque, encenderá una luz roja en la Defensa (SIEM) del objetivo.
+3. Iremos aún volando por debajo del radar
+
+##### Modo manual
+Observar modelo y servidor web (a priori con la cabecera "Server" de respuesta):
+**'curl -l <url>**
+
+La mayoría de sitios están en servidores de terceros que ya tienen cabeceras por defecto.
+
+##### Examen de páginas de error, trazas de ejecución o páginas típicas de servidores web por defecto
+Buscar mediante:
+- **dorks**
+- **nmap**: Escáner de puertos originalmente, con LUA (motor de scripts) ahora es suite o framework recon (recomendado usar grep)
+Ej: 'nmap www.campusciberseguridad.com -p443 --script httpserver-header'
