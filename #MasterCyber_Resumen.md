@@ -138,3 +138,6 @@ Consultas pasivas:
 ##### Infraestructura Web
 Ya tenemos un listado de dominios que mapean sobre IPs.
 Hemos identificado los bloques y redes del objetivo (su presencia)
+Ahora desactivaremos el "gran angular" y nos enfocamos en objetivos concretos.
+
+1. Establecemos contacto 
