@@ -13,7 +13,7 @@
 #### Locales
 Soporte SSL para inspeccionar tráfico cifrado.
 
-**- Burp Suite:** suite completa de seguridad web, auditoría, bug bounting, cara
+- **Burp Suite:** suite completa de seguridad web, auditoría, bug bounting, cara
 - **ZAP** (Zed Attack Proxy): del proyecto OWASP, open source - https://www.zaproxy.org
 - **Nikto**: Escáner open source para recon y vulnerabilidades - https://github.com/sullo/nikto
 
