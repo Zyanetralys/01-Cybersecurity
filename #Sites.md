@@ -159,6 +159,38 @@
 
 ## Aprendizaje
 
+### Certificados gratis
+
+📍Cisco – Introduction to Cybersecurity
+🌐 https://skillsforall.com
+
+📍Fortinet – NSE 1 & NSE 2 Network Security Expert
+🌐 https://lnkd.in/g3BhRqnZ
+
+📍 Google – Networking in Google Cloud
+🌐 https://lnkd.in/gcARM9kz with audit)
+
+📍 IBM – Cybersecurity Fundamentals
+🌐 https://www.edx.org (Free audit)
+
+📍TryHackMe – Network Security Path
+🌐 https://tryhackme.com(Free tier)
+
+📍 TCM Security – Practical Network Defense
+🌐 https://tcm-sec.com
+
+📍 Cybrary – Network Security Basics
+🌐 https://www.cybrary.it
+
+📍AWS – Networking Security Fundamentals
+🌐 https://lnkd.in/gVGYHHHw
+
+📍Microsoft – Azure Network Security Concepts
+🌐 https://lnkd.in/gK4vRye8
+
+📍 Alison – Diploma in Network Security
+🌐 https://alison.com (Free with cert)
+
 ### Roadmaps y Frameworks
 - [Cybersecurity Roadmap](https://roadmap.sh/cyber-security) - Ruta visual completa
 - [NICE Framework](https://niccs.cisa.gov/tools/nice-framework) - Framework oficial NIST
