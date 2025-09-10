@@ -76,3 +76,65 @@ Configuración: Round-Robin (va cambiando de IP circularmente), balanceo de carg
 Nuevo servidor debería tener mismo contenido salvo que existe sistema de sincronización que no haya indexado la nueva carga.
 
 ##### Whois
+Whois es un protocolo. Su info se mantiene en BBDD administradas por autoridades y delegados. Parte del IANA y jerarquicamente por registros por continentes: ARIN, APNIC, LACNIC, RIPE, etc.
+Whois se usa también para info de IPs: a quién pertenece y quién administra esa red.
+La información de registro identifica al Admin de dominios, direcciones IP y redes.
+Normalmente aparece el registrador (empresa que registra dominio), no el registrante (quien compra el registro del dominio)
+Info de interés: Servidores DNS del dominio, fecha de registro, actualización, caducidad (deben renovarse)
+Si la organización es grande: Localizar bloque de IPs al que pertence la IP que apunta a un dominio para investigara las máquinas activas en ese bloque y realizar consulta de nombres inversa.
+
+##### Subdominios (Dominios de tercer nivel, TLD)
+Si ya tenemos un grupo de dominios asociados a una organización, toca expandir consultas a los subdominios o dominios de tercer nivel.
+TLD no están registrados en ningún lado, solo se configura el DNS para cuando llegue una consulta, responda de una u otra forma.
+
+###### Consulta Web
+Buscamos contenido indexado en la web.
+
+**Dorks**: Operadores en los buscadores.
+
+###### Consultas DNS masivas (DNS enumeration)
+Interrogar los servidores DNS usando listas de subdominios y variando tipo de consulta DNS (A, NS, MX...)
+
+Herramientas:
+- **bucle "for"** en bash con host o dig.
+- **dnsrecon**:https://github.com/darkoperator/dnsrecon
+- **amass**:https://github.com/owasp-amass/amass
+amass tambien para descubrimientos DNS y activos en más fuentes de información
+
+**Registro Wildcard**: Cualquier consulta de subdominio tiene una respuesta.
+Todos los subdominios que probemos tendrán una respuesta bálida pero no necesariamente útil.
+
+###### Transferencias de zona
+- **Transferencia de zona**: Copiar "zonas" de un servidor DNS (maestro) a otro (secundario).
+      Transferencia de zona abierta = raro.
+- **Zonas:** Conjunto de registros del mismo dominio.
+      (ejemplo: consultas de dominio en las que dig nos da el registro A, AAAA, MX...)
+
+###### Consulta inversa de dominio (reverse DNS lookup)
+Cuando tenemos el bloque de IPs, vemos si responde a consultas inversas.
+- **Consultas inversas**: Tenemos una IP y preguntamos al servidor DNS si posee registro para ella.
+      Normalmente responderá, no con dominio real, sino con uno sintético (pseudo-dominio).
+
+- **dnsrecon**: Consultas masivas.
+
+###### Certificados SSL
+Si el servidor expone un certificado en un puesto, lo examinamos para encontrar campos (CN, canonical name) de su dominio.
+
+###### Certificate Transparency Logs
+Para evidenciar certificados digitales, hay un sistema abierto donde se publican los certificados.
+Podemos realizar una consulta a cualquiera de estos logs para encontrar certificados digitales (y subdominios) asociados a un dominio.
+
+###### Consultas DNS pasivos
+Son servidores y servicios que "escuchan" peticiones DNS realizadas por clientes y guardan la consulta. Se trata de capturar tráfico DNS de origen y su respuesta.
+Se usan en honeypots, sandboxes, etc.
+**¿Para qué?** Para vender la info, con el tiempo se va acumulando una BBDD util de consultas en el tiempo de un dominio y subdominios.
+
+Se extraen colateralmente: 
+- **archive.org**
+
+Consultas pasivas:
+- **subfinder**: Herramienta opensource para consultas pasivas - https://github.com/projectdiscovery/subfinder
+
+##### Infraestructura Web
+Ya tenemos un listado de dominios que mapean sobre IPs.
+Hemos identificado los bloques y redes del objetivo (su presencia)
