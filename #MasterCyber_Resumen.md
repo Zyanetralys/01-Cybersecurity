@@ -68,4 +68,10 @@ Dig hace consulta tipo "A"
 
 '-t any' da todos los registros asociados a ese dominio
 
+##### Los dominios cambian de IP (pero no a corto plazo)
+No cambia en corto plazo (posee las mismas direcciones asoaciadas en corto plazo)
+Cada respuesta DNS va acompañda de TTL (time to live), duración en caché de la respuesta, que al cumplir ya no es fiable y debe refrescarse.
+Configuración: Round-Robin (va cambiando de IP circularmente), balanceo de carga, etc.
+Nuevo servidor debería tener mismo contenido salvo que existe sistema de sincronización que no haya indexado la nueva carga.
 
+##### Whois
