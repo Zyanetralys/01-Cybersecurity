@@ -157,3 +157,24 @@ Buscar mediante:
 Ej: 'nmap www.campusciberseguridad.com -p443 --script httpserver-header'
 ###### Extensiones de navegador
 - Wappalyzer
+- WhatWeb - https://github.com/urbanadventurer/WhatWeb
+- CMS
+Para Joomla:
+https://github.com/OWASP/joomscan
+https://github.com/Pepelux/JoomlaScan (no mantenido)
+Para Wordpress:
+https://github.com/wpscanteam/wpscan
+Para Drupal
+https://github.com/SamJoan/droopescan
+
+##### Mapeado de Contenido Web
+Ya tenemos
+- Subdominios
+- Tech del Stack (modelo y versiones)
+Ahora a mapear la aplicación web o todas las que encontrasemos.
+Es circular: Mientras mapeamos y encontramos nuevas aplicaciones que nos harán volver a anteriores.
+
+Mapear si no detectamos URL dinámicas puede darnos miles de resultados.
+
+**Técnicas para mapear**
+- **Navegación forzada:** Preguntar a través de peticiones http si un servidor sirve ciertas páginas en fuerza bruta, usando diccionario o similar. Es la principal y la más ruidosa.
