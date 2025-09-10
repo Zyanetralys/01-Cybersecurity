@@ -152,6 +152,8 @@ La mayoría de sitios están en servidores de terceros que ya tienen cabeceras p
 
 ##### Examen de páginas de error, trazas de ejecución o páginas típicas de servidores web por defecto
 Buscar mediante:
-- **dorks**
-- **nmap**: Escáner de puertos originalmente, con LUA (motor de scripts) ahora es suite o framework recon (recomendado usar grep)
+###### **dorks**
+######- **nmap**: Escáner de puertos originalmente, con LUA (motor de scripts) ahora es suite o framework recon (recomendado usar grep)
 Ej: 'nmap www.campusciberseguridad.com -p443 --script httpserver-header'
+###### Extensiones de navegador
+- Wappalyzer
