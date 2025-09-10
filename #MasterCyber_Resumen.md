@@ -191,4 +191,10 @@ Necesitamos un motor heurístico que descarte endpoints no productivos, y que pe
 Con esto, la navegación parece "natural" y no levanta sospechas. Pero solo se va a limitar a ver el contenido indexado o visitable.
 
 ##### Navegación forzada
+Recurso indexado NO significa no publicado. Y al revés (404).
+
+Por eso se hace esta prospección:
+- Cargar programa con lista de cientos o miles (o más magnitudes) de cadena de texto (directorios y/o archivos)
+- Se van visitando una a una (normalmente varios hilos, asíncrona) y se observa la respuesta.
+
 pag 36
