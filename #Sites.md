@@ -707,6 +707,265 @@
 - Guías oficiales de usuario
 - Cursos de especialización avanzada
 
+### DFIR
+RATas inminentes
+Un CTF sencillito y juguetón, ideal para empezar poco a poco. Poquitas preguntas y razonablemente fáciles, el nivel de dificultad es más que asequible. Si ya sabes algo de DFIR, salta directamente al siguiente, pero si es tu primer CTF … ¡a por él!
+
+URL: https://ctf.unizar.es/ratas_inminentes
+Nivel de dificultad: Bajo.
+Jugable como CTF: Sí.
+Solución: https://www.securityartwork.es/2018/05/28/caso-practico-ratas-inminentes-i/
+BaklavaCTF
+Un CTF la mar de entretenido hecho por mis compañeros Andrés Yedra y Arturo Jiménez, que refleja un caso de ransomware más que asequible (hay un par de preguntas de “idea feliz”, pero el caso se resuelve casi casi en una tarde, muy recomendable).
+
+URL: https://ctf.communia.cc/
+Nivel de dificultad: Bajo/Medio.
+Jugable como CTF: Sí.
+Solución: https://www.securityartwork.es/2025/04/07/baklava-ctf-writeup-incident-report-style-i/
+Ransomware ate my network
+Un CTF muy redondo, viendo un caso de ransomware totalmente realista y actual de principio a final. El primer nivel es el más complicado, si lo superas lo tienes todo hecho. Y si lo quieres jugar en modo DIFICIL, no tengas en cuenta que los equipos tienen Sysmon…
+
+URL: https://ctf.unizar.es/ransomware
+Nivel de dificultad: Medio.
+Jugable como CTF: Sí.
+Solución: https://www.securityartwork.es/2021/01/18/ransomware-ate-my-network-i/
+Vientos Remotos, tempestades locales
+Otro de los clásicos: una intrusión en una red con un posible acceso a información clasificada en un entorno seguro. Mucho Windows, giros de guión y alguna que otra pregunta para darle de comer al coco.
+
+URL: https://ctf.unizar.es/remotos
+Nivel de dificultad: Medio.
+Jugable como CTF: Sí.
+Solución: https://www.securityartwork.es/2020/02/10/vientos-remotos-tempestades-locales-i/
+Bolas de cocido
+Mi primer CTF DFIR, ¡cómo pasa el tiempo! Hasta el año pasado era el CTF de formación interna de S2 Grupo, y al pobre se le notan los años (Windows 7, pocas TTP actualizadas, etc…). Sin embargo, es una gozada ver cómo van encajando las piezas a medida que se avanza el CTF, y el brillito en la gente cuando ve un Mimikatz, o cuando de repente se dan cuenta de que no solo SABEN lo que ha pasado, sino que además PUEDEN demostrarlo. No tiene solución por ahora (y tiene alguna pregunta endemoniadamente complicada), pero solo por la nostalgia a lo mejor me animo… 
+
+URL: https://ctf.unizar.es/bolas_cocido
+Nivel de dificultad: Medio.
+Jugable como CTF: Sí.
+Solución: No.
+DEFCON DFIR CTF 2019
+“Old but gold” sería la forma de describir este CTF: un mix de Windows, Linux, RAM … en un monstruo de 83 preguntas (con alguna “idea feliz” de por medio, eso sí) pero altamente interesante. Muy muy recomendable.
+
+URL: https://www.dropbox.com/scl/fo/4wi8n7fm01yfcbwv4nom5/AIO_qWCQRyjl9-QtLa70wrE?rlkey=4uu6og3vph3rth8lp1ap86f9c&e=1&dl=0
+Nivel de dificultad: Medio.
+Jugable como CTF: No.
+Solución: https://www.securityartwork.es/2019/09/10/defcon-dfir-ctf-2019-writeup-i-crypto-deadbox-forensics/
+The Stolen Szechuan Sauce
+Uno de los CTF DFIR clásicos (y con estética de Rick & Morty). Totalmente recomendable para afilar los cuchillos investigadores.
+
+URL: https://mimircyber.com/the-case-of-the-stolen-szechuan-sauce/
+Nivel de dificultad: Medio.
+Jugable como CTF: No.
+Solución: https://walshcat.medium.com/case-write-up-the-stolen-szechuan-sauce-2409344264c3
+Segundo bloque: los especialistas
+En este bloque están los CTF DFIR que, por el motivo que sea, están especializados en algo que no sea puro DFIR Windows (que de todo hay que saber en esta vida). Hay pocos, por lo que son ocasiones únicas para aprender en profundidad algo de un tema concreto.
+
+Los peligros de andar por las nubes (mucho O365)
+Un CTF diseñado específicamente para O365, con todas las TTP clásicas de una estafa al CEO + algunos extras juguetones. Dado que NO HAY, es una “rara avis” y un recurso fantástico para apender DFIR en O365.
+
+URL: https://ctf.unizar.es/o365
+Nivel de dificultad: Medio.
+Jugable como CTF: Sí.
+Solución: https://www.securityartwork.es/2022/01/31/los-peligros-de-andar-por-las-nubes-dfir-en-o365-i/
+GrrCON 2022
+Uno de los pocos CTF DFIR que únicamente se dedica al análisis de RAM. Para cogerlo con paciencia y ganas, pero también para aprender una barbaridad.
+
+URL: https://cyberdefenders.org/blueteam-ctf-challenges/93
+Nivel de dificultad: Medio/Alto.
+Jugable como CTF: No.
+Solución: https://medium.com/@JakubLakomy/teamspy-blue-team-challenge-cyberdefenders-org-6711d1641a59
+Belkasoft CTF DFIR 7 (2025) – Stranger DFINGS
+Recién salido del horno, el último CTF DFIR de Belkasoft mezcla RAM con móviles … y “cosas extrañas”. Una cantidad de preguntas “locas” quizás mayor de lo apetecible, pero tiene su gracia.
+
+URL: https://belkasoft.com/belkactf7-writeup
+Nivel de dificultad: Medio/Alto.
+Jugable como CTF: Sí.
+Solución: https://belkasoft.com/belkactf7-writeup
+Ali Hadi (Linux)
+Mr Hadi tiene una buena pila de workshops la mar de interesantes, con la particularidad de que tiene unos cuantos casos prácticos altamente interesantes:
+
+URL: https://linuxdfir.ashemery.com/Workshops/
+Nivel de dificultad: Medio.
+Jugable como CTF: No.
+Solución: en los propios materiales del curso.
+Hal Pomeranz Linux Forensic Workshop
+Hal Pomeranz es un pope de forense en Linux desde hace mucho tiempo. El curso de forense en Linux es introductorio, pero gratis, y los casos prácticos muy, muy jugables.
+
+URL: https://archive.org/details/HalLinuxForensics
+Nivel de dificultad: Medio.
+Jugable como CTF: No.
+Solución: en los propios materiales del curso.
+Belkasoft  Capture the Flag: Kidnapper Case (Linux)
+Tanto Belkasoft como Magnet son dos pedazo de compañías con productos estupendos… pero que además casi todos los años sacan un CTF DFIR que puedes jugar en el momento (hay premios), o puedes jugarlo con la solución a tu ritmo. No hay ninguno malo, así que dales caña a tu gusto.
+
+URL: https://belkasoft.com/ctf_march_2022/index.php
+Nivel de dificultad: Medio.
+Jugable como CTF: Sí.
+Solución: https://belkasoft.com/belkactf-mar2022-writeup
+Belkasoft Capture the Flag: Bogus Bill (móviles)
+URL: https://belkasoft.com/belkactf6/
+Nivel de dificultad: Bajo/Medio.
+Jugable como CTF: Sí.
+Solución: https://belkasoft.com/belkactf6-writeup 
+Magnet CTF DFIR 2024 (móviles)
+URL:  https://www.magnetforensics.com/blog/2024-magnet-virtual-summit-ctf-winners-and-another-chance-to-play/
+Nivel de dificultad: Bajo/Medio.
+Jugable como CTF: No.
+Solución: en el enlace anterior hay varios writeups.
+Belkasoft Capture the Flag: Drug Dealer Case (móviles)
+URL: https://belkasoft.com/ctf_may/chall
+Nivel de dificultad: Bajo/Medio.
+Jugable como CTF: Sí.
+Solución: https://belkasoft.com/belkactf-may2021-writeup
+Agujas, pajares e imanes (malware)
+Uno de mis primeros CTF, bastante orientado a malware pero desde el punto de vista de respuesta ante incidentes (si quieres meterle el IDA o el Radare puedes, pero no es para reversers). Es denso, pero desentrelazar la matrioska de todo lo hecho da mucho gustito J
+
+CTF: https://ctf.unizar.es/agujas_pajares
+Nivel de dificultad: Medio.
+Jugable como CTF: Sí.
+Solución: https://www.securityartwork.es/2019/01/24/agujas-pajares-e-imanes-analisis-forense-de-malware-fileless-i/
+Magnet CTF DFIR 2021 (MacOS):
+URL: https://digitalcorpora.s3.amazonaws.com/corpora/scenarios/magnet/2021%20CTF%20-%20MacOS.zip  
+Nivel de dificultad: Medio.
+Jugable como CTF: No.
+Solución: https://www.stark4n6.com/2021/05/mvs2021-ctf-mac.html
+Cómo te levantan 100.000€ sin pestañear – Análisis forense de una “Estafa al CEO”
+No te voy a mentir: este CTF DFIR ha quedado prácticamente obsoleto porque se basa en una estafa al CEO vista desde un Exchange on-prem. Tiene un nivel de detalle onanista, baja a un nivel MUY BAJO de cómo está montado Exchange, y en general a día de hoy solo merece la pena si quieres comprender el dolor de analizar logs y sistemas Exchange y entender lo dañados que están algunos especialistas DFIR de una cierta edad… xDDDD
+
+URL:  https://ctf.unizar.es/estafa_CEO/home
+Nivel de dificultad: Medio/Alto.
+Jugable como CTF: Sí.
+Solución: https://www.securityartwork.es/2019/12/03/como-te-levantan-100-000e-sin-pestanear-analisis-forense-de-una-estafa-al-ceo-i/
+Tercer bloque: MOAR CTF
+Si quieres más CTF DFIR, no hay problema, aquí tienes una pila inmensa. Suficientes como para entretenerte durante una temporada bien larga de análisis (y no es malo, porque lo interesante es que tienes CASOS y CASOS, justo lo que necesitas para generar “memoria muscular” de analista).
+
+[NOTA: de este bloque he jugado solo unos pocos, así que mi feedback no es completo … pero los de Belkasoft son bastante asequibles y sobre todo cortitos, puedes jugarte uno entero prácticamente en un día. Los de Magnet molan porque son extensos pero tocan diferentes tecnologías (y aprendes a correlar evidencias), y los de Digital Corpora son “clásicos clásicos].
+
+Belkasoft Capture the Flag: Party Girl—MISSING
+URL: https://belkasoft.com/ctf_july_2022/info.php
+Nivel de dificultad: Bajo/Medio.
+Jugable como CTF: Sí.
+Solución: https://belkasoft.com/belkactf-jul2022-writeup
+Belkasoft Capture the Flag: Meet the Boss
+URL: https://belkasoft.com/ctf_june/
+Nivel de dificultad: Bajo/Medio.
+Jugable como CTF: Sí.
+Solución: https://belkasoft.com/belkactf-jun2021-writeup
+Belkasoft Capture the Flag: Kidnapper Case
+URL: https://belkasoft.com/ctf_march_2022/
+Nivel de dificultad: Bajo/Medio.
+Jugable como CTF: Sí.
+Solución: https://belkasoft.com/belkactf-mar2022-writeup
+Belkasoft Capture the Flag: Insider
+URL: https://belkasoft.com/ctf_march/chall
+Nivel de dificultad: Bajo/Medio.
+Jugable como CTF: Sí.
+Solución: https://belkasoft.com/belkactf-mar2021-writeup
+Magnet CTF DFIR 2025 (Android Takout, Chromebook Takeout)
+URL Android: https://drive.google.com/file/d/1MPSdsR16qA3FAQgjkNJCo4v-E-56yL7N/view?usp=drive_link  y Chromebook: https://drive.google.com/file/d/1ls4gLVNcdy6EpBPAlvTWZkaSR3zWHIAi/view?usp=drive_link
+Nivel de dificultad: Medio.
+Jugable como CTF: No.
+Solución: https://www.stark4n6.com/2025/03/magnet-virtual-summit-2025-ctf-android_24.html y  https://www.stark4n6.com/2025/03/magnet-virtual-summit-2025-ctf_19.html
+Magnet CTF DFIR 2023 (iOS, W11, VMDK)
+URL: https://www.magnetforensics.com/blog/announcing-the-mvs-2023-ctf-winners-and-a-new-ctf-challenge/
+Nivel de dificultad: Medio.
+Jugable como CTF: No.
+Solución: en el mismo enlace.
+Magnet CTF DFIR 2022 (Pixel, Windows, Google Takeout)
+URL: https://www.magnetforensics.com/blog/update-on-magnet-summit-2022-capture-the-flag-contests/
+Nivel de dificultad: Medio.
+Jugable como CTF: No.
+Solución: https://www.stark4n6.com/2022/05/magnet-virtual-summit-2022-ctf-android.html
+Magnet CTF DFIR 2021 (Chomebook, iPhone, Mac)
+URL: https://drive.google.com/drive/folders/1U8hGYNBgFyc7dm7IGeH_Vqide668WNZx
+Nivel de dificultad: Medio.
+Jugable como CTF: No.
+Solución: https://www.stark4n6.com/2021/05/mvs2021-ctf-chromebook.html  / https://www.stark4n6.com/2021/05/mvs2021-ctf-iphone.html  https://www.stark4n6.com/2021/05/mvs2021-ctf-mac.html
+Digital Corpora – Scenarios
+La gente de Digital Corpora tiene unos cuantos escenarios bastante interesantes (sobre todo el de Narcos), e imágenes forenses base de algunas cosas, así que échale un ojo:
+
+URL: https://digitalcorpora.org/corpora/scenarios/
+Nivel de dificultad: Medio.
+Jugable como CTF: No.
+Solución: Algunos tienen solución, pero solo te la dan si eres profesor de una enseñanza reglada (pero responden con agilidad razonable, así que pide).
+bios CTF – Batman Investigation Series by @Azr43lKn1ght – 
+Una serie de seis CTF DFIR con dificultad variable, pero entre DIFICIL y LOCURA TOTAL. Juégalos a tu cuenta y riesgo si quieres ver cosas nuevas (si no recuerdo mal tienen reversing, tienes que hacerte scripts a medida, varias “ideas felices” … así que si luego no digas que no he avisado).
+
+URL: https://x.com/_abhiramkumar/status/1790750384413446192?t=JBEiU4hUTm2MsSzACzdIpA
+Nivel de dificultad: Alto/Imposible.
+Jugable como CTF: No.
+Solución: en el mismo enlace.
+DFIR-LABS – CTF completos de @Azr43lKn1ght
+El sitio web donde están los de Batman de antes, y como 20+, con dificultad variable y donde tenéis material para … un buen rato de DFIR J
+
+URL: https://github.com/Azr43lKn1ght/DFIR-LABS
+Nivel de dificultad: Variable (ver cada reto).
+Jugable como CTF: No.
+Solución: en el mismo enlace.
+Ali Hadi – CTF DFIR
+Hadi no tiene solo casos de Linux, de hecho tiene una buena pila de “mini casos” que pueden encajar muy bien en algunas prácticas, así que échale un ojo:
+
+URL: https://www.ashemery.com/dfir.html
+Nivel de dificultad: Bajo/Medio
+Jugable como CTF: No.
+Solución: en el mismo material
+Cuarto bloque: CTF DFIR IoT
+Hay un bloque especial, que es el de “los cacharros”. Encontrar evidencias de prueba de dispositivos IoT o ICS es prácticamente imposible, así que solo por eso merecen la pena. Lo malo: ni uno de ellos tiene solución publicada (al menos que la haya encontrado), por lo que si quieres aprender te vas a tener que arremangar…
+
+DFRWS Forensic Challenge 2023 – ICS – The Troubled Elevator (PLC, CCTV)
+URL: https://github.com/dfrws/dfrws2023-challenge
+
+DFRWS Forensic Challenge 2021 – IoT (Raspberry, Samsung smartphone, QNAP NAS) 
+URL: https://dfrws.org/dfrws-2021-challenge/
+
+DFRWS Forensic Challenge 2018 – IoT (Samsung smartphone, iSmartAlarm, Arlo, WinkHub, Amazon Echo)
+URL: https://github.com/dfrws/dfrws2018-challenge/blob/master/challenge-details.md
+
+Evidencias: https://github.com/dfrws/dfrws2018-challenge
+
+DFRWS Forensic Challenge 2017 – IoT (Raspberry, Samsung Note x2, Google OnHub, Amazon Echo, Smarthome app)
+https://github.com/dfrws/dfrws2017-challenge
+
+Quinto bloque: los de pago (pero que merecen la pena)
+Si ya has arrasado con todos los anteriores, o si quieres ir directamente a “lo más tope de gama / moderno / Wow” te va a tocar sacar la cartera. Si te planteas dedicar (o ya te dedicas) profesionalmente a DFIR, merece la pena porque en muchos casos tampoco te van a costar un riñón, y la calidad es EXCELENTE.  Lo malo: que no tienen solución publicada (así que te los vas a tener que currar a sangre y fuego, que también es la idea)
+
+Xintra Labs
+CTF de grupos APT, ransomware, intrusiones complejas… hechos con las ultimísimas TTP, con mucho cariño y amor. No he hecho ninguno (lo tengo en mi lista para cuando me de la vida), pero solo he oído ma-ra-vi-llas. A 45$/mes (con un 15% de descuento si eres estudiante), los CTF son AVANZADOS, pero son un verdadero LUJAZO.
+
+URL: https://www.xintra.org/
+Nivel de dificultad: Medio/Alto.
+Jugable como CTF: No.
+TheDFIRreport Labs
+Si trabajas en DFIR y no has oído hablar de TheDFIRreport, sal de tu cueva y toma un poco el aire.  Los informes de su blog (casi todos de ransomware) son ORO PURO para un analista DFIR, y lo mejor de todo es que ahora los puedes jugar. Tienen dos modelos: compra cada CTF por separado (tienen 15), o una subscripción que por 17$/mes te deja jugar un CTF al mes. Lo único malo: que cuando empiezas a jugarlo, tienes un tiempo límite para terminarlo (lo que puede causar problemas dada la mala vida del DFIR). Pero a ese precio, sigue siendo una verdadera ganga.
+
+URL: https://dfirlabs.thedfirreport.com/auth/login
+Nivel de dificultad: Variable.
+Jugable como CTF: No.
+Entrenamientos DFIR – Securizame
+Los cursos de DFIR de Securízame son de lo mejor calidad/precio de España, y con diferencia. Lo que no sabe mucha gente es que Lorenzo tiene casos prácticos dentro de su pack de formación, y que si le das la brasa, es posible que te deje apuntar… ;)
+
+URL:  https://cursos.securizame.com/
+Nivel de dificultad: Medio.
+Jugable como CTF: No, te vas a Madrid, compartes sudor, batallitas, pizza y risas con Lorenzo, que merece la pena. [Nota: me dice Lorenzo que los puedes hacer online en tiempo real desde tu casa en las fechas en las que se imparten]
+Hack the box – Sherlocks 
+Una de las plataformas de hacking ético más conocidas también tiene máquinas de DFIR (que llaman Sherlocks). Si ya tienes cuenta, ahí las tienes … y si no, puedes coger una cuenta de prueba de 14 días, y probarlos
+
+URL:  https://www.hackthebox.com/hacker/blue-team-labs-for-dfir
+Nivel de dificultad: Medio.
+Jugable como CTF: No.
+Let’s defend – DFIR Challenges
+Una de las plataformas para Blue Team más conocidas, tiene una buena cantidad de contenido de respuesta ante incidentes, forense, malware, etc… Tiene muchas cosas de acceso gratuito, y la subscripción es de 40$/mes:
+
+URL:  https://app.letsdefend.io/challenge?filters%3Atype_filter=Digital+Forensics+and+Incident+Response
+Nivel de dificultad: Variable.
+Jugable como CTF: No.
+CyberDefenders.org
+Otra plataforma dedicada al entrenamiento del BlueTeam, tiene una buena cantidad de recursos gratis dedicados a DFIR (pero no he sido capaz de saber lo que cuesta el acceso Premium):
+
+URL:  https://cyberdefenders.org/blueteam-ctf-challenges/
+Nivel de dificultad: Variable.
+Jugable como CTF: No.
+
 ---
 
 ## Contribuir
