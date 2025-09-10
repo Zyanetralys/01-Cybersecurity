@@ -181,4 +181,14 @@ Mapear si no detectamos URL dinámicas puede darnos miles de resultados.
 
 Buscamos endpoints (si puede ser con funcionalidad), páginas con info contextual y trazas de aplicaciones de terceros par aobservar vulnerabilidades.
 
-- **Registrar avances del mapeo:** Aplicación que registre esas URL. Proxies http: ZAP y Burp
+- **Registrar avances del mapeo:** Aplicación que registre esas URL. Proxies http: ZAP y Burp (conectamos un navegador al proxy local, y tendremos registro de las URL que vayamos visitando)
+
+#### Navegación Asistida
+Pasamos a través del proxy para que recolecte los enlaces analizando fuentes (html, css, js, etc)
+
+Necesitamos un motor heurístico que descarte endpoints no productivos, y que perciba construcciones en JS que componen peticiones.
+
+Con esto, la navegación parece "natural" y no levanta sospechas. Pero solo se va a limitar a ver el contenido indexado o visitable.
+
+##### Navegación forzada
+pag 36
