@@ -29,7 +29,8 @@ Obtener dirección IP, whois, OSINT.
 1. Se empieza por un Dominio.
 2. Scripts para determinar versión del cliente y dependencia de tipo.
 3. **Cambiar nuestro origen respecto de la IP:**
-4. Pasar por un proxy (como Tor) o tener una máquina en una localización geográfica. Ese proxy o máquina es la IP que conecta con el objetivo.
+   Pasar por un proxy (como Tor) o tener una máquina en una localización geográfica.
+   Ese proxy o máquina es la IP que conecta con el objetivo.
     Otras veces, es DNS determinada.
 
 **¿Por qué?** Si una app movil es una vist web, al cargar la versión móvil da acceso a API autorizadas para la versión móvil que confían en la app, y nos da acceso a endpoints que en versión desktop necesitarían autenticación.
