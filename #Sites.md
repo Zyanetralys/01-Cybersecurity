@@ -262,7 +262,8 @@
 - [Oracle](https://mylearn.oracle.com/ou/story/35644) Certificaciones oficiales Gratis Limited
 - [ISC2](https://my.isc2.org/s/login/?ec=302&startURL=%2Fs%2FCandidate-Application-Form) ISC2 Oficial Gratis Limited
 - [DO-RTA Certified DevOps Red Team Analyst](https://cyberwarfare.live/product/certified-devops-red-team-analyst-do-rta/)
-- 
+- [Aviator](https://aviatrix.com/training/ace-multicloud-networking-training/)
+
 ### OSINT Específico
 - [Basel Governance](https://baselgovernance.org/news/new-free-elearning-course-open-source-intelligence-osint) - Curso gratuito OSINT
 - [Reuters Digital Journalism](https://reutersdigitaljournalism.com/?l=en) - Periodismo digital
@@ -732,6 +733,7 @@
 
 ### Herramientas de Productividad
 - [CTF Writeup Builder](https://github.com/ilanami/ctf_writeup_builder) - Automatización de writeups
+- [Lista aprender desde 0 Youtube](https://www.youtube.com/playlist?list=PLMd59HZRUmEg539WgqJjbsvto4V3fRwn5)
 
 ### Contenido Complementario
 - Videos de formación especializados
