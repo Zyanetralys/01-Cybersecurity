@@ -197,4 +197,38 @@ Por eso se hace esta prospección:
 - Cargar programa con lista de cientos o miles (o más magnitudes) de cadena de texto (directorios y/o archivos)
 - Se van visitando una a una (normalmente varios hilos, asíncrona) y se observa la respuesta.
 
-pag 36
+CÓDIGO 200 + respuesta válida: **CANDIDATO A AGREGAR AL ÁRBOL**
+
+**Usar un proxy-http**: Burp o ZAP para alimentar resultados de nuestro árbol inyectando visitas.
+
+###### Herramientas:
+- Integradas de Burp o ZAP
+- Cansina*4 https://github.com/deibit/cansina
+- DirSearch https://github.com/maurosoria/dirsearch
+- GoBuster https://github.com/OJ/gobuster (también sirve para DNS y virtual hosts)
+
+###### Diccionarios de búsqueda:
+- https://github.com/danielmiessler/SecLists
+
+#### Navegación Pasiva
+Búsqueda pasiva de los activos de una web.
+Capturas, registros de cambio, etc.
+
+Herramientas
+- Amass - https://github.com/owasp-amass/amass
+- DirHunt - https://github.com/Nekmo/dirhunt
+
+#### Ingenieria inversa
+
+- **Aplicaciones web incrustadas en aplicaciones móviles:**
+tiran de Endpoint que suele ser servicio web o api REST.
+No están indexadas pero haciendo reversing sobre las aplicaciones nos dejan verlas.
+
+- **Interponer proxy con la aplicación instalada en emulador:**
+  Interactuamos con la aplicación móvil y el proxy registra lo que pase por él.
+
+  Los creadores de aplicaciones piensa que nadie va a mirar tan a fondo para sacar URLs que no deben indexarse en buscadores.
+  Nosotros miramos donde no se debería.
+
+  ## Configuraciones inseguras
+  
