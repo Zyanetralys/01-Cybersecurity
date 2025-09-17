@@ -599,6 +599,15 @@
 - [KodeKloud](https://kodekloud.com/) - DevOps, Cloud y Kubernetes
 - [Free-for.dev](https://free-for.dev/) - Servicios gratuitos para desarrolladores
 - [CodeWars](https://codewars.com/) - Challenges de programación
+- Ozaria - https://www.ozaria.com/
+  StudioCode - https://studio.code.org/
+
+### CSS
+https://flexboxfroggy.com/#es
+https://cssgridgarden.com/#es
+https://mastery.games/flexboxzombies/
+https://flukeout.github.io/
+https://cssbattle.dev/
 
 ### Desarrollo Seguro
 - Secure coding practices integration
