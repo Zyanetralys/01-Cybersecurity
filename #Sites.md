@@ -311,6 +311,7 @@
 - [Bug Bounty Methodology](https://github.com/KathanP19/HowToHunt) - Metodologías de hunting
 - [All About Bug Bounty](https://github.com/daffainfo/AllAboutBugBounty) - Guía completa
 - [Bug Bounty Roadmaps](https://github.com/1ndianl33t/Bug-Bounty-Roadmaps) - Rutas de aprendizaje
+- Active Directory Mindmap - https://orange-cyberdefense.github.io/ocd-mindmaps/img/mindmap_ad_dark_classic_2025.03.excalidraw.svg
 
 ---
 
