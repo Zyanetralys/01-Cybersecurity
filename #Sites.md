@@ -199,6 +199,7 @@
 - [OWASP](https://owasp.org/) - Seguridad en aplicaciones web
 - [Security Certification Roadmap](https://pauljerimy.com/security-certification-roadmap/) - Mapa de certificaciones
 
+
 ### Documentación Premium
 - [HackTricks](https://book.hacktricks.wiki/) - Wiki completa de pentesting
 - [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings) - Attack payloads
@@ -250,7 +251,8 @@
 - [Comandos Linux Cheatsheet](https://azulschool.net/wp-content/uploads/2025/02/Comandos-Linux-Cheatsheet-Espanol-Azul-School.pdf) - Guía Linux en español
 - [Knowledge Management for Offensive Security](https://github.com/Hacker-Hermanos/Knowledge-Management-for-Offensive-Security-Professionals.git) - Gestión de conocimiento
 - [OpenVAS Guide](https://www.s4ur0n.com/assets/media/OpenVAS-DOVA.pdf) - Guía OpenVAS
-
+- Active Directory - https://mayfly277.github.io/posts/Exchange-part1/
+    
 ### Certificaciones
 - [OSCP Guide](https://gist.github.com/s4vitar/b88fefd5d9fbbdcc5f30729f7e06826e) - Preparación OSCP
 - [OSCP Video Guide](https://youtu.be/7UGaa_EsVXk) - Video preparación
