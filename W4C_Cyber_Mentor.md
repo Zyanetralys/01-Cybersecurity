@@ -1,15 +1,14 @@
 # Women4Cyber Mentorship – Guía completa
 
-## Ending the Relationship
-- Ten una conversación clara cuando sea momento de cerrar la relación de mentoring.  
-- Da y recibe feedback para ayudar en futuras relaciones de mentoring.  
-
 ---
 
 ## For Mentors & Mentees
 Estas pautas ofrecen un marco flexible para un mentoring efectivo.  
 Cada relación es única y se puede adaptar a tus necesidades.  
 Para las guías completas, visita la plataforma PushFar en la sección de Resources.  
+
+**Objetivo:**  
+Apoyo, orientación y desarrollo profesional en ciberseguridad. No garantiza empleo.
 
 ---
 
@@ -34,17 +33,7 @@ Para las guías completas, visita la plataforma PushFar en la sección de Resour
 
 - Si el emparejamiento no funciona, se puede solicitar un nuevo match (según disponibilidad).  
 
----
-
-## Etiquette Rules
-- Puntualidad.  
-- Si no puedes asistir, informa a tu pareja y reprograma.  
-- Si ya no puedes o no deseas participar, avisa a W4C y a tu pareja.  
-- Si el mentor o mentee no responde, avisa a W4C para soporte.  
-
----
-
-## 04. Consecutive Sessions
+### 04. Consecutive Sessions
 - Reuniones mensuales para revisar avances.  
 - Mentee responsable de agendar y enviar la agenda con anticipación.  
 - Discutir logros, desafíos y objetivos futuros.  
@@ -60,6 +49,20 @@ Para las guías completas, visita la plataforma PushFar en la sección de Resour
 
 **Apoyo adicional para mentores:**  
 - Recursos opcionales de formación y técnicas prácticas para mejorar la confianza y efectividad del mentoring, a través de la Mentoring Academy.  
+
+---
+
+## Etiquette Rules
+- Puntualidad en todas las reuniones.  
+- Si no puedes asistir, informa a tu pareja y reprograma.  
+- Si ya no puedes o no deseas participar, avisa a W4C y a tu pareja.  
+- Si mentor o mentee no responde, W4C te brindará soporte.  
+
+---
+
+## Ending the Relationship
+- Ten una conversación clara cuando sea momento de cerrar la relación de mentoring.  
+- Da y recibe feedback para ayudar en futuras relaciones de mentoring.  
 
 ---
 
