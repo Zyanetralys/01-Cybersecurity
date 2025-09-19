@@ -23,6 +23,7 @@
 - [SANS Holiday Hack Challenge](https://holidayhackchallenge.com/) - Desafío anual
 - [DEF CON CTF](https://defcon.org/) - Competición premium
 - [Cyberlandsec](https://github.com/Rannden-SHA/CyberLand-Labs/)
+- [Hacksplaining](https://www.hacksplaining.com/lessons)
 
 ### Plataformas Premium
 - [HackTheBox](https://www.hackthebox.com) - Plataforma líder en pentesting
