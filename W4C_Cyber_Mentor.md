@@ -78,7 +78,7 @@ Mantén conversaciones claras, fija objetivos compartidos y realiza seguimiento 
 
 ---
 
-# Resumen Exhaustivo Completo - Programa de Mentoría Women4Cyber
+# Programa de Mentoría Women4Cyber
 
 ## 1. FUNDAMENTOS DEL MENTORING
 
