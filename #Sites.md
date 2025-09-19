@@ -569,6 +569,8 @@
 - [Machines - Javier Molines](https://machines-javiermolines.vercel.app/)
 - [IppSec Rocks](https://ippsec.rocks/?#)
 - Excalibur - https://github.com/ex-cal1bur/Excal1bur_Writeups/tree/main
+- https://github.com/7h3rAm/writeups
+- https://medium.com/@yossefmohamedsalah2001
   
 ### Red Team Playbooks
 - [Red-Team-Exercises](https://github.com/CyberSecurityUP/Red-Team-Exercises/blob/main/shellcoderunner-exercise-1.cpp) - Ejercicios prácticos
