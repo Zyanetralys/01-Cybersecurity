@@ -11,6 +11,7 @@
 - [Máquinas Virtuales](#máquinas-virtuales)
 - [Comunidad](#comunidad)
 - [Writeups y Referencias](#writeups-y-referencias)
+- https://securiumsolutions.com/how-to-build-a-ctf-team-and-win-your-first-competition/
 
 ---
 
@@ -161,44 +162,36 @@
 
 ## Aprendizaje
 
+### Estudios Oficiales, Masters, etc.
+- https://aula.campusciberseguridad.com/login/
+
 ### Certificados gratis
 
-📍Cisco – Introduction to Cybersecurity
-🌐 https://skillsforall.com
-
-📍Fortinet – NSE 1 & NSE 2 Network Security Expert
-🌐 https://lnkd.in/g3BhRqnZ
-
-📍 Google – Networking in Google Cloud
-🌐 https://lnkd.in/gcARM9kz with audit)
-
-📍 IBM – Cybersecurity Fundamentals
-🌐 https://www.edx.org (Free audit)
-
-📍TryHackMe – Network Security Path
-🌐 https://tryhackme.com(Free tier)
-
-📍 TCM Security – Practical Network Defense
-🌐 https://tcm-sec.com
-
-📍 Cybrary – Network Security Basics
-🌐 https://www.cybrary.it
-
-📍AWS – Networking Security Fundamentals
-🌐 https://lnkd.in/gVGYHHHw
-
-📍Microsoft – Azure Network Security Concepts
-🌐 https://lnkd.in/gK4vRye8
-
-📍 Alison – Diploma in Network Security
-🌐 https://alison.com (Free with cert)
+- Cisco – Introduction to Cybersecurity - 🌐 https://skillsforall.com
+- Fortinet – NSE 1 & NSE 2 Network Security Expert - 🌐 https://lnkd.in/g3BhRqnZ
+- Google – Networking in Google Cloud - 🌐 https://lnkd.in/gcARM9kz with audit)
+- IBM – Cybersecurity Fundamentals - 🌐 https://www.edx.org (Free audit)
+- TryHackMe – Network Security Path - 🌐 https://tryhackme.com(Free tier)
+- TCM Security – Practical Network Defense - 🌐 https://tcm-sec.com
+- Cybrary – Network Security Basics - 🌐 https://www.cybrary.it
+- AWS – Networking Security Fundamentals - 🌐 https://lnkd.in/gVGYHHHw
+- Microsoft – Azure Network Security Concepts - 🌐 https://lnkd.in/gK4vRye8
+- Alison – Diploma in Network Security - https://alison.com (Free with cert) - - https://sepe.pue.es/
+- https://www.efundae.es/course/index.php
+- https://experienciafundae.es/beca-google/detalle/2555
+- https://learnondemandsystemsb2c.b2clogin.com/learnondemandsystemsb2c.onmicrosoft.com/b2c_1a_signup_signin_tms/oauth2/v2.0/authorize?client_id=c602a47c-ab93-480b-ac8d-cccf54c59797&redirect_uri=https%3A%2F%2Flms.learnondemand.net%2FAuthenticationProvider%2FOwinCallback&response_type=id_token&scope=openid%20profile%20email&state=OpenIdConnect.AuthenticationProperties%3DoYwTfCSKE-HmzjLb6vF9YGRxTsQchp4uBaL4xQIE8mjITwr6xcdO5fKjxqDNg2KBLgRWM0jxoGf-2imNo73c3Z3jrQwHfitKMNocGYWbwSgJKr8u44Vvex3x3_szNHwBFAelyk1aBCa1Qo27JChZEfaXCMEBqx9BPWfcsbpY3Iw2G4Xxlezv6WhlzqlZ2phiRvdugG5d52R22bfppJN-GfksWrh_Ki3BV6TAHwOVg_ritRzWqiIZU0qstmWq3tdr4XoEDVjE0dxbbpbiTSLlMkMow59usrSFFTCTrCU4h6nRX6uU&response_mode=form_post&nonce=638939545159193958.MjFjMjM4ZTUtZmY3Ny00ZjhjLTk1Y2QtNGRmYjg0NGM3M2Y1ZjNkMWY5M2YtY2I1MS00MzdjLWE4NzEtNmVjMTdiOTVhNjY2&ui=tms&x-client-SKU=ID_NET472&x-client-ver=7.0.3.0
+- https://aulavirtualatu.com/login/index.php
+- https://academy.socradar.io/course/cti-fundamentals-for-soc-analysts
+- https://cohackers.co/learn
+- https://microsoft.github.io/PartnerResources/skilling/microsoft-security-academy
+- https://login.paloaltonetworks.com/lms/PreRegister?UserType=CUST
+- https://www.proofpoint.com/es/ai-email-security-specialist-2025?mkt_tok=MzA5LVJIVi02MTkAAAGcRlzByL28dcwvx9db4wBmMt1MWyTRws5IUvTYZElfBg4x8uCQGakoqSHu92LeDImO7f6x51rGSx9kutiLKMQQbzMZh8Wy7guYbQ9o4tl0eLx2l9Vn7Q
 
 ### Roadmaps y Frameworks
 - [Cybersecurity Roadmap](https://roadmap.sh/cyber-security) - Ruta visual completa
 - [NICE Framework](https://niccs.cisa.gov/tools/nice-framework) - Framework oficial NIST
 - [OWASP](https://owasp.org/) - Seguridad en aplicaciones web
 - [Security Certification Roadmap](https://pauljerimy.com/security-certification-roadmap/) - Mapa de certificaciones
-
 
 ### Documentación Premium
 - [HackTricks](https://book.hacktricks.wiki/) - Wiki completa de pentesting
@@ -226,6 +219,8 @@
 - [Game Hacking Academy](https://gamehacking.academy/pages/2/04/) - Hacking de juegos
 - [KodeKloud](https://kodekloud.com/) - DevOps y Cloud
 - [Pentesting Everything](https://github.com/m14r41/PentestingEverything) - Manual completo de todos los pentestings
+- https://founderz.com/aiskills4women/women-tech-network/#form
+- https://market.tutorialspoint.com/login.jsp
 
 ### Contenido en Español
 - [Un Hacker en Capital](https://www.youtube.com/@unHackerEnCapital) - Canal educativo premium
@@ -240,18 +235,23 @@
 - [El Hacker Ético](https://elhackeretico.com/operacion-directorio-activo-vulnerando-la-seguridad-en-entornos-reales-taller-de-navaja-negra/) - Talleres prácticos
 - [CyberWorking](https://cyberworking.es/) - Recursos laborales
 - [Achirou](https://achirou.com/practica-hacking-de-forma-segura-100-sitios-web-y-entornos/) - Entornos de práctica
+- https://luma.com/wy9zekcz?tk=iKqO0E
+- https://app.coursestack.com/auth?r=https%3A%2F%2Flimacharlie.coursestack.com%2Fcourses%2F1cf16446-10cf-459f-9dd2-73ed01dea970%2Ftake%2Fii-deploying-a-limacharlie-sensor
+  
 
 ### Contenido Internacional
 - [Inteligencia de Ciberseguridad](https://www.cybersecurityintelligence.com/)
 - [HackerSploit](https://www.youtube.com/c/HackerSploit) - Tutoriales técnicos
 - [Contando Bits](https://www.contandobits.com/cursos/bits-al-dia/) - Cursos actualizados
 - [HackerMentor](https://hackermentor.net/) - Mentoría especializada
+- https://book.hacktricks.wiki/en/index.html
 
 ### Recursos Específicos
 - [Comandos Linux Cheatsheet](https://azulschool.net/wp-content/uploads/2025/02/Comandos-Linux-Cheatsheet-Espanol-Azul-School.pdf) - Guía Linux en español
 - [Knowledge Management for Offensive Security](https://github.com/Hacker-Hermanos/Knowledge-Management-for-Offensive-Security-Professionals.git) - Gestión de conocimiento
 - [OpenVAS Guide](https://www.s4ur0n.com/assets/media/OpenVAS-DOVA.pdf) - Guía OpenVAS
 - Active Directory - https://mayfly277.github.io/posts/Exchange-part1/
+- https://linkfred.com/wp1/%f0%9f%8c%90-netinvm/
     
 ### Certificaciones
 - [OSCP Guide](https://gist.github.com/s4vitar/b88fefd5d9fbbdcc5f30729f7e06826e) - Preparación OSCP
@@ -280,6 +280,12 @@
 ### Herramientas de IA para Aprendizaje
 - [FlowGPT](https://flowgpt.com/) - IA para aprendizaje
 - [NotebookLM](https://notebooklm.google.com/?pli=1) - Gestión de notas con IA
+
+---
+
+## Idiomas
+- https://app.memrise.com/signin
+- https://www.duolingo.com/
 
 ---
 
@@ -384,6 +390,10 @@
 ### Análisis de Malware
 - [VirusTotal](https://virustotal.com/) - Análisis de malware colaborativo
 
+### SOC
+- https://www.yolandacorral.com/como-montar-un-soc-en-casa/
+
+
 ---
 
 ## Cloud Security
@@ -487,20 +497,16 @@
 
 ## Comunidad
 
-### Equipos CTF buscando miembros
-
-#### Team Zerohex (Top 1% Global)
-- [LinkedIn Team](https://www.linkedin.com/posts/zerohex-ctf-team_ctf2025-cybersecurity-webexploitation-activity-7365069310907633664-0mad)
-
-#### Team 0xDEADFA11 (DownUnder CTF India)
-- [LinkedIn Team](https://www.linkedin.com/posts/aditya-it_ctf-progress-update-our-team-0xdeadfa11-activity-7352933740093849600-ZKEO)
-
-#### Team Individual
+### Equipos CTF buscando miembros anteriormente
+- Team Zerohex (Top 1% Global) - [LinkedIn Team](https://www.linkedin.com/posts/zerohex-ctf-team_ctf2025-cybersecurity-webexploitation-activity-7365069310907633664-0mad)
+- Team 0xDEADFA11 (DownUnder CTF India) - [LinkedIn Team](https://www.linkedin.com/posts/aditya-it_ctf-progress-update-our-team-0xdeadfa11-activity-7352933740093849600-ZKEO)
 - [Ruslan Issayev](https://www.linkedin.com/posts/issayevruslan_ctf-capturetheflag-cybersecurity-activity-7328653903238008832-TW7m) - Participación activa en CTF
+- https://ctf.n3xtl3v3l.site/
 
 ### Comunidades Hispanas
 - [XSec Community](https://discord.gg/xsec) - Discord activo de CTF y hacking
 - [C1b3rwall Academy](https://c1b3rwallacademy.usal.es/) - Formación avanzada Universidad Salamanca
+- https://www.elladodelmal.com/
 
 ### Comunidades
 - [Cyberrangers](https://forum.cyberranges.com/)
@@ -528,17 +534,29 @@
 - [DragonJar](https://discord.gg/hacking-y-seguridad-informatica-dragonjar-753997683672350840)
 - [Flipper Devices](https://discord.gg/TARqwj64me)
 - [Ukraine IT Army](https://itarmy.com.ua/instruction/?lang=en#custom)
+- https://luma.com/wy9zekcz?tk=iKqO0E
+- https://www.pushfar.com/home/jHYpfY90Fk/
+
+### Mentorias
+- https://step4ward.es/
+- https://giveandtech.org.il/
+- https://mujeresit.com/mentorias/
+- https://it-women.com/home-2/unirse/formulario-estudiante/
+- https://mentorship.lfx.linuxfoundation.org/#projects_all
+- https://road2cyber.eu/courses-listing
 
 ### Conferencias y Eventos
 - [Black Hat](https://blackhat.com/) - Conferencia técnica líder mundial
 - [DEF CON](https://defcon.org/) - Evento hacker más famoso del mundo
 - [C1b3rwall](https://c1b3rwall.es/) - Conferencia española de ciberseguridad
 - [RootCon](https://rootcon.org/) - Evento asiático premier
+- https://redcon.es
 
-### Simulación de Empleo
+### Empleo
 - [iGrowker](https://igrowker.com/) | [Discord](https://discord.gg/zmvKVXsKVC) - Simulación de proyectos reales
 - [NoCountry](https://www.nocountry.tech/) - Experiencia laboral simulada
 - [IdForIdeas](https://idforideas.com/) | [Discord](https://discord.gg/h6BT8QwC6W) - Proyectos colaborativos
+- https://foorilla.com/hiring/
 
 ### Mentorías y Networking
 - [MujeresIT Mentorías](https://mujeresit.com/mentorias/) - Red de mentorías tech
@@ -547,6 +565,11 @@
 - [Step4Ward](https://step4ward.es/) - Desarrollo profesional
 - [IT Women](https://it-women.com/home-2/unirse/formulario-estudiante/) - Comunidad femenina IT
 - [Linux Foundation Mentorship](https://mentorship.lfx.linuxfoundation.org/#projects_all) - Mentorías oficiales
+
+
+### Posible Advanced Training and where
+- https://davinci.army/
+- https://joinuarmy.org/es/contact/submit-full-application/?p1?utm_source=jooble
 
 ---
 
@@ -571,6 +594,9 @@
 - Excalibur - https://github.com/ex-cal1bur/Excal1bur_Writeups/tree/main
 - https://github.com/7h3rAm/writeups
 - https://medium.com/@yossefmohamedsalah2001
+- https://www.maquinasvirtuales.eu/
+- https://ciberseguridad.blog/capture-the-flag-reto-ciberseguridad-nivel-1-easy-level/
+- https://www.youtube.com/watch?v=iMPKsR6ln_s
   
 ### Red Team Playbooks
 - [Red-Team-Exercises](https://github.com/CyberSecurityUP/Red-Team-Exercises/blob/main/shellcoderunner-exercise-1.cpp) - Ejercicios prácticos
@@ -740,6 +766,34 @@ https://cssbattle.dev/
 - [100 Days CSS](https://100dayscss.com)
 - [30 Seconds of Code](https://www.30secondsofcode.org)
 
+---
+
+## Noticias
+- Remove paywall: https://www.removepaywall.com/
+- https://www.gees-spain.org/
+- https://www.defensa.gob.es/ceseden
+- https://www.lisainstitute.com/
+- https://noticiasseguridad.com/
+- https://www.escudodigital.com/ciberseguridad
+- https://www.tierradehackers.com/
+- https://thehackernews.com/
+- https://hackread.com/
+- https://www.reuters.com/technology/cybersecurity/
+- https://portswigger.net/daily-swig/hacking-news
+- https://www.securityweek.com/
+- https://cybersecuritynews.com/
+- https://gbhackers.com/
+- https://www.cisa.gov/
+- https://news.ycombinator.com/
+- https://hackread.com/
+- https://www.cosasdehackers.es/categoria/noticias/
+- 
+
+---
+
+## Seguridad
+- https://cpfp.uvigo.gal/es/estudios/titulos-propios/id1194-1/
+  
 ---
 
 ## Recursos Adicionales
