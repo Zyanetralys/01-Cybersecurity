@@ -712,6 +712,7 @@
 - [CodeWars](https://codewars.com/) - Challenges de programación
 - Ozaria - https://www.ozaria.com/
   StudioCode - https://studio.code.org/
+  https://algorithm-visualizer.org/
 
 ### CSS
 https://flexboxfroggy.com/#es
