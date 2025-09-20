@@ -544,6 +544,7 @@
 - https://it-women.com/home-2/unirse/formulario-estudiante/
 - https://mentorship.lfx.linuxfoundation.org/#projects_all
 - https://road2cyber.eu/courses-listing
+- https://forms.office.com/pages/responsepage.aspx?id=Mo3k20FxqEa_L5WxazLZsT18HYOUPlhEsnodyi1gUW1UQkVRVk8xWEhSWjJYU0xDQVgxUjk2Q1dGMC4u&route=shorturl
 
 ### Conferencias y Eventos
 - [Black Hat](https://blackhat.com/) - Conferencia técnica líder mundial
@@ -557,17 +558,20 @@
 - [NoCountry](https://www.nocountry.tech/) - Experiencia laboral simulada
 - [IdForIdeas](https://idforideas.com/) | [Discord](https://discord.gg/h6BT8QwC6W) - Proyectos colaborativos
 - https://foorilla.com/hiring/
+- https://iced-plot-27a.notion.site/Vacantes-2025-People-Querida-b4ded1124fb54e75b58680c243e65ef6
 
 ### Mentorías y Networking
+- [Step4Ward](https://step4ward.es/) - Desarrollo profesional
+- - https://www.women4cyberspain.es/mentoring
 - [MujeresIT Mentorías](https://mujeresit.com/mentorias/) - Red de mentorías tech
 - [Mujeres CONS](https://www.mujerescons.es/) - Consultoría femenina
 - [Give and Tech](https://giveandtech.org.il/) - Mentorías tecnológicas
-- [Step4Ward](https://step4ward.es/) - Desarrollo profesional
 - [IT Women](https://it-women.com/home-2/unirse/formulario-estudiante/) - Comunidad femenina IT
 - [Linux Foundation Mentorship](https://mentorship.lfx.linuxfoundation.org/#projects_all) - Mentorías oficiales
+- https://nacionhacker.org/cybersecurity_mentorship/
+- https://tripledobleu.online/
 
-
-### Posible Advanced Training and where
+### Posible Advanced Training
 - https://davinci.army/
 - https://joinuarmy.org/es/contact/submit-full-application/?p1?utm_source=jooble
 
