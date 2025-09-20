@@ -572,6 +572,78 @@
 - [Linux Foundation Mentorship](https://mentorship.lfx.linuxfoundation.org/#projects_all) - Mentorías oficiales
 - https://nacionhacker.org/cybersecurity_mentorship/
 - https://tripledobleu.online/
+- InfoJobs (filtro remoto) – Aunque es generalista, cada vez más empresas españolas publican vacantes 100 % remotas.
+- Domestika – Muy conocida en el sector creativo y cultural (diseño, ilustración, comunicación, audiovisual). También publican oportunidades de empleo remoto.
+- Malt – Plataforma freelance activa en España. Permite que los clientes (empresas y productoras) contacten directamente contigo.
+- Torre – Usada en España y Europa, con inteligencia artificial para hacer matching entre tu perfil y oportunidades remotas.
+- BilingualJobs.io – Trabajos internacionales para perfiles bilingües, con muchas opciones en español e inglés.
+- Europe Language Jobs – Portal europeo con vacantes que requieren español y otros idiomas, muchas en modalidad remota.
+- La Pieza – Conecta a profesionales creativos y de marketing digital con empresas abiertas al teletrabajo. (sobre todo en LATAM)
+- BeFreelancr – Enfocada en traducción freelance, muy útil para perfiles culturales y lingüísticos.
+- Protranslate – Plataforma de traducción y corrección 100 % online.
+- Trabajo Freelance – Incluye proyectos de redacción, diseño y marketing digital.
+ -RemoteJobs.es – Portal español con ofertas remotas en áreas variadas.
+ -Remotasks (microtrabajos) – Para quienes buscan tareas rápidas online (anotación de datos, IA, etc.).
+- Chumijobs: https://www.chumijobs.com/
+- Indeed: https://www.indeed.com/
+- Monster: https://www.monster.com/
+- ZipRecruiter: https://lnkd.in/gV4Huwte
+- Dice: https://www.dice.com/
+- Hireline: https://hireline.io/
+- Getonboard: https://www.getonbrd.com/
+- SimplyHired: https://lnkd.in/gPA4NyGY
+- Remote.co: https://www.remote.co/
+- FlexJobs: https://www.flexjobs.com/
+- WeWorkRemotely: https://lnkd.in/gz-N4vZ8
+- RemoteOk: https://www.remoteok.io/
+- Working Nomads: https://lnkd.in/gcgsxNxM
+- Hubstaff Talent: https://lnkd.in/gpH3MQ8T
+- Virtual Vocations: https://lnkd.in/gj6G2MpG
+- Upwork: https://www.upwork.com/
+- Freelancer: https://lnkd.in/gkE6Y6ib
+- Fiverr: https://www.fiverr.com/
+- Guru: https://www.guru.com/
+- PeoplePerHour: https://lnkd.in/g5b-wmmZ
+- Toptal: https://www.toptal.com/
+- Aquent: https://www.aquent.com/
+- Hirable: https://www.hirable.com/
+- Remotive: https://www.remotive.io/
+- WorkRemote: https://lnkd.in/g5srrsQW
+- Work Remoto: workremoto.com/empleos/
+- Working Nomads: https://lnkd.in/gcgsxNxM
+- RemoteLeads: https://lnkd.in/g35zcVvX
+- RemoteGlobal: https://lnkd.in/gqW42y8Q
+- RemoteWorkHub: https://lnkd.in/g8x5YCSt
+- Jobspresso: https://www.jobspresso.co/
+- SkipTheDrive: https://lnkd.in/gaBHXSDs
+- Coworker: https://www.coworker.com/
+- Remotely: https://www.remotely.com/
+- RemoteTeam: https://lnkd.in/g8XvnbNi
+- RemoteWork.jobs: https://lnkd.in/gMfEvK-K
+- Remote.jobs: https://www.remote.jobs/
+- Remotive.io: https://www.remotive.io/
+- Remote.com: https://www.remote.com/
+- RemoteWorkHub.com: https://lnkd.in/g8x5YCSt
+- Remote.co.uk: https://www.remote.co.uk/
+- FlexJobs.com: https://www.flexjobs.com/
+- LinkedIn: https://www.linkedin.com/
+- Glassdoor: https://www.glassdoor.com/
+- Workana: https://www.workana.com/
+- Arc: https://arc.dev/
+- Torre: torre.ai/es
+- Full Stack Remote: https://lnkd.in/gp-3P3Ur
+- Mission dev: https://mission.dev/
+- The Bridge: https://thebridge.social/
+- Wipperoz: https://www.wipperoz.com/
+- Turing: https://www.turing.com/
+- Powertoflyer: https://powertofly.com/
+- Remote Talent: https://lnkd.in/gKBu8hxu
+- RemoteSpain: https://lnkd.in/gg5Be2kW
+- Freelancer.com: www.freelancer.com.co/
+- Hire with Near: www.jobs.hirewithnear.com
+- Work for Impact: www.workforimpact.com
+- We Remote: weremote.net
+
 
 ### Posible Advanced Training
 - https://davinci.army/
