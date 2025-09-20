@@ -1,4 +1,4 @@
-# Women4Cyber Mentorship – Guía completa
+# Women4Cyber Mentorship
 
 ---
 
