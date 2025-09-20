@@ -564,7 +564,7 @@
 
 ### Mentorías y Networking
 - [Step4Ward](https://step4ward.es/) - Desarrollo profesional
-- - https://www.women4cyberspain.es/mentoring
+- https://www.women4cyberspain.es/mentoring
 - [MujeresIT Mentorías](https://mujeresit.com/mentorias/) - Red de mentorías tech
 - [Mujeres CONS](https://www.mujerescons.es/) - Consultoría femenina
 - [Give and Tech](https://giveandtech.org.il/) - Mentorías tecnológicas
