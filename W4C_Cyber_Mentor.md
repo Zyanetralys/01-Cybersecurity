@@ -69,7 +69,7 @@ Apoyo, orientación y desarrollo profesional en ciberseguridad. No garantiza emp
 ## Contact Information
 - **Email:** mentorship@women4cyber.eu  
 - **Login:** [PushFar](https://www.pushfar.com/home/)  
-- **Recursos:** Guías completas en la sección Resources de PushFar.  
+- **Recursos:** https://www.pushfar.com/org/resources/
 
 ---
 
@@ -797,6 +797,3 @@ Los reportes dan a equipos de aprendizaje y organizaciones visibilidad completa 
 La plataforma, tanto en web como móvil, está marcada y personalizada a la cultura y requisitos de tu organización, con el equipo PushFar ahí para apoyar con recursos de mentoring, incorporación, entrenamiento y mucho más.
 
 Este resumen exhaustivo ahora incluye todos los detalles sutiles mencionados en los documentos originales, incluyendo fechas específicas, horarios, procesos paso a paso, criterios detallados, y toda la información técnica y práctica proporcionada en los materiales fuente.
-
-## Recursos
-https://www.pushfar.com/org/resources/
