@@ -179,13 +179,15 @@
 - Alison – Diploma in Network Security - https://alison.com (Free with cert) - - https://sepe.pue.es/
 - https://www.efundae.es/course/index.php
 - https://experienciafundae.es/beca-google/detalle/2555
-- https://learnondemandsystemsb2c.b2clogin.com/learnondemandsystemsb2c.onmicrosoft.com/b2c_1a_signup_signin_tms/oauth2/v2.0/authorize?client_id=c602a47c-ab93-480b-ac8d-cccf54c59797&redirect_uri=https%3A%2F%2Flms.learnondemand.net%2FAuthenticationProvider%2FOwinCallback&response_type=id_token&scope=openid%20profile%20email&state=OpenIdConnect.AuthenticationProperties%3DoYwTfCSKE-HmzjLb6vF9YGRxTsQchp4uBaL4xQIE8mjITwr6xcdO5fKjxqDNg2KBLgRWM0jxoGf-2imNo73c3Z3jrQwHfitKMNocGYWbwSgJKr8u44Vvex3x3_szNHwBFAelyk1aBCa1Qo27JChZEfaXCMEBqx9BPWfcsbpY3Iw2G4Xxlezv6WhlzqlZ2phiRvdugG5d52R22bfppJN-GfksWrh_Ki3BV6TAHwOVg_ritRzWqiIZU0qstmWq3tdr4XoEDVjE0dxbbpbiTSLlMkMow59usrSFFTCTrCU4h6nRX6uU&response_mode=form_post&nonce=638939545159193958.MjFjMjM4ZTUtZmY3Ny00ZjhjLTk1Y2QtNGRmYjg0NGM3M2Y1ZjNkMWY5M2YtY2I1MS00MzdjLWE4NzEtNmVjMTdiOTVhNjY2&ui=tms&x-client-SKU=ID_NET472&x-client-ver=7.0.3.0
+- https://learnondemandsystemsb2c.b2clogin.com
 - https://aulavirtualatu.com/login/index.php
 - https://academy.socradar.io/course/cti-fundamentals-for-soc-analysts
 - https://cohackers.co/learn
 - https://microsoft.github.io/PartnerResources/skilling/microsoft-security-academy
 - https://login.paloaltonetworks.com/lms/PreRegister?UserType=CUST
-- https://www.proofpoint.com/es/ai-email-security-specialist-2025?mkt_tok=MzA5LVJIVi02MTkAAAGcRlzByL28dcwvx9db4wBmMt1MWyTRws5IUvTYZElfBg4x8uCQGakoqSHu92LeDImO7f6x51rGSx9kutiLKMQQbzMZh8Wy7guYbQ9o4tl0eLx2l9Vn7Q
+- https://www.proofpoint.com/es/ai-email-security-specialist-2025
+- https://www.netacad.com/
+- https://app.coursestack.com/
 
 ### Roadmaps y Frameworks
 - [Cybersecurity Roadmap](https://roadmap.sh/cyber-security) - Ruta visual completa
@@ -770,6 +772,11 @@ https://cssbattle.dev/
 - [100 Days CSS](https://100dayscss.com)
 - [30 Seconds of Code](https://www.30secondsofcode.org)
 
+---
+
+## Tools
+
+- Resume videos con IA: https://decopy.ai/es/video-summarizer/
 ---
 
 ## Noticias
