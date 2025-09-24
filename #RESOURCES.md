@@ -695,6 +695,7 @@
 - https://www.maquinasvirtuales.eu/
 - https://ciberseguridad.blog/capture-the-flag-reto-ciberseguridad-nivel-1-easy-level/
 - https://www.youtube.com/watch?v=iMPKsR6ln_s
+- https://elhackeretico.com/
   
 ### Red Team Playbooks
 - [Red-Team-Exercises](https://github.com/CyberSecurityUP/Red-Team-Exercises/blob/main/shellcoderunner-exercise-1.cpp) - Ejercicios prácticos
@@ -870,6 +871,9 @@ https://cssbattle.dev/
 ## Tools
 
 - Resume videos con IA: https://decopy.ai/es/video-summarizer/
+- https://github.com/aliasrobotics/cai
+- 
+
 ---
 
 ## Noticias
