@@ -243,7 +243,7 @@
 - [Achirou](https://achirou.com/practica-hacking-de-forma-segura-100-sitios-web-y-entornos/) - Entornos de práctica
 - https://luma.com/wy9zekcz?tk=iKqO0E
 - https://app.coursestack.com/auth?r=https%3A%2F%2Flimacharlie.coursestack.com%2Fcourses%2F1cf16446-10cf-459f-9dd2-73ed01dea970%2Ftake%2Fii-deploying-a-limacharlie-sensor
-  
+- https://store.academia-hacker.com/ciberguerreros
 
 ### Contenido Internacional
 - [Inteligencia de Ciberseguridad](https://www.cybersecurityintelligence.com/)
