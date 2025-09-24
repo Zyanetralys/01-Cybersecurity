@@ -11,7 +11,6 @@
 - [Máquinas Virtuales](#máquinas-virtuales)
 - [Comunidad](#comunidad)
 - [Writeups y Referencias](#writeups-y-referencias)
-- https://securiumsolutions.com/how-to-build-a-ctf-team-and-win-your-first-competition/
 
 ---
 
@@ -25,6 +24,8 @@
 - [DEF CON CTF](https://defcon.org/) - Competición premium
 - [Cyberlandsec](https://github.com/Rannden-SHA/CyberLand-Labs/)
 - [Hacksplaining](https://www.hacksplaining.com/lessons)
+- https://securiumsolutions.com/how-to-build-a-ctf-team-and-win-your-first-competition/
+- [Wifi Challenge Academy](https://academy.wifichallenge.com/pages/aniversario?ref=d79459) + [Repo]((https://github.com/r4ulcl/WiFiChallengeLab-docker))
 
 ### Plataformas Premium
 - [HackTheBox](https://www.hackthebox.com) - Plataforma líder en pentesting
@@ -32,8 +33,8 @@
 - [PortSwigger Web Security Academy](https://portswigger.net/web-security) - Academia de seguridad web
 - [Hacker101 CTF](https://ctf.hacker101.com) - CTF de HackerOne
 - [ImmersiveLabs](https://immersivelabs.com) - Labs interactivos empresariales
-- [Wifi Challenge Academy](https://academy.wifichallenge.com/pages/aniversario?ref=d79459) + [Repo]((https://github.com/r4ulcl/WiFiChallengeLab-docker))
-
+- https://digitalcerthub.com/
+- 
 ### Plataformas Gratuitas
 - [VulnHub](https://www.vulnhub.com) - VMs vulnerables descargables
 - [VulnHub Machines](https://vulnmachines.com) - VMs vulnerables descargables
@@ -50,6 +51,8 @@
 - [Co-Hackers](https://cohackers.co/) - Comunidad de retos
 - [Infinity Cyberwarfare](https://infinity.cyberwarfare.live/#pricing)
 - [The Hackers Labs](https://thehackerslabs.com/)
+- https://hixec.com/cursos/
+- 
 
 ### Varias
 - [Cyberseclabs](https://www.cyberseclabs.co.uk) - Cyberseclabs
@@ -188,6 +191,7 @@
 - https://www.proofpoint.com/es/ai-email-security-specialist-2025
 - https://www.netacad.com/
 - https://app.coursestack.com/
+- https://certjoin.com/es/categoria/certificaciones-gratuitas/
 
 ### Roadmaps y Frameworks
 - [Cybersecurity Roadmap](https://roadmap.sh/cyber-security) - Ruta visual completa
