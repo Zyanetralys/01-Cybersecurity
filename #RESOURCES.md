@@ -26,7 +26,23 @@
 - [Hacksplaining](https://www.hacksplaining.com/lessons)
 - https://securiumsolutions.com/how-to-build-a-ctf-team-and-win-your-first-competition/
 - [Wifi Challenge Academy](https://academy.wifichallenge.com/pages/aniversario?ref=d79459) + [Repo]((https://github.com/r4ulcl/WiFiChallengeLab-docker))
-
+- Vulnersity – Aprende sobre ataques webs y escala de privilegios
+- Blue – Hackea una máquina windows 
+- Bolt – Pruebas de penetración web y aplicaciones.
+- Chill Hack – Técnicas de hacking práctico 
+- Ice – Pentesting de windows y explotación de servicios.
+- Startup – Abusar de vulnerabilidades tradicionales
+- Blog – Wordpress
+ - ColddBox: Easy - Muchas formas de escalada de privilegios
+- Publisher – Testea tus habilidades
+- Pentesting Fundamentals – Aprende la metodología para empezar en pent.
+- Pyrat – Consigue el root!
+- Pickle Rick – Desafios de hacking un poco más avanzado
+ - Basic Pentesting – Hacking web y escala de privilegios 
+- LazyAdmin – Máquina de linux para practicar
+ - RootMe – Consigue el root!
+- Lian_Yu – Reto de seguridad
+  
 ### Plataformas Premium
 - [HackTheBox](https://www.hackthebox.com) - Plataforma líder en pentesting
 - [TryHackMe](https://tryhackme.com) - Laboratorios guiados paso a paso
