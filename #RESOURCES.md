@@ -909,6 +909,7 @@ https://cssbattle.dev/
 ### Guías Especializadas
 - [Metasploit Guide](https://docs.rapid7.com/metasploit/) - Guía oficial completa
 - [OSINT Video Tutorial](https://www.youtube.com/watch?v=1iVm7Mwc9UM) - Tutorial práctico OSINT
+-  [BugTrace & Shift Agents V2](https://www.youtube.com/watch?v=sbLwUYfuhIQ)
 
 ### Herramientas de Productividad
 - [CTF Writeup Builder](https://github.com/ilanami/ctf_writeup_builder) - Automatización de writeups
