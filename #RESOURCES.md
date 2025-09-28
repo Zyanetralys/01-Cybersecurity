@@ -208,6 +208,7 @@
 - https://www.netacad.com/
 - https://app.coursestack.com/
 - https://certjoin.com/es/categoria/certificaciones-gratuitas/
+- https://opensecuritytraining.info/
 
 ### Roadmaps y Frameworks
 - [Cybersecurity Roadmap](https://roadmap.sh/cyber-security) - Ruta visual completa
