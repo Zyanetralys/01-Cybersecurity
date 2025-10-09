@@ -26,6 +26,7 @@
 - [Hacksplaining](https://www.hacksplaining.com/lessons)
 - https://securiumsolutions.com/how-to-build-a-ctf-team-and-win-your-first-competition/
 - [Wifi Challenge Academy](https://academy.wifichallenge.com/pages/aniversario?ref=d79459) + [Repo]((https://github.com/r4ulcl/WiFiChallengeLab-docker))
+- https://bit.ly/h4ckfr1days
 - Vulnersity – Aprende sobre ataques webs y escala de privilegios
 - Blue – Hackea una máquina windows 
 - Bolt – Pruebas de penetración web y aplicaciones.
