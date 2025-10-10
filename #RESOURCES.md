@@ -43,6 +43,28 @@
 - LazyAdmin – Máquina de linux para practicar
  - RootMe – Consigue el root!
 - Lian_Yu – Reto de seguridad
+- [RATas inminentes](https://ctf.unizar.es/ratas_inminentes) - CTF sencillo y educativo para iniciarse en DFIR.  
+- [BaklavaCTF](https://ctf.communia.cc/) - Caso de ransomware entretenido y resoluble en una tarde.  
+- [Ransomware Ate My Network](https://ctf.unizar.es/ransomware) - Caso realista de ransomware, nivel medio.  
+- [Vientos Remotos, tempestades locales](https://ctf.unizar.es/remotos) - Intrusión en red con énfasis en Windows y pivoteo.  
+- [Bolas de cocido](https://ctf.unizar.es/bolas_cocido) - CTF DFIR clásico, reto nostálgico centrado en Windows.  
+- [DEFCON DFIR CTF 2019 (archivo)](https://www.dropbox.com/scl/fo/4wi8n7fm01yfcbwv4nom5/AIO_qWCQRyjl9-QtLa70wrE?rlkey=4uu6og3vph3rth8lp1ap86f9c&e=1&dl=0) - Concurso intenso con preguntas variadas (archivo/colección).  
+- [The Case of the Stolen Szechuan Sauce](https://mimircyber.com/the-case-of-the-stolen-szechuan-sauce/) - CTF clásico DFIR con estética gamificada.  
+- [Xintra Labs](https://www.xintra.org/) - CTFs avanzados estilo APT / ransomware (suscripción).  
+- [TheDFIRReport Labs](https://dfirlabs.thedfirreport.com/auth/login) - CTFs basados en informes reales; modelo por compra o suscripción.  
+- [Securízame (Entrenamientos DFIR)](https://cursos.securizame.com/) - Cursos y casos prácticos presenciales/online en España.  
+- [Hack The Box — Blue Team / DFIR (Sherlocks)](https://www.hackthebox.com/hacker/blue-team-labs-for-dfir) - Máquinas/labs DFIR dentro de HTB.  
+- [Let’s Defend — DFIR Challenges](https://app.letsdefend.io/challenge?filters%3Atype_filter=Digital+Forensics+and+Incident+Response) - Plataforma para blue team con contenido gratuito y premium.  
+- [Digital Corpora — Scenarios](https://digitalcorpora.org/corpora/scenarios/) - Escenarios y corpus forense reutilizables.  
+- [DFIR-LABS (GitHub)](https://github.com/Azr43lKn1ght/DFIR-LABS) - Colección de CTFs y casos DFIR publicados por la comunidad.  
+- [Ali Hadi — Workshops / Linux DFIR](https://linuxdfir.ashemery.com/Workshops/) - Workshops y mini-casos prácticos en Linux.  
+- [Hal Pomeranz — Linux Forensic Workshop (archivo)](https://archive.org/details/HalLinuxForensics) - Curso introductorio gratuito con casos prácticos.  
+- [Belkasoft — series de CTFs (varios)](https://belkasoft.com/belkactf7-writeup) - Colección de CTFs DFIR publicados por Belkasoft (acceso y writeups).  
+- [Magnet Forensics — CTFs / Summit (archivo y noticias)](https://www.magnetforensics.com/blog/2024-magnet-virtual-summit-ctf-winners-and-another-chance-to-play/) - CTFs y material de forense móvil.  
+- [DFRWS Forensic Challenges (repositorios)](https://github.com/dfrws/dfrws2023-challenge) - Retos forenses IoT/ICS y sus repositorios oficiales.  
+- [CyberDefenders.org — Blue Team CTFs](https://cyberdefenders.org/blueteam-ctf-challenges/) - Plataforma orientada a blue team y DFIR.  
+- [Magnet CTF / Digital Corpora (archivos adicionales)](https://drive.google.com/drive/folders/1U8hGYNBgFyc7dm7IGeH_Vqide668WNZx) - Colección de archivos y retos de ediciones pasadas.  
+- [Belkasoft — entradas y writeups adicionales](https://belkasoft.com/ctf_march_2022/index.php) - Más eventos/retos de Belkasoft para practicar móviles y RAM.
   
 ### Plataformas Premium
 - [HackTheBox](https://www.hackthebox.com) - Plataforma líder en pentesting
@@ -95,7 +117,9 @@
 - [W3CHALLS](http://www.wechall.net)
 - [ZENK SECURITY](https://repo.zenk-security.com)
 - [SOC Cyberguru](http://acyberguru.io/)
-
+- Bolas de cocido-  - CTF DFIR clásico, reto nostálgico centrado en Windows.
+- DEFCON DFIR CTF 2019 (archivo) -  - Concurso intenso con preguntas variadas (archivo/colección).
+- The Case of the Stolen Szechuan Sauce-  - CTF clásico DFIR con estética gamificada.
   
 ### Especializados
 
