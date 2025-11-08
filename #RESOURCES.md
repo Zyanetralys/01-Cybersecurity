@@ -758,8 +758,9 @@
 - [Free-for.dev](https://free-for.dev/) - Servicios gratuitos para desarrolladores
 - [CodeWars](https://codewars.com/) - Challenges de programación
 - Ozaria - https://www.ozaria.com/
-  StudioCode - https://studio.code.org/
-  https://algorithm-visualizer.org/
+-  StudioCode - https://studio.code.org/
+-  https://algorithm-visualizer.org/
+-  https://www.theodinproject.com/
 
 ### CSS
 https://flexboxfroggy.com/#es
@@ -859,6 +860,11 @@ https://cssbattle.dev/
 - [Vim Adventures](https://vim-adventures.com)
 - [VimGenius](http://www.vimgenius.com)
 - [30 Seconds of Code](https://www.30secondsofcode.org)
+- https://cursa.app/es/curso-gratis/python-desde-0-bcef?utm_source=chatgpt.com
+- https://es.learncafe.com/cursos/programacion-python?utm_source=chatgpt.com
+- https://www.santanderopenacademy.com/es/courses/introduction_to_python_programming.html?utm_source=chatgpt.com
+- https://www.freecodecamp.org/
+  
 
 ### Frontend
 - [Ace Frontend](https://www.acefrontend.com)
