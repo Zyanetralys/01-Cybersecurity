@@ -120,7 +120,24 @@
 - Bolas de cocido-  - CTF DFIR clásico, reto nostálgico centrado en Windows.
 - DEFCON DFIR CTF 2019 (archivo) -  - Concurso intenso con preguntas variadas (archivo/colección).
 - The Case of the Stolen Szechuan Sauce-  - CTF clásico DFIR con estética gamificada.
-  
+
+
+### Ciberseguridad OT
+- https://ics-training.inl.gov/learn/courses/352/industrial-control-system-cybersecurity-ics300-training
+- https://www.cisa.gov/resources-tools/programs/ics-training-available-through-cisa
+- https://www.mindluster.com/certificate/12787/OT-ICS-Security-video
+- https://grupomainjobs.com/ciberseguridad/#form
+- https://cursossubvencionados.corenetworks.es/cursos-gratis-sevilla/curso-gratis-ifct0050-ciberseguridad-avanzada-en-entornos-de-las-tecnologias-de-la-operacion#inscripcion
+- https://www.cci-es.org/hazte-miembro-del-ecosistema-gratis/
+- https://www.roadmapciberseguridad.org/como-iniciar-en/ciberseguridad-icsot
+- https://formacionpermanente.uned.es/tp_actividad/actividad/ciberseguridad-en-sistemas-de-control-industrial-icsscada
+- https://www.udemy.com/es/topic/ics-ot-security/?srsltid=AfmBOooERR2w3RdJMfrHlfdiy4fUMjW0c7Q5T2M39DSJHormRJVYY6wD
+- https://www.cci-es.org/master-ciberseguridad-industrial/
+- https://www.udemy.com/course/ot-cybersecurity-in-hindi-ics-scada-mitre-pentest/?couponCode=0D0A2DC234F521BFFC33
+- https://www.incibe.es/incibe/cibercooperantes/quiero-ser-cibercooperante
+- https://www.cisa.gov/resources-tools/programs/ics-training-available-through-cisa
+- https://www.mindluster.com/certificate/12787/OT-ICS-Security-video
+
 ### Especializados
 
 #### Criptografía
