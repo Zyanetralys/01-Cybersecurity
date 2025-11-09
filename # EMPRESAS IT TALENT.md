@@ -422,23 +422,23 @@ ________________________________________
 
 💡 Consejos para Contractors
 Modelos de Contratación
-- •	Freelance/Autónomo - Trabajo independiente
-- •	Contractor independiente - Contrato directo
-- •	EOR (Employer of Record) - Vía Deel, Remote, Ontop
+- Freelance/Autónomo - Trabajo independiente
+- Contractor independiente - Contrato directo
+- EOR (Employer of Record) - Vía Deel, Remote, Ontop
 - 
 Plataformas de Pago
-- •	Wise (TransferWise) - Transferencias internacionales
-- •	Payoneer - Pagos globales
-- •	PayPal - Pagos online
-- •	Payflow - Gestión de cobros
-- •	Crypto - USDT, etc.
+- Wise (TransferWise) - Transferencias internacionales
+- Payoneer - Pagos globales
+- PayPal - Pagos online
+- Payflow - Gestión de cobros
+- Crypto - USDT, etc.
 
 Requisitos Comunes
 - ✅ Portfolio/GitHub activo
 - ✅ Inglés fluido (principalmente escrito)
 - ✅ Disponibilidad horaria compatible
 - ✅ Capacidad de facturar legalmente
-- 
+  
 NO Necesitas
 - ❌ Visa o permiso de trabajo
 - ❌ Nacionalidad específica
