@@ -1,634 +1,444 @@
-# CONSULTORAS IT Y HEADHUNTERS
-Selecta Digital
-URL: https://selectaselecciontalento.com/digital/
-Email: contacto@selectadigital.com
-CSI Consultora Selección IT
-URL: https://consultoraseleccionit.com/
-Email: info@consultoraseleccionit.com
-iTalenters
-URL: https://www.italenters.com/seleccion-it-madrid/
-Tech Executive Search
-URL: https://www.techexecutivesearch.es/
-Humansyde
-URL: https://humansyde.com/
-Email: contact@humansyde.com
-Peter Möma
-URL: https://petermoma.com/
-Talent-R
-URL: https://talent-r.com/
-Hiring IT
-URL: https://hiringit.es/
-Selección IT
-URL: https://seleccion-it.com/
-LJselection
-URL: https://ljselection.com/seleccion-de-perfiles-it/
-The Valley Talent
-URL: https://thevalleytalent.es/en/
-Humann
-URL: https://humann.es/en/
-Iwantic
-URL: https://iwantic.com/
-IT Talent Headhunting
-URL: https://www.ittalentheadhunting.com/es
-The Board Headhunting
-URL: https://www.theboard.es/
-Aratech Lifestyle Technology
-URL: https://ara-tech.es/es/recruitment-it-headhunting-it/
-Sectorea
-Email: sectorea@jobs.workablemail.com
-AdelantTa Recursos Humanos
-Email: contacto@adelantta.es
-Prometeo Talent
-URL: https://www.prometeotalent.com/
-Zero to One Search
-URL: https://www.zerotoonesearch.com/
-Fut-Ure
-URL: https://fut-ure.es/
-TalentFY
-URL: https://ytalentfy.com/
-Cognitio Talent
-URL: https://cognitiotalent.com/
-BTS Talent
-URL: https://btstalent.com/
+# 📋 Directorio Completo de Empleo Tech y Ciberseguridad 2025
 
-# CONSULTORAS MULTINACIONALES IT
-Accenture Technology
-URL: https://www.accenture.com/es-es/careers
-Deloitte Digital & Technology
-URL: https://www2.deloitte.com/es/es/pages/careers/topics/technology-careers.html
-EY Technology
-URL: https://www.ey.com/es_es/careers
-KPMG Technology
-URL: https://home.kpmg/es/es/home/careers.html
-PwC Technology Consulting
-URL: https://www.pwc.es/es/empleo.html
-Capgemini
-URL: https://www.capgemini.com/es-es/careers/
-IBM España
-URL: https://www.ibm.com/es-es/employment/
-Cognizant España
-URL: https://www.cognizant.com/es/es/careers
-Eviden (Atos)
-URL: https://eviden.com/careers/
-NTT DATA
-URL: https://es.nttdata.com/careers
-Everis (NTT DATA)
-URL: https://careers.nttdata.com/
-Minsait (Indra)
-URL: https://www.minsait.com/es/empleo
-Indra Sistemas
-URL: https://www.indracompany.com/es/trabaja-con-nosotros
-GFT Technologies
-URL: https://www.gft.com/es/es/careers
-Sopra Steria
-URL: https://www.soprasteria.es/empleo
-T-Systems
-URL: https://www.t-systems.com/es/es/careers
-DXC Technology
-URL: https://dxc.com/es/es/careers
-CGI España
-URL: https://www.cgi.com/es/es-es/empleo
-Altran (Capgemini Engineering)
-URL: https://www.capgemini.com/es-es/empleo/
-Alten España
-URL: https://www.alten.es/empleo/
-Babel
-URL: https://www.babel.es/trabaja-con-nosotros/
-Devoteam
-URL: https://es.devoteam.com/careers/
-Entelgy (Innotec Security)
-URL: https://www.entelgy.com/empleo
-Hiberus
-URL: https://www.hiberus.com/empleo/
-Stratesys
-URL: https://stratesys.es/trabaja-con-nosotros/
-Abast
-URL: https://www.abast.es/
+## 📊 Plataformas de Empleo
 
-# EMPRESAS DE CIBERSEGURIDAD (ESPAÑA)
-S2 Grupo
-URL: https://www.s2grupo.es/trabaja-con-nosotros
-Secure&IT
-URL: https://www.secureit.es/
-Tarlogic Security
-URL: https://www.tarlogic.com/
-Telefónica Tech Cyber Security & Cloud
-URL: https://telefonicatech.com/es/ciberseguridad
-AlienVault (AT&T Cybersecurity)
-URL: https://cybersecurity.att.com/
-IriusRisk
-URL: https://www.iriusrisk.com/
-Electronic IDentification
-URL: https://www.electronicid.eu/
-Panda Security
-URL: https://www.pandasecurity.com/es/empresa/empleo/
-Linka (Grupo Linka)
-URL: https://www.grupolinka.com/
-SG6
-URL: https://www.sg6.es/
-On Retrieval
-URL: https://onretrieval.com/
-Trend Micro España
-URL: https://www.trendmicro.com/es_es/
-Ciberso
-URL: https://ciberso.com/
-Grupo EULEN Seguridad
-URL: https://www.eulen.com/
-S21sec (Thales)
-URL: https://www.s21sec.com/
-Kaspersky España
-URL: https://www.kaspersky.es/
-Cisco España
-URL: https://www.cisco.com/c/es_es/index.html
-Fortinet España
-URL: https://www.fortinet.com/es
-Palo Alto Networks
-URL: https://www.paloaltonetworks.com/
+### 🇪🇸 Plataformas Tech España
+- [InfoJobs](https://www.infojobs.net/) - Portal de empleo con filtro remoto
+- [Domestika](https://www.domestika.org/) - Comunidad creativa y ofertas
+- [Malt](https://www.malt.es/) - Plataforma de freelancers europea
+- [La Pieza](https://www.lapieza.io/) - Empleo tech startup
+- [RemoteJobs.es](https://remotejobs.es/) - Trabajo remoto en España
+- [Work Remoto](https://workremoto.com/empleos/) - Ofertas remotas hispanas
+- [RemoteSpain](https://remotespain.com/) - Trabajo remoto España
+- [ChumiJobs](https://www.chumijobs.com/) - Portal de empleo
+- [WeRemoto](https://weremoto.com/) - Trabajo remoto hispano
+- [Remoto JOB](https://remotojob.com/) - Empleos en español
+- [Getonboard](https://www.getonbrd.com/) - Startups LATAM
 
-# ETTs Y CONSULTORAS DE SELECCIÓN GENERALISTAS CON DIVISIÓN IT
-Robert Walters España
-URL: https://www.robertwalters.es/contacto/espana/madrid.html
-Email: contacto@robertwalters.com
-Michael Page Tecnología
-URL: https://www.michaelpage.es/seleccion-personal/tecnolog%C3%ADa
-Page Personnel
-URL: https://www.pagepersonnel.es/
-PageGroup España
-URL: https://www.pagegroup.es/
-Hays IT
-URL: https://www.hays.es/seleccion/it
-Randstad Technologies
-URL: https://www.randstad.es/empresas/seleccion/perfiles-digitales-it/
-Adecco Technology
-URL: https://www.adecco.es/
-Manpower Technology
-URL: https://www.manpower.es/
-Spring Professional
-URL: https://www.springprofessional.es/
-Experis Selección IT
-URL: https://www.experis.es/es/soluciones-it/seleccion-it
-Start People Selección IT
-URL: https://www.seleccionitstartpeople.com/consultora-seleccion-it/
-Kelly Services España
-URL: https://www.kellyservices.es/
-Expansion People
-URL: https://expansion-people.com/
-Etalentum
-URL: https://www.etalentum.com/es/oficinas/etalentum-madrid-oeste.html
-Select-ing Selección de Ingenieros
-URL: https://www.select-ing.es/
-Acertto Talent Linkers
-URL: https://www.acertto.es/seleccion-it/
-LHH Tecnología
-URL: https://www.lhh.com/es/es/divisiones/tecnologia/
-Morgan Philips Tecnología & Digital
-URL: https://es.morganphilips.com/es/tecnologia-y-digital
+### 🌍 Plataformas Internacionales
+- [LinkedIn](https://www.linkedin.com/) - Red profesional global
+- [Indeed](https://www.indeed.com/) - Agregador de ofertas mundial
+- [Glassdoor](https://www.glassdoor.com/) - Ofertas y reviews
+- [Monster](https://www.monster.com/) - Portal de empleo global
+- [ZipRecruiter](https://www.ziprecruiter.com/) - Búsqueda de empleo
+- [Dice](https://www.dice.com/) - Especializado en tech
+- [SimplyHired](https://www.simplyhired.com/) - Búsqueda de empleo
+- [Jora](https://www.jora.com/) - Búsqueda internacional
 
-# CONSULTORAS HEADHUNTING EXECUTIVE
-Boyden Spain
-URL: https://www.boyden.com/spain/
-Keller Executive Search
-URL: https://www.kellerexecutivesearch.com/recruitment/recruitment-agency-spain/
-Signium
-URL: https://www.signium.es/
-Concentric
-URL: https://www.weareconcentric.com/
-Crearte Consulting
-URL: https://crearteconsulting.com/en/headhunting/
-Amrop Seeliger y Conde
-URL: https://www.amrop.es/
-Alexander Hughes
-URL: https://www.alexanderhughes.com/es/
-Russell Reynolds Associates
-URL: https://www.russellreynolds.com/
-Odgers Berndtson
-URL: https://www.odgersberndtson.com/es-es/
-Spencer Stuart
-URL: https://www.spencerstuart.com/
-Egon Zehnder
-URL: https://www.egonzehnder.com/es
-Heidrick & Struggles
-URL: https://www.heidrick.com/
+### 💻 Trabajo Remoto Global
+- [Remote.co](https://www.remote.co/) - Empleos remotos + recursos
+- [FlexJobs](https://www.flexjobs.com/) - Empleos remotos verificados (pago)
+- [WeWorkRemotely](https://weworkremotely.com/) - Job board remoto líder
+- [RemoteOk](https://www.remoteok.io/) - Trabajos 100% remotos
+- [Working Nomads](https://workingnomads.com/) - Nómadas digitales
+- [Remote.jobs](https://www.remote.jobs/) - Ofertas remotas curadas
+- [Remotive](https://www.remotive.io/) - Comunidad remota
+- [RemoteGlobal](https://remoteglobal.com/) - Empleo global
+- [RemoteWorkHub](https://remoteworkhub.com/) - Hub trabajo remoto
+- [Jobspresso](https://www.jobspresso.co/) - Empleo remoto curado
+- [SkipTheDrive](https://www.skipthedrive.com/) - Trabajo desde casa
+- [We Remote](https://weremote.net/) - Ofertas remotas
+- [Dynamite Jobs](https://dynamitejobs.com/) - Startups y tech
+- [Remote List](https://www.remotolist.com/) - Hispanohablantes
 
-# CONSULTORAS INTERNACIONALES CON PRESENCIA EN ESPAÑA
-DevsData
-URL: https://devsdata.com/
-NBS IT Recruitment
-URL: https://www.itrecruitmentnbs.com/
-Approach People
-URL: https://www.approachpeople.com/spain
-Allen Recruitment Spain
-URL: https://www.allenrec.com/spain/
-Talent Search People
-URL: https://talentsearchpeople.com/
-E-Frontiers Spain
-URL: https://e-frontiers.ie/in-spain/
-Gini Talent
-URL: https://ginitalent.com/staffing-agencies-in-spain/
-Matchtech España
-URL: https://www.matchtech.com/es/
-Adeas HR
-URL: https://www.adeas-hr.com/
-Blu Selection
-URL: https://www.bluselection.com/
-Catenon
-URL: https://www.catenon.com/
-Talentful
-URL: https://www.talentful.com/
-CPL Resources Spain
-URL: https://www.cpl.com/es/
-Aspire People
-URL: https://www.aspirepeople.com/
-Mercer Talent Solutions
-URL: https://www.mercer.com/
-Cegid HR Solutions
-URL: https://www.cegid.com/es/
+### 🌎 Empleo Internacional
+- [Torre](https://torre.ai/es) - IA para matching laboral
+- [BilingualJobs.io](https://bilingualjobs.io/) - Empleos bilingües
+- [Europe Language Jobs](https://www.europelanguagejobs.com/) - Empleos en Europa
+- [Hire with Near](https://www.hirewithnear.com/) - Contratación nearshore
+- [Work for Impact](https://www.workforimpact.com/) - Empleos con impacto
+- [Where She Works](https://wheresheworks.com/) - Mujeres en tech
+- [Human Head Hunter](https://humanheadhunter.com/) - Vacantes variadas
 
-# STARTUPS Y SCALE-UPS TECNOLÓGICAS
-Glovo
-URL: https://glovoapp.com/es/es/careers
-Cabify
-URL: https://cabify.com/es/careers
-Jobandtalent
-URL: https://www.jobandtalent.com/es/careers
-Wallapop
-URL: https://about.wallapop.com/careers/
-Typeform
-URL: https://www.typeform.com/careers/
-Travelperk
-URL: https://www.travelperk.com/careers/
-Factorial
-URL: https://factorialhr.com/careers
-Holded
-URL: https://www.holded.com/es/careers
-Clarity AI
-URL: https://clarity.ai/careers/
-Coinscrap Finance
-URL: https://www.coinscrap.com/
-Clarity AI
-URL: https://clarity.ai/
-Carto
-URL: https://carto.com/careers/
-Verse (ex Verses)
-URL: https://verse.me/
-Spotahome
-URL: https://www.spotahome.com/
-Housfy
-URL: https://www.housfy.com/
-Geoblink
-URL: https://www.geoblink.com/
+### 💼 Plataformas Freelance
+- [Upwork](https://www.upwork.com/) - Marketplace freelance líder
+- [Freelancer](https://www.freelancer.com/) - Plataforma de proyectos
+- [Fiverr](https://www.fiverr.com/) - Servicios freelance
+- [Toptal](https://www.toptal.com/) - Freelancers top 3% (muy selectivo)
+- [Guru](https://www.guru.com/) - Plataforma profesional
+- [Workana](https://www.workana.com/) - Freelance latinoamericana
+- [PeoplePerHour](https://www.peopleperhour.com/) - Freelance UK
+- [Hubstaff Talent](https://talent.hubstaff.com/) - Talento remoto
+- [Virtual Vocations](https://www.virtualvocations.com/) - Empleos virtuales
+- [Gun.io](https://gun.io/) - Desarrolladores freelance elite
+- [Malt](https://www.malt.com/) - Plataforma europea freelance
 
-# BANCOS Y ENTIDADES FINANCIERAS CON EQUIPOS IT
-BBVA Technology
-URL: https://www.bbva.com/es/empleo/
-Santander Technology
-URL: https://www.santander.com/es/trabaja-con-nosotros
-CaixaBank Tech
-URL: https://www.caixabank.com/es/particular/empleo_es.html
-Banco Sabadell
-URL: https://www.grupbancsabadell.com/es/trabaja-con-nosotros/
-Bankinter
-URL: https://www.bankinter.com/trabaja-con-nosotros
-ING España
-URL: https://www.ing.es/sobre-ing/trabaja-con-nosotros
-Openbank
-URL: https://www.openbank.es/
+### 🚀 Tech Específico
+- [Hireline](https://hireline.io/) - Empleo tech LATAM
+- [Arc](https://arc.dev/) - Desarrolladores remotos
+- [Turing](https://www.turing.com/) - AI-powered matching
+- [Mission Dev](https://mission.dev/) - Developers
+- [The Bridge](https://thebridge.social/) - Tech community
+- [Foorilla](https://foorilla.com/hiring/) - Tech hiring
+- [Aquent](https://www.aquent.com/) - Creativos y tech
+- [Hirable](https://www.hirable.com/) - Tech jobs
+- [RemoteLeads](https://remoteleads.io/) - Tech remoto
+- [Coworker](https://www.coworker.com/) - Espacios coworking
+- [Remotely](https://www.remotely.com/) - Tech remoto
+- [RemoteTeam](https://remoteteam.com/) - Equipos remotos
+- [Full Stack Remote](https://fullstackremote.com/) - Desarrolladores
+- [Wipperoz](https://www.wipperoz.com/) - Tech jobs
+- [Remote Talent](https://remotetalent.com/) - Talento remoto
+- [Angel.co (Wellfound)](https://wellfound.com/) - Startups
 
-# OPERADORES TELCO Y PROVEEDORES CLOUD
-Telefónica
-URL: https://www.telefonica.com/es/empleo/
-Orange España
-URL: https://www.orange.es/empleo
-Vodafone España
-URL: https://www.vodafone.es/c/conocenos/es/vodafone-espana/empleo/
-MásMóvil
-URL: https://www.grupomasmovil.com/empleo/
-AWS (Amazon Web Services)
-URL: https://www.amazon.jobs/
-Microsoft España
-URL: https://careers.microsoft.com/
-Google España
-URL: https://careers.google.com/
-Red Hat
-URL: https://www.redhat.com/es/jobs
+### 📝 Recursos Adicionales
+- [Vacantes 2025 People Querida](https://iced-plot-27a.notion.site/Vacantes-2025-People-Querida-b4ded1124fb54e75b58680c243e65ef6) - Listado curado Notion
 
-# PLATAFORMAS Y MARKETPLACES GLOBALES
-GitLab
-URL: https://about.gitlab.com/jobs/
-Nota: 100% remoto, contrata en 60+ países como contractor
-Automattic (WordPress.com)
-URL: https://automattic.com/work-with-us/
-Nota: Equipo distribuido globalmente
-Zapier
-URL: https://zapier.com/jobs
-Nota: 100% remoto desde cualquier país
-Toptal
-URL: https://www.toptal.com/
-Nota: Plataforma para freelancers IT top tier
-Upwork
-URL: https://www.upwork.com/
-Nota: Marketplace freelance global
-Fiverr
-URL: https://www.fiverr.com/
-Nota: Plataforma de servicios freelance
-Workana
-URL: https://www.workana.com/
-Nota: Plataforma latinoamericana con clientes USA/Europa
-Freelancer.com
-URL: https://www.freelancer.com/
-Nota: Marketplace global de proyectos
-Guru
-URL: https://www.guru.com/
-Nota: Plataforma freelance para profesionales
-PeoplePerHour
-URL: https://www.peopleperhour.com/
-Nota: Plataforma UK con proyectos internacionales
-RemoteOK
-URL: https://remoteok.com/
-Nota: Job board para trabajos 100% remotos
-We Work Remotely
-URL: https://weworkremotely.com/
-Nota: Plataforma de empleos remotos
-Remote.co
-URL: https://remote.co/
-Nota: Especializada en trabajos remotos internacionales
-FlexJobs
-URL: https://www.flexjobs.com/
-Nota: Empleos remotos verificados
-Gun.io
-URL: https://gun.io/
-Nota: Para desarrolladores freelance
-Malt
-URL: https://www.malt.com/
-Nota: Plataforma europea de freelancers
+---
 
-# EMPRESAS TECH QUE CONTRATAN GLOBALMENTE COMO CONTRACTORS
-Elastic
-URL: https://www.elastic.co/careers
-Nota: Distribuida globalmente, contrata contractors
-InVision
-URL: https://www.invisionapp.com/careers
-Nota: Diseño/UX, equipo remoto global
-Buffer
-URL: https://buffer.com/journey
-Nota: 100% remoto, transparente con salarios
-Stripe
-URL: https://stripe.com/jobs
-Nota: Acepta contractors internacionales
-Shopify
-URL: https://www.shopify.com/careers
-Nota: "Digital by default", contrata globalmente
-Revolut
-URL: https://www.revolut.com/careers/
-Nota: FinTech, contrata en múltiples países
-TransferWise (Wise)
-URL: https://www.wise.com/jobs/
-Nota: Equipo distribuido globalmente
-Hotjar
-URL: https://www.hotjar.com/careers/
-Nota: 100% remoto desde cualquier lugar
-Basecamp
-URL: https://basecamp.com/about/jobs
-Nota: Pioneros en trabajo remoto
-DuckDuckGo
-URL: https://duckduckgo.com/hiring
-Nota: Totalmente distribuida
-Toggl
-URL: https://toggl.com/jobs/
-Nota: Equipo 100% remoto
-Doist (Todoist)
-URL: https://doist.com/jobs
-Nota: Equipo en 30+ países
-Ghost
-URL: https://ghost.org/about/
-Nota: Organización sin fines de lucro, 100% remoto
-Discourse
-URL: https://www.discourse.org/team
-Nota: Plataforma foros, equipo distribuido
+## 🎯 Consultoras IT y Headhunters (España)
 
-# EMPRESAS ISRAELÍES DE CIBERSEGURIDAD (CONTRATAN INTERNACIONALMENTE)
-Check Point Software
-URL: https://www.checkpoint.com/careers/
-Nota: Líder global en ciberseguridad
-CyberArk
-URL: https://www.cyberark.com/careers/
-Nota: Gestión de accesos privilegiados
-Imperva
-URL: https://www.imperva.com/company/careers/
-Nota: Seguridad de aplicaciones y datos
-Aqua Security
-URL: https://www.aquasec.com/about-us/careers/
-Nota: Seguridad cloud native
-Wiz
-URL: https://www.wiz.io/careers
-Nota: Cloud security unicornio
-Snyk
-URL: https://snyk.io/careers/
-Nota: Developer security
-Cato Networks
-URL: https://www.catonetworks.com/careers/
-Nota: SASE/SD-WAN
-BigID
-URL: https://bigid.com/careers/
-Nota: Privacidad y protección de datos
-SafeBreach
-URL: https://safebreach.com/company/careers/
-Nota: Breach and attack simulation
-PerimeterX (HUMAN Security)
-URL: https://www.humansecurity.com/careers
-Nota: Protección contra bots
-Claroty
-URL: https://www.claroty.com/company/careers
-Nota: Seguridad industrial (OT/IoT)
-Armis
-URL: https://www.armis.com/careers/
-Nota: Asset visibility y seguridad
-Illusive Networks
-URL: https://www.illusivenetworks.com/
-Nota: Deception technology
-Cycode
-URL: https://cycode.com/careers/
-Nota: Application security
-Vulcan Cyber
-URL: https://vulcan.io/careers/
-Nota: Vulnerability remediation
+### Especializadas en IT
+- [Selecta Digital](https://selectaselecciontalento.com/digital/) - contacto@selectadigital.com
+- [CSI Consultora Selección IT](https://consultoraseleccionit.com/) - info@consultoraseleccionit.com
+- [iTalenters](https://www.italenters.com/seleccion-it-madrid/) - Selección IT Madrid
+- [Tech Executive Search](https://www.techexecutivesearch.es/) - Executive tech
+- [Humansyde](https://humansyde.com/) - contact@humansyde.com
+- [Peter Möma](https://petermoma.com/) - Tech recruitment
+- [Talent-R](https://talent-r.com/) - Talento tech
+- [Hiring IT](https://hiringit.es/) - Especialistas IT
+- [Selección IT](https://seleccion-it.com/) - Perfiles tech
+- [LJselection](https://ljselection.com/seleccion-de-perfiles-it/) - IT profiles
+- [The Valley Talent](https://thevalleytalent.es/en/) - Digital talent
+- [Humann](https://humann.es/en/) - Tech recruitment
+- [Iwantic](https://iwantic.com/) - IT headhunting
+- [IT Talent Headhunting](https://www.ittalentheadhunting.com/es) - Especialistas IT
+- [The Board Headhunting](https://www.theboard.es/) - Executive search
+- [Aratech Lifestyle Technology](https://ara-tech.es/es/recruitment-it-headhunting-it/) - IT recruitment
+- [Sectorea](mailto:sectorea@jobs.workablemail.com) - Via email
+- [AdelantTa Recursos Humanos](mailto:contacto@adelantta.es) - Via email
+- [Prometeo Talent](https://www.prometeotalent.com/) - Tech talent
+- [Zero to One Search](https://www.zerotoonesearch.com/) - Executive search
+- [Fut-Ure](https://fut-ure.es/) - Future talent
+- [TalentFY](https://ytalentfy.com/) - Digital talent
+- [Cognitio Talent](https://cognitiotalent.com/) - Tech recruiting
+- [BTS Talent](https://btstalent.com/) - Business tech
 
-# EMPRESAS UCRANIANAS Y NEARSHORE (CONTRATAN ESPAÑOLES)
-Intellias
-URL: https://intellias.com/careers/
-Nota: Empresa ucraniana de software, contrata europeos
-SoftServe
-URL: https://www.softserveinc.com/en-us/career
-Nota: IT consulting ucraniana, oficinas en Europa
-EPAM Systems
-URL: https://www.epam.com/careers
-Nota: Origen bielorruso, contrata globalmente
-DataArt
-URL: https://www.dataart.com/careers
-Nota: Desarrollo software, equipos distribuidos
-Luxoft (DXC)
-URL: https://www.luxoft.com/careers/
-Nota: IT consulting, múltiples locaciones
-GlobalLogic
-URL: https://www.globallogic.com/careers/
-Nota: Digital engineering, contrata en Europa
-N-iX
-URL: https://www.n-ix.com/careers/
-Nota: Software development ucraniana
-Ciklum
-URL: https://www.ciklum.com/careers/
-Nota: Software engineering europea
+### ETTs y Consultoras con División IT
+- [Robert Walters España](https://www.robertwalters.es/contacto/espana/madrid.html) - contacto@robertwalters.com
+- [Michael Page Tecnología](https://www.michaelpage.es/seleccion-personal/tecnolog%C3%ADa) - Tech division
+- [Page Personnel](https://www.pagepersonnel.es/) - Staffing
+- [PageGroup España](https://www.pagegroup.es/) - Grupo completo
+- [Hays IT](https://www.hays.es/seleccion/it) - IT division
+- [Randstad Technologies](https://www.randstad.es/empresas/seleccion/perfiles-digitales-it/) - Digital IT
+- [Adecco Technology](https://www.adecco.es/) - Tech division
+- [Manpower Technology](https://www.manpower.es/) - IT staffing
+- [Spring Professional](https://www.springprofessional.es/) - Professional services
+- [Experis Selección IT](https://www.experis.es/es/soluciones-it/seleccion-it) - IT solutions
+- [Start People Selección IT](https://www.seleccionitstartpeople.com/consultora-seleccion-it/) - IT consulting
+- [Kelly Services España](https://www.kellyservices.es/) - Staffing global
+- [Expansion People](https://expansion-people.com/) - Talent solutions
+- [Etalentum](https://www.etalentum.com/es/oficinas/etalentum-madrid-oeste.html) - Madrid office
+- [Select-ing Selección de Ingenieros](https://www.select-ing.es/) - Engineering
+- [Acertto Talent Linkers](https://www.acertto.es/seleccion-it/) - IT selection
+- [LHH Tecnología](https://www.lhh.com/es/es/divisiones/tecnologia/) - Tech division
+- [Morgan Philips Tecnología & Digital](https://es.morganphilips.com/es/tecnologia-y-digital) - Tech & digital
 
-# EMPRESAS USA QUE CONTRATAN CONTRACTORS INTERNACIONALES
-Working Solutions
-URL: https://www.workingsolutions.com/
-Nota: Líder en contratación remota 2025
-Liveops
-URL: https://www.liveops.com/
-Nota: Customer service remoto
-CVS Health
-URL: https://jobs.cvshealth.com/
-Nota: Salud, múltiples posiciones remotas
-Thermo Fisher Scientific
-URL: https://jobs.thermofisher.com/
-Nota: Biotecnología, contrata en España
-UnitedHealth Group
-URL: https://careers.unitedhealthgroup.com/
-Nota: Salud, posiciones remotas
-Salesforce
-URL: https://www.salesforce.com/company/careers/
-Nota: CRM, contrata globalmente
-Amazon (AWS)
-URL: https://www.amazon.jobs/
-Nota: Muchas posiciones remotas
-Cisco
-URL: https://jobs.cisco.com/
-Nota: Networking, ciberseguridad remota
-Microsoft
-URL: https://careers.microsoft.com/
-Nota: Posiciones remotas globales
-Google
-URL: https://careers.google.com/
-Nota: Algunas posiciones contractor
-IBM
-URL: https://www.ibm.com/employment/
-Nota: Consulting y tech remoto
-Dell Technologies
-URL: https://jobs.dell.com/
-Nota: Posiciones remotas
-Veeva Systems
-URL: https://www.veeva.com/careers/
-Nota: Cloud computing para pharma
-Reddit
-URL: https://www.redditinc.com/careers
-Nota: Equipo distribuido
-Cloudflare
-URL: https://www.cloudflare.com/careers/
-Nota: CDN/Security, remoto
-DigitalOcean
-URL: https://www.digitalocean.com/careers
-Nota: Cloud infrastructure
-Twilio
-URL: https://www.twilio.com/company/jobs
-Nota: APIs comunicación
-Auth0 (Okta)
-URL: https://www.okta.com/company/careers/
-Nota: Identity management
-MongoDB
-URL: https://www.mongodb.com/careers
-Nota: Database company
-Atlassian
-URL: https://www.atlassian.com/company/careers
-Nota: Jira, Confluence, equipo distribuido
+### Headhunting Executive
+- [Boyden Spain](https://www.boyden.com/spain/) - Executive search
+- [Keller Executive Search](https://www.kellerexecutivesearch.com/recruitment/recruitment-agency-spain/) - Spain office
+- [Signium](https://www.signium.es/) - Executive partners
+- [Concentric](https://www.weareconcentric.com/) - Executive search
+- [Crearte Consulting](https://crearteconsulting.com/en/headhunting/) - Headhunting
+- [Amrop Seeliger y Conde](https://www.amrop.es/) - Executive search
+- [Alexander Hughes](https://www.alexanderhughes.com/es/) - Global partners
+- [Russell Reynolds Associates](https://www.russellreynolds.com/) - Leadership advisors
+- [Odgers Berndtson](https://www.odgersberndtson.com/es-es/) - Executive search
+- [Spencer Stuart](https://www.spencerstuart.com/) - Leadership consulting
+- [Egon Zehnder](https://www.egonzehnder.com/es) - Executive search
+- [Heidrick & Struggles](https://www.heidrick.com/) - Leadership advisors
 
-# AGENCIAS Y CONSULTORAS QUE CONTRATAN CONTRACTORS
-10Clouds
-URL: https://10clouds.com/careers
-Nota: Agencia de desarrollo, distribuida
-X-Team
-URL: https://x-team.com/
-Nota: Developers para startups internacionales
-Andela
-URL: https://andela.com/
-Nota: Conecta developers con empresas globales
-Turing
-URL: https://www.turing.com/
-Nota: AI-powered talent matching
-Crossover
-URL: https://www.crossover.com/
-Nota: High-paying remote jobs
-Terminal
-URL: https://www.terminal.io/
-Nota: Remote teams infrastructure
-Ontop
-URL: https://www.getontop.com/
-Nota: Global payroll, contractors
-Deel
-URL: https://www.deel.com/
-Nota: Contractor management platform
-Remote.com
-URL: https://remote.com/
-Nota: Employment platform global
-Lemon.io
-URL: https://lemon.io/
-Nota: Vetted developers marketplace
-Gun.io
-URL: https://gun.io/
-Nota: Elite freelance developers
-Scalable Path
-URL: https://www.scalablepath.com/
-Nota: Remote software teams
+### Consultoras Internacionales
+- [DevsData](https://devsdata.com/) - IT recruitment
+- [NBS IT Recruitment](https://www.itrecruitmentnbs.com/) - IT specialists
+- [Approach People](https://www.approachpeople.com/spain) - Spain office
+- [Allen Recruitment Spain](https://www.allenrec.com/spain/) - Multilingual
+- [Talent Search People](https://talentsearchpeople.com/) - International
+- [E-Frontiers Spain](https://e-frontiers.ie/in-spain/) - Spain presence
+- [Gini Talent](https://ginitalent.com/staffing-agencies-in-spain/) - Staffing Spain
+- [Matchtech España](https://www.matchtech.com/es/) - STEM recruitment
+- [Adeas HR](https://www.adeas-hr.com/) - HR solutions
+- [Blu Selection](https://www.bluselection.com/) - Multilingual jobs
+- [Catenon](https://www.catenon.com/) - Global recruitment
+- [Talentful](https://www.talentful.com/) - Tech recruitment
+- [CPL Resources Spain](https://www.cpl.com/es/) - Spain office
+- [Aspire People](https://www.aspirepeople.com/) - Recruitment
+- [Mercer Talent Solutions](https://www.mercer.com/) - Talent consulting
+- [Cegid HR Solutions](https://www.cegid.com/es/) - HR tech
 
-# EMPRESAS LATINOAMERICANAS QUE CONTRATAN EUROPEOS
-Mercado Libre
-URL: https://mercadolibre.com/trabajo
-Nota: E-commerce latinoamericano
-Globant
-URL: https://www.globant.com/careers
-Nota: Software argentino, oficinas globales
-Auth0 (ya mencionada)
-Nota: Origen argentino, ahora Okta
-Vercel
-URL: https://vercel.com/careers
-Nota: Origen argentino, equipo global
-Despegar
-URL: https://www.despegar.com/
-Nota: Travel tech latinoamericana
+---
 
-# PLATAFORMAS ESPECIALIZADAS EN CIBERSEGURIDAD
-HackerOne
-URL: https://www.hackerone.com/
-Nota: Bug bounty platform
-Bugcrowd
-URL: https://www.bugcrowd.com/
-Nota: Crowdsourced security
-Synack
-URL: https://www.synack.com/
-Nota: Pentesting as a service
-YesWeHack
-URL: https://www.yeswehack.com/
-Nota: Bug bounty europea
+## 🏢 Consultoras Multinacionales IT
 
-**CONSEJOS IMPORTANTES:**
-Modelo de contratación: La mayoría te contratarán como:
-- Freelance/Autónomo
-- Contractor independiente
-- A través de plataformas EOR (Deel, Remote, Ontop)
+### Big Four & Consulting
+- [Accenture Technology](https://www.accenture.com/es-es/careers) - Tech consulting + Innotec Security
+- [Deloitte Digital & Technology](https://www2.deloitte.com/es/es/pages/careers/topics/technology-careers.html) - Digital tech
+- [EY Technology](https://www.ey.com/es_es/careers) - Tech division
+- [KPMG Technology](https://home.kpmg/es/es/home/careers.html) - Tech advisory
+- [PwC Technology Consulting](https://www.pwc.es/es/empleo.html) - Tech consulting
 
-**Pagos: Usa:**
-- Wise (TransferWise)
-- Payoneer
-- PayPal
-- Payflow
-- Crypto (USDT, etc.)
+### Multinacionales IT
+- [Capgemini](https://www.capgemini.com/es-es/careers/) - IT services
+- [IBM España](https://www.ibm.com/es-es/employment/) - Tech giant
+- [Cognizant España](https://www.cognizant.com/es/es/careers) - IT services
+- [Eviden (Atos)](https://eviden.com/careers/) - Digital transformation
+- [NTT DATA](https://es.nttdata.com/careers) - IT services
+- [Everis (NTT DATA)](https://careers.nttdata.com/) - Consulting
+- [Minsait (Indra)](https://www.minsait.com/es/empleo) - Digital transformation
+- [Indra Sistemas](https://www.indracompany.com/es/trabaja-con-nosotros) - Tech systems
+- [GFT Technologies](https://www.gft.com/es/es/careers) - IT solutions
+- [Sopra Steria](https://www.soprasteria.es/empleo) - Digital consulting
+- [T-Systems](https://www.t-systems.com/es/es/careers) - ICT services
+- [DXC Technology](https://dxc.com/es/es/careers) - IT services
+- [CGI España](https://www.cgi.com/es/es-es/empleo) - IT consulting
+- [Altran (Capgemini Engineering)](https://www.capgemini.com/es-es/empleo/) - Engineering
+- [Alten España](https://www.alten.es/empleo/) - Engineering consulting
+- [Babel](https://www.babel.es/trabaja-con-nosotros/) - IT services
+- [Devoteam](https://es.devoteam.com/careers/) - Cloud & cybersecurity
+- [Entelgy (Innotec Security)](https://www.entelgy.com/empleo) - IT solutions
+- [Hiberus](https://www.hiberus.com/empleo/) - Digital transformation
+- [Stratesys](https://stratesys.es/trabaja-con-nosotros/) - IT consulting
+- [Abast](https://www.abast.es/) - IT services
+- [Viewnext](https://www.viewnext.com/) - IBM Group, tech services
+- [Fujitsu](https://www.fujitsu.com/es/careers/) - Tech services
+- [Ayesa](https://www.ayesa.com/empleo/) - Tech & engineering
 
-**Requisitos comunes:**
-- Portfolio/GitHub activo
-- Inglés fluido (escrito principalmente)
-- Disponibilidad horaria compatible
-- Capacidad de facturar legalmente
+---
 
-**NO necesitas:**
-- Visa o permiso de trabajo
-- Nacionalidad específica
-- Residencia en el país de la empresa
+## 🔐 Empresas de Ciberseguridad
+
+### 🇪🇸 Ciberseguridad España
+- [S2 Grupo](https://www.s2grupo.es/trabaja-con-nosotros) - Ciberseguridad española
+- [Secure&IT](https://www.secureit.es/) - Seguridad IT, cumplimiento normativo
+- [Tarlogic Security](https://www.tarlogic.com/) - Pentesting
+- [Telefónica Tech Cyber Security & Cloud](https://telefonicatech.com/es/ciberseguridad) - Telco security
+- [AlienVault (AT&T Cybersecurity)](https://cybersecurity.att.com/) - Threat intelligence
+- [IriusRisk](https://www.iriusrisk.com/) - Threat modeling
+- [Electronic IDentification](https://www.electronicid.eu/) - Digital identity
+- [Panda Security](https://www.pandasecurity.com/es/empresa/empleo/) - Antivirus
+- [Linka (Grupo Linka)](https://www.grupolinka.com/) - Ciberseguridad, SOC 24/7
+- [SG6](https://www.sg6.es/) - Seguridad digital
+- [On Retrieval](https://onretrieval.com/) - Data recovery
+- [Trend Micro España](https://www.trendmicro.com/es_es/) - Antivirus
+- [Ciberso](https://ciberso.com/) - Ciberseguridad
+- [Grupo EULEN Seguridad](https://www.eulen.com/) - Seguridad integral
+- [S21sec (Thales)](https://www.s21sec.com/) - Ciberseguridad
+- [Kaspersky España](https://www.kaspersky.es/) - Antivirus
+- [Cisco España](https://www.cisco.com/c/es_es/index.html) - Networking security
+- [Fortinet España](https://www.fortinet.com/es) - Firewalls
+- [Palo Alto Networks](https://www.paloaltonetworks.com/) - Cybersecurity
+- [Wise Security Global](https://wisesecurity.com/) - Ciber resiliencia
+- [Apolo Cybersecurity](https://apolocybersecurity.com/) - Soluciones integrales
+- [Intelequia](https://www.intelequia.com/) - Ciberseguridad, Data e IA
+- [SecurityHQ](https://www.securityhq.com/) - MSSP global
+
+### 🇮🇱 Ciberseguridad Israel
+> **Nota:** Contratan internacionalmente, líderes mundiales
+- [Check Point Software](https://www.checkpoint.com/careers/) - Líder global seguridad
+- [CyberArk](https://www.cyberark.com/careers/) - PAM (Privileged Access Management)
+- [Imperva](https://www.imperva.com/company/careers/) - App & data security
+- [Aqua Security](https://www.aquasec.com/about-us/careers/) - Cloud native security
+- [Wiz](https://www.wiz.io/careers) - Cloud security unicornio
+- [Snyk](https://snyk.io/careers/) - Developer security
+- [Cato Networks](https://www.catonetworks.com/careers/) - SASE/SD-WAN
+- [BigID](https://bigid.com/careers/) - Data privacy
+- [SafeBreach](https://safebreach.com/company/careers/) - Breach and attack simulation
+- [PerimeterX (HUMAN Security)](https://www.humansecurity.com/careers) - Bot protection
+- [Claroty](https://www.claroty.com/company/careers) - OT/IoT security
+- [Armis](https://www.armis.com/careers/) - Asset visibility
+- [Illusive Networks](https://www.illusivenetworks.com/) - Deception tech
+- [Cycode](https://cycode.com/careers/) - Application security
+- [Vulcan Cyber](https://vulcan.io/careers/) - Vulnerability remediation
+
+### 🎯 Plataformas Bug Bounty & Pentesting
+- [HackerOne](https://www.hackerone.com/) - Bug bounty platform líder
+- [Bugcrowd](https://www.bugcrowd.com/) - Crowdsourced security
+- [Synack](https://www.synack.com/) - Pentesting as a service
+- [YesWeHack](https://www.yeswehack.com/) - Bug bounty europea
+
+---
+
+## 🚀 Startups y Scale-ups (España)
+
+- [Glovo](https://glovoapp.com/es/es/careers) - Delivery platform
+- [Cabify](https://cabify.com/es/careers) - Ride-hailing
+- [Jobandtalent](https://www.jobandtalent.com/es/careers) - HR tech
+- [Wallapop](https://about.wallapop.com/careers/) - Marketplace C2C
+- [Typeform](https://www.typeform.com/careers/) - Forms & surveys
+- [Travelperk](https://www.travelperk.com/careers/) - Travel management
+- [Factorial](https://factorialhr.com/careers) - HR software
+- [Holded](https://www.holded.com/es/careers) - Business management
+- [Clarity AI](https://clarity.ai/careers/) - Sustainability tech
+- [Coinscrap Finance](https://www.coinscrap.com/) - Fintech
+- [Carto](https://carto.com/careers/) - Location intelligence
+- [Verse](https://verse.me/) - Payments
+- [Spotahome](https://www.spotahome.com/) - Rental platform
+- [Housfy](https://www.housfy.com/) - Real estate
+- [Geoblink](https://www.geoblink.com/) - Location intelligence
+
+---
+
+## 🏦 Bancos y Fintech
+
+### Bancos con Tech Teams
+- [BBVA Technology](https://www.bbva.com/es/empleo/) - Banking tech
+- [Santander Technology](https://www.santander.com/es/trabaja-con-nosotros) - Digital banking
+- [CaixaBank Tech](https://www.caixabank.com/es/particular/empleo_es.html) - Banking IT
+- [Banco Sabadell](https://www.grupbancsabadell.com/es/trabaja-con-nosotros/) - Tech division
+- [Bankinter](https://www.bankinter.com/trabaja-con-nosotros) - Digital bank
+- [ING España](https://www.ing.es/sobre-ing/trabaja-con-nosotros) - Digital banking
+- [Openbank](https://www.openbank.es/) - Online banking
+
+---
+
+## 📡 Telco y Cloud Providers
+
+### Operadores Telco
+- [Telefónica](https://www.telefonica.com/es/empleo/) - Telco giant
+- [Orange España](https://www.orange.es/empleo) - Telecom
+- [Vodafone España](https://www.vodafone.es/c/conocenos/es/vodafone-espana/empleo/) - Mobile operator
+- [MásMóvil](https://www.grupomasmovil.com/empleo/) - Telecom group
+
+### Cloud Providers
+- [AWS (Amazon Web Services)](https://www.amazon.jobs/) - Cloud leader
+- [Microsoft España](https://careers.microsoft.com/) - Azure & more
+- [Google España](https://careers.google.com/) - Cloud & tech
+- [Red Hat](https://www.redhat.com/es/jobs) - Open source
+
+---
+
+## 🌍 Empresas Tech Globales (Contractors)
+
+### 💼 Remote-First Companies
+- [GitLab](https://about.gitlab.com/jobs/) - 100% remoto, 60+ países
+- [Automattic (WordPress.com)](https://automattic.com/work-with-us/) - Distribuido global
+- [Zapier](https://zapier.com/jobs) - 100% remoto
+- [Buffer](https://buffer.com/journey) - Remoto transparente
+- [Basecamp](https://basecamp.com/about/jobs) - Pioneros remoto
+- [DuckDuckGo](https://duckduckgo.com/hiring) - Totalmente distribuida
+- [Toggl](https://toggl.com/jobs/) - 100% remoto
+- [Doist (Todoist)](https://doist.com/jobs) - 30+ países
+- [Ghost](https://ghost.org/about/) - Non-profit remoto
+- [Discourse](https://www.discourse.org/team) - Equipo distribuido
+
+### 🏢 Tech Giants (Contractors)
+- [Elastic](https://www.elastic.co/careers) - Distribuida global
+- [InVision](https://www.invisionapp.com/careers) - Design/UX remoto
+- [Stripe](https://stripe.com/jobs) - Contractors internacionales
+- [Shopify](https://www.shopify.com/careers) - Digital by default
+- [Revolut](https://www.revolut.com/careers/) - FinTech global
+- [TransferWise (Wise)](https://www.wise.com/jobs/) - Distribuido global
+- [Hotjar](https://www.hotjar.com/careers/) - 100% remoto
+- [Cloudflare](https://www.cloudflare.com/careers/) - CDN/Security
+- [DigitalOcean](https://www.digitalocean.com/careers) - Cloud infrastructure
+- [Twilio](https://www.twilio.com/company/jobs) - APIs comunicación
+- [Auth0 (Okta)](https://www.okta.com/company/careers/) - Identity management
+- [MongoDB](https://www.mongodb.com/careers) - Database company
+- [Atlassian](https://www.atlassian.com/company/careers) - Jira, Confluence
+
+### 🇺🇸 US Companies (Remote)
+- [Working Solutions](https://www.workingsolutions.com/) - Líder remoto 2025
+- [Liveops](https://www.liveops.com/) - Customer service
+- [CVS Health](https://jobs.cvshealth.com/) - Healthcare
+- [Thermo Fisher Scientific](https://jobs.thermofisher.com/) - Biotech
+- [UnitedHealth Group](https://careers.unitedhealthgroup.com/) - Healthcare
+- [Salesforce](https://www.salesforce.com/company/careers/) - CRM
+- [Amazon (AWS)](https://www.amazon.jobs/) - E-commerce & cloud
+- [Cisco](https://jobs.cisco.com/) - Networking
+- [Microsoft](https://careers.microsoft.com/) - Tech giant
+- [Google](https://careers.google.com/) - Search & cloud
+- [IBM](https://www.ibm.com/employment/) - Consulting
+- [Dell Technologies](https://jobs.dell.com/) - Hardware & services
+- [Veeva Systems](https://www.veeva.com/careers/) - Cloud for pharma
+- [Reddit](https://www.redditinc.com/careers) - Social media
+- [American Express](https://careers.americanexpress.com/) - Fintech
+
+---
+
+## 🌎 Empresas Nearshore/Offshore
+
+### 🇺🇦 Europa del Este
+- [Intellias](https://intellias.com/careers/) - Ucraniana, contrata EU
+- [SoftServe](https://www.softserveinc.com/en-us/career) - IT consulting ucraniana
+- [EPAM Systems](https://www.epam.com/careers) - Origen bielorruso
+- [DataArt](https://www.dataart.com/careers) - Equipos distribuidos
+- [Luxoft (DXC)](https://www.luxoft.com/careers/) - IT consulting
+- [GlobalLogic](https://www.globallogic.com/careers/) - Digital engineering
+- [N-iX](https://www.n-ix.com/careers/) - Software ucraniana
+- [Ciklum](https://www.ciklum.com/careers/) - Software europea
+
+### 🌎 Latinoamérica
+- [Mercado Libre](https://mercadolibre.com/trabajo) - E-commerce LATAM
+- [Globant](https://www.globant.com/careers) - Software argentina
+- [Vercel](https://vercel.com/careers) - Origen argentino
+- [Despegar](https://www.despegar.com/) - Travel tech
+
+---
+
+## 🤝 Agencias y Plataformas de Contractors
+
+### 🎯 Talent Platforms
+- [10Clouds](https://10clouds.com/careers) - Agencia distribuida
+- [X-Team](https://x-team.com/) - Developers para startups
+- [Andela](https://andela.com/) - Conecta developers globalmente
+- [Turing](https://www.turing.com/) - AI matching
+- [Crossover](https://www.crossover.com/) - High-paying remote
+- [Terminal](https://www.terminal.io/) - Remote teams
+- [Lemon.io](https://lemon.io/) - Vetted developers
+- [Scalable Path](https://www.scalablepath.com/) - Remote software teams
+
+### 💰 EOR & Payroll Platforms
+- [Ontop](https://www.getontop.com/) - Global payroll contractors
+- [Deel](https://www.deel.com/) - Contractor management líder
+- [Remote.com](https://remote.com/) - Employment platform global
+
+---
+
+## 🎓 Mentorías y Networking
+
+### 👥 Programas de Mentoría
+- [Step4Ward](https://step4ward.es/) - Mentoría profesional
+- [Women4CyberSpain](https://www.women4cyberspain.es/mentoring)
+- [MujeresIT Mentorías](https://mujeresit.com/mentorias/)
+- [Mujeres CONS](https://www.mujerescons.es/)
+- [Give and Tech](https://giveandtech.org.il/)
+- [IT Women](https://it-women.com/)
+- [Linux Foundation Mentorship](https://mentorship.lfx.linuxfoundation.org/)
+- [Nación Hacker](https://nacionhacker.org/cybersecurity_mentorship/)
+- [PushFar](https://www.pushfar.com/)
+- [Founderz](https://founderz.com/aiskills4women/)
+________________________________________
+💼 Experiencia Práctica
+Proyectos y Práctica
+- [iGrowker](https://igrowker.com/) | [Discord](https://discord.gg/zmvKVXsKVC)
+- [NoCountry](https://www.nocountry.tech/)
+- [IdForIdeas](https://idforideas.com/) | [Discord](https://discord.gg/h6BT8QwC6W)
+________________________________________
+🎖️ Training Avanzado
+Programas Especializados
+- [DaVinci Army](https://davinci.army/)
+- [Ukrainian Army](https://joinuarmy.org/es/)
+________________________________________
+💡 Consejos para Contractors
+Modelos de Contratación
+•	Freelance/Autónomo - Trabajo independiente
+•	Contractor independiente - Contrato directo
+•	EOR (Employer of Record) - Vía Deel, Remote, Ontop
+Plataformas de Pago
+•	Wise (TransferWise) - Transferencias internacionales
+•	Payoneer - Pagos globales
+•	PayPal - Pagos online
+•	Payflow - Gestión de cobros
+•	Crypto - USDT, etc.
+Requisitos Comunes
+✅ Portfolio/GitHub activo
+✅ Inglés fluido (principalmente escrito)
+✅ Disponibilidad horaria compatible
+✅ Capacidad de facturar legalmente
+NO Necesitas
+❌ Visa o permiso de trabajo
+❌ Nacionalidad específica
+❌ Residencia en el país de la empresa
+________________________________________
+📌 Última actualización: Noviembre 2025
+🌍 Enfoque: España + Global Remote + Contractors
