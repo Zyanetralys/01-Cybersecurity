@@ -425,7 +425,7 @@ Modelos de Contratación
 - Freelance/Autónomo - Trabajo independiente
 - Contractor independiente - Contrato directo
 - EOR (Employer of Record) - Vía Deel, Remote, Ontop
-- 
+
 Plataformas de Pago
 - Wise (TransferWise) - Transferencias internacionales
 - Payoneer - Pagos globales
