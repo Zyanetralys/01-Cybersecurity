@@ -419,26 +419,31 @@ Programas Especializados
 - [DaVinci Army](https://davinci.army/)
 - [Ukrainian Army](https://joinuarmy.org/es/)
 ________________________________________
+
 💡 Consejos para Contractors
 Modelos de Contratación
-•	Freelance/Autónomo - Trabajo independiente
-•	Contractor independiente - Contrato directo
-•	EOR (Employer of Record) - Vía Deel, Remote, Ontop
+- •	Freelance/Autónomo - Trabajo independiente
+- •	Contractor independiente - Contrato directo
+- •	EOR (Employer of Record) - Vía Deel, Remote, Ontop
+- 
 Plataformas de Pago
-•	Wise (TransferWise) - Transferencias internacionales
-•	Payoneer - Pagos globales
-•	PayPal - Pagos online
-•	Payflow - Gestión de cobros
-•	Crypto - USDT, etc.
+- •	Wise (TransferWise) - Transferencias internacionales
+- •	Payoneer - Pagos globales
+- •	PayPal - Pagos online
+- •	Payflow - Gestión de cobros
+- •	Crypto - USDT, etc.
+
 Requisitos Comunes
-✅ Portfolio/GitHub activo
-✅ Inglés fluido (principalmente escrito)
-✅ Disponibilidad horaria compatible
-✅ Capacidad de facturar legalmente
+- ✅ Portfolio/GitHub activo
+- ✅ Inglés fluido (principalmente escrito)
+- ✅ Disponibilidad horaria compatible
+- ✅ Capacidad de facturar legalmente
+- 
 NO Necesitas
-❌ Visa o permiso de trabajo
-❌ Nacionalidad específica
-❌ Residencia en el país de la empresa
+- ❌ Visa o permiso de trabajo
+- ❌ Nacionalidad específica
+- ❌ Residencia en el país de la empresa
+  
 ________________________________________
 📌 Última actualización: Noviembre 2025
 🌍 Enfoque: España + Global Remote + Contractors
