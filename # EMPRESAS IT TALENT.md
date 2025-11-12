@@ -1,4 +1,4 @@
-# 📋 Directorio Completo de Empleo Tech y Ciberseguridad 2025
+# 📋 Directorio de Empleo Tech y Ciberseguridad 2025
 
 ## 📊 Plataformas de Empleo
 
