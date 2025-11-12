@@ -392,6 +392,12 @@
 - [Deel](https://www.deel.com/) - Contractor management líder
 - [Remote.com](https://remote.com/) - Employment platform global
 
+### Emails
+- seleccion@cosgs.com
+- talento@plexus.es
+- sectorea@jobs.workablemail.com
+________________________________________
+
 ---
 
 ## 🎓 Mentorías y Networking
