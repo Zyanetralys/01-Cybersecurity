@@ -52,6 +52,7 @@
 - [Pwn Till Dawn](https://online.pwntilldawn.com/)
 - [Co-Hackers](https://cohackers.co/)
 - [Parrot-CTFs](https://parrot-ctfs.com/)
+- [FDIR Training](https://www.dfir.training/downloads/test-images?category[0]=11&category_children=1)
 
 ### CTF y Competiciones
 
