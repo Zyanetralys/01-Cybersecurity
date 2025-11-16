@@ -81,6 +81,211 @@
 - [Remote Talent](https://remotetalent.com/) - Talento remoto
 - [Angel.co (Wellfound)](https://wellfound.com/) - Startups
 
+### 🚀 Ciberseguridad España
+# Empleo / Talento — enlaces (lista completa)
+
+- **A3SEC GRUPO, S.L.**  
+  https://a3sec.com/trabaja-con-nosotros
+
+- **ACCENTURE**  
+  https://www.accenture.com/es-es/careers
+
+- **Advens Cybersecurity, S.L. (ADVENS)**  
+  https://www.advens.com/en/careers/
+
+- **AKUDA**  
+  https://www.linkedin.com/company/akuda
+
+- **ALL4SEC, S.L.**  
+  https://all4sec.es/contacto.html
+
+- **ASECI (Asociación ASECI)**  
+  https://asociacionaseci.es
+
+- **BeOneSec Cybersecurity Solutions S.L.**  
+  https://www.beonesec.com/en/talent/
+
+- **BIOCATCH**  
+  https://www.biocatch.com/cybersecurity-careers
+
+- **CIPHER (PROSEGUR CIBERSEGURIDAD), S.L.**  
+  https://www.cipher.com/about-us/work-with-us  
+  https://www.prosegur.com/trabaja-con-nosotros
+
+- **CYBER GUARDIAN SOLUTIONS, S.L.**  
+  https://www.cyberguardian.tech
+
+- **CYBER GURU, S.R.L.**  
+  https://www.cyberguru.it/en/work-with-us/  
+  (perfil LinkedIn: https://www.linkedin.com/company/cyberguru)
+
+- **CyberWatch**  
+  https://cyberwatch.fr/es/ofertas-de-trabajo/
+
+- **DLTCode, S.L.**  
+  https://dltcode.es (página de contacto / empresa)
+
+- **El Corte Inglés**  
+  https://empleo.elcorteingles.es
+
+- **FrauDfense**  
+  https://www.linkedin.com/company/fraudfense OR https://www.linkedin.com (buscar "FrauDfense")
+
+- **FUNDACIÓN PARA EL DESARROLLO Y LA INNOVACIÓN TECNOLÓGICA (FUNDITEC / FDI)**  
+  https://funditec.es
+
+- **Fundacion Tecnalia Research & Innovation**  
+  https://www.tecnalia.com/en/people-and-jobs/  
+  https://www.tecnalia.com/ofertas-de-empleo/
+
+- **Genelva Echavarri**  
+  (persona — perfil profesional / LinkedIn: buscar "Genelva Echavarri" en LinkedIn)
+
+- **GMV Soluciones Globales Internet S.A.U.**  
+  https://www.gmv.com/en-es/talent/  
+  https://www.gmv.com/es-es/talento/trabaja-con-nosotros
+
+- **Grupo Cybentia**  
+  https://www.linkedin.com/company/cybentia (perfil corporativo / ofertas en LinkedIn)
+
+- **Grupo Microsyscom S.L**  
+  https://www.microsyscom.com (web corporativa — sección contacto)
+
+- **Grupo SIA**  
+  https://www.gruposia.com (web corporativa — sección empleo/contacto)  
+  (perfil LinkedIn: https://www.linkedin.com/company/gruposia)
+
+- **Hackrocks (GTAK CYBER S.L.)**  
+  https://hackrocks.io (o perfil LinkedIn de Hackrocks / GTAK Cyber)
+
+- **HISPASEC SISTEMAS, S.L.**  
+  https://empleo.hispasec.com/  
+  https://hispasec.com/es/empresa/rsc-talento
+
+- **IFEMA MADRID**  
+  https://www.ifema.es/es/empleo
+
+- **IMMUNE CODING INSTITUTE, S.L.**  
+  https://www.linkedin.com/company/immune-coding-institute (perfil / contacto)
+
+- **INNOTEC SYSTEM S.L.U.**  
+  https://innotec.es (web corporativa — sección contacto)
+
+- **ISACA Madrid**  
+  https://engage.isaca.org/madridchapter (capítulo local — eventos y contactos)
+
+- **ISERN PATENTES Y MARCAS, S. L.**  
+  https://isernpatentesymas.com (web corporativa — contacto)
+
+- **ISMS FORUM**  
+  https://ismsforum.es (web del foro — contacto y actividades)
+
+- **JAYMON SECURITY, S.L.**  
+  https://www.linkedin.com/company/jaymon-security (perfil / contacto)
+
+- **Keytron s.a.**  
+  https://www.keytron.com (web corporativa — contacto / careers si aplica)
+
+- **LEET SECURITY**  
+  https://leetsecurity.com (web corporativa / contacto)  
+  (perfil LinkedIn: https://www.linkedin.com/company/leet-security)
+
+- **MAPFRE S.A**  
+  https://www.mapfre.com/corporativo/es/trabaja-con-nosotros
+
+- **Minery Report S.L.**  
+  https://www.linkedin.com/company/minery-report (perfil / contacto)
+
+- **MNEMO EVOLUTION & INTEGRATION SERVICES, S.A. (MNEMO)**  
+  https://www.mnemo.fr/en/recruitment/ OR https://www.mnemo.com (sección empleo / careers)
+
+- **mrHouston Tech Solutions SL**  
+  https://www.mrhouston.tech (web corporativa / contacto)  
+  (perfil LinkedIn: https://www.linkedin.com/company/mrhouston)
+
+- **Naturgy Energy Group**  
+  https://www.naturgy.com/es/trabaja-con-nosotros
+
+- **NEORIS ESPAÑA, S.L.U.**  
+  https://www.neoris.com/es/carrera-profesional (o https://www.neoris.com/careers)
+
+- **NexTReT,S.L**  
+  https://www.nextret.com (web corporativa — sección talento/empleo)
+
+- **NTT DATA Spain**  
+  https://es.nttdata.com/es/es/careers
+
+- **Nymiz Software Company SL**  
+  https://www.nymiz.com (web corporativa / contacto)  
+  (perfil LinkedIn: https://www.linkedin.com/company/nymiz)
+
+- **Okta Identity Spain, SL**  
+  https://www.okta.com/company/careers/
+
+- **PRIM"X TECHNOLOGIES EP EN ESPANA**  
+  https://www.primxtech.com (web corporativa — sección contacto / careers)  
+  (buscar variante local si existe)
+
+- **PwC España**  
+  https://www.pwc.es/es/trabaja-con-nosotros.html
+
+- **RCC Advisory**  
+  https://www.linkedin.com/company/rcc-advisory (perfil / contacto)  
+  (si es RCC Advisory Spain, buscar web local)
+
+- **RENIC (Red Nacional de Inteligencia Competitiva)**  
+  https://www.renic.es (foro / contacto / actividades)
+
+- **S21Sec Gestión S.A.**  
+  https://www.s21sec.com (sección careers / LinkedIn: https://www.linkedin.com/company/s21sec/)
+
+- **SECUREIT - SECURE AND IT PROYECTOS S.L.**  
+  https://www.secureit.es (web corporativa / contacto)
+
+- **Shaadow.io**  
+  https://shaadow.io (web corporativa / contacto)  
+  (perfil LinkedIn: https://www.linkedin.com/company/shaadow)
+
+- **Singular Bank, S.A.U**  
+  https://www.singularbank.com/es/empresa/trabaja-con-nosotros
+
+- **SOFISTIC CYBERSECURITY**  
+  https://sofistic.es (web corporativa / contacto)  
+  (perfil LinkedIn: https://www.linkedin.com/company/sofistic-cybersecurity)
+
+- **TRANSUNION - CONFIRMA SISTEMAS DE LA INFORMACION S.L.**  
+  https://www.transunion.com (TransUnion global — careers)  
+  https://www.confirma.es (Confirma Sistemas — web / contacto)
+
+- **Trend Micro**  
+  https://www.trendmicro.com/en_us/about/careers.html
+
+- **Universidad Antonio de Nebrija**  
+  https://www.nebrija.com/empleo-universidad (bolsa de empleo / contacto universitario)
+
+- **UNIWAY Technologies, S.L.**  
+  https://www.uniwaytech.com (web corporativa / contacto)  
+  (perfil LinkedIn: https://www.linkedin.com/company/uniway-technologies)
+
+- **VADCefiros, S.L.**  
+  https://www.linkedin.com/company/vadcefiros (perfil / contacto)
+
+- **VENDICT TPRM, S.L.**  
+  https://www.linkedin.com/company/vendict (perfil / contacto)
+
+- **Vertical Sistemas de Información S.L.**  
+  https://www.vertical-sistemas.com (web corporativa — sección empleo/contacto)
+
+- **ZENTRICX Business Transformation S.L.**  
+  https://www.zentricx.com (web corporativa / contacto)  
+  (perfil LinkedIn: https://www.linkedin.com/company/zentricx)
+
+- **ZEROLYNX, S.L.**  
+  https://www.zerolynx.com (web corporativa / contacto)  
+  (perfil LinkedIn: https://www.linkedin.com/company/zerolynx)
+  
+A3SEC GRUPO, S.L. ACCENTURE Advens Cybersecurity, S.L. AKUDA ALL4SEC, S.L. ASECI Asociacion de empresas de consultoria e ingenieria independientes de infraestructuras, arquitectura, instalaciones, medio ambiente y nuevas tecnologias BeOneSec Cybersecurity Solutions S.L. BIOCATCH CIPHER (PROSEGUR CIBERSEGURIDAD), S.L CYBER GUARDIAN SOLUTIONS, S.L CYBER GURU, S.R.L CyberWatch DLTCode, S.L. El Corte Inglés FrauDfense FUNDACIÓN PARA EL DESARROLLO Y LA INNOVACIÓN TECNOLÓGICA Fundacion Tecnalia Research & Innovation Genelva Echavarri GMV Soluciones Globales Internet S.A.U. Grupo Cybentia Grupo Microsyscom S.L Grupo SIA Hackrocks (GTAK CYBER S.L.) HISPASEC SISTEMAS, S.L. IFEMA MADRID IMMUNE CODING INSTITUTE,S.L INNOTEC SYSTEM S.L.U. ISACA Madrid ISERN PATENTES Y MARCAS, S. L. ISMS FORUM JAYMON SECURITY, S.L. Keytron s.a. LEET SECURITY MAPFRE S.A Minery Report S.L. MNEMO EVOLUTION & INTEGRATION SERVICES, S.A. mrHouston Tech Solutions SL Naturgy Energy Group NEORIS ESPAÑA, S.L.U. NexTReT,S.L NTT DATA Spain Nymiz Software Company SL Okta Identity Spain, SL PRIM"X TECHNOLOGIES EP EN ESPANA PwC España RCC Advisory RENIC S21Sec Gestion S.A. SECUREIT -SECURE AND IT PROYECTOS S.L.- Shaadow.io Singular Bank, S.A.U SOFISTIC CYBERSECURITY TRANSUNION - CONFIRMA SISTEMAS DE LA INFORMACION S.L. Trend Micro Universidad Antonio de Nebrija UNIWAY Technologies, S.L. VADCefiros, S.L. VENDICT TPRM, S.L. Vertical Sistemas de Información S.L. ZENTRICX Business Transformation S.L. ZEROLYNX, S.L.
+
 ### 📝 Recursos Adicionales
 - [Vacantes 2025 People Querida](https://iced-plot-27a.notion.site/Vacantes-2025-People-Querida-b4ded1124fb54e75b58680c243e65ef6) - Listado curado Notion
 
