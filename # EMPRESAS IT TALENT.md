@@ -370,6 +370,7 @@ A3SEC GRUPO, S.L. ACCENTURE Advens Cybersecurity, S.L. AKUDA ALL4SEC, S.L. ASECI
 - [Aspire People](https://www.aspirepeople.com/) - Recruitment
 - [Mercer Talent Solutions](https://www.mercer.com/) - Talent consulting
 - [Cegid HR Solutions](https://www.cegid.com/es/) - HR tech
+- https://www.grupocibernos.com/unete-a-nosotros#envianos-tu-cv-unete-a-nosotros
 
 ---
 
