@@ -1510,36 +1510,4 @@ Este repositorio es **exclusivamente con fines educativos**. Los recursos y herr
 
 ---
 
-## 📜 Licencia
-
-Este repositorio es una **recopilación de recursos públicos**. Todos los enlaces y recursos pertenecen a sus respectivos autores y están sujetos a sus propias licencias.
-
----
-
 ## 🌟 Mantente Actualizado
-
-Este repositorio se actualiza regularmente. Para estar al día:
-
-- ⭐ **Star** el repositorio
-- 👁️ **Watch** para notificaciones
-- 🔄 **Pull** cambios regularmente
-- 📢 **Share** con la comunidad
-
----
-
-## 📞 Contacto y Comunidad
-
-¿Encontraste un recurso excelente? ¿Enlace roto? ¿Sugerencias?
-
-- Abre un **Issue**
-- Envía un **Pull Request**
-- Únete a las comunidades mencionadas
-- Comparte tu experiencia
-
----
-
-**Última actualización**: 2025
-
-**Mantenido por**: Comunidad de Ciberseguridad
-
-**¡Happy Hacking! 🎯🔐**
