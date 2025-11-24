@@ -68,6 +68,7 @@
 - [Hacksplaining](https://www.hacksplaining.com/lessons)
 - [WiFi Challenge Academy](https://academy.wifichallenge.com/pages/aniversario?ref=d79459)
 - [Razzify](https://razzify.in/challenges)
+- [SolCTF[(https://www.solctf.com/?ref=blog.colosseum.com)
 
 ### Plataformas Web y Seguridad
 
