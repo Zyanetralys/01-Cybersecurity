@@ -602,6 +602,11 @@ A3SEC GRUPO, S.L. ACCENTURE Advens Cybersecurity, S.L. AKUDA ALL4SEC, S.L. ASECI
 - seleccion@cosgs.com
 - talento@plexus.es
 - sectorea@jobs.workablemail.com
+- talento@alcorce.es
+- cv.linkedin@rawson-bpo.es
+- sara.rodriguez@mensoft.es
+- careers@nimerya.tech
+
 ________________________________________
 
 ---
