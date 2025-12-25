@@ -53,6 +53,9 @@
 - [Co-Hackers](https://cohackers.co/)
 - [Parrot-CTFs](https://parrot-ctfs.com/)
 - [FDIR Training](https://www.dfir.training/downloads/test-images?category[0]=11&category_children=1)
+- [Certified Secure](https://lnkd.in/dJ2avBew)
+- [CMD Challenge](https://cmdchallenge.com/)
+- [CryptoHack](https://cryptohack.org/)
 
 ### CTF y Competiciones
 
@@ -339,6 +342,7 @@
 - [Oracle](https://mylearn.oracle.com/)
 - [EC-Council Free Courses](https://www.eccouncil.org/cybersecurity-exchange/ethical-hacking/free-ethical-hacking-courses/)
 - [Aviator](https://aviatrix.com/training/ace-multicloud-networking-training/)
+- [EC-Council (Cursos Gratuitos)](https://www.eccouncil.org/cybersecurity-exchange/cyber-novice/free-cybersecurity-courses-beginners/)
 
 **Premium**
 - [OSCP](https://www.offensive-security.com/)
