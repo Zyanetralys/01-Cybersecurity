@@ -1397,6 +1397,87 @@
 
 ---
 
+### 📚 Libros y Lecturas Clave
+- **Hábitos Atómicos – James Clear** – Enseña cómo pequeños cambios diarios generan grandes resultados a largo plazo mediante sistemas efectivos de hábitos.
+- **Never Eat Alone – Keith Ferrazzi** – Libro sobre el poder del networking y las relaciones auténticas para el éxito personal y profesional.
+
+---
+
+### 🌍 Informes y Visión Global
+- **[Global Cybersecurity Outlook 2025 – World Economic Forum](https://www.weforum.org/publications/global-cybersecurity-outlook-2025/)** – Tendencias, riesgos y desafíos globales en ciberseguridad.
+
+---
+
+
+### 🎯 Retos y Aprendizaje Práctico
+- **[90 Days of Cybersecurity](https://github.com/farhanashrafdev/90DaysOfCyberSecurity)** – Reto estructurado de 90 días para aprender ciberseguridad desde fundamentos hasta práctica real.
+
+---
+
+
+### 🛡️ Guías y Recursos INCIBE
+- **[Guía de Ciberataques – INCIBE (2025)](https://www.incibe.es/sites/default/files/docs/guia-ciberataques/osi-guia-ciberataques.pdf)** – Tipos de ciberataques, vectores y medidas de protección.
+- **[Guía de Ciberseguridad: La Ciberseguridad al Alcance de Todos – INCIBE (2025)](https://www.incibe.es/sites/default/files/docs/senior/guia_ciberseguridad_para_todos.pdf)** – Fundamentos de ciberseguridad explicados de forma accesible.
+- **[Herramientas Gratuitas – INCIBE](https://www.incibe.es/ciudadania/herramientas)** – Herramientas gratuitas para mejorar la seguridad digital.
+- **[Talleres de Ciberseguridad – INCIBE](https://www.incibe.es/ciudadania/formacion/talleres)** – Formación práctica y talleres gratuitos.
+
+---
+
+
+### 📊 Gobierno y Gestión de Seguridad
+- **[Plantilla Evaluación de Madurez COBIT](https://www.itsm-docs.com/blogs/cobit-templates/cobit-maturity-assessment-template)** – Plantilla para evaluar la madurez de gobierno TI según COBIT.
+
+---
+
+
+### 🏢 SOC y Operaciones de Seguridad
+- **[Programa SOC – Microsoft](https://microsoft.github.io/SOC/source/content/#/)** – Entrenamiento en fundamentos de operaciones SOC.
+
+---
+
+
+### 🎓 Certificaciones y Rutas de Aprendizaje
+- **[ISC2 – Certified in Cybersecurity (CC)](https://www.isc2.org/certifications/cc/cc-certification-exam-outline)** – Certificación de fundamentos en ciberseguridad.
+- **[AZ-900 – Azure Fundamentals](https://learn.microsoft.com/es-es/credentials/certifications/azure-fundamentals/)** – Fundamentos de Microsoft Azure.
+- **[SC-900 – Security, Compliance & Identity Fundamentals](https://learn.microsoft.com/es-es/credentials/certifications/azure-fundamentals/)** – Fundamentos de seguridad y cumplimiento en Microsoft.
+- **[Microsoft Applied Skills](https://learn.microsoft.com/en-us/credentials/browse/?credential_types=applied%20skills)** – Evaluaciones prácticas basadas en habilidades reales.
+- **[Microsoft Certification Poster](https://arch-center.azureedge.net/Credentials/Certification-Poster-en-us.pdf)** – Mapa completo de certificaciones Microsoft.
+
+---
+
+
+### ☁️ AWS – Formación, Certificaciones y Recursos
+- **[AWS Skill Builder](https://explore.skillbuilder.aws/learn)** – Plataforma oficial de formación AWS.
+- **[AWS Educate](https://aws.amazon.com/es/education/awseducate/)** – Programas de aprendizaje para estudiantes.
+- **[Well-Architected Labs](https://www.wellarchitectedlabs.com/)** – Laboratorios prácticos sobre buenas prácticas en AWS.
+- **[AWS Workshops](https://workshops.aws/)** – Workshops técnicos guiados.
+- **[Certificaciones AWS](https://aws.amazon.com/es/certification/)** – Certificaciones oficiales de AWS.
+- **[Rutas de Certificación AWS por Rol](https://d1.awsstatic.com/es_ES/training-and-certification/docs/AWS_certification_paths.pdf)** – Mapa de certificaciones según perfil profesional.
+- **[AWS Free Tier](https://aws.amazon.com/es/free/)** – Capa gratuita de servicios AWS.
+- **[AWS Pricing](https://aws.amazon.com/es/pricing/)** – Modelos de costes por servicio.
+- **[AWS Calculator](https://calculator.aws/#/)** – Calculadora de costes AWS.
+- **[AWS Cost Explorer](https://aws.amazon.com/es/aws-cost-management/aws-cost-explorer/)** – Reportes y alertas de costes.
+- **[AWS Cloud Practitioner](https://aws.amazon.com/es/certification/certified-cloud-practitioner/)** – Certificación fundamental de AWS.
+- **[AWS Solutions Architect Associate](https://aws.amazon.com/es/certification/certified-solutions-architect-associate/)** – Arquitectura de soluciones en AWS.
+- **[AWS Security Specialty](https://aws.amazon.com/es/certification/certified-security-specialty/)** – Especialización en seguridad AWS.
+
+---
+
+
+### 👥 Comunidades y Programas
+- **[AWS User Groups](https://aws.amazon.com/es/developer/community/usergroups/)** – Comunidades oficiales de AWS.
+- **[Global AWS User Group Community](https://www.meetup.com/pro/global-aws-user-group-community/)** – Meetups globales de AWS.
+- **[AWS User Group Panama](https://www.meetup.com/es-es/aws-user-group-panama)** – Comunidad AWS Panamá.
+- **[Eventos Gratuitos AWS](https://aws.amazon.com/es/training/events/)** – Eventos y formaciones gratuitas.
+- **[HashiCorp User Group Panama](https://www.meetup.com/panama-hashicorp-user-group/)** – Comunidad HashiCorp Panamá.
+- **[Microsoft Azure Panama](https://www.meetup.com/microsoft-azure-panama/)** – Comunidad Microsoft Azure.
+- **[Microsoft Learn Student Ambassadors](https://mvp.microsoft.com/studentambassadors)** – Programa estudiantil de Microsoft.
+- **[Microsoft MVP](https://mvp.microsoft.com/en-US/mvp)** – Programa de expertos reconocidos por Microsoft.
+- **[HashiCorp Ambassadors](https://www.hashicorp.com/en/ambassador)** – Programa de embajadores HashiCorp.
+
+---
+
+
 ## 🎯 Objetivos de Aprendizaje por Área
 
 ### Red Team
