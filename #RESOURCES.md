@@ -161,6 +161,7 @@
 - [OT-ICS Security Video](https://www.mindluster.com/certificate/12787/OT-ICS-Security-video)
 - [INCIBE Cibercooperantes](https://www.incibe.es/incibe/cibercooperantes/quiero-ser-cibercooperante)
 - [Roadmap Ciberseguridad ICS/OT](https://www.roadmapciberseguridad.org/como-iniciar-en/ciberseguridad-icsot)
+- [Roadmap Ciberseguridad CyberDefenders Certificaciones]https://cyberdefenders.org/community/cybersecurity-roadmap/
 
 ### Wargames Clásicos
 
