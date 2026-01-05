@@ -35,6 +35,7 @@
 - [PWN College](https://pwn.college)
 - [Shellter Labs](https://shellterlabs.com/pt)
 - [Zenk Security](https://repo.zenk-security.com)
+- [Academia de Ciberseguridad Labs](https://github.com/Academia-de-Ciberseguridad)
 
 ### Plataformas Gratuitas
 
