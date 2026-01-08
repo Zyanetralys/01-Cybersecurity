@@ -475,6 +475,7 @@
 - [All About Bug Bounty](https://github.com/daffainfo/AllAboutBugBounty)
 - [Bug Bounty Roadmaps](https://github.com/1ndianl33t/Bug-Bounty-Roadmaps)
 - [Active Directory Mindmap](https://orange-cyberdefense.github.io/ocd-mindmaps/img/mindmap_ad_dark_classic_2025.03.excalidraw.svg)
+- [Recursos Directorio](https://cybersources.site/)
 
 ---
 
