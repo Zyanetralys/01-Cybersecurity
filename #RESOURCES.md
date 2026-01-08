@@ -36,6 +36,7 @@
 - [Shellter Labs](https://shellterlabs.com/pt)
 - [Zenk Security](https://repo.zenk-security.com)
 - [Academia de Ciberseguridad Labs](https://github.com/Academia-de-Ciberseguridad)
+- [Hackviser – CAPT](https://hackviser.com/capt)
 
 ### Plataformas Gratuitas
 
@@ -57,6 +58,10 @@
 - [Certified Secure](https://lnkd.in/dJ2avBew)
 - [CMD Challenge](https://cmdchallenge.com/)
 - [CryptoHack](https://cryptohack.org/)
+- [TCM Security Academy](https://lnkd.in/dD6rqCYe)
+- [Basel Institute on Governance – OSINT](https://lnkd.in/dE4K4eQV)
+- [APIsec University](https://lnkd.in/daMY6WA3)
+- [Syber Offense](https://syberoffense.com)
 
 ### CTF y Competiciones
 
