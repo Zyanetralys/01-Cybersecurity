@@ -62,6 +62,7 @@
 - [Basel Institute on Governance – OSINT](https://lnkd.in/dE4K4eQV)
 - [APIsec University](https://lnkd.in/daMY6WA3)
 - [Syber Offense](https://syberoffense.com)
+- [Blue Team Junior Amalyst](https://www.securityblue.team/courses/blue-team-junior-analyst-pathway-bundle)
 
 ### CTF y Competiciones
 
