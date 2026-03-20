@@ -79,6 +79,7 @@
 - [WiFi Challenge Academy](https://academy.wifichallenge.com/pages/aniversario?ref=d79459)
 - [Razzify](https://razzify.in/challenges)
 - [SolCTF][(https://www.solctf.com/?ref=blog.colosseum.com)
+- [hacktoria](https://hacktoria.com)
 
 ### Plataformas Web y Seguridad
 
