@@ -889,6 +889,12 @@
 - [Ozaria](https://www.ozaria.com/)
 - [Code.org Studio](https://studio.code.org/)
 
+### Pair Programming
+- https://codingcoach.io/
+- https://peerprogramming.org/
+- https://exercism.org/
+
+
 ### Challenges y Práctica Backend
 
 - [LeetCode](https://leetcode.com/)
@@ -916,6 +922,10 @@
 - [Python desde 0 - Cursa](https://cursa.app/es/curso-gratis/python-desde-0-bcef)
 - [Python - LearnCafe](https://es.learncafe.com/cursos/programacion-python)
 - [Santander Python](https://www.santanderopenacademy.com/es/courses/introduction_to_python_programming.html)
+-  Python: codecombat.com
+
+### Otros desarrollos
+- Mobile Coding: sololearn.com (Estilo Duolingo)
 
 ### Frontend y CSS
 
@@ -930,7 +940,9 @@
 - [Daily UI](https://www.dailyui.co/)
 - [Frontend Loops](https://frontloops.io/)
 - [100 Days CSS](https://100dayscss.com/)
+-  CSS & HTML: codepip.com
 
+  
 ### JavaScript
 
 - [JavaScript 30](https://javascript30.com/)
@@ -944,6 +956,12 @@
 - [Vim Adventures](https://vim-adventures.com/)
 - [OpenVim](https://www.openvim.com/)
 - [VimGenius](http://www.vimgenius.com/)
+- Kubernetes: k8sgames.com
+- DevOps: devops.games
+- Linux: overthewire.org
+- Git: ohmygit.org
+- Para Principiantes: scratch.mit.edu
+- +25 Lenguajes: codingame.com
 
 ### Otras Plataformas
 
