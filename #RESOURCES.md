@@ -804,6 +804,19 @@
 - [Nación Hacker](https://nacionhacker.org/cybersecurity_mentorship/)
 - [PushFar](https://www.pushfar.com/)
 - [Founderz](https://founderz.com/aiskills4women/)
+- https://wevise.org/
+- https://code-you.org/mentor
+- https://www.frontendmentor.io/
+- https://solvery.io/
+- https://women4cyber.eu/mentorship-programme-2/
+- https://cybermentor.institute/
+- https://cybersquad6351.netlify.app/
+
+### Pair Programming
+- https://codingcoach.io/
+- https://peerprogramming.org/
+- https://exercism.org/
+- https://curriculum.codeyourfuture.io/
 
 ### Experiencia Práctica
 
@@ -888,13 +901,6 @@
 - [Algorithm Visualizer](https://algorithm-visualizer.org/)
 - [Ozaria](https://www.ozaria.com/)
 - [Code.org Studio](https://studio.code.org/)
-
-### Pair Programming
-- https://codingcoach.io/
-- https://peerprogramming.org/
-- https://exercism.org/
-- https://curriculum.codeyourfuture.io/
-
 
 ### Challenges y Práctica Backend
 
