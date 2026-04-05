@@ -930,6 +930,13 @@
 - [Python - LearnCafe](https://es.learncafe.com/cursos/programacion-python)
 - [Santander Python](https://www.santanderopenacademy.com/es/courses/introduction_to_python_programming.html)
 -  Python: codecombat.com
+-  https://programming-23.mooc.fi/
+
+### Java
+- https://java-programming.mooc.fi/
+- https://academy.jetbrains.com/
+- https://www.youtube.com/@TodoCode
+
 
 ### Otros desarrollos
 - Mobile Coding: sololearn.com (Estilo Duolingo)
@@ -1254,6 +1261,7 @@
 
 ### Google
 - [Google Cloud Networking](https://cloud.google.com/training)
+- https://www.skills.google/paths
 
 ### AWS
 - [AWS Networking Security](https://aws.amazon.com/training/)
