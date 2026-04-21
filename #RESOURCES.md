@@ -130,6 +130,7 @@
 - [RATas inminentes](https://ctf.unizar.es/ratas_inminentes)
 - [BaklavaCTF](https://ctf.communia.cc/)
 - [The Stolen Szechuan Sauce](https://mimircyber.com/the-case-of-the-stolen-szechuan-sauce/)
+- [BBLabs](https://bblabs.es/)
 
 **Nivel Medio**
 - [Ransomware Ate My Network](https://ctf.unizar.es/ransomware)
