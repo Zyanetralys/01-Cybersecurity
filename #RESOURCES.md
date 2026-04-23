@@ -440,6 +440,7 @@
 - [Totem Project](https://learn.totem-project.org/)
 - [Dark Web Academy](https://www.darkwebacademy.com/courses/dark-web-foundations)
 - [Malware Traffic Analysis](https://www.malware-traffic-analysis.net/)
+- [Investiga OSINT](https://investigaosint.io/)
 
 ### Herramientas IA para Aprendizaje
 
