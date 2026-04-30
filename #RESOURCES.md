@@ -124,6 +124,9 @@
 - [CMD Challenge](https://cmdchallenge.com)
 - [Bandit (OverTheWire)](http://overthewire.org/wargames/)
 
+**Dashboards**
+https://p3ta-tricks.com
+
 ### CTF DFIR Especializados
 
 **Nivel Básico/Medio**
