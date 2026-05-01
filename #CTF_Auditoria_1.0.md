@@ -1,7 +1,4 @@
-# Manual Definitivo de Pentesting — CTF + Auditoría Real (con consentimiento)
-**Autora:** Zyanetralys (alias “Zyanetralys”)  
-**Ámbito:** CTF / Red externa / Red interna / Web & APIs / Cloud / Móvil / Wireless / IoT/OT / Ingeniería Social / Physical (solo si está en alcance).  
-**Norma de oro:** Siempre con **autorización por escrito**, **ROE** claras y controles de seguridad.
+# Manual de Pentesting
 
 ---
 
