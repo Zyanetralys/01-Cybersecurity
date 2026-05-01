@@ -10,9 +10,7 @@
 
 ---
 
-## ⚠️ Advertencia Legal y Ética
-
-> **IMPORTANTE:** Este manual está diseñado únicamente para pentesting autorizado, auditorías de seguridad con consentimiento expreso y entornos CTF/laboratorio. El uso indebido de estas técnicas sin autorización es ilegal y éticamente incorrecto. El autor no se hace responsable del mal uso de esta información.
+> **IMPORTANTE:** Este manual está diseñado únicamente para pentesting autorizado, auditorías de seguridad con consentimiento y entornos CTF/laboratorio. El uso indebido de estas técnicas sin autorización es ilegal.
 
 ---
 
