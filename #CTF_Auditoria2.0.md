@@ -1,13 +1,5 @@
 # Manual Definitivo de Pentesting — CTF + Auditoría
 
-[![License: MIT](https://img.shields.io/badge/License-yellow.svg)](https://opensource.org/licenses/)
-[![Security](https://img.shields.io/badge/Security-Pentesting-red.svg)](https://github.com/topics/penetration-testing)
-[![Platform](https://img.shields.io/badge/Platform-Linux-blue.svg)](https://www.linux.org/)
-
-**Autora:** Zyanetralys (alias "Zyanetralys")  
-**Ámbito:** CTF / Red externa / Red interna / Web & APIs / Cloud / Móvil / Wireless / IoT/OT / Ingeniería Social / Physical  
-**Norma de oro:** Siempre con **autorización por escrito**, **ROE** claras y controles de seguridad.
-
 ---
 
 > **IMPORTANTE:** Este manual está diseñado únicamente para pentesting autorizado, auditorías de seguridad con consentimiento y entornos CTF/laboratorio. El uso indebido de estas técnicas sin autorización es ilegal.
