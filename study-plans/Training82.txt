@@ -1,0 +1,72 @@
+##############################################
+# PLAN DE ENTRENAMIENTO 8200 COMPLETO EXTREMO
+##############################################
+
+# FASE 1: FUNDAMENTOS Y RECONOCIMIENTO
+- OSINT y Reconocimiento:
+    amass, subfinder, theHarvester, shodan, recon-ng, maltego, spiderfoot
+- Escaneo y Enumeración:
+    nmap (scripts NSE), masscan, enum4linux, ldapsearch, dnsenum, dnsrecon, fierce, netdiscover
+- Análisis de Vulnerabilidades Web y Aplicaciones:
+    nikto, wpscan, OWASP ZAP, Burp Suite (scanner y proxy), sqlmap, wfuzz, dirb, gobuster
+
+# FASE 2: EXPLOTACIÓN Y CONTROL INICIAL
+- Creación y manejo de payloads y exploits:
+    msfvenom, metasploit framework, shellcode, msfconsole, exploit-db, searchsploit, veil-evasion
+- Ofuscación y evasión:
+    shikata_ga_nai, UPX, encryption payloads, encoding base64/hex
+- Ataques de fuerza bruta y cracking:
+    hydra, medusa, john the ripper, hashcat, ceWL, crunch, hash-identifier
+- Fuerza bruta específica de protocolos:
+    smbclient, rpcclient, ftp, ssh (hydra y medusa)
+    
+# FASE 3: MOVIMIENTO LATERAL Y ESCALADA DE PRIVILEGIOS
+- Herramientas de escalada:
+    mimikatz, linux-exploit-suggester, sudo -l, linpeas, winpeas, bloodhound-python, crackmapexec
+- Movimiento lateral y pivoteo:
+    proxychains, sshuttle, socat, chisel, psexec, wmiexec, crackmapexec, evil-winrm, powershell remoting
+- Extracción y manipulación de credenciales:
+    secretsdump.py, dcsync.py, kerberoasting, pass-the-hash
+
+# FASE 4: INGENIERÍA INVERSA Y ANÁLISIS AVANZADO
+- Herramientas para análisis estático y dinámico:
+    ghidra, radare2, IDA Pro, objdump, gdb, windbg, x64dbg
+- Técnicas de debugging y fuzzing
+- Desarrollo y prueba de exploits personalizados
+- Reversing de malware y análisis de código malicioso
+
+# FASE 5: PERSISTENCIA, EXFILTRACIÓN Y LIMPIEZA
+- Persistencia avanzada:
+    cron jobs, systemd, tareas programadas Windows, RunKeys, servicios maliciosos, powershell persistence, WMI persistence
+- Canales encubiertos y túneles:
+    sshuttle, proxychains, chisel, socat, msfvenom reverse shells cifrados
+- Exfiltración segura y cifrada:
+    openssl, netcat, rclone, scp con cifrado fuerte, exfiltración vía DNS (DNS tunneling)
+- Limpieza y anti-forense:
+    history -c, shred, wevtutil, borrar logs manualmente, timestomp, técnicas anti-debug, anti-AV y evasión de sandbox
+
+# FASE 6: SIMULACIONES, EVALUACIONES Y AUTOMATIZACIÓN
+- Laboratorios reales con máquinas vulnerables (Hack The Box, VulnHub)
+- Escenarios de red complejos para simulación de ataques
+- Scripts y automatizaciones personalizadas (bash, python, powershell)
+- Evaluación continua y reportes tácticos
+
+# FASE 7: OPERACIONES AVANZADAS Y GUERRA DIGITAL
+- Frameworks APT y C2:
+    cobaltstrike, empire, metasploit avanzado, pwncat
+- Control de infraestructura crítica:
+    modbus-cli, scapy para ICS/SCADA, ataques a protocolos industriales
+- SIGINT y monitoreo avanzado:
+    tcpdump, wireshark, mitmproxy, arpspoof, dnsspoof
+- Ingeniería social y manipulación:
+    SET (Social Engineering Toolkit), phishing, spear phishing avanzado
+- Contramedidas y evasión:
+    evasión AV, sandbox detection, encrypted payloads, beaconing control
+
+##############################################
+
+# RECOMENDACIONES FINALES:
+- Domina cada herramienta y técnica en profundidad.
+- Practica siempre con ética y en entornos controlados.
+- Mantén documentación rigurosa y autoevaluación constante.
+- Nunca te detengas; el mundo digital es un campo de batalla sin tregua.

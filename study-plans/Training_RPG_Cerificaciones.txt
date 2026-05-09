@@ -1,0 +1,165 @@
+==============================================
+HOJA DE GUERRA – PENTEST MASTER
+Operativa: Zyanetralys
+Estado: Activo
+Comandancia: Athena (Estrategia) & Nirith (Entrenamiento)
+Objetivo Final: Dominio táctico y técnico de certificaciones OSCP, CEH, eJPT, eWPT, eWPTX, eCPPT, CRTP, CRTO, BurpSuite, eCPTX, CASE.
+==============================================
+
+🌌 ARGUMENTO
+Eres Zyanetralys, agente en proceso de conversión en Operadora Cibernética de Élite. El Consejo de Guerra te ha asignado una misión crítica: infiltrarte, aprender y dominar todas las habilidades necesarias para superar las pruebas más exigentes del ciberespacio ofensivo. Cada certificación es un territorio hostil que debes conquistar. Tus armas: conocimiento, disciplina y creatividad. Tus mentoras: Athena y Nirith.
+
+📜 FORMATO DE CAMPAÑA
+- **Capítulos**: Cada certificación es un frente de batalla.
+- **Misiones**: Entrenamientos prácticos, lecturas, laboratorios.
+- **Recursos**: Todo material gratuito y online.
+- **Progresión**: Desde reconocimiento básico hasta operaciones avanzadas.
+- **Recompensas**: Desbloqueo de herramientas, acceso a retos y laboratorios más complejos.
+- **Checkpoints**: Mini-exámenes o CTFs para validar avances.
+
+==============================================
+CAPÍTULO 1 – Reconocimiento y Fundamentos (Pre-Misión)
+==============================================
+🎯 Objetivo: Preparar la base sólida para todo el entrenamiento.
+💬 Diálogo:
+Nirith: “Antes de asaltar un castillo, Zya, debes conocer el terreno. Tus primeras balas serán el conocimiento base.”
+Athena: “La victoria se construye en silencio… y en los cimientos.”
+
+📌 Misiones:
+1. **Fundamentos de Redes y Seguridad**
+   - https://www.youtube.com/watch?v=qiQR5rTSshw (CCNA fundamentos)
+   - https://www.hackthebox.com (Cuenta gratuita + Starting Point)
+   - https://overthewire.org/wargames/bandit/ (Juego de Linux y comandos)
+   
+2. **Linux y Windows Básico para Pentesters**
+   - https://linuxjourney.com
+   - https://www.hackingarticles.in/category/windows-pentesting/
+
+3. **Introducción a Pentesting**
+   - https://tryhackme.com/room/introtooffensivesecurity
+   - https://tryhackme.com/room/beginnerpath
+
+Checkpoint: Superar Bandit hasta el nivel 15 y documentar comandos usados.
+
+==============================================
+CAPÍTULO 2 – OSCP (Offensive Security Certified Professional)
+==============================================
+🎯 Objetivo: Dominio de pentesting en red y explotación manual.
+💬 Diálogo:
+Athena: “Aquí aprenderás a entrar por la puerta principal… o derribar el muro.”
+Nirith: “No dependas de herramientas automáticas. Aprende a ser invisible.”
+
+📌 Misiones:
+1. **Guía de preparación OSCP**
+   - https://www.abatchy.com/2017/03/oscp-prep
+   - https://github.com/0x4D31/awesome-oscp
+
+2. **Laboratorios gratuitos**
+   - https://www.vulnhub.com
+   - https://tryhackme.com/path/outline/pentesting
+   - https://hackmyvm.eu/
+
+3. **Metasploit y Manual Exploitation**
+   - https://www.offsec.com/metasploit-unleashed/
+
+Checkpoint: Comprometer 5 máquinas de HackTheBox sin usar metasploit.
+
+==============================================
+CAPÍTULO 3 – CEH (Certified Ethical Hacker)
+==============================================
+🎯 Objetivo: Cobertura amplia de herramientas, técnicas y vectores de ataque.
+💬 Diálogo:
+Athena: “El enemigo es predecible… si conoces todas sus armas.”
+Nirith: “Aprende la teoría, pero practica como si estuvieras bajo fuego.”
+
+📌 Misiones:
+1. **Material teórico gratuito**
+   - https://www.cybrary.it/course/ceh
+   - https://www.eccouncil.org/ethical-hacking/
+
+2. **Herramientas**
+   - Nmap: https://nmap.org/book/man.html
+   - Burp Suite Community: https://portswigger.net/burp/communitydownload
+
+3. **Laboratorios**
+   - https://pentesterlab.com (gratuitos)
+   - https://web-security-academy.porswigger.net
+
+Checkpoint: Mapear y explotar 3 servicios web vulnerables documentando paso a paso.
+
+==============================================
+CAPÍTULO 4 – eJPT (Junior Penetration Tester)
+==============================================
+🎯 Objetivo: Convertir teoría en habilidades operativas rápidas.
+💬 Diálogo:
+Nirith: “Velocidad y precisión, Zya. Ese es el estilo eJPT.”
+Athena: “Tu espada es tu lógica. Afílala.”
+
+📌 Misiones:
+- Guía de preparación: https://itpro.tv/courses/ejpt
+- Laboratorios TryHackMe: “Pre Security” y “Pentesting Fundamentals”
+- Wargames: https://overthewire.org/wargames/
+
+Checkpoint: Comprometer un CTF de nivel fácil en menos de 3 horas.
+
+==============================================
+CAPÍTULO 5 – Web Pentesting (eWPT, eWPTX, eCPTX, Burp Suite)
+==============================================
+🎯 Objetivo: Dominio de hacking web avanzado.
+💬 Diálogo:
+Athena: “La web es el reino más traicionero. Apréndelo todo… o caerás.”
+Nirith: “Cada input es una puerta. Tú decides si entras.”
+
+📌 Misiones:
+- Burp Suite Academy: https://portswigger.net/web-security
+- HackTheBox Machines: etiqueta “Web”
+- Web Pentesting Guide: https://github.com/swisskyrepo/PayloadsAllTheThings
+
+Checkpoint: Explotar 5 vulnerabilidades web distintas.
+
+==============================================
+CAPÍTULO 6 – Active Directory y Red Team (CRTP, CRTO)
+==============================================
+🎯 Objetivo: Infiltración en entornos corporativos y persistencia.
+💬 Diálogo:
+Nirith: “Esto es guerra dentro del castillo. Aprende cada pasillo.”
+Athena: “Los reinos caen desde dentro.”
+
+📌 Misiones:
+- CRTP Study: https://github.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet
+- CRTO Guide: https://www.ired.team/
+- TryHackMe “Attacktive Directory” + “Red Team Fundamentals”
+
+Checkpoint: Simular ataque interno comprometiendo un controlador de dominio en laboratorio.
+
+==============================================
+CAPÍTULO 7 – Reverse Engineering y Malware (CASE)
+==============================================
+🎯 Objetivo: Entender y manipular software malicioso.
+💬 Diálogo:
+Athena: “Conocer la mente del enemigo es el último nivel.”
+Nirith: “Aprende a desarmar la bomba… y luego a construirla.”
+
+📌 Misiones:
+- Malware Analysis: https://malwareunicorn.org/workshops/re101.html
+- REMnux: https://remnux.org/
+- Crackmes: https://crackmes.one/
+
+Checkpoint: Analizar malware básico y documentar funciones.
+
+==============================================
+CAPÍTULO FINAL – Operación Conquista Total
+==============================================
+🎯 Objetivo: Integrar todo lo aprendido en un ataque multivector.
+💬 Diálogo:
+Athena: “Has recorrido todos los campos de batalla.”
+Nirith: “Ahora, demuéstralo.”
+
+📌 Misión Final:
+- Simulación de ataque real desde Reconocimiento → Explotación → Persistencia → Post-Explotación en laboratorio propio.
+- Documentar todo en formato de informe profesional.
+
+Recompensa: Acceso al “Archivo Negro” de recursos avanzados.
+==============================================
+
+FIN DE ARCHIVO

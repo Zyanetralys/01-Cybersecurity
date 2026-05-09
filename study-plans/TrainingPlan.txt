@@ -1,0 +1,119 @@
+───────────────────────────────────────────────────────────────
+ZYA'S CYBERSECURITY MASTER TRAINING PLAN
+───────────────────────────────────────────────────────────────
+OBJETIVO:
+Ciberseguridad Ofensiva y Defensiva, cubriendo todo el ciclo de operaciones:
+Reconocimiento, Explotación, Post-explotación, Persistencia, Defensa, Análisis Forense.
+
+───────────────────────────────
+I. FUNDAMENTOS INICIALES
+───────────────────────────────
+1️⃣ Redes y Sistemas Operativos:
+   - TCP/IP, protocolos, OSI, puertos, servicios.
+   - Linux avanzado (bash scripting, administración).
+   - Windows interno (AD, PowerShell, servicios, seguridad).
+
+2️⃣ Programación y Automatización:
+   - Python (scripting ofensivo/defensivo).
+   - Bash scripting, PowerShell.
+   - Comprensión de APIs, JSON, Regex.
+
+3️⃣ Seguridad y Pentesting Básico:
+   - Principios de pentesting (Metodologías OWASP, PTES).
+   - Laboratorios: Hack The Box, TryHackMe, VulnHub.
+
+───────────────────────────────
+II. RECONOCIMIENTO Y ENUMERACIÓN
+───────────────────────────────
+Herramientas clave:
+- Nmap (escaneo de red).
+- Amass (subdominios y superficie externa).
+- TheHarvester (OSINT emails, hosts).
+- Recon-ng (marco OSINT completo).
+- Shodan (exposición en Internet).
+- Maltego (mapa de relaciones).
+
+Combinaciones:
+- Amass + Nmap → descubrimiento y mapeo de hosts.
+- TheHarvester + Recon-ng → inteligencia sobre objetivos humanos y técnicos.
+
+───────────────────────────────
+III. VULNERABILITY SCANNING Y EXPLOTACIÓN WEB
+───────────────────────────────
+Herramientas:
+- Nessus / OpenVAS (escaneo de vulnerabilidades).
+- Nikto, OWASP ZAP, Burp Suite (testeo de aplicaciones web).
+- SQLmap (explotación SQLi).
+
+Combinaciones:
+- Nmap + Nessus → identificar servicios vulnerables.
+- Burp Suite + SQLmap → explotación manual y automatizada.
+
+───────────────────────────────
+IV. POST-EXPLOTACIÓN Y MOVIMIENTOS LATERALES
+───────────────────────────────
+Herramientas:
+- Metasploit Framework (explotación automatizada).
+- BloodHound (mapeo de privilegios en AD).
+- CrackMapExec (automatización de credenciales en red).
+- Empire (framework post-explotación).
+- Mimikatz (extracción de credenciales).
+- Hydra, Hashcat, John the Ripper (ataques a contraseñas).
+
+Combinaciones:
+- Mimikatz + CrackMapExec → escalada y movimiento lateral.
+- BloodHound + Empire → rutas de privilegios y persistencia.
+
+───────────────────────────────
+V. ANÁLISIS DE TRÁFICO Y PERSISTENCIA
+───────────────────────────────
+Herramientas:
+- Zeek (Bro), Wireshark, Tcpdump → monitoreo de red.
+- Responder → ataque a protocolos de autenticación.
+- Cobalt Strike → simulación avanzada de adversarios.
+- Sliver, Covenant → C2 alternativos.
+
+Combinaciones:
+- Zeek + Cobalt Strike → monitoreo y control del entorno.
+- Responder + CrackMapExec → captura y reutilización de credenciales.
+
+───────────────────────────────
+VI. DEFENSA, FORENSE Y HUNTING
+───────────────────────────────
+Herramientas:
+- OSQuery → monitoreo de endpoints.
+- Volatility → análisis de memoria.
+- Autopsy / Sleuth Kit → forense de discos.
+- Wazuh, Suricata, ELK Stack → SIEM y detección.
+
+Combinaciones:
+- OSQuery + ELK → correlación de eventos en endpoints.
+- Volatility + Wireshark → investigación de malware.
+
+───────────────────────────────
+VII. INGENIERÍA INVERSA Y ANÁLISIS DE MALWARE
+───────────────────────────────
+Herramientas:
+- Ghidra, IDA Pro, Radare2, Cutter → análisis binario.
+- YARA, PEStudio → detección y clasificación.
+
+───────────────────────────────
+VIII. INGENIERÍA SOCIAL Y GUERRA PSICOLÓGICA
+───────────────────────────────
+Herramientas:
+- Gophish, King Phisher → campañas controladas.
+- Maltego, Recon-ng → perfilado de objetivos.
+- Evilginx2 → phishing avanzado.
+
+───────────────────────────────
+PLAN DE ENTRENAMIENTO EN FASES (MISIÓN)
+───────────────────────────────
+Fase 1: Fundamentos + Laboratorios de red y sistemas.
+Fase 2: Reconocimiento avanzado y OSINT.
+Fase 3: Explotación web y escalada de privilegios.
+Fase 4: Post-explotación, persistencia y C2.
+Fase 5: Defensa, detección y respuesta a incidentes.
+Fase 6: Ingeniería inversa y malware.
+Fase 7: Ingeniería social, manipulación conductual.
+
+───────────────────────────────
