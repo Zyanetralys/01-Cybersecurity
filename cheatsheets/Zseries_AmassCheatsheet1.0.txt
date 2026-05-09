@@ -1,0 +1,78 @@
+┌───────────────────────────────────────────────────────────────┐
+│                     ZYA'S AMASS CHEATSHEET                    │
+│                      TACTICAL GUIDE                           │
+└───────────────────────────────────────────────────────────────┘
+
+MISSION:  
+Perform comprehensive external attack surface discovery through  
+DNS enumeration, subdomain enumeration, scraping, brute forcing,  
+and data correlation to map target’s domain infrastructure.
+
+───────────────────────────────
+QUICK DEPLOYMENT PROTOCOL  
+───────────────────────────────  
+1️⃣ Define target domain(s) and scope.  
+2️⃣ Select enumeration techniques: passive, active, brute force, or hybrid.  
+3️⃣ Run Amass with appropriate flags to gather subdomains and related info.  
+4️⃣ Analyze output data for valuable entry points and potential attack surfaces.  
+5️⃣ Export results for integration with other tools (Burp, Nmap, etc).  
+
+───────────────────────────────
+COMMON ENUMERATION MODES  
+───────────────────────────────  
+- **Passive**: Collect data from public sources without direct interaction.  
+  `amass enum -passive -d example.com`
+
+- **Active**: Perform DNS queries and zone transfers.  
+  `amass enum -active -d example.com`
+
+- **Brute Force**: Use wordlists to discover subdomains.  
+  `amass enum -brute -d example.com -src -w wordlist.txt`
+
+- **Combined**: Passive + Active + Brute for comprehensive results.  
+  `amass enum -d example.com -brute -src -w wordlist.txt`
+
+───────────────────────────────
+KEY FLAGS & OPTIONS  
+───────────────────────────────  
+- `-d <domain>` — Target domain.  
+- `-o <file>` — Output file.  
+- `-oA <basename>` — Output in all formats (.txt, .json, .dot).  
+- `-src` — Show data sources in output.  
+- `-ip` — Include IP addresses of discovered hosts.  
+- `-brute` — Enable brute force subdomain discovery.  
+- `-w <file>` — Use custom wordlist for brute forcing.  
+- `-active` — Enable active reconnaissance.  
+- `-passive` — Use passive reconnaissance only.  
+- `-r <resolver>` — Use custom DNS resolvers.  
+- `-config <file>` — Load configuration file.  
+- `-nolocaldb` — Disable local graph database usage.
+
+───────────────────────────────
+OUTPUT FORMATS  
+───────────────────────────────  
+- Plain text list of discovered subdomains.  
+- JSON format for structured data.  
+- DOT format for graph visualization (use Graphviz).
+
+───────────────────────────────
+INTEGRATION & AUTOMATION  
+───────────────────────────────  
+- Integrate Amass output with Nmap for targeted scanning.  
+- Use results in Burp Suite for focused web testing.  
+- Combine with tools like Sublist3r or The Harvester for richer recon.  
+- Automate scans with cronjobs or CI pipelines.
+
+───────────────────────────────
+TACTICAL TIPS  
+───────────────────────────────  
+- Start with passive enumeration to avoid detection.  
+- Add active and brute force carefully to minimize noise.  
+- Use multiple data sources for maximum coverage.  
+- Update wordlists regularly with target-specific terms.  
+- Correlate data with OSINT and intelligence platforms.
+
+───────────────────────────────
+FINAL COMMANDMENT:  
+“Map the invisible surface to strike where defenses are weakest.”
+───────────────────────────────

@@ -1,0 +1,17 @@
+XFREERDP - Manual Básico
+------------------
+Descripción:
+xfreerdp es un cliente RDP de código abierto para acceder a escritorios Windows.
+
+Instalación:
+sudo apt install freerdp2-x11
+
+Uso básico:
+xfreerdp /u:usuario /p:contraseña /v:192.168.1.10
+xfreerdp /u:usuario /pth:hash /v:192.168.1.10
+
+Opciones comunes:
+/u:usuario     Usuario
+/p:contraseña  Contraseña
+/pth:hash      Pass-the-Hash
+/v:IP          Host destino

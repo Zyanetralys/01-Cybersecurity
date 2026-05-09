@@ -1,0 +1,55 @@
+┌───────────────────────────────────────────────────────────────┐
+│                      ZYA'S EMPIRE CHEATSHEET                  │
+│                      TACTICAL GUIDE                           │
+└───────────────────────────────────────────────────────────────┘
+
+MISSION:  
+Deploy and control a flexible post-exploitation framework with  
+modular agents for stealthy persistence, lateral movement, and credential theft.
+
+───────────────────────────────
+QUICK DEPLOYMENT PROTOCOL  
+───────────────────────────────  
+1️⃣ Set up Empire server and listener (HTTP/HTTPS/SMB).  
+2️⃣ Generate stager payloads for target execution.  
+3️⃣ Deliver stagers via phishing, exploits, or manual delivery.  
+4️⃣ Maintain agent communications and issue commands.  
+5️⃣ Use modules for reconnaissance, persistence, and exploitation.  
+6️⃣ Harvest credentials and escalate privileges.  
+7️⃣ Automate tasks with PowerShell scripts and Empire modules.
+
+───────────────────────────────
+CORE COMPONENTS  
+───────────────────────────────  
+- Listeners — Network interfaces to receive agent communications.  
+- Agents — Deployed payloads on compromised hosts.  
+- Modules — Post-exploitation scripts and tools (recon, persistence, creds).  
+- Tasks — Commands issued to agents.  
+- List — Active agents and their status.
+
+───────────────────────────────
+KEY COMMANDS & MODULES  
+───────────────────────────────  
+- `usestager` — Generate stager payloads.  
+- `usemodule` — Load post-exploitation modules.  
+- `list listeners` — Display configured listeners.  
+- `list agents` — Show active agents.  
+- Recon modules: `getuid`, `netview`, `ps` (process list), `enum` (user/group enumeration).  
+- Credential modules: `mimikatz`, `invoke_mimikatz`, `get_creds`.  
+- Persistence modules: `persistence`, `run_as_service`.  
+- Lateral movement: `wmiexec`, `smbexec`.  
+- File operations: `upload`, `download`, `execute`.
+
+───────────────────────────────
+TACTICAL TIPS  
+───────────────────────────────  
+- Use encrypted communications and randomized intervals to avoid detection.  
+- Employ obfuscation in PowerShell stagers and scripts.  
+- Leverage Empire’s modularity to adapt to different environments.  
+- Combine with external tools for enhanced exploitation chains.  
+- Maintain operational security by cleaning traces post-operation.
+
+───────────────────────────────
+FINAL COMMANDMENT:  
+“Be the ghost in the system, unseen and unstoppable.”
+───────────────────────────────

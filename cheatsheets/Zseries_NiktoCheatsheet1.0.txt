@@ -1,0 +1,59 @@
+┌───────────────────────────────────────────────────────────────┐
+│                      ZYA'S NIKTO CHEATSHEET                   │
+│                      TACTICAL GUIDE                           │
+└───────────────────────────────────────────────────────────────┘
+
+MISSION:
+Identify known vulnerabilities, misconfigurations, and outdated software in web servers
+through automated scanning and comprehensive testing.
+
+───────────────────────────────
+QUICK DEPLOYMENT PROTOCOL
+───────────────────────────────
+1️⃣ Launch Nikto against target web server:  
+   `nikto -h http://target.com`
+
+2️⃣ Customize scan with options for ports, plugins, and reporting.  
+3️⃣ Analyze results for outdated software, dangerous headers, and exposed files.  
+4️⃣ Use findings to plan manual validation and exploitation.  
+5️⃣ Integrate with other tools like Burp Suite for deeper testing.
+
+───────────────────────────────
+COMMON OPTIONS & FLAGS
+───────────────────────────────
+- `-h <host>` — Target hostname or IP.  
+- `-p <port>` — Specify port(s) (default 80).  
+- `-ssl` — Force SSL mode (https).  
+- `-Tuning <number>` — Select plugin categories (e.g., 1 for interesting files).  
+- `-output <file>` — Save report to file (txt, html).  
+- `-Format <type>` — Output format (txt, csv, html, xml).  
+- `-Cgidirs <dirs>` — Scan specified CGI directories.  
+- `-Useragent <string>` — Customize User-Agent header.
+
+───────────────────────────────
+PLUGIN CATEGORIES (TUNING)
+───────────────────────────────
+- 0: Defaults  
+- 1: Interesting files/directories  
+- 2: Misconfiguration  
+- 3: Information disclosure  
+- 4: Injection (XSS/SQL)  
+- 5: Remote file access  
+- 6: Denial of service  
+- 7: Remote shell uploads  
+- 8: File upload  
+- 9: Authentication bypass
+
+───────────────────────────────
+TACTICAL TIPS
+───────────────────────────────
+- Use tuning to focus on relevant vulnerabilities and reduce noise.  
+- Run against staging or test environments first.  
+- Combine with manual checks for false positives.  
+- Keep Nikto updated for latest vulnerability checks.  
+- Automate output parsing for integration with reporting tools.
+
+───────────────────────────────
+FINAL COMMANDMENT:
+“Probe the web’s defenses; exploit the gaps left unguarded.”
+───────────────────────────────

@@ -1,0 +1,17 @@
+SEARCHSPLOIT - Manual Básico
+------------------
+Descripción:
+Searchsploit busca exploits locales en la base de datos de Exploit-DB.
+
+Instalación:
+sudo apt install exploitdb
+
+Uso básico:
+searchsploit apache 2.4
+searchsploit --mirror <ID>
+searchsploit -m <ruta>
+
+Opciones comunes:
+-m   Copiar exploit a directorio actual
+-w   Mostrar URLs en lugar de rutas locales
+-u   Actualizar base de datos

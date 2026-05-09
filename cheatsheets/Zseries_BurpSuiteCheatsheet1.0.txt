@@ -1,0 +1,115 @@
+┌───────────────────────────────────────────────────────────────┐
+│                  ZYA'S BURP SUITE CHEATSHEET                  │
+│                      TACTICAL GUIDE                           │
+└───────────────────────────────────────────────────────────────┘
+
+MISSION:
+Intercept, modify, and exploit web traffic; discover, analyze, and exploit vulnerabilities in web applications stealthily and efficiently.
+
+───────────────────────────────
+QUICK DEPLOYMENT PROTOCOL
+───────────────────────────────
+1️⃣ Configure browser proxy to 127.0.0.1:8080 (default Burp proxy).
+2️⃣ Import Burp CA certificate into browser to intercept HTTPS traffic.
+3️⃣ Define Target Scope meticulously to avoid collateral captures.
+4️⃣ Enable Intercept to capture and modify requests/responses live.
+5️⃣ Use Repeater for manual crafted request replay and fine tuning.
+6️⃣ Launch Intruder for automated attacks: brute force, fuzzing, parameter manipulation.
+7️⃣ Run Scanner (Pro) for automated vulnerability detection and risk scoring.
+8️⃣ Analyze responses using Decoder and Comparer for encoding issues and subtle differences.
+9️⃣ Extend Burp with plugins/extensions (Extender tab) for custom needs and automation.
+
+───────────────────────────────
+KEY TOOLS & FUNCTIONALITY
+───────────────────────────────
+
+Proxy:
+- Core interception of HTTP/S requests.
+- Modify requests/responses on the fly.
+- Intercept WebSockets and HTTP/2 supported.
+
+Repeater:
+- Manual crafting and replaying of requests.
+- Test injection points, analyze responses.
+- Save custom request templates.
+
+Intruder:
+- Attack automation engine.
+- Four attack modes: Sniper, Battering Ram, Pitchfork, Cluster Bomb.
+- Perfect for fuzzing, brute forcing credentials, bypass testing.
+
+Scanner (Pro only):
+- Automated discovery of common vulnerabilities (XSS, SQLi, SSRF, RCE, etc).
+- Passive & active scanning modes.
+- Custom scan configurations and macros.
+
+Decoder:
+- Transform and analyze encoded data (Base64, URL, HTML, Hex).
+- Useful for decoding tokens, cookies, payloads.
+
+Comparer:
+- Side-by-side comparison of requests/responses.
+- Identify subtle differences in server behavior or response content.
+
+Extender:
+- Add 3rd party or custom plugins (e.g. ActiveScan++, Logger++).
+- Script Burp in Python/Jython/JavaScript for advanced automation.
+
+───────────────────────────────
+PROXY & INTERCEPT BEST PRACTICES
+───────────────────────────────
+- Always configure Target Scope to reduce noise and risk.
+- Use interception rules to auto-forward benign requests.
+- Inspect headers, cookies, and hidden parameters carefully.
+- Decrypt HTTPS with Burp’s CA cert; watch for HSTS pinning issues.
+- Capture and analyze WebSocket traffic for real-time apps.
+
+───────────────────────────────
+INTRUDER ATTACK MODES EXPLAINED
+───────────────────────────────
+- Sniper: Single insertion point; precision attacks on one parameter.
+- Battering Ram: Same payload on all positions; useful for uniform parameters.
+- Pitchfork: Parallel multiple payloads; test parameter sets synchronously.
+- Cluster Bomb: Combinatorial multiple payloads; exhaustive testing of combinations.
+
+───────────────────────────────
+COMMON PAYLOADS & STRATEGIES FOR INTRUDER
+───────────────────────────────
+- SQL Injection: `' OR '1'='1' --`, `' UNION SELECT ...`, blind payloads.
+- Cross-Site Scripting (XSS): `<script>alert(1)</script>`, event handlers.
+- Command Injection: `; ls -la`, `| whoami`.
+- Authentication bypass: `' OR 1=1--`, null byte injections.
+- Fuzzing: Common file extensions, long strings, special chars.
+- Parameter pollution: Repeated or malformed parameters.
+- File path traversal: `../../etc/passwd`, URL-encoded variants.
+
+───────────────────────────────
+SCANNER & VULNERABILITY MANAGEMENT
+───────────────────────────────
+- Use passive scanning to avoid detection on sensitive targets.
+- Adjust scan speed/intensity per environment rules.
+- Review and verify findings manually; scan tools generate false positives.
+- Correlate with manual testing (Repeater/Intruder) before exploitation.
+- Export scan reports for evidence and mitigation planning.
+
+───────────────────────────────
+EXTENDER & AUTOMATION INSIGHTS
+───────────────────────────────
+- ActiveScan++: Enhanced scanning capabilities with more vulnerability checks.
+- Logger++: Detailed logging of traffic for audit trails.
+- Write custom extensions for specialized needs (token handling, complex workflows).
+- Use Burp macros to handle multi-step authentication or session handling.
+
+───────────────────────────────
+ADVANCED TACTICAL TIPS
+───────────────────────────────
+- Chain Burp with tools like OWASP ZAP, Fiddler, or Mitmproxy for layered analysis.
+- Use session handling rules to automate CSRF tokens or 2FA flows.
+- Capture and replay API requests with custom headers and JSON payloads.
+- Monitor response timing and sizes to detect blind injection points.
+- Utilize Burp Collaborator to identify out-of-band vulnerabilities.
+
+───────────────────────────────
+FINAL COMMANDMENT:
+“Master the web, bend it to your will, leave no flaw unchecked, and strike silently.”
+───────────────────────────────

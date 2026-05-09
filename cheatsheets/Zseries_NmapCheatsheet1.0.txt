@@ -1,0 +1,186 @@
+┌───────────────────────────────────────────────────────────────┐
+│                   ZYA'S NMAP CHEATSHEET                       │
+│                      TACTICAL GUIDE                           │
+└───────────────────────────────────────────────────────────────┘
+
+MISSION:  
+Execute precision network reconnaissance, vulnerability discovery,  
+and stealthy target enumeration to gather actionable intelligence  
+without detection or footprint.
+
+───────────────────────────────────────────────────────────────
+QUICK DEPLOYMENT PROTOCOL  
+───────────────────────────────────────────────────────────────
+1️⃣ Select target(s) — IPs, ranges, subnets, or hostnames.  
+2️⃣ Define scan type and timing according to operational security needs.  
+3️⃣ Execute scan with output formatting for easy parsing/reporting.  
+4️⃣ Analyze results immediately; use scripts for vulnerability detection.  
+5️⃣ Correlate findings with intel sources; plan next moves.
+
+───────────────────────────────────────────────────────────────
+PRIORITY SCAN TYPES & FLAGS  
+───────────────────────────────────────────────────────────────
+⚡ SYN SCAN (stealthy, fast):  
+`nmap -sS <target>`  
+*Half-open scan; stealthier than full connect.*
+
+⚡ CONNECT SCAN (full TCP handshake):  
+`nmap -sT <target>`  
+*Used when SYN scan is not allowed.*
+
+⚡ UDP SCAN (discover UDP services):  
+`nmap -sU <target>`  
+*Slower; UDP can reveal different services.*
+
+⚡ SERVICE & VERSION DETECTION:  
+`nmap -sV <target>`  
+*Identify service versions, important for vuln assessment.*
+
+⚡ OS DETECTION:  
+`nmap -O <target>`  
+*Fingerprint remote OS.*
+
+⚡ SCRIPT SCAN (NSE - Nmap Scripting Engine):  
+`nmap -sC <target>`  
+*Run default scripts for common checks.*
+
+⚡ FULL SCRIPT SCAN (all scripts):  
+`nmap -p- --script=default,vuln <target>`  
+*Run default plus vulnerability scripts.*
+
+⚡ AGGRESSIVE SCAN (combines multiple scans + traceroute):  
+`nmap -A <target>`  
+*Comprehensive but noisy.*
+
+───────────────────────────────────────────────────────────────
+TIMING & STEALTH OPTIONS  
+───────────────────────────────────────────────────────────────
+`-T0` to `-T5` — Timing templates from paranoid (slowest) to insane (fastest):  
+- `-T0` paranoid: ultra slow, stealthy (best for IDS evasion).  
+- `-T3` default: balanced speed and stealth.  
+- `-T4` aggressive: faster, more detectable.  
+- `-T5` insane: fastest, most detectable.
+
+───────────────────────────────────────────────────────────────
+PORT SELECTION  
+───────────────────────────────────────────────────────────────
+`-p <port>`           → scan specific port(s), e.g. `-p 22,80,443`  
+`-p-`                 → scan all 65535 TCP ports  
+`--top-ports <num>`   → scan top <num> ports by frequency  
+
+───────────────────────────────────────────────────────────────
+OUTPUT FORMATS  
+───────────────────────────────────────────────────────────────
+`-oN <file>`          → Normal output (human-readable)  
+`-oX <file>`          → XML output (for tools integration)  
+`-oG <file>`          → Grepable output (easy to parse)  
+`-oA <basename>`      → All three formats simultaneously  
+
+───────────────────────────────────────────────────────────────
+COMMONLY USED NSE SCRIPT CATEGORIES  
+───────────────────────────────────────────────────────────────
+- **default**     → common useful scripts  
+- **discovery**   → host and service discovery  
+- **intrusive**   → potential to disrupt targets (use with caution)  
+- **vuln**        → vulnerability detection  
+- **exploit**     → exploit attempts (use only in controlled env)  
+- **malware**     → malware detection  
+- **auth**        → authentication bypass or checks  
+- **brute**       → brute-force attacks  
+- **safe**        → scripts considered safe to run
+
+───────────────────────────────────────────────────────────────
+NSE SCRIPTS ESSENTIALS  
+───────────────────────────────────────────────────────────────
+a) Recon & Discovery  
+- `http-title` — Detect page titles, quick target identification.  
+- `ssl-cert` — Extract SSL/TLS cert info for fingerprinting.  
+- `dns-brute` — Rapid subdomain enumeration.  
+- `snmp-info` — Collect basic SNMP info.  
+- `ftp-anon` — Detect anonymous FTP access.
+
+b) Vulnerability Detection  
+- `http-vuln-cve2017-5638` — Apache Struts RCE (critical).  
+- `ssl-heartbleed` — Heartbleed SSL vulnerability detection.  
+- `smb-vuln-ms17-010` — EternalBlue SMB vuln detection.  
+- `ftp-vuln-cve2010-4221` — FTP server vuln detection.  
+- `http-slowloris` — Slow HTTP DoS attack detection.
+
+c) Bruteforce & Auth Testing  
+- `ftp-brute` — FTP brute force.  
+- `ssh-brute` — SSH brute force.  
+- `http-brute` — HTTP Auth brute force.  
+- `smtp-brute` — SMTP brute force.
+
+d) Exploitation & Post-Exploitation (Controlled Use)  
+- `http-shellshock` — Shellshock exploit detection.  
+- `smb-double-pulsar-backdoor` — SMB backdoor detection.
+
+───────────────────────────────────────────────────────────────
+RUNNING NSE SCRIPTS  
+───────────────────────────────────────────────────────────────
+Basic syntax:  
+`nmap --script=<scriptname> <target>`
+
+Example running multiple script categories (default + vuln):  
+`nmap -sV --script=default,vuln 10.10.10.5`
+
+Running specific script:  
+`nmap --script=http-vuln-cve2017-5638 192.168.1.100`
+
+───────────────────────────────────────────────────────────────
+CUSTOM SCRIPT SELECTION FOR TACTICAL SCANS  
+───────────────────────────────────────────────────────────────
+| MISSION TYPE      | SCRIPT CATEGORY             | COMMAND EXAMPLE                   |
+|-------------------|-----------------------------|---------------------------------|
+| Quick Recon       | discovery, default           | `--script=discovery,default`     |
+| Vulnerability Hunt| vuln                        | `--script=vuln`                  |
+| Brute Force       | brute                       | `--script=brute`                 |
+| Full Ops          | default, vuln, brute        | `--script=default,vuln,brute`    |
+
+───────────────────────────────────────────────────────────────
+EVASION TECHNIQUES TO BYPASS IDS/IPS  
+───────────────────────────────────────────────────────────────
+a) Timing and Speed  
+- Use `-T0` or `-T1` for ultra stealth scans to avoid detection.  
+- Adjust speed with `--scan-delay <time>` and `--max-rate <pps>`.
+
+b) Fragmentation  
+- Fragment TCP packets:  
+`nmap -f <target>`
+
+c) Decoy Scan  
+- Use decoys to confuse defenses:  
+`nmap -D RND:10 <target>`
+
+d) Source Port Spoofing  
+- Spoof source port to bypass simple filters:  
+`nmap --source-port 53 <target>`
+
+e) Randomize Target Scan Order  
+- Avoid predictable patterns:  
+`nmap --randomize-hosts <targets>`
+
+f) Idle Zombie Scan (Spoof Scan)  
+- Hide scan origin through another host:  
+`nmap -sI <zombie_host> <target>`
+
+───────────────────────────────────────────────────────────────
+INTEGRATION TIPS  
+───────────────────────────────────────────────────────────────
+- Combine Nmap with Python or Bash scripts for post-processing.  
+- Use XML output (`-oX`) for feeding SIEM or analysis platforms.  
+- Integrate with Metasploit or pentesting frameworks to automate exploitation after detection.
+
+───────────────────────────────────────────────────────────────
+PERFORMANCE TIPS  
+───────────────────────────────────────────────────────────────
+- Use `--max-retries <num>` to reduce scan retries and speed up.  
+- Use `--host-timeout <time>` to skip slow hosts.  
+- Control packet rate with `--min-rate` and `--max-rate`.  
+- Use `--exclude <targets>` to skip friendly IPs.
+
+───────────────────────────────────────────────────────────────
+FINAL COMMANDMENT:  
+“Scan with precision, leave no trace, know your target inside out.”  
+───────────────────────────────────────────────────────────────

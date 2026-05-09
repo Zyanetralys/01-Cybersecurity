@@ -1,0 +1,74 @@
+┌───────────────────────────────────────────────────────────────┐
+│                  ZYA'S THE HARVESTER CHEATSHEET               │
+│                      TACTICAL GUIDE                           │
+└───────────────────────────────────────────────────────────────┘
+
+MISSION:
+Gather emails, subdomains, hosts, and metadata from public sources to map
+target infrastructure and personnel before engagement.
+
+───────────────────────────────
+QUICK DEPLOYMENT PROTOCOL
+───────────────────────────────
+1️⃣ Define target domain or company to investigate.  
+2️⃣ Choose data sources (search engines, PGP servers, social media, etc).  
+3️⃣ Run theharvester with appropriate flags to extract data.  
+4️⃣ Analyze gathered information for patterns and pivot points.  
+5️⃣ Combine with other OSINT tools for deeper reconnaissance.
+
+───────────────────────────────
+COMMON COMMAND USAGE
+───────────────────────────────
+- Basic usage:  
+  `theharvester -d example.com -b google`
+
+- Search using different sources:  
+  `-b` flag options include: google, bing, baidu, yahoo, linkedin, pgp, twitter, etc.
+
+- Limit search results:  
+  `-l <number>` — number of results per source (default 100).
+
+- Use custom output format:  
+  `-f <filename>` — save results to HTML or TXT file.
+
+- Search for emails and hosts:  
+  `-d example.com -b google -l 200`
+
+- Use virtual hosts enumeration:  
+  `-b crtsh` — search SSL certificates transparency logs.
+
+───────────────────────────────
+AVAILABLE DATA SOURCES (-b)
+───────────────────────────────
+- google — Google search engine.  
+- bing — Bing search engine.  
+- yahoo — Yahoo search engine.  
+- baidu — Baidu search engine.  
+- linkedin — LinkedIn profiles.  
+- pgp — PGP key servers.  
+- twitter — Twitter user mentions.  
+- crtsh — Certificate transparency logs.  
+- dogpile — Metasearch engine.  
+- netcraft — Netcraft data.  
+- virustotal — VirusTotal metadata.
+
+───────────────────────────────
+OUTPUT FORMATS
+───────────────────────────────
+- Plain text (default).  
+- HTML report (`-f report.html`).  
+- JSON (if scripted, via parsing).
+
+───────────────────────────────
+TACTICAL TIPS
+───────────────────────────────
+- Combine multiple data sources for thorough intelligence.  
+- Limit requests to avoid detection or rate limiting.  
+- Use SSL certificate sources (crtsh) to discover subdomains missed by search engines.  
+- Pivot from discovered emails to social media or breached data.  
+- Use output files to feed other tools or automate further analysis.
+
+───────────────────────────────
+FINAL COMMANDMENT:
+“Reveal your target’s digital footprints; build the map before the infiltration.”
+───────────────────────────────

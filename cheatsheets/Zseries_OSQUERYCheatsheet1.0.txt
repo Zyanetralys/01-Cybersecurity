@@ -1,0 +1,85 @@
+┌───────────────────────────────────────────────────────────────┐
+│                  ZYA'S OSQUERY CHEATSHEET                     │
+│                      TACTICAL GUIDE                           │
+└───────────────────────────────────────────────────────────────┘
+
+MISSION:
+Deploy OSQuery agents across endpoints to collect real-time system state,
+detect anomalies, and enable proactive endpoint defense and forensics.
+
+───────────────────────────────
+QUICK DEPLOYMENT PROTOCOL
+───────────────────────────────
+1️⃣ Deploy osquery agent on target endpoints (Windows, Linux, macOS).
+2️⃣ Use SQL-like queries to extract detailed system, process, and network info.
+3️⃣ Schedule queries for continuous monitoring and historical data.
+4️⃣ Forward query results to centralized SIEM, ELK, or logging platforms.
+5️⃣ Analyze anomalies, unusual behavior, and trigger alerts for incident response.
+
+───────────────────────────────
+ESSENTIAL TABLES
+───────────────────────────────
+- **processes**  
+  Active running processes with PID, path, cmdline, parent PID.
+
+- **users**  
+  Logged in users, user accounts, and sessions.
+
+- **listening_ports**  
+  Network ports currently open and listening.
+
+- **crontab / scheduled_tasks**  
+  Scheduled jobs and persistence mechanisms.
+
+- **file_events**  
+  File system modifications and access events.
+
+- **logged_in_users**  
+  Real-time current user sessions.
+
+- **os_version**  
+  OS build, version, platform info.
+
+- **autoruns**  
+  Common persistence points (startup items, services, etc).
+
+───────────────────────────────
+SAMPLE QUERIES
+───────────────────────────────
+- Detect suspicious PowerShell processes:  
+  SELECT name, pid, path, cmdline FROM processes WHERE name LIKE '%powershell%';
+
+- Find unusual open ports (exclude common safe ports):  
+  SELECT * FROM listening_ports WHERE port NOT IN (22, 80, 443, 3389);
+
+- Detect recently created user accounts (UID > 1000 for Linux):  
+  SELECT * FROM users WHERE uid > 1000;
+
+- Check autoruns persistence points in temp directories:  
+  SELECT * FROM autoruns WHERE path LIKE '%temp%';
+
+- Identify unexpected scheduled tasks (Windows):  
+  SELECT * FROM scheduled_tasks WHERE task_name NOT LIKE '%Microsoft%';
+
+───────────────────────────────
+DEPLOYMENT & MONITORING TIPS
+───────────────────────────────
+- Schedule frequent queries on critical tables for real-time visibility.  
+- Correlate osquery data with YARA scans for malware and IOC detection.  
+- Integrate with SIEM for alerting on anomalies or suspicious patterns.  
+- Use osquery packs for modular query sets and policy enforcement.  
+- Harden osquery configuration and secure communication channels.
+
+───────────────────────────────
+ADVANCED STRATEGIC INSIGHTS
+───────────────────────────────
+- Combine process and network data to detect suspicious lateral movement.  
+- Use file_events and autoruns to discover persistence mechanisms and rootkits.  
+- Monitor logged_in_users and session changes for unauthorized access.  
+- Query os_version and patch levels for vulnerability management.  
+- Leverage custom SQL queries to tailor detection to your threat model.
+
+───────────────────────────────
+FINAL COMMANDMENT:
+“Know your endpoints as your frontline fortress; visibility is control.”
+───────────────────────────────

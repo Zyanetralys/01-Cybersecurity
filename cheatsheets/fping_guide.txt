@@ -1,0 +1,20 @@
+FPING - Manual Básico
+------------------
+Descripción:
+FPing es una herramienta de línea de comandos para enviar pings ICMP a múltiples hosts rápidamente.
+
+Instalación:
+Debian/Ubuntu: sudo apt install fping
+Arch Linux: sudo pacman -S fping
+
+Uso básico:
+fping <host>
+fping -a -g 192.168.1.0/24 2>/dev/null    # Escaneo de rango
+fping -a -f lista_ips.txt                 # Desde un archivo
+
+Opciones útiles:
+-a   Muestra solo hosts activos.
+-g   Genera un rango de direcciones IP.
+-f   Lee la lista de hosts desde un archivo.
+-q   Salida silenciosa.
+-u   Muestra solo hosts inalcanzables.

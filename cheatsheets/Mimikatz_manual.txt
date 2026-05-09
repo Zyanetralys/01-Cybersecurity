@@ -1,0 +1,44 @@
+┌───────────────────────────────────────────────────────────────┐
+│                      ZYA'S MIMIKATZ CHEATSHEET                │
+│                      TACTICAL GUIDE                           │
+└───────────────────────────────────────────────────────────────┘
+
+MISSION:  
+Extract credentials, hashes, tickets, and secrets from Windows memory and system stores  
+to facilitate lateral movement and privilege escalation.
+
+───────────────────────────────
+QUICK DEPLOYMENT PROTOCOL  
+───────────────────────────────  
+1️⃣ Gain administrative or SYSTEM-level access on target.  
+2️⃣ Run Mimikatz executable or PowerShell module on the target.  
+3️⃣ Dump plaintext passwords, NTLM hashes, Kerberos tickets (Golden Tickets).  
+4️⃣ Use harvested creds for Pass-the-Hash, Pass-the-Ticket, or Over-Pass-the-Hash attacks.  
+5️⃣ Clean traces to avoid detection.
+
+───────────────────────────────
+KEY COMMANDS  
+───────────────────────────────  
+- `privilege::debug` — Enable debug privileges.  
+- `sekurlsa::logonpasswords` — Dump credentials from LSASS process.  
+- `sekurlsa::tickets` — Extract Kerberos tickets.  
+- `sekurlsa::pth /user:<username> /domain:<domain> /ntlm:<hash>` — Pass-the-Hash attack.  
+- `sekurlsa::msv` — Extract cached credentials.  
+- `kerberos::golden` — Create Golden Ticket.  
+- `token::elevate` — Elevate privileges via token manipulation.  
+- `misc::cmd` — Spawn a command prompt with SYSTEM privileges.
+
+───────────────────────────────
+TACTICAL TIPS  
+───────────────────────────────  
+- Dump credentials on memory dump files or live systems.  
+- Use in-memory execution or PowerShell to avoid dropping files.  
+- Combine with lateral movement tools like CrackMapExec or Cobalt Strike.  
+- Regularly clear event logs and disable auditing where possible.  
+- Detect and bypass Credential Guard and LSASS protections.  
+- Use obfuscation or custom builds to evade AV/EDR.
+
+───────────────────────────────
+FINAL COMMANDMENT:  
+“Seize the keys to the kingdom hidden in memory’s depths.”
+───────────────────────────────

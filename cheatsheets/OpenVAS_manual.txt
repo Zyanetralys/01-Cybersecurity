@@ -1,0 +1,89 @@
+┌───────────────────────────────────────────────────────────────┐
+│                   ZYA'S OPENVAS CHEATSHEET                    │
+│                      TACTICAL GUIDE                           │
+└───────────────────────────────────────────────────────────────┘
+
+MISSION:
+Perform comprehensive vulnerability scanning and management to identify,
+prioritize, and remediate weaknesses across network assets proactively.
+
+───────────────────────────────
+QUICK DEPLOYMENT PROTOCOL
+───────────────────────────────
+1️⃣ Install OpenVAS / Greenbone Vulnerability Manager on a secure server.  
+2️⃣ Update NVT (Network Vulnerability Tests) database regularly.  
+3️⃣ Configure targets: single IPs, ranges, subnets, or entire networks.  
+4️⃣ Create scan configurations or use default templates (Full and Fast, etc).  
+5️⃣ Launch scans, monitor progress, and collect detailed reports.  
+6️⃣ Analyze results, prioritize critical issues, and plan remediation.  
+7️⃣ Schedule regular scans for continuous security posture monitoring.
+
+───────────────────────────────
+CORE COMPONENTS
+───────────────────────────────
+- **GVM (Greenbone Vulnerability Manager)** — Central management console.  
+- **OpenVAS Scanner** — Performs the actual vulnerability scanning.  
+- **Greenbone Security Assistant (GSA)** — Web-based GUI for managing scans and reports.  
+- **NVT Feed** — Collection of vulnerability tests (free and commercial).
+
+───────────────────────────────
+SCAN CONFIGURATIONS
+───────────────────────────────
+- **Full and Fast** — Comprehensive but quicker scan (default).  
+- **Full and Very Deep** — Exhaustive checks, longer runtime.  
+- **Discovery** — Identify live hosts and services only.  
+- **Host Discovery** — Ping and port scan to detect alive hosts.  
+- **Custom** — Tailored scans for specific vulnerabilities or compliance checks.
+
+───────────────────────────────
+KEY OPERATIONS & COMMANDS
+───────────────────────────────
+- Update NVT feed:  
+  `greenbone-nvt-sync`
+
+- Start GSA web interface:  
+  Usually at `https://<server_ip>:9392`
+
+- Create target:  
+  Specify IP or hostname, port ranges, and scan options.
+
+- Create task:  
+  Assign target and scan config, schedule scan.
+
+- Run task:  
+  Manually start or schedule recurring scans.
+
+- View reports:  
+  Detailed vulnerability list with severity, CVSS scores, and remediation advice.
+
+───────────────────────────────
+SCAN OUTPUT & ANALYSIS
+───────────────────────────────
+- Results classified by severity: High, Medium, Low, Info.  
+- CVE identifiers linked for vulnerabilities.  
+- Exploitability and risk scores provided.  
+- Recommendations and references for remediation.  
+- Export reports in PDF, XML, HTML, CSV.
+
+───────────────────────────────
+BEST PRACTICES & TACTICAL TIPS
+───────────────────────────────
+- Run discovery scans before vulnerability scans to optimize scope.  
+- Use credentialed scans where possible for deeper inspection.  
+- Regularly update vulnerability database for latest checks.  
+- Correlate findings with threat intelligence feeds.  
+- Integrate OpenVAS with SIEM for centralized alerting.  
+- Schedule scans during off-peak hours to minimize impact.
+
+───────────────────────────────
+DEFENSIVE CONSIDERATIONS
+───────────────────────────────
+- Harden OpenVAS server and restrict access.  
+- Monitor scan activity logs for anomalous or unauthorized scans.  
+- Use OpenVAS findings to patch, update, and strengthen defenses.  
+- Validate scan results with manual verification for false positives.
+
+───────────────────────────────
+FINAL COMMANDMENT:
+“Scan with precision, know your weaknesses, and fortify your defenses before the adversary strikes.”
+───────────────────────────────

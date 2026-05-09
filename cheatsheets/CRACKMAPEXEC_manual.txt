@@ -1,0 +1,67 @@
+┌───────────────────────────────────────────────────────────────┐
+│                  ZYA'S CRACKMAPEXEC CHEATSHEET                │
+│                      TACTICAL GUIDE                           │
+└───────────────────────────────────────────────────────────────┘
+
+MISSION:  
+Automate network penetration, lateral movement, and credential validation  
+across Windows Active Directory environments using SMB, WinRM, and more.
+
+───────────────────────────────
+QUICK DEPLOYMENT PROTOCOL  
+───────────────────────────────  
+1️⃣ Enumerate targets or import IP ranges/domains.  
+2️⃣ Gather valid credentials or hashes for authentication.  
+3️⃣ Launch CME with target(s), credentials, and desired modules.  
+4️⃣ Execute built-in modules for enumeration, exploitation, or payload delivery.  
+5️⃣ Harvest credentials, execute commands remotely, and pivot within network.  
+6️⃣ Analyze output for weak passwords, misconfigurations, and live hosts.
+
+───────────────────────────────
+CORE COMMAND STRUCTURE  
+───────────────────────────────  
+Basic syntax:  
+`cme smb <target> -u <user> -p <pass> [options]`
+
+───────────────────────────────
+KEY OPTIONS & FLAGS  
+───────────────────────────────  
+- `-u <user>` — Specify username.  
+- `-p <pass>` — Specify password.  
+- `-H <hash>` — Use NTLM hash for authentication.  
+- `-d <domain>` — Domain name for authentication.  
+- `--local-auth` — Use local account authentication.  
+- `-M <module>` — Execute a CME module.  
+- `--exec-method <method>` — Execution method (smbexec, wmiexec, psexec, etc).  
+- `--shares` — Enumerate SMB shares.  
+- `--pass-pol` — Check password policy compliance.  
+- `--no-bruteforce` — Skip brute force attempts.  
+- `--log` — Log output to file.  
+- `-t <threads>` — Number of parallel threads.
+
+───────────────────────────────
+USEFUL MODULES  
+───────────────────────────────  
+- **wmiexec** — Execute commands via WMI remotely.  
+- **psexec** — Use SMB service for remote command execution.  
+- **mimikatz** — Extract credentials from memory.  
+- **secrets** — Dump SAM and LSA secrets.  
+- **shares** — Enumerate accessible SMB shares.  
+- **passpol** — Retrieve domain password policy.  
+- **lsassy** — Dump credentials from LSASS process.  
+- **group** — Enumerate groups and memberships.
+
+───────────────────────────────
+TACTICAL TIPS  
+───────────────────────────────  
+- Use credential or hash authentication to minimize detection.  
+- Select execution method based on network and target security controls.  
+- Enumerate shares and services for attack surface mapping.  
+- Harvest credentials to escalate privileges or pivot laterally.  
+- Chain CME with tools like BloodHound for AD attack path analysis.  
+- Log all activities securely for audit and analysis.
+
+───────────────────────────────
+FINAL COMMANDMENT:  
+“Control the domain, harvest secrets, and dominate your digital battlefield.”
+───────────────────────────────

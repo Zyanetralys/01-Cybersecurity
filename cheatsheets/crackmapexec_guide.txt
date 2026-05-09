@@ -1,0 +1,19 @@
+CRACKMAPEXEC - Manual Básico
+------------------
+Descripción:
+CrackMapExec (CME) es una herramienta de post-explotación para redes Windows/Active Directory.
+
+Instalación:
+pipx install crackmapexec
+
+Uso básico:
+cme smb 192.168.1.0/24 -u usuario -p contraseña
+cme smb 192.168.1.0/24 -u usuario -H hashNTLM
+cme smb 192.168.1.10 --shares
+cme smb 192.168.1.10 --users
+
+Opciones comunes:
+--shares   Listar recursos compartidos
+--users    Listar usuarios
+--groups   Listar grupos
+--sam      Extraer SAM hashes

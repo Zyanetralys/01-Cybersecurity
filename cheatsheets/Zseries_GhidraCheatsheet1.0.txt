@@ -1,0 +1,101 @@
+┌───────────────────────────────────────────────────────────────┐
+│                   ZYA'S GHIDRA CHEATSHEET                     │
+│                      TACTICAL GUIDE                           │
+└───────────────────────────────────────────────────────────────┘
+
+MISSION:
+Perform deep static analysis, reverse engineering, and binary exploitation by dissecting executables, firmware, and malware to extract logic, vulnerabilities, and intel.
+
+───────────────────────────────
+QUICK DEPLOYMENT PROTOCOL
+───────────────────────────────
+1️⃣ Import binary (ELF, PE, Mach-O, raw) into Ghidra project.
+2️⃣ Let Ghidra analyze the binary automatically (functions, strings, symbols).
+3️⃣ Navigate through decompiled code and assembly listing.
+4️⃣ Identify key functions, control flow, and data structures.
+5️⃣ Apply patches or scripts to modify or extract behaviors.
+6️⃣ Export decompiled code, comments, and analysis reports.
+7️⃣ Use collaborative features for team analysis (if applicable).
+
+───────────────────────────────
+CORE INTERFACE COMPONENTS
+───────────────────────────────
+- **CodeBrowser**: Main UI for disassembly and decompilation.
+- **Decompiler Window**: High-level C-like pseudocode view.
+- **Symbol Tree**: Navigate functions, labels, and symbols.
+- **Listing Window**: Low-level assembly and instructions.
+- **Data Type Manager**: Define and manage structs, enums, typedefs.
+- **Function Graph**: Visualize function control flow graph (CFG).
+- **Bookmarks**: Mark critical code locations for reference.
+- **Script Manager**: Run custom Jython/Java scripts.
+
+───────────────────────────────
+IMPORT & ANALYSIS OPTIONS
+───────────────────────────────
+- Support for multiple architectures (x86/x64, ARM, MIPS, PowerPC, RISC-V).
+- Auto-analysis options: function detection, string extraction, symbol recovery.
+- Load symbols and debug info if available (PDB, DWARF).
+- Set analysis options before running: data references, pointer analysis, function signatures.
+- Import raw binaries with manual base address and architecture assignment.
+
+───────────────────────────────
+NAVIGATION & SEARCH TECHNIQUES
+───────────────────────────────
+- Use **Symbol Tree** to locate functions, globals, and imports.
+- Search for strings to find clues or function names.
+- Use **Function Graph** to understand complex control flow.
+- Cross-reference functions and variables with references window.
+- Bookmark important offsets or suspicious code sections.
+- Search for specific opcodes or instruction patterns.
+
+───────────────────────────────
+DECOMPILATION & CODE EXPLORATION
+───────────────────────────────
+- Decompiled view shows C-like pseudocode, easier to understand than assembly.
+- Rename variables, functions, and parameters for clarity.
+- Define function signatures and calling conventions.
+- Identify data structures and apply data types to memory regions.
+- Comment lines of code for documenting logic and hypotheses.
+- Detect and analyze loops, branches, and API calls.
+
+───────────────────────────────
+PATCHING & SCRIPTING
+───────────────────────────────
+- Use **Patch Program** to modify binary instructions or bytes.
+- Export patched binaries for testing or exploitation.
+- Write custom analysis or automation scripts in Python (Jython) or Java.
+- Use scripting to automate repetitive tasks: pattern searching, data extraction, or function renaming.
+- Import and run community scripts for extended functionality.
+
+───────────────────────────────
+PLUGIN & EXTENSIONS
+───────────────────────────────
+- Ghidra supports user plugins to add new analysis features.
+- Popular plugins:  
+  - GhidraDecompilerExtensions  
+  - GhidraBridge (for integration with debugging tools)  
+  - Various community-developed plugins for automation and integration.
+
+───────────────────────────────
+ADVANCED REVERSE ENGINEERING TIPS
+───────────────────────────────
+- Analyze dynamic library imports to infer functionality.
+- Identify cryptographic primitives by opcode patterns and constants.
+- Recover switch-case statements from jump tables.
+- Track data flow through registers and memory.
+- Use function signatures from well-known libraries for quicker identification.
+- Compare versions of binaries to detect patches or backdoors.
+- Combine with dynamic analysis tools for full context.
+
+───────────────────────────────
+EXPORTING & REPORTING
+───────────────────────────────
+- Export decompiled code and analysis reports (HTML, XML, TXT).
+- Share project files for collaborative review.
+- Document findings with bookmarks and code comments.
+- Generate call trees and function cross-references for reports.
+
+───────────────────────────────
+FINAL COMMANDMENT:
+“Dissect the binary’s soul, unveil its secrets, and control its destiny.”
+───────────────────────────────

