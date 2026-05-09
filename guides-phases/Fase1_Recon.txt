@@ -1,0 +1,153 @@
+1. Reconocimiento y OSINT – Posición de Vanguardia Sigilosa
+Amass
+Fase: Reconocimiento
+
+Función: Enumeración exhaustiva de subdominios y estructura de dominio objetivo.
+
+Protocolo de empleo:
+
+Ejecutar en horas de baja actividad para minimizar alertas.
+
+Distribuir resolvers para evitar concentración de tráfico.
+
+Filtrar resultados para evitar falsos positivos.
+
+Reglas de enfrentamiento:
+
+No enviar peticiones excesivas al mismo dominio en corto periodo.
+
+Usar modos pasivos si es posible para evitar detección.
+
+TheHarvester
+Fase: Reconocimiento
+
+Función: Recopilar correos electrónicos, subdominios y hosts públicos.
+
+Protocolo de empleo:
+
+Priorizar fuentes OSINT gratuitas y abiertas.
+
+Comprobar relevancia de datos antes de avanzar.
+
+Reglas de enfrentamiento:
+
+Evitar abuso de APIs públicas para no ser bloqueado.
+
+Cruzar datos para verificar veracidad.
+
+Recon-ng
+Fase: Reconocimiento
+
+Función: Plataforma modular para integrar diversas fuentes OSINT.
+
+Protocolo de empleo:
+
+Modularizar tareas para seguimiento ordenado.
+
+Mantener logs detallados para análisis posterior.
+
+Reglas de enfrentamiento:
+
+Cuidar límites de tasa en cada módulo.
+
+Actualizar módulos para evitar errores por cambios en APIs.
+
+nmap
+Fase: Reconocimiento
+
+Función: Escaneo de red para detectar hosts activos y servicios abiertos.
+
+Protocolo de empleo:
+
+Ejecutar escaneos segmentados y con timing agresivo ajustado para evitar IDS.
+
+Uso de técnicas stealth (SYN scan, fragmentación de paquetes).
+
+Priorizar escaneo sobre puertos clave según perfil del objetivo.
+
+Reglas de enfrentamiento:
+
+No escanear rangos IP completos de golpe.
+
+Alternar modos de escaneo para evadir detección por firmas.
+
+fping
+Fase: Reconocimiento
+
+Función: Sondeo rápido y masivo para determinar hosts vivos en red.
+
+Protocolo de empleo:
+
+Ejecutar barridos en segmentos pequeños y secuenciales.
+
+Limitar velocidad para no generar saturación.
+
+Reglas de enfrentamiento:
+
+Evitar respuestas ICMP de red masivas que puedan alertar.
+
+Priorizar uso en redes internas o controladas.
+
+searchsploit
+Fase: Reconocimiento
+
+Función: Búsqueda local y remota de exploits para software detectado.
+
+Protocolo de empleo:
+
+Actualizar base de datos antes de cada operación.
+
+Filtrar resultados según versiones exactas detectadas.
+
+Reglas de enfrentamiento:
+
+No usar exploits sin validación previa de seguridad y contexto.
+
+Shodan CLI
+Fase: Reconocimiento
+
+Función: Recolección de datos sobre dispositivos expuestos y vulnerables en Internet.
+
+Protocolo de empleo:
+
+Uso moderado para evitar bloqueos por abuso de API.
+
+Filtrar búsquedas por geolocalización y tipo de dispositivo.
+
+Reglas de enfrentamiento:
+
+No realizar consultas masivas en poco tiempo.
+
+Confirmar hallazgos con escaneo propio antes de actuar.
+
+Maltego
+Fase: Reconocimiento
+
+Función: Mapeo visual de relaciones entre entidades y activos.
+
+Protocolo de empleo:
+
+Configurar gráficos y fuentes específicas para evitar datos irrelevantes.
+
+Trabajar en etapas para análisis incremental.
+
+Reglas de enfrentamiento:
+
+Proteger la identidad digital durante consultas.
+
+Guardar resultados para comparativas futuras.
+
+Spiderfoot
+Fase: Reconocimiento
+
+Función: OSINT automatizado a gran escala para perfilado integral.
+
+Protocolo de empleo:
+
+Ejecutar en entornos controlados para evitar fugas.
+
+Priorizar módulos críticos para acelerar análisis.
+
+Reglas de enfrentamiento:
+
+Revisar resultados para filtrar falsos positivos y datos sensibles.

@@ -1,0 +1,72 @@
+5. Web & Cloud Offensive – El cielo y la web no son refugio
+SQLmap
+Fase: Ataque web
+
+Función: Automatización de inyección SQL para extracción y control.
+
+Protocolo de empleo:
+
+Ejecutar pruebas en modo sigiloso para evitar WAFs y sistemas IDS.
+
+Analizar respuestas para ajustar payloads según comportamiento del servidor.
+
+Priorizar objetivos con datos sensibles o accesos administrativos.
+
+Reglas de enfrentamiento:
+
+Evitar inyecciones agresivas que bloqueen el servidor.
+
+Confirmar vulnerabilidades manualmente para evitar falsos positivos.
+
+ffuf
+Fase: Fuzzing web
+
+Función: Fuzzing de directorios, archivos y parámetros para descubrimiento.
+
+Protocolo de empleo:
+
+Utilizar wordlists específicas y adaptadas al objetivo.
+
+Ajustar velocidad para evitar detección por IDS.
+
+Priorizar rutas y parámetros críticos.
+
+Reglas de enfrentamiento:
+
+Limitar número de peticiones simultáneas.
+
+Evitar patrones repetitivos que alerten sistemas de defensa.
+
+CloudBrute
+Fase: Reconocimiento nube
+
+Función: Enumeración de recursos y servicios expuestos en proveedores cloud.
+
+Protocolo de empleo:
+
+Ejecutar con credenciales mínimas para evitar bloqueo.
+
+Filtrar recursos críticos y datos sensibles para análisis prioritario.
+
+Reglas de enfrentamiento:
+
+Evitar escaneos masivos en cortos periodos.
+
+Revisar logs y alertas para ajustar intensidad de ataques.
+
+AWS CLI + Pacu
+Fase: Ataque y explotación nube
+
+Función: Gestión y explotación de recursos AWS con enfoque ofensivo.
+
+Protocolo de empleo:
+
+Configurar perfiles y permisos para escalada de privilegios.
+
+Usar módulos Pacu para enumeración y explotación específica.
+
+Reglas de enfrentamiento:
+
+Evitar uso de comandos ruidosos o fácilmente detectables.
+
+Mantener limpieza y eliminar rastros tras explotación.

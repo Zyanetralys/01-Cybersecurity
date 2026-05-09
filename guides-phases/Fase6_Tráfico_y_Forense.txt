@@ -1,0 +1,89 @@
+6. Análisis de Tráfico y Forense – Lo que se mueve y lo que queda
+Wireshark
+Fase: Análisis de tráfico
+
+Función: Captura y análisis en profundidad de paquetes en red.
+
+Protocolo de empleo:
+
+Filtrar tráfico relevante para evitar saturación de datos.
+
+Monitorizar segmentos clave para detectar actividad sospechosa.
+
+Guardar capturas para análisis posterior.
+
+Reglas de enfrentamiento:
+
+Evitar capturas masivas en entornos con alta latencia.
+
+Utilizar filtros BPF para optimizar rendimiento.
+
+Zeek
+Fase: Monitoreo y registro
+
+Función: Análisis en tiempo real y generación de logs de eventos de red.
+
+Protocolo de empleo:
+
+Configurar sensores en puntos estratégicos de red.
+
+Definir políticas personalizadas para alertas tempranas.
+
+Integrar con sistemas SIEM para correlación.
+
+Reglas de enfrentamiento:
+
+Mantener actualizadas las firmas y scripts de detección.
+
+Balancear la carga para evitar pérdida de datos.
+
+Ghidra
+Fase: Ingeniería inversa
+
+Función: Análisis estático y dinámico de binarios para identificación de malware o vulnerabilidades.
+
+Protocolo de empleo:
+
+Preparar entornos aislados para análisis seguro.
+
+Documentar hallazgos y modificar payloads según resultados.
+
+Reglas de enfrentamiento:
+
+Mantener confidencialidad del código analizado.
+
+Usar scripts personalizados para automatizar tareas repetitivas.
+
+Volatility3
+Fase: Análisis forense de memoria
+
+Función: Análisis de dumps de memoria para detectar procesos, credenciales y actividades ocultas.
+
+Protocolo de empleo:
+
+Capturar memoria en momentos de sospecha.
+
+Ejecutar análisis con perfiles específicos del sistema.
+
+Reglas de enfrentamiento:
+
+Evitar análisis en sistemas productivos sin copias previas.
+
+Correlacionar resultados con logs y tráfico.
+
+Radare2
+Fase: Ingeniería inversa
+
+Función: Análisis binario y explotación manual avanzada.
+
+Protocolo de empleo:
+
+Desensamblar binarios y buscar vectores de ataque.
+
+Integrar con scripts y módulos para automatización.
+
+Reglas de enfrentamiento:
+
+Mantener entornos controlados para evitar contaminación.
+
+Documentar pasos para replicación y entrenamiento.

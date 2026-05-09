@@ -1,0 +1,34 @@
+7. Exfiltración y Manipulación de Datos – Llévatelo sin que lo noten
+Exiftool
+Fase: Exfiltración y manipulación
+
+Función: Análisis y edición de metadatos en archivos para camuflar información.
+
+Protocolo de empleo:
+
+Revisar y limpiar metadatos antes de exfiltración para evitar rastros.
+
+Insertar marcas ocultas para control interno.
+
+Reglas de enfrentamiento:
+
+No modificar archivos críticos que puedan levantar sospechas.
+
+Mantener registros de cambios para auditoría interna.
+
+Steghide / zsteg
+Fase: Exfiltración oculta
+
+Función: Ocultación de datos dentro de imágenes y archivos multimedia.
+
+Protocolo de empleo:
+
+Utilizar formatos compatibles y con baja compresión para evitar pérdida de datos.
+
+Emplear claves robustas para cifrado interno.
+
+Reglas de enfrentamiento:
+
+Evitar sobrecargar archivos con datos para no levantar sospechas.
+
+Realizar pruebas de extracción antes de uso operativo.
