@@ -1,7 +1,5 @@
-param(
-    [int]$Intervalo = 5,
-    [int]$DuracionClick = 30
-)
+$Intervalo = 5
+$DuracionClick = 30
 
 Add-Type @"
 using System;
